@@ -1,0 +1,6 @@
+@import url("../styles/a5.css");
+
+.page {
+    page-break-after: always;
+}
+

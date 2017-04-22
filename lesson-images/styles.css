@@ -1,0 +1,34 @@
+@import url("../styles/a4.css");
+
+img {
+    display: block;
+    margin-bottom: 1em;        
+}
+
+h1 {
+    page-break-before: always;
+}
+
+.image-100 {
+    width: 100%
+}
+
+.image-50 {
+    width: 50%
+}
+
+.image-30 {
+    width: 30%
+}
+
+.rotate-45 {
+    transform: rotate(45deg)        
+}
+
+.rotate-90 {
+    transform: rotate(90deg)        
+}
+
+.rotate-135 {
+    transform: rotate(135deg)        
+}

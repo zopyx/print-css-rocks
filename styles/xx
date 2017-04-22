@@ -1,0 +1,4 @@
+@page {
+    size: a4;
+    margin: 2cm;
+}

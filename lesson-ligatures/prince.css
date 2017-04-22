@@ -1,0 +1,4 @@
+.without-ligatures {
+    font-variant: prince-opentype(onum);
+}
+

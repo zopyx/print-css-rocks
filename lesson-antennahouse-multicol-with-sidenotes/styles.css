@@ -1,0 +1,79 @@
+@import url("../styles/a4.css");
+
+#content {
+        column-count: 2;
+}
+
+@page:left {
+    margin-left: 5cm;
+    @bottom-left {
+        content: counter(page);
+    }
+}
+
+@page:right {
+    margin-right : 5cm;
+
+    @bottom-right {
+        content: counter(page);
+    }
+}
+
+#first {
+    position: running(first);
+    font-size: 0.8em;
+    color: red;
+    width: 2cm;
+}
+
+@page:first {
+    @right-middle {
+        content: element(first);
+    }
+}
+
+#last {
+    position: running(last);
+    font-size: 0.8em;
+    color: red;
+    width: 2cm;
+}
+
+
+@page {
+    @left-middle {
+        content: element(last);
+    }
+}
+
+.marker {
+    font-weight: bold;
+    color: red;
+}
+.annotation {
+    font-size: 0.8em;
+    font-weight: 100;
+    -ah-float: outside;
+    width: 3cm;
+    border: 1px solid #ddd;
+    -ah-float-reference: multicol;        
+    -ah-float-offset-x: -5cm;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+table#span2 {
+    -ah-float: multicol after left;
+    width: 3gr;
+    margin-top: 1em;
+}
+
+table#span2 caption {
+    font-weight: bold;
+}
+ 
+table#span2 td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+    

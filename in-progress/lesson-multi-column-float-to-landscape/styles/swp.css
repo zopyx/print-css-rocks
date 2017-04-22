@@ -1,0 +1,157 @@
+@import "swp-fonts.css";
+
+@page {
+    size: a4;
+}
+
+body {
+    font-family: Lato;
+}
+
+#content {
+    column-count: 2;
+    hyphens: auto;
+    hyphenate-before: 4;
+    hyphenate-after: 4;
+    font-size: 10pt;
+    -ah-baseline-grid: new;
+    -ah-baseline-block-snap: auto;
+}
+
+.outer  {
+    -ah-float-y: before;
+    -ah-float-reference: page;
+    -ah-float-move: next;
+    -ah-float-margin-y: 100%;
+    height: 100%;
+    width: 100%;
+    /*
+    border: 1px solid blue;
+    */
+    display: table;
+}
+
+.inner {
+    padding: 10px;
+    /*
+    border: 1px dashed gray;
+    */
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+#span2 table {
+    width: 50%;
+    font-size: 10pt;
+    top: 5cm;
+    left: 5cm;
+    position: relative;
+    display: inline-block;
+}
+
+/* SWP */
+
+#headline {
+    font-size: 2em;
+}
+
+#headline2 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.subheadline {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#abstract {
+    font-weight: bold;
+}
+
+#karte {
+    max-width: 100%;
+}
+
+#footer {
+    position: running(footer);
+}
+
+@page:left {
+    @bottom-center {
+        font-family: Lato;
+        content: element(footer);
+        font-size: 0.8em;
+        text-align: left;
+        vertical-align: top;
+        margin-top: 0.5cm;
+        margin-left: -1.5cm;
+    }
+    @bottom-left {
+        font-family: Lato;
+        content: counter(page);
+    }
+}
+
+@page:right {
+    @bottom-center {
+        font-family: Lato;
+        content: element(footer);
+        font-size: 0.8em;
+        text-align: right;
+        vertical-align: top;
+        margin-top: 0.5cm;
+        margin-right: -1.5cm;
+    }
+    @bottom-right {
+        font-family: Lato;
+        content:  counter(page);
+    }
+}
+
+
+@page {
+    counter-reset: footnote 0;
+}
+
+@page {
+    @footnote {
+        float: bottom;
+    }
+}
+
+span.footnote { 
+    float: footnote; 
+    counter-increment: footnote;
+    font-size: 0.8em;
+    line-height: 0.4em;
+    -ah-baseline-grid: new;
+    -ah-baseline-block-snap: auto;
+    margin-left: 0.5em;
+}
+
+.footnote::footnote-call {
+    content: counter(footnote) " ";
+}
+
+.footnote::footnote-marker {
+    content: counter(footnote);
+}
+
+
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+
+table td {
+    padding: 0.25em;
+}
+
+img {
+    max-width: 90%;
+}

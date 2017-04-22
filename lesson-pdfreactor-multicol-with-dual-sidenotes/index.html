@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+	<script type="text/javascript">
+
+	function annotations() {
+        var columnContainers = document.querySelectorAll(".columns");
+
+		for (var i = 0; i < columnContainers.length; i++) {
+			var columnContainer = columnContainers[i];
+			var annotations = document.querySelectorAll(".annotation");
+			var columnContainerRect = ro.layout.getBoxDescriptions(columnContainer)[0].marginRect;
+			var columnContainerWidth = columnContainerRect.width;
+			var columnContainerLeft = columnContainerRect.left
+
+			for (var j = 0; j < annotations.length; j++) {
+				var annotation = annotations[j];
+				var boxDescription = ro.layout.getBoxDescriptions(annotation)[0];
+				var left = boxDescription.marginRect.left;
+
+				// check if in a left or right column
+				if (left < columnContainerLeft + columnContainerWidth / 2) {
+					annotation.className += " left";
+				} else {
+					annotation.className += " right";
+				}
+			}
+		}
+	}
+	</script>	
+</head>
+
+<body onload="annotations()">
+
+
+    <div class="columns">
+<!--lorem-->
+<p>Libero. Integer euismod lacinia velit. Donec velit justo, sodales varius,
+cursus sed, mattis a, arcu.</p>
+
+<p>Maecenas accumsan, sem iaculis egestas gravida, odio nunc aliquet dui, eget
+cursus diam purus vel augue. Donec eros nisi, imperdiet quis, volutpat ac,
+sollicitudin sed, arcu. Aenean vel mauris. Mauris tincidunt. Nullam euismod
+odio at velit. Praesent elit purus, porttitor id, facilisis in, consequat ut,
+libero. Morbi imperdiet, magna quis ullamcorper malesuada, mi massa pharetra
+lectus, a pellentesque urna urna id turpis. Nam posuere lectus vitae nibh.
+    <span class="anchor">Anchor</span>
+    <span class="annotation">This is a small annotation</span>
+Etiam tortor orci, sagittis malesuada, rhoncus quis, hendrerit eget, libero.
+Quisque commodo nulla at nunc. Mauris consequat, enim vitae venenatis
+sollicitudin, dolor orci bibendum enim, a sagittis nulla nunc quis elit.
+Phasellus augue. Nunc suscipit, magna tincidunt lacinia faucibus, lacus tellus
+ornare purus, a pulvinar lacus orci eget nibh. Maecenas sed nibh non lacus
+tempor faucibus. In hac habitasse platea dictumst. Vivamus a orci at nulla
+tristique condimentum. Donec arcu quam, dictum accumsan, convallis accumsan,
+cursus sit amet, ipsum. In pharetra sagittis nunc.</p>
+
+<p>Donec consequat mi. Quisque vitae dolor. Integer lobortis. Maecenas id
+nulla. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed volutpat
+felis vitae dui. Vestibulum et est ac ligula dapibus elementum. Nunc suscipit
+    <span class="anchor">Anchor</span>
+    <span class="annotation">This is a small annotation</span>
+nisl eu felis. Duis nec tortor. Nullam diam libero, semper id, consequat in,
+consectetuer ut, metus. Phasellus dui purus, vehicula sed, venenatis a, rutrum
+at, nunc. Pellentesque interdum sapien nec neque.</p>
+
+<p>Vivamus sagittis, sem sit amet porttitor lobortis, turpis sapien consequat
+orci, sed commodo nulla pede eget sem. Phasellus sollicitudin. Proin orci erat,
+blandit ut, molestie sed, fringilla non, odio. Nulla porta, tortor non suscipit
+    <span class="anchor">Anchor</span>
+    <span class="annotation">This is a small annotation</span>
+gravida, velit enim aliquam quam, nec condimentum orci augue vel magna. Nulla
+facilisi. Donec ipsum enim, congue in, tempus id, pulvinar sagittis, leo. Donec
+et elit in nunc blandit auctor. Nulla congue urna quis lorem. Nam rhoncus pede
+sed nunc. Etiam vitae quam. Fusce feugiat pede vel quam. In et augue.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+<p>Phasellus mollis dictum nulla. Integer vitae neque vitae eros fringilla
+rutrum. Vestibulum in pede adipiscing mi dapibus condimentum. Etiam felis
+risus, condimentum in, malesuada eget, pretium ut, sapien. Suspendisse placerat
+lectus venenatis lorem. Sed accumsan aliquam enim. Etiam hendrerit, metus eu
+semper rutrum, nisl elit pharetra purus, non interdum nibh enim eget augue. Sed
+    <span class="anchor">Anchor</span>
+    <span class="annotation">This is a small annotation</span>
+mauris. Nam varius odio a sapien. Aenean rutrum dictum sapien. Fusce pharetra
+elementum ligula. Nunc eu mi non augue iaculis facilisis. Morbi interdum. Donec
+nisi arcu, rhoncus ac, vestibulum ut.</p>
+<!--/lorem-->
+
+
+
+    </div>
+
+</body>
+</html>

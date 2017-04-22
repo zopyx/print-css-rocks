@@ -1,0 +1,16 @@
+@import url("../styles/a5.css");
+
+#box {
+    font-size: 1.2em;
+    color: red;
+    width: 80%;
+    top: 2cm;
+    margin-top: 2cm;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1em;
+    border:  10px solid blue;
+    border-radius: 40px;
+    box-shadow: -20pt -10pt orange, 10pt 20pt silver;
+}
+

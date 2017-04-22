@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script>
+            var containers = document.querySelectorAll("#box1");
+
+            for (var i = 0; i < containers.length; i++) {
+                var container = containers[i];
+                var content = container.querySelector(".content");
+
+                var containerHeight = ro.layout.getBoxDescriptions(container)[0].contentRect.height;
+                var contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
+                var fontSize = parseInt(window.getComputedStyle(content).fontSize);
+
+                while (contentHeight > containerHeight) {
+                    fontSize = fontSize * 0.9;
+                    content.style.fontSize = fontSize + "pt";
+                    contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
+                }
+            }
+        </script>
+    </head>
+    <body lang="de"> 
+
+    <h1>Box with text overflow</h1>   
+    <div class="box">
+        <div class="content">
+            <!--lorem--> <p>Mauris aliquam mauris ut tortor. Pellentesque
+            tincidunt mattis nibh. In id lectus eu magna vulputate ultrices. Aliquam
+            interdum varius enim. Maecenas at mauris. Sed sed nibh. Nam non turpis.
+            Maecenas fermentum nibh in est. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            <p>Duis sagittis fermentum nunc. Nullam elementum erat. Quisque dapibus, augue
+            nec dapibus bibendum, velit enim scelerisque sem, accumsan suscipit lectus odio
+            ac justo. Fusce in felis a enim rhoncus placerat. Cras nec eros et mi egestas
+            facilisis. In hendrerit tincidunt neque. Maecenas tellus. Fusce sollicitudin
+            molestie dui. Sed magna orci, accumsan nec, viverra non, pharetra.</p>
+            <!--/lorem-->
+        </div>
+    </div>
+
+    <h1>Auto fit by adjusting the font-size using Javascript</h1>   
+    <div class="box" id="box1">
+        <div class="content">
+            <!--lorem--> <p>Mauris aliquam mauris ut tortor. Pellentesque
+            tincidunt mattis nibh. In id lectus eu magna vulputate ultrices. Aliquam
+            interdum varius enim. Maecenas at mauris. Sed sed nibh. Nam non turpis.
+            Maecenas fermentum nibh in est. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            <p>Duis sagittis fermentum nunc. Nullam elementum erat. Quisque dapibus, augue
+            nec dapibus bibendum, velit enim scelerisque sem, accumsan suscipit lectus odio
+            ac justo. Fusce in felis a enim rhoncus placerat. Cras nec eros et mi egestas
+            facilisis. In hendrerit tincidunt neque. Maecenas tellus. Fusce sollicitudin
+            molestie dui. Sed magna orci, accumsan nec, viverra non, pharetra.</p>
+            <!--/lorem-->
+        </div>
+    </div>
+
+    </body>
+</html>

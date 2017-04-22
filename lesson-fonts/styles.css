@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: Font1;
+    src: url(Chunkfive.otf);
+}
+
+@font-face {
+    font-family: Font2;
+    src: url(AlexBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: Font3;
+    src: url(Forum-Regular.ttf);
+}
+
+
+#block1 {
+    font-family: Font1;
+    font-size: 36pt;
+    color: red;
+}
+
+#block2 {
+    font-family: Font2;
+    font-size: 36pt;
+    color: blue;
+}
+
+#block3 {
+    font-family: Font3;
+    font-size: 36pt;
+    color: orange;
+}

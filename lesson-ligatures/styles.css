@@ -1,0 +1,29 @@
+@import url("../styles/a5.css");
+
+h1 {
+    font-size: 15pt;
+    color: red;
+    margin-bottom: 1em;
+}
+
+div.demo {
+    margin-bottom: 1em;
+    font-size: 18pt;
+    float: left;
+    width: 45%;
+    min-width: 45%;
+}
+
+.with-ligatures {
+    -ah-ligature-mode: auto;
+    -webkit-font-kerning: auto;
+}
+
+
+.without-ligatures {
+    -ah-ligature-mode: none;
+}
+
+.serif {
+    font-family: Times;
+}

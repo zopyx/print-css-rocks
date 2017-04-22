@@ -1,0 +1,66 @@
+/*
+@import  url('../styles/a4.css');
+*/
+
+@page {
+    margin: 4cm;
+
+    @sidenote {
+        position: absolute;
+        right: -30mm;
+        top: 0;
+        width: 25mm;
+        height: auto;
+        margin-bottom: 1em;
+        display: block;
+        border: 1px solid blue;
+    }
+}
+
+@page:left {
+
+    @sidenote: {
+        position: absolute;
+        left: -30mm;
+        top: 0;
+        width: 25mm;
+        height: auto;
+    }
+}
+
+@page:right {
+
+    @sidenote: {
+        position: absolute;
+        right: -30mm;
+        top: 0;
+        width: 25mm;
+        height: auto;
+    }
+}
+
+.sidearea { 
+    -ah-float: sidenote;  
+}
+
+.sidearea img {
+    width: 100%;
+}
+
+
+article {
+    display: block;
+    -ah-baseline-grid: new;
+    -ro-line-grid: create;
+    font-size: 10pt;
+}
+
+p {
+    display: block;
+    margin-bottom: 1em;
+    text-align: justify;
+    hyphens: auto;
+    hyphenate-before: 5;
+    hyphenate-after: 5;
+    -ro-line-snap: baseline;
+}                     

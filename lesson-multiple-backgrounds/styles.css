@@ -1,0 +1,9 @@
+@import url("../styles/a5.css");
+
+#example {
+    width: 500px;
+    height: 250px;
+    background-image: url(sheep.png), url(betweengrassandsky.png);
+    background-position: center bottom, left top;
+    background-repeat: no-repeat;
+}

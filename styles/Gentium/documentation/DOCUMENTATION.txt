@@ -1,0 +1,11 @@
+DOCUMENTATION
+Gentium Plus
+========================
+
+
+This file describes the documentation files included with the Gentium Plus font family. This information should be distributed along with the Gentium Plus fonts and any derivative works.
+
+Primary documentation for the Gentium Plus font family is on the Gentium website (http://scripts.sil.org/Gentium).
+
+The GentiumPlus-features.pdf file illustrates the use of OpenType and Graphite features.
+The GentiumPlus-features.odt file illustrates the use of OpenType and Graphite features (source file for the pdf).

@@ -1,0 +1,83 @@
+
+#content {
+    column-count: 2;
+    hyphens: auto;
+    hyphenate-before: 2;
+    hyphenate-after: 3;
+    font-size: 10pt;
+}
+
+/* ensure some fake counter */
+@page {
+    counter-increment: page 1;
+}
+
+@page:left {
+    margin-left: 5cm;
+    @bottom-left {
+        content: counter(page);
+    }
+}
+
+@page:right {
+    margin-right : 5cm;
+
+    @bottom-right {
+        content: counter(page);
+    }
+}
+
+
+.outer  {
+    -ah-float-y: before;
+    -ah-float-reference: page;
+    -ah-float-move: next;
+    -ah-float-margin-y: 100%;
+    height: 100%;
+    width: 100%;
+    /*
+    border: 1px solid blue;
+    */
+    display: table;
+}
+
+.inner {
+    padding: 10px;
+    /*
+    border: 1px dashed gray;
+    */
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+#span2 table {
+    width: 50%;
+    font-size: 10pt;
+    top: 5cm;
+    left: 5cm;
+    position: relative;
+    display: inline-block;
+}
+
+/* SWP */
+
+#headline {
+    font-size: 2em;
+}
+
+#headline2 {
+    font-size: 1.4em;
+}
+
+#abstract {
+    font-weight: bold;
+}
+
+#karte {
+    max-width: 100%;
+}
+
+

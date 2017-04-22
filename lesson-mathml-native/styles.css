@@ -1,0 +1,8 @@
+@import url("../styles/a4.css");
+
+math {
+    border: 1px solid blue;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: block;
+}

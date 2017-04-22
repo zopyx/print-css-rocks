@@ -1,0 +1,21 @@
+@import url("../styles/a5.css");
+
+@page {
+    counter-increment: page;
+}
+
+@page:left {
+    @bottom-left {
+         content: counter(page) " of " counter(pages);
+    }
+}
+
+@page:right {
+    @bottom-right {
+         content: counter(page) " of " counter(pages);
+    }
+}
+
+p {
+    page-break-after: always;
+}

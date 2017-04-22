@@ -1,0 +1,36 @@
+@import url("../styles/a5.css");
+
+h1 {
+    counter-increment: c1;
+    counter-reset: c2;
+    counter-reset: c3;
+}
+
+h2 {
+    counter-increment: c2;
+    counter-reset: c3;
+}
+
+h3 {
+    counter-increment: c3;
+}
+
+h1:before,
+h2:before,
+h3:before {
+    color: red;
+    padding-right: 1em;
+}
+
+
+h1:before {
+    content: counter(c1);
+}
+
+h2:before {
+    content: counter(c1) "." counter(c2);
+}
+
+h3:before {
+    content: counter(c1) "." counter(c2) "." counter(c3);
+}

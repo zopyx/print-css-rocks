@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body {
+                column-count: 2;
+            }
+
+            .container {
+                width: 200pt;
+                height: 50pt;
+                border: 1pt solid red;
+            }
+
+            .content {
+                break-inside: avoid;
+            }
+
+            h1 {
+                break-before: column;
+            }
+        </style>
+        <script>
+            var containers = document.querySelectorAll(".scaleContent");
+
+            for (var i = 0; i < containers.length; i++) {
+                var container = containers[i];
+                var content = container.querySelector(".content");
+
+                var containerHeight = ro.layout.getBoxDescriptions(container)[0].contentRect.height;
+                var contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
+                var fontSize = parseInt(window.getComputedStyle(content).fontSize);
+
+                while (contentHeight > containerHeight) {
+                    fontSize = fontSize * 0.9;
+                    content.style.fontSize = fontSize + "pt";
+                    contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Kein Scaling</h1>
+        <div class="container">
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta orci vitae augue iaculis euismod. Sed ut augue a nisl faucibus efficitur. Mauris et commodo leo. In molestie ante quis magna mattis, in bibendum nunc maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+        </div>
+
+        <h1>Automatisches Scaling</h1>
+        <div class="container scaleContent">
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta orci vitae augue iaculis euismod. Sed ut augue a nisl faucibus efficitur. Mauris et commodo leo. In molestie ante quis magna mattis, in bibendum nunc maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+        </div>
+    </body>
+</html>

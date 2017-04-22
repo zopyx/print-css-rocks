@@ -1,0 +1,285 @@
+usage: pdfreactor.py [-h] [-i URL [URL ...]] [-o OUTPUTFILE] [-v]
+                     [-s SERVERURL] [--version] [--addAttachments]
+                     [--addBookmarks] [--addComments] [--addLinks]
+                     [--addOverprint] [--addPreviewImages] [--addTags]
+                     [--allowAnnotations] [--allowAssembly] [--allowCopy]
+                     [--allowDegradedPrinting] [--allowFillIn]
+                     [--allowModifyContents] [--allowPrinting]
+                     [--allowScreenReaders] [--appendLog]
+                     [--authenticationCredentials KEY VALUE] [--author AUTHOR]
+                     [--baseURL BASE_URL]
+                     [--bookletMode SHEET_SIZE SHEET_MARGIN RTL]
+                     [--cacheFonts] [--cleanupTool CLEANUP_TOOL]
+                     [--conformance CONFORMANCE]
+                     [--continuousOutput WIDTH HEIGHT]
+                     [--conversionName CONVERSION_NAME] [--cookies KEY VALUE]
+                     [--creator CREATOR]
+                     [--customDocumentProperties KEY VALUE]
+                     [--defaultColorSpace DEFAULT_COLOR_SPACE]
+                     [--disableFontEmbedding] [--disableFontRegistration]
+                     [--disableSystemFonts]
+                     [--documentDefaultLanguage DOCUMENT_DEFAULT_LANGUAGE]
+                     [--documentType DOCUMENT_TYPE] [--enableDebugMode]
+                     [--encoding ENCODING] [--encryption ENCRYPTION]
+                     [--fontAliases SOURCE FAMILY BOLD ITALIC]
+                     [--fontCachePath FONT_CACHE_PATH]
+                     [--fontDirectories FONT_DIRECTORIES [FONT_DIRECTORIES ...]]
+                     [--fontFallback FONT_FALLBACK [FONT_FALLBACK ...]]
+                     [--fonts SOURCE FAMILY BOLD ITALIC] [--fullCompression]
+                     [--httpsMode HTTPS_MODE]
+                     [--integrationStyleSheets CONTENT URI]
+                     [--javaScriptMode JAVA_SCRIPT_MODE] [--keywords KEYWORDS]
+                     [--licenseKey LICENSE_KEY]
+                     [--logExceedingContent LOG_EXCEEDING_CONTENT_ANALYZE LOG_EXCEEDING_CONTENT_AGAINST]
+                     [--logLevel LOG_LEVEL]
+                     [--mediaFeatureValues MEDIA_FEATURE VALUE]
+                     [--mediaTypes MEDIA_TYPES [MEDIA_TYPES ...]]
+                     [--mergeMode MERGE_MODE] [--mergeURL MERGE_URL]
+                     [--mergeURLs MERGE_URLS [MERGE_URLS ...]]
+                     [--outputFormat TYPE WIDTH HEIGHT MULTI_IMAGE]
+                     [--overlayRepeat OVERLAY_REPEAT]
+                     [--ownerPassword OWNER_PASSWORD] [--pageOrder PAGE_ORDER]
+                     [--pagesPerSheetProperties COLS ROWS SHEET_SIZE SHEET_MARGIN SPACING DIRECTION]
+                     [--pdfScriptAction TRIGGER_EVENT SCRIPT]
+                     [--pixelsPerInch PIXELS_PER_INCH]
+                     [--pixelsPerInchShrinkToFit]
+                     [--postTransformationDocumentType POST_TRANSFORMATION_DOCUMENT_TYPE]
+                     [--printDialogPrompt]
+                     [--processingPreferences PROCESSING_PREFERENCES [PROCESSING_PREFERENCES ...]]
+                     [--rawCookies KEY VALUE] [--requestHeaders KEY VALUE]
+                     [--signPDF KEYSTORE_URL KEY_ALIAS KEYSTORE_PASSWORD KEYSTORE_TYPE SIGNIN_MODE]
+                     [--subject SUBJECT] [--throwLicenseExceptions]
+                     [--title TITLE] [--userPassword USER_PASSWORD]
+                     [--userScripts CONTENT URI BEFORE_DOCUMENT_SCRIPTS]
+                     [-u CONTENT URI]
+                     [--viewerPreferences VIEWER_PREFERENCES [VIEWER_PREFERENCES ...]]
+                     [--xsltMode] [--xsltStyleSheets CONTENT URI]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i URL [URL ...], --document URL [URL ...]
+                        The file to render as a PDF document (as an URL, path incl. wildcards or file URI). 
+  -o OUTPUTFILE, --outputFile OUTPUTFILE
+                        The output file to write the document to.
+                        Optional argument.
+                        If no argument is passed, the output file name is based on the input file name.
+  -v, --verbose
+  -s SERVERURL, --serverUrl SERVERURL
+                        The URL of the PDFreactor Web Service.
+  --version             Prints the version of the PDFreactor Web Service and the CLI version.
+  --addAttachments      Enables or disables attachments specified in style sheets.
+                        
+  --addBookmarks        Enables or disables bookmarks in the PDF document.
+                        
+  --addComments         Enables or disables comments in the PDF document.
+                        
+  --addLinks            Enables or disables links in the PDF document.
+                        
+  --addOverprint        Enables or disables overprinting.
+                        
+  --addPreviewImages    Enables or disables embedding of image previews per page in the PDF
+                        document.
+                        
+  --addTags             Enables or disables tagging of the PDF document.
+                        
+  --allowAnnotations    Enables or disables the 'annotations' restriction in the PDF
+                        document.
+                        
+  --allowAssembly       Enables or disables the 'assembly' restriction in the PDF
+                        document.
+                        
+  --allowCopy           Enables or disables the 'copy' restriction in the PDF document.
+                        
+  --allowDegradedPrinting
+                        Enables or disables the 'degraded printing' restriction in the PDF
+                        document.
+                        
+  --allowFillIn         Enables or disables the 'fill in' restriction in the PDF document.
+                        
+  --allowModifyContents
+                        Enables or disables the 'modify contents' restriction in the PDF
+                        document.
+                        
+  --allowPrinting       Enables or disables the 'printing' restriction in the PDF
+                        document.
+                        
+  --allowScreenReaders  Enables or disables the 'screen readers' restriction in the PDF
+                        document.
+                        
+  --appendLog           Specifies whether or not the log data should be added to the
+                        PDF document.
+                        
+  --authenticationCredentials KEY VALUE
+                        Enables access to resources that are secured via Basic or Digest authentication.
+                        
+  --author AUTHOR       Sets the value of the author field of the PDF document.
+                        
+  --baseURL BASE_URL    Sets the base URL of the document.
+                        
+  --bookletMode SHEET_SIZE SHEET_MARGIN RTL
+                        Convenience method to set pages-per-sheet properties and page order 
+                        in one step to create a booklet.
+                        
+  --cacheFonts
+  --cleanupTool CLEANUP_TOOL
+                        Sets the cleanup tool to use for documents with unparsable content.
+                        
+  --conformance CONFORMANCE
+                        Sets the conformance of the PDF.
+                        
+  --continuousOutput WIDTH HEIGHT
+                        Enables the conversion of the input document into one image.
+                        
+  --conversionName CONVERSION_NAME
+                        Sets a name for the conversion.
+                        
+  --cookies KEY VALUE   Adds a cookie to all outgoing HTTP connections.
+                        
+  --creator CREATOR     Sets the value of creator field of the PDF document.
+                        
+  --customDocumentProperties KEY VALUE
+                        Adds a custom property to the PDF document.
+                        
+  --defaultColorSpace DEFAULT_COLOR_SPACE
+                        Sets whether to convert color key words to CMYK instead of RGB.
+                        
+  --disableFontEmbedding
+                        Sets whether fonts will not be embedded into the resulting PDF.
+                        
+  --disableFontRegistration
+  --disableSystemFonts  Enables or disables the use of system fonts.
+                        
+  --documentDefaultLanguage DOCUMENT_DEFAULT_LANGUAGE
+                        Sets the language used for documents having no explicit language attribute set.
+                        
+  --documentType DOCUMENT_TYPE
+                        Sets the document type.
+                        
+  --enableDebugMode     Enables debug mode, which adds additional information to the output.
+                        
+  --encoding ENCODING   Sets the encoding of the document.
+                        
+  --encryption ENCRYPTION
+                        Sets the encryption.
+                        
+  --fontAliases SOURCE FAMILY BOLD ITALIC
+                        Registers an alias font family for an existing font.
+                        
+  --fontCachePath FONT_CACHE_PATH
+  --fontDirectories FONT_DIRECTORIES [FONT_DIRECTORIES ...]
+                        Registers an additional font directory to load fonts from.
+                        
+  --fontFallback FONT_FALLBACK [FONT_FALLBACK ...]
+                        Sets a list of fallback font families used for character substitution.
+                        
+  --fonts SOURCE FAMILY BOLD ITALIC
+                        Loads a font from a URL which can be used via the CSS property font-family.
+                        
+  --fullCompression     Enables or disables full compression of the PDF document.
+                        
+  --httpsMode HTTPS_MODE
+                        Sets the HTTPS mode.
+                        
+  --integrationStyleSheets CONTENT URI
+                        Adds an integration style sheet to the document.
+                        
+  --javaScriptMode JAVA_SCRIPT_MODE
+                        Sets the JavaScript Mode.
+                        
+  --keywords KEYWORDS   Sets the value of the keywords field of the PDF document.
+                        
+  --licenseKey LICENSE_KEY
+                        Sets the license key using a string.
+                        
+  --logExceedingContent LOG_EXCEEDING_CONTENT_ANALYZE LOG_EXCEEDING_CONTENT_AGAINST
+                        Whether to log content exceeding the page.
+                        
+  --logLevel LOG_LEVEL  Sets the log level.
+                        
+  --mediaFeatureValues MEDIA_FEATURE VALUE
+                        Defines the value of a Media Feature which is used to resolve CSS3 media queries.
+                        
+  --mediaTypes MEDIA_TYPES [MEDIA_TYPES ...]
+                        Sets the media types that are used to resolve CSS3 media queries.
+                        
+  --mergeMode MERGE_MODE
+                        Sets the merge mode.
+                        
+  --mergeURL MERGE_URL  This method sets a URL of an external PDF document which will be
+                        merged with the PDF document generated by the XML source.
+                        
+  --mergeURLs MERGE_URLS [MERGE_URLS ...]
+                        This method sets an array of URLs of external PDF documents which will be
+                        merged with the PDF document generated by the XML source.
+                        
+  --outputFormat TYPE WIDTH HEIGHT MULTI_IMAGE
+                        Sets the output format.
+                        
+  --overlayRepeat OVERLAY_REPEAT
+                        If one of the documents of an overlay process is shorter than the other, this method 
+                        allows repeating either its last page or all of its pages in order to overlay all pages of 
+                        the longer document.
+                        
+  --ownerPassword OWNER_PASSWORD
+                        Sets the owner password of the PDF document.
+                        
+  --pageOrder PAGE_ORDER
+                        Sets the page order of the direct result of the conversion.
+                        
+  --pagesPerSheetProperties COLS ROWS SHEET_SIZE SHEET_MARGIN SPACING DIRECTION
+                        Sets the properties of a sheet on which multiple pages are being arranged.
+                        
+  --pdfScriptAction TRIGGER_EVENT SCRIPT
+                        Sets a pair of trigger event and PDF script.
+                        
+  --pixelsPerInch PIXELS_PER_INCH
+                        Sets the pixels per inch.
+                        
+  --pixelsPerInchShrinkToFit
+                        Whether the pixels per inch should be adapted automatically to avoid content exceeding pages.
+                        
+  --postTransformationDocumentType POST_TRANSFORMATION_DOCUMENT_TYPE
+                        Sets the document type after the XSL-Transformations have been applied.
+                        
+  --printDialogPrompt   Enables or disables a print dialog to be shown upon opening
+                        the generated PDF document by a PDF viewer.
+                        
+  --processingPreferences PROCESSING_PREFERENCES [PROCESSING_PREFERENCES ...]
+                        Preferences that influence the conversion process without changing 
+                        the output
+                        Use the ProcessingPreferences constants to specify the 
+                        processing preferences.
+                        
+  --rawCookies KEY VALUE
+                        Adds a cookie to all outgoing HTTP connections.
+                        
+  --requestHeaders KEY VALUE
+                        Adds a request header to all outgoing HTTP connections.
+                        
+  --signPDF KEYSTORE_URL KEY_ALIAS KEYSTORE_PASSWORD KEYSTORE_TYPE SIGNIN_MODE
+                        Sets a digital certificate to sign the newly created PDF.
+                        
+  --subject SUBJECT     Sets the value of the subject field of the PDF document.
+                        
+  --throwLicenseExceptions
+                        Whether an exception should be thrown when no legal full license key is set.
+                        
+  --title TITLE         Sets the value of the title field of the PDF document.
+                        
+  --userPassword USER_PASSWORD
+                        Sets the user password of the PDF document.
+                        
+  --userScripts CONTENT URI BEFORE_DOCUMENT_SCRIPTS
+                        Adds an user script to the document.
+                        
+  -u CONTENT URI, --userStyleSheets CONTENT URI
+                        Adds a user style sheet to the document.
+                        
+  --viewerPreferences VIEWER_PREFERENCES [VIEWER_PREFERENCES ...]
+                        Sets the page layout and page mode preferences of the PDF.
+                        
+  --xsltMode            Enables or disables XSLT transformations.
+                        
+  --xsltStyleSheets CONTENT URI
+                        Adds an XSLT style sheet to the document.
+                        

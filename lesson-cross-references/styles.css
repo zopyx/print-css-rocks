@@ -1,0 +1,40 @@
+@import url("../styles/a5.css");
+
+@page {
+    counter-increment: page;
+    @bottom-right{
+            content: counter(page);
+    }
+}
+
+
+.title {
+    font-size: 2em;
+}
+
+h1, p {
+}
+
+
+h1 {
+    font-size: 1.6em;
+    color: blue;    
+    counter-increment: chapterCounter;
+    page-break-before: always;
+}
+
+
+h1::before{
+    content: counter(chapterCounter, upper-roman) " ";
+}
+
+p {
+    font-size: 20pt;
+    color: red;
+}
+
+a[href]::after{
+    content: " (Chapter " target-counter(attr(href), chapterCounter, upper-roman) 
+                " on page " target-counter(attr(href), page) ")";
+    color: green;
+}

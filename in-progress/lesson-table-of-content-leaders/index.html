@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script type="text/javascript" src="awesomizr.js"></script>
+        <script type="text/javascript">
+            function toc() {
+                Awesomizr.createTableOfContents({
+                    elements: ['h1', 'h2', 'h3'],
+                    insertiontype: 'afterend',
+                    toctitle: 'Table of Contents',
+                    insertiontarget: '#toc'
+                });
+            }
+        </script>
+    </head>
+    <body onload="toc()">
+
+        <div id="toc">Table of content goes here</div>
+
+        <h1>Chapter Level 1</h1>
+            <h2>Chapter Level 2</h2>
+            <h2>Chapter Level 2</h2>
+                <h3>Chapter Level 3</h3>
+                <h3>Chapter Level 3</h3>
+                <h3>Chapter Level 3</h3>
+            <h2>Chapter Level 2</h2>
+        <h1>Chapter Level 1</h1>
+            <h2>Chapter Level 2</h2>
+            <h2>Chapter Level 2</h2>
+                <h3>Chapter Level 3</h3>
+            <h2>Chapter Level 2</h2>
+        <h1>Chapter Level 1</h1>
+            <h2>Chapter Level 2</h2>
+            <h2>Chapter Level 2</h2>
+                <h3>Chapter Level 3</h3>
+            <h2>Chapter Level 2</h2>
+
+    </body>
+</html>

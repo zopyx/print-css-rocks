@@ -1,0 +1,16 @@
+@import url("../styles/a4.css");
+
+p {
+    font-size: 20pt;
+    color: red;
+}
+
+h1 {
+    page-break-before: always;
+}
+
+p {
+    page-break-after: always;
+}
+
+

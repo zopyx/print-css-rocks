@@ -1,0 +1,15 @@
+﻿@import url("../styles/a4.css");
+
+img {
+    width: 8cm;
+}
+
+.text {
+    width: 8cm;
+    border: 1px dashed grey;
+    padding: 0.5cm;
+}
+
+.flip {
+    transform: scaleX(-1);
+}

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+
+        <h1> 300 px width, image should be clipped</h1> 
+        <div class="w-300 outer">
+            <div class="no-fit">
+                <img class="no-fit" src="600x300.jpg"/>
+            </div>
+        </div>
+
+        <h1> 600 px width, image should fill the box</h1> 
+        <div class="w-600 outer">
+            <div class="no-fit">
+                <img class="no-fit" src="600x300.jpg"/>
+            </div>
+        </div>
+
+        <h1> 300 px width, image should scaled into the the box</h1> 
+        <div class="w-300 outer">
+            <img class="fit-size" src="600x300.jpg"/>
+        </div>
+
+        <h1> 600 px width, image should scaled into the the box</h1> 
+        <div class="w-600 outer">
+            <img class="fit-size" src="600x300.jpg"/>
+        </div>
+
+    </body>
+</html>

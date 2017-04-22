@@ -1,0 +1,131 @@
+
+@page {
+
+    counter-increment: page;
+    counter-reset: footnote 0;
+    size: a4;
+    margin: 2cm;
+
+    @bottom-center {
+         content:  counter(page); 
+    }
+
+    @footnote {
+        border-top: dashed #ddd 1px;
+        float: bottom;
+    }
+}
+
+maintitle,
+title,
+metadata,
+authoraddresses {
+    display: none;
+    color: blue;
+}
+
+article {
+    -ah-columns: 2;
+    column-count: 2;
+    display: block;
+    column-gap: 3em;
+    column-rule: 7px solid #eee;
+    -ah-baseline-grid: new;
+    -ro-line-grid: create;
+    font-size: 10pt;
+}
+
+p {
+    display: block;
+    margin-bottom: 1em;
+    text-align: justify;
+    hyphens: auto;
+    hyphenate-before: 5;
+    hyphenate-after: 5;
+    -ro-line-snap: baseline;
+}                     
+
+p[align="center"] {
+    text-align: center;
+    break-after: avoid;
+}
+
+strong {
+    font-weight: bold;
+}
+
+tab {
+    display: inline-block;
+    width: 1em;
+}
+
+ol {
+    display: block;
+    margin-left: 2em;
+    counter-reset: list-counter;
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+li {
+    counter-increment: list-counter;
+    display: list-item;
+    margin-bottom: 1em;
+}
+
+li::before {
+    content: "(" counter(list-counter, lower-roman) ")";
+    display: inline;
+}
+
+li p {
+    display: inline;
+}
+
+fn { 
+    -ah-float: sidenote;  
+    counter-increment: footnote;
+}
+
+@page :left {
+    @sidenote {
+        -ah-float: outside;
+        clear: both;
+        width: 20%;
+        border: 1px dashed grey;
+        padding: 1em;        
+    }
+}
+
+
+authorbox {
+    display: block;
+    width: 4cm;
+    float: left;
+    margin-left: -1cm;
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: 2px solid grey;
+    margin-bottom: 1em;
+}
+
+author {
+    display: block;
+}
+
+author name {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+author bio {
+    display: block; 
+    font-size: 0.8em;
+    text-align: justify;
+    margin-bottom: 0.5em;
+    hyphens: auto;
+    border: 1px solid blue;
+    line-height: 50% !important;
+}

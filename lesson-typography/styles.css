@@ -1,0 +1,27 @@
+@import url("../styles/a5.css");
+
+
+p.first-letter::first-letter {
+    font-size: 2em;
+    color: pink;
+    font-weight: bold;
+}
+
+p.first-letter-multi::first-letter {
+    font-size: 40px;
+    color: pink;
+    font-weight: bold;
+    height:40px;
+    font-size:40px;
+    line-height:40px;
+    position:relative;
+    float:left;
+    display:block;
+}
+
+p.first-line::first-line {
+    font-size: 2em;
+    color: pink;
+    font-weight: bold;
+    text-transform: uppercase;
+}

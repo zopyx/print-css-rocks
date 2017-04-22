@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<description>this text has the properties overflow:visible</description>
+	<no-condense>text that will be condensed text that will be condensed text that will be condensed</no-condense>
+	<description>this text has the properties overflow:condense and -ah-overflow-condense:font-stretch(default)</description>
+	<condense-font-stretch>text that will be condensed text that will be condensed text that will be condensed</condense-font-stretch>
+	<description>this text has the properties overflow:condense and -ah-overflow-condense:font-size</description>
+	<condense-font-size>text that will be condensed text that will be condensed text that will be condensed</condense-font-size>
+	<description>this text has the properties overflow:condense and -ah-overflow-condense:letter-spacing</description>
+	<condense-letter-spacing>text that will be condensed text that will be condensed text that will be condensed</condense-letter-spacing>		
+</root>

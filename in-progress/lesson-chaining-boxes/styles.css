@@ -1,0 +1,53 @@
+@page {
+    size: a4 landscape;
+    margin: 0;
+    padding: 0;
+}
+
+#block1 {
+    font-family: Arial;
+    font-size: 9pt;
+    position: absolute;
+    color: blue;
+    border : 1px dashed red;
+    padding: 1em;
+    top: 2cm;
+    left: 2cm;
+    width: 8cm;
+    height: 8cm;
+}
+
+#block2 {
+    font-family: Courier;
+    font-size: 9pt;
+    position: absolute;
+    color: green;
+    border : 1px solid red;
+    padding: 1em;
+    right: 2cm;
+    bottom: 2cm;
+    width: 8cm;
+    height: 8cm;
+}
+
+#block3 {
+    font-family: Courier;
+    font-size: 9pt;
+    position: absolute;
+    color: orange;
+    border : 1px solid pink;
+    padding: 1em;
+    top: 8cm;
+    left: 8cm;
+    width: 8cm;
+    height: 8cm;
+}
+
+
+#block1, #block2, #block3 {
+     -ro-flow-from: myChain;
+ }
+
+#content {
+    -ro-flow-into: myChain;
+}

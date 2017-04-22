@@ -1,0 +1,6 @@
+@import url("../styles/a4.css");
+
+body {
+    background-image: url(back.jpg);
+    background-repeat: repeat-y;
+}

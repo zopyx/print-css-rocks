@@ -1,0 +1,14 @@
+@import url("../styles/a4.css");
+
+div.box {
+    text-align: justify;
+    width: 6cm;
+    height: 6cm;
+    border: 2px solid blue;
+    padding: 0.1em;
+    font-size: 10pt;
+    margin-bottom: 1em;
+    page-break-after: always;
+    hyphens: auto;
+}
+

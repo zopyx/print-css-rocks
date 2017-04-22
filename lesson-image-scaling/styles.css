@@ -1,0 +1,31 @@
+@import url("../styles/a5.css");
+
+div.outer {
+    page-break-after: always;
+}
+
+div.no-fit {
+    overflow: hidden;
+}
+
+img.fit-size {
+    width: 100%;
+}
+
+.w-300 {
+    width: 300px;
+    border: 2px solid red;
+    margin-bottom: 1em;
+}
+
+.w-600 {
+    width: 600px;
+    border: 2px solid red;
+    margin-bottom: 1em;
+}
+
+.w-1000 {
+    width: 1000px;
+    border: 2px solid red;
+    margin-bottom: 1em;
+}

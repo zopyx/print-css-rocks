@@ -1,0 +1,98 @@
+@import url("../styles/a4.css");
+
+@page {
+    border: 1px solid blue;
+    font-size: 8pt;
+
+    @top-left-corner {
+        content: "@top-left-corner";
+        border: 1px solid red;
+    }
+    @top-left {
+        content: "@top-left";
+        border: 1px solid red;
+    }
+    @top-center {
+        content: "@top-center";
+        border: 1px solid red;
+    }
+    @top-right {
+        content: "@top-right";
+        border: 1px solid red;
+    }
+    @top-right-corner {
+        content: "@top-rightcorner";
+        border: 1px solid red;
+    }
+
+    @bottom-left-corner {
+        content: "@bottom-left-corner";
+        border: 1px solid red;
+    }
+    @bottom-left {
+        content: "@bottom-left";
+        border: 1px solid red;
+    }
+    @bottom-center {
+        content: "@bottom-center";
+        border: 1px solid red;
+    }
+    @bottom-right {
+        content: "@bottom-right";
+        border: 1px solid red;
+    }
+    @bottom-right-corner {
+        content: "@bottom-rightcorner";
+        border: 1px solid red;
+    }
+
+    @left-top {
+        content: "@left-top";
+        border: 1px solid red;
+    }
+    @left-middle {
+        content: "@left-middle";
+        border: 1px solid red;
+    }
+    @left-bottom {
+        content: "@left-bottom";
+        border: 1px solid red;
+    }
+
+    @right-top {
+        content: "@right-top";
+        border: 1px solid red;
+    }
+    @right-middle {
+        content: "@right-middle";
+        border: 1px solid red;
+    }
+    @right-bottom {
+        content: "@right-bottom";
+        border: 1px solid red;
+    }
+
+
+    /* PDFreactor (from brochure/styles.css) */
+    -ro-media-size: A4;
+    -ro-bleed-width: 3mm;
+    -ro-crop-size: trim;
+    
+    /* Printer Marks */
+    -ro-marks: bleed trim registration;
+    
+    -ro-colorbar-left-top: gradient-tint;
+    -ro-colorbar-right-top: progressive-color;
+    
+    -ro-colorbar-left-bottom: cmyk(100%, 0%, 0%, 0%) cmyk(75%, 0%, 0%, 0%) cmyk(50%, 0%, 0%, 0%) cmyk(25%, 0%, 0%, 0%)
+                              cmyk(0%, 100%, 0%, 0%) cmyk(0%, 75%, 0%, 0%) cmyk(0%, 50%, 0%, 0%) cmyk(0%, 25%, 0%, 0%);
+                              
+    -ro-colorbar-right-bottom: cmyk(0%, 0%, 25%, 0%) cmyk(0%, 0%, 50%, 0%) cmyk(0%, 0%, 75%, 0%) cmyk(0%, 0%, 100%, 0%)
+                               cmyk(0%, 0%, 0%, 25%) cmyk(0%, 0%, 0%, 50%) cmyk(0%, 0%, 0%, 75%) cmyk(0%, 0%, 0%, 100%);
+
+
+    /* PrinceXML */
+    prince-bleed: 10mm;
+    marks: crop cross;
+
+}

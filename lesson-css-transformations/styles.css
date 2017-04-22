@@ -1,0 +1,47 @@
+@import url("../styles/a4.css");
+
+.sample {
+    display: block;
+    width: 50%;
+    border: 1px solid blue;
+    padding: 1em;
+    page-break-after: always;
+    break-after: always;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.rotate-270 {
+    transform: rotate(270deg);
+}
+
+
+.tux {
+    width: 5cm;
+    height: 5cm;
+    border: 1px solid blue;
+    position: absolute;
+    left: 4cm;
+    transform-origin: center;
+}
+
+#tux1 {
+    top: 2cm;
+    transform: rotate(0.001deg); /* PDFreactor error */
+}
+
+#tux2 {
+    top: 8cm;
+    transform: rotate(45deg) scale(1.5);
+}
+
+#tux3 {
+    top: 20cm;
+    transform: rotate(90deg)  scale(2.0);
+}

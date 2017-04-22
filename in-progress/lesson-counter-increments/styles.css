@@ -1,0 +1,22 @@
+@import url("../styles/a5.css");
+
+body {
+    counter-reset: page 2 chapter 0;
+}
+
+@page {
+    counter-increment: page 2;
+
+    @bottom-center {
+         content: counter(page);
+    }
+}
+
+h1:before {
+    content: counter(chapter) " ";
+}
+
+.chapter {
+    counter-increment: chapter 3;
+    page-break-after: always;
+}

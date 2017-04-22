@@ -1,0 +1,13 @@
+@import url("../styles/a5.css");
+
+h1 {
+    bookmark-label: content(); 
+    -ah-bookmark-level: 1;
+    -ro-pdf-bookmark-level: 1;
+}
+
+h2 {
+    bookmark-label: content(); 
+    -ah-bookmark-level: 2;
+    -ro-pdf-bookmark-level: 2;
+}

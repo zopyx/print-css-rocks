@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dghodoc version="1.0" lang="en">
+  <head>
+    <title>test ajung</title>
+    <metadata>
+      <meta name="Autoren">
+        <value title="Wollmer, Ellen">14792</value>
+        <value title="Aebi, Stefan">359774</value>
+        <value title="Bargetzi, Mario">359775</value>
+      </meta>
+      <meta name="FruehereAutoren"/>
+      <meta name="Sprache">
+        <value title="German">de</value>
+      </meta>
+      <meta name="Bereich">
+        <value title="Onkopedia">onkopedia</value>
+      </meta>
+      <meta name="Status">
+        <value title="Draft">draft</value>
+      </meta>
+      <meta name="Klassifizierung"/>
+      <meta name="Fachgesellschaften"/>
+      <meta name="Stand"/>
+      <meta name="DokumentTyp">
+        <value title="Guideline">guideline</value>
+      </meta>
+      <meta name="LLThema">
+        <value title="Allgemeines / Definition">77</value>
+      </meta>
+      <meta name="Zulassungsland"/>
+      <meta name="AutorenZusatzinformationen">
+        <value/>
+      </meta>
+      <meta name="FruehereAutorenZusatzinformationen">
+        <value/>
+      </meta>
+      <meta name="Titel">
+        <value>test ajung</value>
+      </meta>
+      <meta name="GuidelineID">
+        <value>ada3b57c-14c2-11e5-8d9a-001c4210b7a0</value>
+      </meta>
+      <meta name="PloneUUID">
+        <value>99e5dc99dd8144bda7a1f22a13d82405</value>
+      </meta>
+    </metadata>
+    <authoraddresses type="Autoren">
+      <author author-ID="14792" alive="true">
+        <firstname>Ellen</firstname>
+        <lastname>Wollmer</lastname>
+        <address>
+          <phone>06421   58 62706</phone>
+          <email>wollmer@med.uni-marburg.de</email>
+          <fax/>
+          <street>Baldingerstraße</street>
+          <zip>35043</zip>
+          <city>Marburg</city>
+          <salutation language="de">Dr. med.</salutation>
+          <company>Philipps-Universität Marburg<br/>Abt. f. Hämatol., Onkol. u. Immunol.</company>
+        </address>
+      </author>
+      <author author-ID="359774" alive="true">
+        <firstname>Stefan</firstname>
+        <lastname>Aebi</lastname>
+        <address>
+          <phone>0041 41 205-5860</phone>
+          <email>stefan.aebi@onkologie.ch</email>
+          <fax/>
+          <street/>
+          <zip>CH-6000</zip>
+          <city>Luzern 16</city>
+          <salutation language="de">Prof. Dr. med.</salutation>
+          <company>Luzerner Kantonsspital<br/>Departement Medizin<br/>Medizinische Onkologie</company>
+        </address>
+      </author>
+      <author author-ID="359775" alive="true">
+        <firstname>Mario</firstname>
+        <lastname>Bargetzi</lastname>
+        <address>
+          <phone>0041 62 8386053</phone>
+          <email>mario.bargetzi@ksa.ch</email>
+          <fax/>
+          <street>Tellstraße</street>
+          <zip>CH-5001</zip>
+          <city>Aarau</city>
+          <salutation language="de">Prof. Dr. med.</salutation>
+          <company>Kantonsspital Aarau AG <br/>Zentrum f. Onkologie / Hämatologie und Transfusionsmedizin<br/>Haus 40</company>
+        </address>
+      </author>
+    </authoraddresses>
+    <authoraddresses type="FruehereAutoren"/>
+    <links-related/>
+  </head>
+  <body orientation="portrait">
+    <header>
+      <maintitle>test ajung</maintitle>
+    </header>
+    <article>
+      <authorbox>
+          <author>
+              <name>Andreas Jung</name>
+              <bio>
+                  Integer aenean adipiscing proin magnis phasellus elementum scelerisque mus nascetur proin sed turpis, et, mattis vut elementum augue in tincidunt mauris facilisis et purus! Nisi aliquet porttitor. Tincidunt ultrices, velit in vel? 
+              </bio>
+          </author>
+          <author>
+              <name>Heinz Becker</name>
+              <bio>
+                  Integer aenean adipiscing proin magnis phasellus elementum scelerisque mus nascetur proin sed turpis, et, mattis vut elementum augue in tincidunt mauris facilisis et purus! Nisi aliquet porttitor. Tincidunt ultrices, velit in vel? 
+              </bio>
+          </author>
+      </authorbox>  
+      <segment id="ID0EF" class="content">
+        <p align="center" id="ID0EG">
+          <strong>APPENDIX 2</strong>
+        </p>
+        <p align="center" id="ID0EK">
+          <strong>SECTION B</strong>
+        </p>
+        <p align="center" id="ID0EO">
+          <strong>ANNEX ON OPERATIONAL CERTIFICATION PROCEDURES </strong>
+        </p>
+        <p align="center" id="ID0ES">
+          <strong>TO CHAPTER 3 (RULES OF ORIGIN)</strong>
+          <br/>
+        </p>
+        <p align="center" id="ID0EX">
+          <strong>ANNEX ON OPERATIONAL CERTIFICATION PROCEDURES</strong>
+        </p>
+            <p id="ID0E2">For the purpose of implementing Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 3</xref> (Rules of Origin), the following operational procedures on the issuance and verification of Certificates of Origin and other related administrative matters shall be observed by each Party.</p>
+            <p align="center" id="ID0EGB">
+              <strong>AUTHORITIES </strong>
+            </p>
+            <p align="center" id="ID0EKB">
+              <strong>Rule 1</strong>
+            </p>
+            <p id="ID0EOB">The Certificate of Origin shall be issued by an Issuing Authority/Body of the exporting Party. Details of the Issuing Authorities/Bodies shall be notified by each Party, through the ASEAN Secretariat, prior to the entry into force of this Agreement. Any subsequent changes shall be promptly notified by each Party, through the ASEAN Secretariat.</p>
+            <p align="center" id="ID0ERB">
+              <strong>Rule 2</strong>
+            </p>
+            <p id="ID0EVB">1.<tab/>The Issuing Authorities/Bodies shall provide the names, addresses, specimen signatures and specimens of the impressions of official seals of their respective Issuing Authorities/Bodies to the other Parties, through the ASEAN Secretariat. The Issuing Authorities/Bodies shall submit electronically to the ASEAN Secretariat the above information and specimens for dissemination to the other Parties. Any subsequent changes shall be promptly notified through the ASEAN Secretariat.</p>
+            <p id="ID0E2B">2.<tab/>Any Certificate of Origin issued by a person not included in the list may not be honoured by the Customs Authority of the importing Party.</p>
+            <p align="center" id="ID0EBC">
+              <strong>Rule 3</strong>
+            </p>
+            <p id="ID0EFC">For the purpose of determining originating status, the Issuing Authorities/Bodies shall have the right to call for supporting documentary evidence and/or other relevant information to carry out any check considered appropriate in accordance with respective domestic laws, regulations and administrative practices.</p>
+            <p id="ID0EIC">
+              <br/>
+            </p>
+            <p align="center" id="ID0ELC">
+              <strong>APPLICATIONS </strong>
+            </p>
+            <p align="center" id="ID0EPC">
+              <strong>Rule 4</strong>
+            </p>
+            <p id="ID0ETC">1.<tab/>The manufacturer, producer, or exporter of the good or its authorised representative shall apply in writing or by electronic means to an Issuing Authority/Body, in accordance with the exporting Party’s domestic laws, regulations and the Issuing Authority’s/Body’s procedures, requesting a pre-exportation examination of the origin of the good to be exported.</p>
+            <p id="ID0EZC">2.<tab/>The result of the examination, subject to review periodically or whenever appropriate, shall be accepted as the supporting evidence in issuing a Certificate of Origin for the good to be exported thereafter.</p>
+            <p id="ID0E6C">3.<tab/>Pre-exportation examination need not apply to a good for which, by its nature, origin can be easily determined.</p>
+            <p align="center" id="ID0EFD">
+              <strong>Rule 5</strong>
+            </p>
+            <p id="ID0EJD">The manufacturer, producer, or exporter of the good or its authorised representative shall apply for the Certificate of Origin by providing appropriate supporting documents and other relevant information, proving that the good to be exported qualifies as originating.</p>
+            <p align="center" id="ID0EMD">
+              <strong>PRE-EXPORTATION EXAMINATION </strong>
+            </p>
+            <p align="center" id="ID0EQD">
+              <strong>Rule 6</strong>
+            </p>
+            <p id="ID0EUD">The Issuing Authority/Body shall, to the best of its competence and ability, carry out proper examination, in accordance with the domestic laws and regulations of the exporting Party or the procedures of the Issuing Authority/Body, upon each application for the Certificate of Origin to ensure that:</p>
+            <ol>
+          <li>
+            <p id="ID0E1D">the application and the Certificate of Origin are duly completed and signed by the authorised signatory;</p>
+          </li>
+          <li>
+            <p id="ID0EAE">the good is an originating good in accordance with Article 2 (Originating Goods) of Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 3</xref> (Rules of Origin);</p>
+          </li>
+          <li>
+            <p id="ID0EOE">other statements in the Certificate of Origin correspond to appropriate supporting documents and other relevant information; and</p>
+          </li>
+          <li>
+            <p id="ID0EUE">information in the List of Data Requirements is provided for the goods being exported.</p>
+          </li>
+        </ol>
+        <p align="center" id="ID0EZE">
+          <strong>ISSUANCE OF CERTIFICATE OF ORIGIN</strong>
+        </p>
+        <p align="center" id="ID0E4E">
+          <strong>Rule 7</strong>
+        </p>
+        <p id="ID0EBF">1.<tab/>The format of the Certificate of Origin is to be determined by the Parties and it must contain the data requirements listed in the List of Data Requirements.</p>
+        <p id="ID0EHF">2.<tab/>The Certificate of Origin shall comprise one (1) original and two (2) copies.</p>
+        <p id="ID0ENF">3.<tab/>The Certificate of Origin shall:</p>
+        <ol>
+          <li>
+            <p id="ID0EWF">be in hardcopy;</p>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <p id="ID0E4F">bear a unique reference number separately given by each place or office of issuance;</p>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <p id="ID0EFG">be in the English language; and</p>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <p id="ID0EMG">bear an authorised signature and official seal of the Issuing Authority/Body. The signature and official seal may be applied electronically.</p>
+          </li>
+        </ol>
+        <p id="ID0ERG">4.<tab/>The original Certificate of Origin shall be forwarded by the exporter to the importer for submission to the Customs Authority of the importing Party. Copies shall be retained by the Issuing Authority/Body and the exporter.</p>
+        <p id="ID0EXG">5.<tab/>Multiple goods declared on the same Certificate of Origin shall be allowed, provided that each good is originating in its own right.</p>
+        <p align="center" id="ID0E4G">
+          <strong>Rule 8</strong>
+        </p>
+        <p id="ID0EBH">To implement Article 2 (Originating Goods) of Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 3</xref> (Rules of Origin), the Certificate of Origin issued by the Issuing Authority/Body shall specify the relevant origin conferring criteria.</p>
+        <p id="ID0EMH">
+          <br/>
+        </p>
+        <p align="center" id="ID0EPH">
+          <strong>Rule 9</strong>
+        </p>
+        <p id="ID0ETH">Neither erasures nor superimpositions shall be allowed on the Certificate of Origin. Any alteration shall be made by striking out the erroneous material and making any addition required. Such alterations shall be approved by a person authorised to sign the Certificate of Origin and certified by the appropriate Issuing Authority/Body. Unused spaces shall be crossed out to prevent any subsequent addition.</p>
+        <p align="center" id="ID0EWH">
+          <strong>Rule 10</strong>
+        </p>
+        <p id="ID0E1H">1.<tab/>The Certificate of Origin shall be issued as near as possible to, but no later than three (3) working days after, the date of exportation.</p>
+        <p id="ID0EBAAC">2.<tab/>Where a Certificate of Origin has not been issued as provided for in Paragraph 1 due to involuntary errors or omissions or other valid causes, the Certificate of Origin may be issued retroactively, but no longer than 12 months from the date of exportation, bearing the words <strong>“ISSUED RETROACTIVELY”</strong>.</p>
+        <p id="ID0EJAAC">3.<tab/>An Issuing Authority/Body of an intermediate Party shall issue a back-to-back Certificate of Origin, if an application is made by the exporter while the good is passing through that intermediate Party, provided that:</p>
+        <ol>
+          <li>
+            <p id="ID0ESAAC">a valid original Certificate of Origin or its certified true copy is presented;</p>
+          </li>
+          <li>
+            <p id="ID0EYAAC">the period of validity of the back-to-back Certificate of Origin does not exceed the period of validity of the original Certificate of Origin;</p>
+          </li>
+          <li>
+            <p id="ID0E5AAC">the consignment which is to be re-exported using the back-to-back Certificate of Origin does not undergo any further processing in the intermediate Party, except for repacking or logistics activities such as unloading, reloading, storing, or any other operations necessary to preserve them in good condition or to transport them to the importing Party;</p>
+          </li>
+          <li>
+            <p id="ID0EEBAC">the back-to-back Certificate of Origin contains relevant information from the original Certificate of Origin in accordance with the List of Data Requirements; and</p>
+          </li>
+          <li>
+            <p id="ID0EKBAC">the verification procedures in Rules 17 and 18 shall also apply to the back-to-back Certificate of Origin.</p>
+          </li>
+        </ol>
+        <p align="center" id="ID0EPBAC">
+          <strong>Rule 11</strong>
+        </p>
+        <p id="ID0ETBAC">In the event of theft, loss or destruction of a Certificate of Origin, the manufacturer, producer, exporter or its authorised representative may apply to the Issuing Authority/Body for a certified true copy of the original Certificate of Origin. The copy shall be made on the basis of the export documents in their possession and bear the words <strong>“CERTIFIED TRUE COPY”</strong>. This copy shall bear the date of issuance of the original Certificate of Origin. The certified true copy of a Certificate of Origin shall be issued no longer than 12 months from the date of issuance of the original Certificate of Origin.</p>
+        <p align="center" id="ID0EYBAC">
+          <strong>PRESENTATION </strong>
+        </p>
+        <p align="center" id="ID0E3BAC">
+          <strong>Rule 12</strong>
+        </p>
+        <p id="ID0EACAC">1.<tab/>For the purpose of claiming preferential tariff treatment, the importer shall submit to the Customs Authority at the time of import declaration the Certificate of Origin and other documents as required, in accordance with the procedures of the Customs Authority or domestic laws and regulations of the importing Party.</p>
+        <p id="ID0EGCAC">2. <tab/>Notwithstanding Paragraph 1, a Party may elect not to require the submission of the Certificate of Origin.</p>
+        <p align="center" id="ID0EMCAC">
+          <strong>Rule 13</strong>
+        </p>
+        <p id="ID0EQCAC">The following time limits for the presentation of the Certificate of Origin shall be observed:</p>
+        <p id="ID0ETCAC">(i) <tab/>the Certificate of Origin shall be valid for a period of 12 months from the date of issue and must be submitted to the Customs Authority of the importing Party within that period;</p>
+        <p id="ID0E1CAC">(ii)<tab/>where the Certificate of Origin is submitted to the Customs Authority of the importing Party after the expiration of the time limit for its submission, such Certificate of Origin shall still be accepted, subject to the importing Party’s domestic laws, regulations or administrative practices, when failure to observe the time limit results from <i>force majeure </i>or other valid causes beyond the control of the importer and/or exporter; and</p>
+        <p id="ID0EDDAC">(iii) <tab/>the Customs Authority of the importing Party may accept such Certificate of Origin, provided that the  goods have been imported before the expiration of the time limit of that Certificate of Origin.</p>
+        <p align="center" id="ID0EKDAC">
+          <strong>Rule 14</strong>
+        </p>
+        <p id="ID0EODAC">The Certificate of Origin shall not be required for:</p>
+        <p id="ID0ERDAC">(i) <tab/>goods originating in the exporting Party and not exceeding US$200.00 FOB value or such higher amount specified in the importing Party’s domestic laws, regulations or administrative practices; or</p>
+        <p id="ID0EYDAC">(ii) <tab/>goods sent through the post not exceeding US$200.00 FOB value or such higher amount specified in the importing Party’s domestic laws, regulations or administrative practices,</p>
+        <p id="ID0E6DAC">provided that the importation does not form part of one or more importations that may reasonably be considered to have been undertaken or arranged for the purpose of avoiding the submission of the Certificate of Origin.</p>
+        <p align="center" id="ID0ECEAC">
+          <strong>Rule 15</strong>
+        </p>
+        <p id="ID0EGEAC">1.<tab/>Where the origin of the good is not in doubt, the discovery of minor transcription errors or discrepancies in documentation shall not <i>ipso facto </i>invalidate the Certificate of Origin, if it does in fact correspond to the goods submitted.</p>
+        <p id="ID0EOEAC">2.<tab/>For multiple goods declared under the same Certificate of Origin, a problem encountered with one of the goods listed shall not affect or delay the granting of preferential tariff treatment and customs clearance of the remaining goods listed in the Certificate of Origin.</p>
+        <p align="center" id="ID0EUEAC">
+          <strong>Rule 16</strong>
+        </p>
+        <p id="ID0EYEAC">1.<tab/>Each Party shall require that the Issuing Authority/Body, manufacturer, producer, exporter, importer, and their authorised representatives maintain for a period of not less than three years after the date of exportation or importation, as the case may be, all records relating to that exportation or importation which are necessary to demonstrate that the good for which a claim for preferential tariff treatment was made qualifies for preferential tariff treatment. Such records may be in electronic form.</p>
+        <p id="ID0E5EAC">2.<tab/>Information relating to the validity of the Certificate of Origin shall be furnished upon request of the importing Party by an official authorised to sign the Certificate of Origin and certified by the appropriate Issuing Authority/Body.</p>
+        <p id="ID0EEFAC">3.<tab/>Any information communicated between the Parties concerned shall be treated as confidential and shall be used for the validation of Certificates of Origin purposes only.<fn><p id="ID0ELFAC"> This Paragraph shall be read with reference to the confidentiality provisions of Article 5 (Confidentiality) of Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 18</xref> (Final Provisions).</p></fn></p>
+        <p align="center" id="ID0EXFAC">
+          <strong>ORIGIN VERIFICATION</strong>
+        </p>
+        <p align="center" id="ID0E2FAC">
+          <strong>Rule 17</strong>
+        </p>
+        <p id="ID0E6FAC">1. <tab/>The Customs Authority of the importing Party may verify the eligibility of a good for preferential tariff treatment in accordance with its domestic laws, regulations or administrative practices.</p>
+        <p id="ID0EFGAC">2.<tab/>If the Customs Authority of the importing Party has reasonable doubts as to the authenticity or accuracy of the information included in the Certificate of Origin or other documentary evidence, it may:</p>
+        <p id="ID0ELGAC">(i) <tab/>institute retroactive checking measures to establish the validity of the Certificate of Origin or other documentary evidence of origin;</p>
+        <p id="ID0ESGAC">(ii) <tab/>request information from the relevant importer of a good for which preferential tariff treatment was claimed; and</p>
+        <p id="ID0EZGAC">(iii) <tab/>issue written requests to the Issuing Authority/Body of the exporting Party for information from the exporter or producer.</p>
+        <p id="ID0EAHAC">3.<tab/>A request for information in accordance with Paragraph 2(iii) shall not preclude the use of the verification visit provided for in Rule 18.</p>
+        <p id="ID0EGHAC">4.<tab/>The recipient of a request for information under Paragraph 2 shall provide the information requested within a period of 90 days from the date the written request is made.</p>
+        <p id="ID0EMHAC">5.<tab/>The Customs Authority of the importing Party shall provide written advice as to whether the goods are eligible for preferential tariff treatment to all the relevant parties within 60 days from receipt of information necessary to make a decision.</p>
+        <p align="center" id="ID0ESHAC">
+          <strong>VERIFICATION VISIT</strong>
+        </p>
+        <p align="center" id="ID0EWHAC">
+          <strong>Rule 18</strong>
+        </p>
+        <p id="ID0E1HAC">1.<tab/>If the Customs Authority of the importing Party wishes to undertake a verification visit, it shall issue a written request to the Issuing Authority/Body of the exporting Party at least 30 days in advance of the proposed verification visit.</p>
+        <p id="ID0EAIAC">2.<tab/>If the Issuing Authority/Body of the exporting Party is not a government agency, the Customs Authority of the importing Party shall notify the Customs Authority of the exporting Party of the written request to undertake the verification visit.</p>
+        <p id="ID0EGIAC">3.<tab/>The written request referred to in Paragraphs 1 and 2 shall at a minimum include:</p>
+        <ol>
+          <li>
+            <p id="ID0EPIAC">the identity of the Customs Authority issuing the request;</p>
+          </li>
+          <li>
+            <p id="ID0EVIAC">the name of the exporter or the producer of the exporting Party whose good is subject to the verification visit;</p>
+          </li>
+          <li>
+            <p id="ID0E2IAC">the date the written request is made;</p>
+          </li>
+          <li>
+            <p id="ID0EBJAC">the proposed date and place of the visit;</p>
+          </li>
+          <li>
+            <p id="ID0EHJAC">the objective and scope of the proposed visit, including specific reference to the good subject to the verification; and</p>
+          </li>
+          <li>
+            <p id="ID0ENJAC">the names and titles of the officials of the Customs Authority or other relevant authorities of the  importing  Party  who  will  participate  in  the visit.</p>
+          </li>
+        </ol>
+        <p id="ID0ESJAC">4.<tab/>The Issuing Authority/Body of the exporting Party shall notify the exporter or producer of the intended verification visit by the Customs Authority or other relevant authorities of the importing Party and request the exporter or producer to:</p>
+        <p id="ID0EYJAC">(i)<tab/>permit the Customs Authority or other relevant authorities of the importing Party to visit their premises or factory; and</p>
+        <p id="ID0E6JAC">(ii)<tab/>provide information  relating to the origin of the good.</p>
+        <p id="ID0EGKAC">5. <tab/>The Issuing Authority/Body shall advise the exporter or producer that, should they fail to respond by a specified date, preferential tariff treatment may be denied.</p>
+        <p id="ID0EMKAC">6.<tab/>The Issuing Authority/Body of the exporting Party shall advise the Customs Authority of the importing Party within 30 days of the date of the written request from the Customs Authority of the importing Party whether the exporter or producer has agreed to the request for a verification visit.</p>
+        <p id="ID0ESKAC">7.<tab/>The Customs Authority of the importing Party shall not visit the premises or factory of any exporter or producer in the territory of the exporting Party without written prior consent from the exporter or producer.</p>
+        <p id="ID0EYKAC">8. <tab/>The Customs Authority of the importing Party shall complete any action to verify eligibility for preferential tariff treatment and make a decision within 150 days of the date of the request to the Issuing Authority/Body under Paragraph 1. The Customs Authority of the importing Party shall provide written advice as to whether goods are eligible for preferential tariff treatment to the relevant parties within ten days of the decision being made.</p>
+        <p id="ID0E5KAC">9.<tab/>Parties shall maintain the confidentiality of information classified as confidential collected in the process of verification and shall protect that information from disclosure that could prejudice the competitive position of the person who provided the information. The information classified as confidential may only be disclosed to those authorities responsible for the administration and enforcement of origin determination.<fn><p id="ID0EFLAC"> This Paragraph shall be read with reference to the confidentiality provisions of Article 5 (Confidentiality) of Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 18</xref> (Final Provisions).</p></fn></p>
+        <p align="center" id="ID0ERLAC">
+          <strong>SUSPENSION OF PREFERENTIAL TARIFF TREATMENT</strong>
+        </p>
+        <p align="center" id="ID0EVLAC">
+          <strong>Rule 19</strong>
+        </p>
+        <p id="ID0EZLAC">1.<tab/>The Customs Authority of the importing Party may suspend preferential tariff treatment to a good that is the subject of an origin verification action under this Annex for the duration of that action or any part thereof.</p>
+        <p id="ID0E6LAC">2. <tab/>The importing Party may release the goods to the importer subject to any administrative measures deemed necessary, provided that they are not held to be subject to import prohibition or restriction and there is no suspicion of fraud.</p>
+        <p id="ID0EFMAC">3.<tab/>In the event that a determination is made by the Customs Authority of the importing Party that the good qualifies as an originating good of the exporting Party, any suspended preferential tariff treatment shall be reinstated.</p>
+        <p align="center" id="ID0ELMAC">
+          <strong>Rule 20</strong>
+        </p>
+        <p id="ID0EPMAC">When the destination of any goods exported to a specified Party is changed after their export from the exporting Party, but before clearance by the importing Party, the exporter, manufacturer, producer or its authorised representative shall apply in writing to the Issuing Authority/Body for a new Certificate of Origin for the goods changing destination. The application shall include the original Certificate of Origin relating to the goods.</p>
+        <p align="center" id="ID0ESMAC">
+          <strong>Rule 21</strong>
+        </p>
+        <p id="ID0EWMAC">For the purpose of implementing Article 14 (Direct Consignment) of Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 3</xref> (Rules of Origin) where transportation is effected through the territory of any non-Party, the following shall be provided to the Customs Authority of the importing Party:</p>
+        <p id="ID0EBNAC">(i) <tab/>a through Bill of Lading issued in the exporting Party;</p>
+        <p id="ID0EINAC">(ii) <tab/>a Certificate of Origin issued by the relevant Issuing Authority/Body of the exporting Party, unless not required pursuant to Rule 12.2 or Rule 14;</p>
+        <p id="ID0EPNAC">(iii) <tab/>a copy of the original commercial invoice in respect of the good; and</p>
+        <p id="ID0EWNAC">(iv) <tab/>supporting documents in evidence that the requirements of Article 14 (Direct Consignment) of  Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 3</xref> (Rules of Origin) have been complied with.</p>
+        <p align="center" id="ID0EFOAC">
+          <strong>Rule 22</strong>
+        </p>
+        <p id="ID0EJOAC">1.<tab/>The Customs Authority of the importing Party may accept Certificates of Origin in cases where the sales invoice is issued either by a company located in a third country or by an exporter for the account of that company, provided that the goods meet the requirements of Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 3</xref> (Rules of Origin).</p>
+        <p id="ID0EXOAC">2.<tab/>The words “<strong>SUBJECT OF THIRD-PARTY INVOICE </strong>(<i>name of company using the invoice</i>)” shall appear on the Certificate of Origin.</p>
+        <p id="ID0EBPAC">
+          <br/>
+        </p>
+        <p align="center" id="ID0EEPAC">
+          <strong>ACTION AGAINST FRAUDULENT ACTS</strong>
+        </p>
+        <p align="center" id="ID0EIPAC">
+          <strong>Rule 23</strong>
+        </p>
+        <p id="ID0EMPAC">When it is suspected that fraudulent acts in connection with the Certificate of Origin have been committed, the government authorities concerned shall co-operate in the action to be taken in the respective Party against the persons involved, in accordance with the Party’s respective laws and regulations.</p>
+        <p align="center" id="ID0EPPAC">
+          <strong>GOODS IN TRANSPORT OR STORAGE</strong>
+        </p>
+        <p align="center" id="ID0ETPAC">
+          <strong>Rule 24</strong>
+        </p>
+        <p id="ID0EXPAC">Originating goods which are in the process of being transported from the exporting Party to the importing Party, or which are in temporary storage in a bonded area in the importing Party, should be accorded preferential tariff treatment if they are imported into the importing Party on or after the date of entry into force of this Agreement, subject to the submission of a Certificate of Origin issued retroactively to the Customs Authority of the importing Party and subject to domestic laws, regulations or administrative practices of the importing Party.</p>
+        <p align="center" id="ID0E1PAC">
+          <strong>SETTLEMENT OF DISPUTES </strong>
+        </p>
+        <p align="center" id="ID0E5PAC">
+          <strong>Rule 25</strong>
+          <fn>
+            <p id="ID0EEAAE">  This Rule is without prejudice to a Party’s rights under Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 17</xref> (Consultations and Dispute Settlement).</p>
+          </fn>
+        </p>
+        <p id="ID0ERAAE">1.<tab/>In the case of a dispute concerning origin determination, classification of goods or other matters, the government authorities concerned in the importing and exporting Parties shall consult each other with a view to resolving the dispute, and the result shall be reported to the other Parties for information.</p>
+        <p id="ID0EXAAE">2.<tab/>If no settlement can be reached bilaterally, the dispute may be referred to the ROO Sub-Committee established pursuant to Article 18 (Sub-Committee on Rules of Origin) of Chapter <xref format="html" scope="internal" href="" checked="notfound" type="chapter">Chapter 3</xref> (Rules of Origin).</p>
+      </segment>
+    </article>
+  </body>
+</dghodoc>

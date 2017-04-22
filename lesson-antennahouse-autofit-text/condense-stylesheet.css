@@ -1,0 +1,55 @@
+description {
+
+display:block;
+font-size:18pt;
+padding:5mm;
+
+}
+
+no-condense {
+
+display:block;
+border: 2pt solid blue;
+padding: 5mm;
+font-size:20pt;
+white-space:nowrap;
+overflow: visible;
+
+
+}
+
+condense-font-stretch {
+
+display:block;
+border: 2pt solid blue;
+padding: 5mm;
+font-size:20pt;
+white-space:nowrap;
+overflow:condense;
+-ah-overflow-condense: font-stretch;
+
+}
+
+condense-font-size {
+
+display:block;
+border: 2pt solid blue;
+padding: 5mm;
+font-size:20pt;
+white-space:nowrap;
+overflow:condense;
+-ah-overflow-condense: font-size;
+
+}
+
+condense-letter-spacing {
+
+display:block;
+border: 2pt solid blue;
+padding: 5mm;
+font-size:20pt;
+white-space:nowrap;
+overflow:condense;
+-ah-overflow-condense: letter-spacing;
+
+}

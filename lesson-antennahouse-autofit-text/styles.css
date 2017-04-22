@@ -1,0 +1,29 @@
+@import url("../styles/a4.css");
+
+div.box {
+    text-align: justify;
+    width: 6cm;
+    height: 6cm;
+    border: 2px solid blue;
+    padding: 0.1em;
+    font-size: 10pt;
+    margin-bottom: 1em;
+    page-break-after: always;
+    hyphens: auto;
+}
+
+
+#box1 {
+    overflow:condense;
+    -ah-overflow-condense: font-stretch;
+}
+
+#box2 {
+    overflow:condense;
+    -ah-overflow-condense: font-size;
+}
+
+#box3 {
+    overflow:condense;
+    -ah-overflow-condense: letter-spacing;
+}

@@ -1,0 +1,154 @@
+@import url("../styles/a4.css");
+
+#type-wrap,
+#type,
+#type em,
+#type strong,
+#type i,
+#type span{
+    border:1px solid transparent;
+    background:transparent;
+}
+#type em,
+#type strong,
+#type i,
+#type span{
+    padding:0.063em 0.25em; /* 8px y 32px x @144px f-size */
+    position:absolute;
+}
+
+#type-wrap{
+    height:12em;
+    text-align:left;
+    display:block;
+    clear:both;
+    border:1px solid #eee;
+}
+#type{
+    font-size:8em;
+    line-height:1em;
+    font-weight:300;
+    font-family:'times new roman',serif;
+    letter-spacing:0;
+    float:none;
+    color:#000;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+/* Jon */
+
+#type em{
+    text-transform:lowercase;
+    left:0;
+    top:0;
+    /* over-ride defaults */
+    font-size:1em;
+    line-height:1em;
+    font-style:italic;
+    margin:0;
+    padding:0.063em 0.25em; /* 8px y 32px x @144px f-size */
+}
+#type em span{
+    font-size:0.25em; /* 32px */
+    font-style:normal;
+    left:1.25em; /* 40px */
+    top:1.75em; /* 56px */
+}
+#type em span span{
+    font-size:1.5em;  /* 48px */
+    font-style:italic;
+    left:0.25em; /* 10px */
+    top:0; /* 21px */
+}
+
+/* Tan */
+
+#type i{
+    font-size:1em; /* 128px */
+    font-style:italic;
+    font-weight:900;
+    text-transform:lowercase;
+    left:0.219em; /* 28px */
+    top:-0.039em; /* 12px */
+}
+#type i span{
+    font-size:0.25em; /* 32px */
+    font-style:normal;
+    font-weight:300;
+    left:2em; /* 64px */
+    top:-0.375em; /* 12px */
+}
+#type i span span{
+    font-size:2em; /* 48px */
+    font-style:italic;
+    left:0.063em; /* 3px */
+    top:0;
+}
+
+/* gerine */
+
+#type strong{
+    font-size:1em; /* 128px */
+    font-weight:300;
+    left:0.444em; /* 88px */
+    top:0.188em; /* 24px */
+}
+#type strong span{
+    font-size:0.5em; /* 64px */
+    font-style:italic;
+    left:1.063em; /* 36px */
+    top:0.25em; /* 16px */
+}
+#type strong span span{
+    font-size:0.75em; /* 48px */
+    left:0.125em; /* 6px */
+    top:-1em; /* 48px */
+}
+#type strong span span span{
+    font-size:1.333em; /* 64px */
+    font-weight:900;
+    text-transform:lowercase;
+    left:0.125em; /* 8px */
+    top:0.189em; /* 12px */
+}
+#type strong span span span span{
+    font-size:1.5em; /* 96px */
+    font-weight:300;
+    font-style:normal;
+    left:0.063em; /* 6px */
+    top:0.125em; /* 12px */
+}
+#type strong span span span span span{
+    font-size:0.5em; /* 48px */
+    text-transform:uppercase;
+    font-style:italic;
+    left:0;
+    top:1.125em; /* 54px */
+}
+#type strong span span span span span span{
+    font-size:2.667em;
+    color:#fc0;
+    left:0.125em; /* 16px */
+    top:-0.375em; /* 48px */
+}
+
+/* note */
+
+#type-wrap p{
+    font-size:2.25em;
+    line-height:0.75em;
+    font-style:italic;
+    text-transform:lowercase;
+    color:#000;
+    font-family: georgia,serif;
+    margin:2em 0 0 8em;
+}
+#type-wrap p strong{
+    font-size:0.611em;
+    font-weight:300;
+    display:block;
+    padding-left:0.5em;
+}
+

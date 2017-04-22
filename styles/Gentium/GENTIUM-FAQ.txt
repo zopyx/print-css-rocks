@@ -1,0 +1,205 @@
+GENTIUM-FAQ
+Gentium Plus
+========================
+
+Here are some answers to frequently asked questions about the Gentium Plus
+fonts:
+
+
+General
+========
+
+How do you pronounce Gentium?
+
+	The preferred pronunciation is with a soft G as in 'general', not a
+	hard one as in 'gold': JEN-tee-oom.
+
+
+Licensing
+=========
+
+I want to use Gentium Plus in my publication - can I?
+
+	Gentium Plus is released under the SIL Open Font License, which permits
+	use for any publication, whether electronic or printed. For more answers
+	to use questions see the OFL-FAQ. The license, alongside information
+	specific to Gentium Plus, is in the release package.
+
+I would like to bundle Gentium Plus with my application - can I?
+
+	This is our most common question. The SIL Open Font License allows
+	bundling with applications, even commercial closed source ones, with
+	some restrictions. See the OFL.txt file and the OFL-FAQ.
+
+Can I use the font on my web site?
+
+	You can certainly create web pages that request that Gentium Plus be
+	used to display them (both if that font is already available on the
+	user's system or if it is delivered via @font-face). According to the
+	license, you are also allowed to place the font on your site for people
+	to download it. We would strongly recommend, however, that you direct
+	users to our site to download the font. This ensures that they are
+	always using the most recent version with bug fixes, etc. To make this
+	easier, there is a simple URL for Gentium: http://scripts.sil.org/Gentium
+	There is further important discussion of webfont issues in the OFL-FAQ.
+
+Is Gentium Plus going to stay unrestricted and available at no cost?
+
+	There is no intention to ever charge users for using Gentium and its
+	variants. The current version is licensed under a free/open license and
+	future versions will be similarly unencumbered.
+
+
+Modification
+============
+
+I would like to modify Gentium Plus to add a couple of characters I need.
+Can I?
+
+	Yes - that is allowed as long as you abide by the conditions of the
+	SIL Open Font License.
+
+So will you add glyphs upon request?
+
+	If you have a special symbol that you need (say, for a particular
+	transcription system), the best means of doing so will be to ensure
+	that the symbol makes it into the Unicode Standard. It is impossible
+	for us to add every glyph that every person desires, but we do place
+	a high priority on adding pretty much anything that falls in certain
+	Unicode ranges (extended Latin, Greek, Cyrillic). You can send us your
+	requests, but please understand that we are unlikely to add symbols
+	where the user base is very small, unless they have been accepted
+	into Unicode.
+
+Can I send you work I've done to be incorporated into Gentium Plus?
+
+	Yes. See the FONTLOG for information on becoming a contributor.
+
+
+Technical
+=========
+
+Can you help me get Gentium Plus working on my system?
+
+	We cannot afford to offer individual technical support. The best
+	resource is this website, where we hope to offer some limited help.
+	However, we do want to hear of any problems you encounter, so that
+	we can add them to the list of bugs to fix in later releases.
+	Our contact address is gentium@sil.org.  Please understand
+	that we cannot guarantee a personal response.
+
+I can't find all the extended Latin letters in the font. How do I type them?
+
+	Gentium Plus is Unicode-encoded, which means that the computer stores a
+	special, unique code for each letter in your document. Since most
+	keyboards do not have hundreds of keys, special software is needed
+	in order to type the hundreds of special characters supported by the
+	font. See the README.txt file for more information.
+	
+I can't find the 'o with right hook' in the font. Where is it?
+
+	Combinations of base letters with diacritics are often called
+	composite, or pre-composed glyphs. Gentium Plus has hundreds of these
+	(the ones that are included in Unicode). There are, however, many
+	common combinations that are not represented by a single composite.
+	It is possible to enter these into a document, but only as
+	individual components. So 'o with right hook' would be entered as
+	'o', then 'right hook'. Although this may not look very good in some
+	cases, we're not able to anticipate every possible combination.
+	Gentium Plus includes 'smart font' support for both OpenType and 
+	Graphite.
+	
+Some diacritics are not aligning well with base glyphs, and if I type more
+than one diacritic, they run into each other. Why is that?
+
+	The smart diacritic positioning in Gentium Plus relies on either
+	OpenType or Graphite. The application you are using must support
+	one of these technologies in order to see appropriate diacritic
+	positioning.
+	
+How do I type the Greek letters?
+
+	You need a Unicode-compatible keyboarding system, which is not
+	included in the release. 
+	
+I'm having problems making PDFs -- why won't my document distill?
+
+	Gentium Plus is a large font, with lots of glyphs. As a result,
+	some older printers, PDF distillers and readers can balk at PDFs
+	that have the complete font embedded. The easiest way to avoid
+	this is to have the PDF distiller subset the font. This is
+	generally a good idea anyway (with any font) and can reduce the
+	size of your files.
+
+
+Plus
+=====
+
+How are the Gentium Plus fonts different from Gentium?
+
+	This font is based on the original Gentium design, but with an expanded
+	character and glyph repertoire. It currently comes with regular and 
+	italic faces. It comes with near-complete support for Latin, Cyrillic
+	and Greek. It also contains 'smart font' support for OpenType and Graphite
+	technologies. This allows for correct diacritic placement over all base
+	characters, whether they are tall, short, wide, narrow, with or without 
+	descenders. It also provides for a large variety of alternates glyphs. 
+	These are described on the Gentium website.
+	
+Why is the line spacing greater for the Plus fonts?
+
+	In some environments, stacked diacritics in Gentium could display as
+	'chopped-off'. Gentium Plus has slightly wider default line spacing
+	in order to avoid this problem. Most applications do, however, let you
+	set the line spacing explicitly, so you can have the lines spaced
+	precisely as you wish.
+	
+Is there an Alt version of the Basic fonts?
+
+	No, although you may notice that capitals and some tall lowercase
+	letters do use 'low-profile' versions. Gentium Plus also includes
+	OpenType and Graphite features to turn low-profile diacritics on
+	and off.
+	
+	
+Future
+======
+
+What are your future plans for Gentium Plus?
+
+	Our next major effort is completing bold and bold italic weights
+	of Gentium Plus alongside a new Gentium Book Plus family. These new
+	weights are currently available for Gentium Basic/Gentium Book Basic.
+
+Do you plan to include other typographic enhancements (old style
+figures, etc.)?
+
+	Those would be nice, wouldn't they? From a design point of view,
+	it would be great to have these refinements, and we haven't ruled
+	them out. But there are other needs that are much higher priority
+	(such as bold). If you think you could contribute some of your time 
+	and effort to these enhancements, see the FONTLOG.txt file for
+	information on becoming a contributor.
+
+Sans-serif?
+
+	There is a definite need for a sans-serif font that shares some of
+	Gentium's strengths -- high readability, economy of space, etc. It
+	would also be great if that font also harmonized well with Gentium.
+	We don't currently have any plans for a companion face, although one
+	of our other projects - Andika - may be useful. Andika is a sans-serif
+	font designed specifically for use in literacy programs around the
+	world, and is available from our web site.
+	
+Will you be extending Gentium to cover other scripts, and Hebrew in
+particular?
+
+	It is very unlikely that we would do this, as there are so many
+	pressing needs in Latin, Greek and Cyrillic scripts.
+	
+Will there be a Type 1 version? What about OpenType?
+
+	Gentium Plus includes OpenType and Graphite support. We do not plan
+	to produce Type 1 versions at this time, but please write us if this
+	is important (and tell us why). We already provide the PostScript
+	bézier curves in the 'designsource' files in the developer release.

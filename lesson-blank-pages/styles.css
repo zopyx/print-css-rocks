@@ -1,0 +1,23 @@
+@import url("../styles/a5.css");
+
+@page:blank {
+    background: blue;
+
+    @bottom-center {
+        content: "";
+    }
+
+    @top-center {
+        content: "";
+    }
+}
+
+h1 {
+    font-size: 30pt;
+    color: red;
+}
+
+div.chapter {
+    page-break-after: right;
+}
+

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Gentium;
+    src: url('Gentium/GentiumPlus-I.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("Lato2OFL/Lato-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("Lato2OFL/Lato-Bold.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("Lato2OFL/Lato-Italic.ttf") format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("Lato2OFL/Lato-BoldItalic.ttf") format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+@page {
+    @bottom-center {
+        content: "https://print-css.rocks";
+        font-size: 0.8em;
+        color: #aaa;
+        font-family: Lato;
+    }
+
+    @top-center {
+        content: "CSS Paged Media Tutorial by Andreas Jung";
+        font-size: 0.8em;
+        color: #aaa;
+        font-family: Lato;
+    }
+}
+
+body {
+    font-family: Lato;
+    font-size: 12pt;
+}

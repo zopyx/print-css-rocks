@@ -1,0 +1,3 @@
+vivliostyle: 
+	vivliostyle-formatter --style=styles.css index.xml 
+

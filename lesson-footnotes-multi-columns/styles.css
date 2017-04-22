@@ -1,0 +1,49 @@
+@import url("../styles/a4-landscape.css");
+
+div.multicol {
+    margin-bottom: 2em;
+    text-align: justify;
+    hyphens: auto;
+    page-break-after: always;
+}
+
+
+h1 {
+    column-span: all;
+}
+
+
+.cols-3 {
+    column-count: 3;
+    column-gap: 1cm;
+    column-rule: 4px solid #ff00ff;
+}
+
+@page {
+    counter-reset: footnote 0;
+}
+
+@page {
+    @footnote {
+        border-top: dashed red 1px;
+        float: bottom;
+        -ah-float: after column auto-move;
+    }
+}
+
+span.footnote { 
+    float: footnote; 
+    counter-increment: footnote;
+    -ah-float: footnote;
+}
+
+.footnote::footnote-call {
+    content: counter(footnote, decimal) " ";
+    color: green;
+}
+
+.footnote::footnote-marker {
+    content: counter(footnote, lower-roman);
+    font-size: 14px;
+    color: blue;
+}

@@ -1,0 +1,18 @@
+        <script>
+            var containers = document.querySelectorAll(".scaleContent");
+
+            for (var i = 0; i < containers.length; i++) {
+                var container = containers[i];
+                var content = container.querySelector(".content");
+
+                var containerHeight = ro.layout.getBoxDescriptions(container)[0].contentRect.height;
+                var contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
+                var fontSize = parseInt(window.getComputedStyle(content).fontSize);
+
+                while (contentHeight > containerHeight) {
+                    fontSize = fontSize * 0.9;
+                    content.style.fontSize = fontSize + "pt";
+                    contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
+                }
+            }
+        </script>

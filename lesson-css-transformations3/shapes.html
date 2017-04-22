@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<div id="demo-top-bar">
+
+
+</div>
+	<div id="page-wrap">
+
+		<h1>The <span>Shapes</span> of CSS</h1>
+
+		<p>All of the below use only a single HTML element. Any kind of CSS goes,
+		   as long as it's supported in at least one browser.</p>
+
+		<div id="shapes">
+
+				<div class="shape">
+					<h2>Square</h2>
+					<div id="square"></div>
+					<style type="text/css">
+#square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Rectangle</h2>
+					<div id="rectangle"></div>
+					<style type="text/css">
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+					</style>
+
+
+			</div>
+
+				<div class="shape">
+					<h2>Circle</h2>
+					<div id="circle"></div>
+					<style type="text/css">
+#circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/* Cleaner, but slightly less support: use "50%" as value */
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Oval</h2>
+					<div id="oval"></div>
+					<style type="text/css">
+#oval {
+	width: 200px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+
+/* Cleaner, but slightly less support: use "50%" as value */
+					</style>
+
+				</div>
+
+
+				<div class="shape">
+					<h2>Triangle Up</h2>
+					<div id="triangle-up"></div>
+
+					<style type="text/css">
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Down</h2>
+					<div id="triangle-down"></div>
+					<style type="text/css">
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Left</h2>
+					<div id="triangle-left"></div>
+					<style type="text/css">
+#triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Right</h2>
+					<div id="triangle-right"></div>
+					<style type="text/css">
+#triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+					</style>
+				</div>
+
+
+				<div class="shape">
+					<h2>Triangle Top Left</h2>
+					<div id="triangle-topleft"></div>
+					<style type="text/css">
+#triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-right: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+				<h2>Triangle Top Right</h2>
+				<div id="triangle-topright"></div>
+				<style type="text/css">
+#triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-left: 100px solid transparent;
+
+}
+				</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Bottom Left</h2>
+					<div id="triangle-bottomleft"></div>
+					<style type="text/css">
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red;
+	border-right: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Bottom Right</h2>
+					<div id="triangle-bottomright"></div>
+					<style type="text/css">
+#triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red;
+	border-left: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+
+					<h2>Curved Tail Arrow <a href="http://about.me/fwd">via Ando Razafimandimby</a></h2>
+
+					<div id="curvedarrow"></div>
+
+					<style type="text/css">
+#curvedarrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid red;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+#curvedarrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid red;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Trapezoid</h2>
+
+					<div id="trapezoid"></div>
+
+					<style type="text/css">
+#trapezoid {
+	border-bottom: 100px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Parallelogram</h2>
+
+					<div id="parallelogram"></div>
+
+					<style type="text/css">
+#parallelogram {
+	width: 150px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Star (6-points)</h2>
+
+					<div id="star-six"></div>
+
+					<style type="text/css">
+#star-six {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+}
+#star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Star (5-points) <a href="http://kitmacallister.com/2011/css-only-5-point-star/">via Kit MacAllister</a></h2>
+
+					<div id="star-five"></div>
+
+					<style type="text/css">
+#star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid red;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Pentagon</h2>
+
+					<div id="pentagon"></div>
+
+					<style type="text/css">
+#pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+}
+#pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Hexagon</h2>
+
+					<div id="hexagon"></div>
+
+					<style type="text/css">
+#hexagon {
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Octagon</h2>
+
+					<div id="octagon"></div>
+
+					<style type="text/css">
+#octagon {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+}
+
+#octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 29px solid red;
+	border-left: 29px solid #eee;
+	border-right: 29px solid #eee;
+	width: 42px;
+	height: 0;
+}
+
+#octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 29px solid red;
+	border-left: 29px solid #eee;
+	border-right: 29px solid #eee;
+	width: 42px;
+	height: 0;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Heart <a href="http://nicolasgallagher.com/">via Nicolas Gallagher</a></h2>
+
+					<div id="heart"></div>
+
+					<style type="text/css">
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Infinity <a href="http://nicolasgallagher.com/">via Nicolas Gallagher</a></h2>
+
+					<div id="infinity"></div>
+
+					<style type="text/css">
+#infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid red;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Square <a href="http://josephsilber.com">via Joseph Silber</a></h2>
+
+					<div id="diamond"></div>
+
+					<style scoped type="text/css">
+#diamond {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -50px;
+}
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: red;
+}
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Shield <a href="http://josephsilber.com">via Joseph Silber</a></h2>
+
+					<div id="diamond-shield"></div>
+
+					<style scoped type="text/css">
+#diamond-shield {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 20px solid red;
+	position: relative;
+	top: -50px;
+}
+#diamond-shield:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 20px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid red;
+}
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Narrow <a href="http://josephsilber.com">via Joseph Silber</a></h2>
+
+					<div id="diamond-narrow"></div>
+
+					<style scoped type="text/css">
+#diamond-narrow {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 70px solid red;
+	position: relative;
+	top: -50px;
+}
+#diamond-narrow:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 70px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid red;
+}
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Cut Diamond <a>via Alexander Futekov</a></h2>
+
+					<div id="cut-diamond"></div>
+
+					<style scoped type="text/css">
+#cut-diamond {
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+#cut-diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Egg</h2>
+
+					<div id="egg"></div>
+
+					<style scoped type="text/css">
+#egg {
+   display:block;
+   width: 126px;
+   height: 180px;
+   background-color: red;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Pac-Man</h2>
+
+					<div id="pacman"></div>
+
+					<style scoped type="text/css">
+#pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Talk Bubble</h2>
+
+					<div id="talkbubble"></div>
+
+					<style scoped type="text/css">
+#talkbubble {
+   width: 120px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>12 Point Burst <a href="http://commondream.net/post/8848553728/pure-css-badges">via Alan Johnson</a></h2>
+
+					<div id="burst-12"></div>
+
+					<style scoped type="text/css">
+#burst-12 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+#burst-12:before, #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+}
+#burst-12:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#burst-12:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>8 Point Burst <a href="http://commondream.net/post/8848553728/pure-css-badges">via Alan Johnson</a></h2>
+
+					<div id="burst-8"></div>
+
+					<style scoped type="text/css">
+#burst-8 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20eg);
+}
+#burst-8:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Yin Yang <a>via Alexander Futekov</a></h2>
+
+					<div id="yin-yang"></div>
+
+					<style scoped type="text/css">
+#yin-yang {
+	width: 96px;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: relative;
+}
+
+#yin-yang:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+}
+
+#yin-yang:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius:100%;
+	width: 12px;
+	height: 12px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Badge Ribbon <a href="http://www.red-team-design.com/">via Catalin Rosu</a></h2>
+
+					<div id="badge-ribbon"></div>
+
+					<style scoped type="text/css">
+#badge-ribbon {
+ position: relative;
+ background: red;
+ height: 100px;
+ width: 100px;
+ -moz-border-radius:    50px;
+ -webkit-border-radius: 50px;
+ border-radius:         50px;
+}
+
+#badge-ribbon:before,
+#badge-ribbon:after {
+  content: '';
+  position: absolute;
+  border-bottom: 70px solid red;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 70px;
+  left: -10px;
+  -webkit-transform: rotate(-140deg);
+  -moz-transform:    rotate(-140deg);
+  -ms-transform:     rotate(-140deg);
+  -o-transform:      rotate(-140deg);
+}
+
+#badge-ribbon:after {
+  left: auto;
+  right: -10px;
+  -webkit-transform: rotate(140deg);
+  -moz-transform:    rotate(140deg);
+  -ms-transform:     rotate(140deg);
+  -o-transform:      rotate(140deg);
+}
+
+</style>
+
+				</div>
+
+        <div class="shape">
+
+          <h2>Space Invader <a href="http://ecsspert.com/">via Vlad Zinculescu</a></h2>
+
+          <div id="space-invader"></div>
+
+          <style scoped type="text/css">
+#space-invader{
+
+  box-shadow:
+    0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    2em -2em 0 0 red,
+    -3em -1em 0 0 red,
+    -2em -1em 0 0 red,
+    2em -1em 0 0 red,
+    3em -1em 0 0 red,
+    -4em 0 0 0 red,
+    -3em 0 0 0 red,
+    3em 0 0 0 red,
+    4em 0 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+
+    background: red;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+
+    margin: 50px 0 70px 65px;
+  }
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>TV Screen</h2>
+
+          <div id="tv"></div>
+
+          <style scoped type="text/css">
+#tv {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  margin: 20px 0;
+  background: red;
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+}
+#tv:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Chevron <a href="http://twitter.com/apticknor">via Anthony Ticknor</a></h2>
+
+          <div id="chevron"></div>
+
+          <style scoped type="text/css">
+#chevron {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 60px;
+  width: 200px;
+}
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  -webkit-transform: skew(0deg, 6deg);
+  -moz-transform: skew(0deg, 6deg);
+  -ms-transform: skew(0deg, 6deg);
+  -o-transform: skew(0deg, 6deg);
+  transform: skew(0deg, 6deg);
+}
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+  -webkit-transform: skew(0deg, -6deg);
+  -moz-transform: skew(0deg, -6deg);
+  -ms-transform: skew(0deg, -6deg);
+  -o-transform: skew(0deg, -6deg);
+  transform: skew(0deg, -6deg);
+}​
+
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Magnifying Glass</h2>
+
+          <div id="magnifying-glass"></div>
+
+          <style type="text/css">
+#magnifying-glass
+{
+ font-size: 10em; /* This controls the size. */
+ display: inline-block;
+ width: 0.4em;
+ height: 0.4em;
+ border: 0.1em solid red;
+ position: relative;
+ border-radius: 0.35em;
+}
+#magnifying-glass::before
+{
+ content: "";
+ display: inline-block;
+ position: absolute;
+ right: -0.25em;
+ bottom: -0.1em;
+ border-width: 0;
+ background: red;
+ width: 0.35em;
+ height: 0.08em;
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+          </style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Facebook Icon <a href="http://clicknathan.com/">via Nathan Swartz</a></h2>
+
+          <div id="facebook-icon"></div>
+
+          <style type="text/css">
+#facebook-icon {
+  background: red;
+  text-indent: -999em;
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid red;
+  border-bottom: 0;
+}
+#facebook-icon::before {
+  content: "/20";
+  position: absolute;
+  background: red;
+  width: 40px;
+  height: 90px;
+  bottom: -30px;
+  right: -37px;
+  border: 20px solid #eee;
+  border-radius: 25px;
+}
+#facebook-icon::after {
+  content: "/20";
+  position: absolute;
+  width: 55px;
+  top: 50px;
+  height: 20px;
+  background: #eee;
+  right: 5px;
+}
+          </style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Moon <a href="http://www.blendesign.ir/">via Omid Rasouli</a></h2>
+
+          <div id="moon"></div>
+
+          <style type="text/css">
+#moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 red;
+}
+          </style>
+
+        </div>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Flag <a href="http://codepen.io/zoerooney/pen/xIoCn">via Zoe Rooney</a></h2>
+
+          <div id="flag"></div>
+
+          <style type="text/css">
+#flag {
+  width: 110px;
+  height: 56px;
+  padding-top: 15px;
+  position: relative;
+  background: red;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+#flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid #eee;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+}
+          </style>
+
+        </div>
+
+      <div class="shape">
+
+        <h2>Cone <a href="http://www.blendesign.ir/">via Omid Rasouli</a></h2>
+
+        <div id="cone"></div>
+
+          <style type="text/css">
+#cone {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid red;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+          </style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Cross <a href="#">via Kaya Basharan</a></h2>
+
+          <div id="cross"></div>
+
+          <style type="text/css">
+#cross {
+  background: red;
+  height: 100px;
+  position: relative;
+  width: 20px;
+}
+#cross:after {
+  background: red;
+  content: "";
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
+}
+          </style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Base <a href="http://joshrodgers.com/">via Josh Rodgers</a></h2>
+
+          <div id="base"></div>
+
+          <style type="text/css">
+#base {
+  background: red;
+  display: inline-block;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 55px;
+    position: relative;
+    width: 100px;
+}
+#base:before {
+  border-bottom: 35px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -35px;
+  width: 0;
+}
+          </style>
+
+        </div>
+
+      </div>
+
+		</div><!-- shapes -->
+
+	</div><!-- page wrap -->
+
+ <style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #222;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		padding: 20px 0 20px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	#demo-bar-buttons {
+		padding-top: 10px;
+		float: right;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		margin-left: 20px;
+		color: white;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		text-decoration: underline;
+	}
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+</body>
+
+</html>

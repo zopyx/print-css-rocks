@@ -1,0 +1,23 @@
+@import url("../styles/a4.css");
+
+p {
+    font-size: 20px;
+    color: red;
+}
+
+@page {
+    @left-top {
+        font-family: Lato;
+        content: "Text left side";
+        font-size: 15px;
+        color: blue;
+        background: pink;
+        transform-origin: top;
+        transform: rotate(-90deg);
+        transform-origin: 20% 40%;
+    }
+    @right-top {
+        font-family: Lato;
+        content: url("logo.png);
+    }
+}

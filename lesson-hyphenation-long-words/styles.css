@@ -1,0 +1,36 @@
+@import url("../styles/a5.css");
+
+h1 {
+    page-break-before: always;
+}
+
+#v1 {
+    width: 25%;
+}
+
+#v2 {
+    width: 40%;
+}
+
+#v3 {
+    width: 50%;
+}
+
+#v4 {
+    width: 65%;
+}
+
+
+p.hyphenate {
+    text-align: justify;
+    font-size: 10pt;
+    border: 1px solid grey;
+    hyphenate-before: 4;
+    hyphenate-after: 3;
+    hyphens: auto;
+    -epub-hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    page-break-after: always;
+}

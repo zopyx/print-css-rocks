@@ -1,0 +1,20 @@
+@import url("../styles/a4.css");
+
+@page {
+    size: a4;
+
+    /* PDFreactor */
+    -ro-media-size: SRA4 landscape;
+    -ro-bleed-width: 3mm;
+    -ro-crop-size: trim;
+    -ro-marks: trim bleed registration;
+    -ro-marks-width: 1pt;
+    -ro-marks-color: red;
+    -ro-colorbar-bottom-left: gradient-tint;
+    -ro-colorbar-bottom-right: progressive-color;
+    -ro-crop-size: none;
+
+    /* PrinceXML */
+    marks: crop cross;
+}
+

@@ -1,0 +1,32 @@
+@import url("../styles/a4.css");
+
+.box  {
+    width: 8cm;
+    height: 8cm;
+    border: 1px solid blue;
+}
+
+
+#box-1 {
+    background-color: blue;
+    position: absolute;
+    left: 2cm;
+    top: 2cm;
+    z-index: 0;
+}
+
+#box-2 {
+    background-color: rgba(255, 0, 0, 0.75);
+    position: absolute;
+    left: 4cm;
+    top: 4cm;
+    z-index: 100;
+}
+
+#box-3 {
+    background-color: green;
+    position: absolute;
+    left: 6cm;
+    top: 6cm;
+    z-index: -100;
+}

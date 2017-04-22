@@ -1,0 +1,4 @@
+vivliostyle-output.pdf filter=lfs diff=lfs merge=lfs -text
+antennahouse.pdf filter=lfs diff=lfs merge=lfs -text
+pdfreactor.pdf filter=lfs diff=lfs merge=lfs -text
+prince.pdf filter=lfs diff=lfs merge=lfs -text

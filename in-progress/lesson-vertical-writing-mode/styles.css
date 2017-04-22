@@ -1,0 +1,16 @@
+@import url("../styles/a5.css");
+
+p {
+    font-size: 20px;
+    color: red;
+}
+
+p.vrl {
+    writing-mode: vertical-rl;
+}
+
+p.vlr {
+    writing-mode: vertical-lr;
+    color: blue;
+}
+

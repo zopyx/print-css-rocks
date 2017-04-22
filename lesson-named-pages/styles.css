@@ -1,0 +1,43 @@
+@import url("../styles/a5.css");
+
+h1 {
+    font-size: 1.6em;
+    color: orange;
+}
+
+@page Portrait {
+    size: a5;
+}
+
+@page Landscape {
+    size: a5 landscape;
+}
+
+@page Bizarre {
+    size: a6 landscape;
+    background: blue;
+    color: pink;
+    border: 3px dashed yellow;
+    margin: 1.5cm;
+
+    @top-center {
+        content: "This is so bizarre";
+        color: red;
+    }
+    @bottom-center {
+        content: "This is so bizarre";
+        color: red;
+    }
+}
+
+#portait {
+    page: Portrait;
+}
+
+#landscape {
+    page: Landscape;
+}
+
+#bizarre {
+    page: Bizarre;
+}

@@ -1,0 +1,37 @@
+<document>
+    <mylist>
+        <item>item 1</item>
+        <item>item 2</item>
+        <item>item 3</item>
+        <item>item 4</item>
+    </mylist>
+    <myindentedparagraph> Elit dolor aliquam elit, a commodo nisi felis nec
+        nibh. Nulla facilisi. Etiam at tortor. Vivamus quis sapien nec magna
+        scelerisque lobortis.
+
+Curabitur tincidunt viverra justo. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Sed eros ante, mattis ullamcorper,
+posuere quis, tempor vel, metus. Maecenas cursus cursus lacus. Sed risus magna,
+aliquam sed, suscipit sit amet, porttitor quis, odio. Suspendisse cursus justo
+nec urna. Suspendisse potenti. In hac habitasse platea dictumst. Cras quis
+lacus. Vestibulum rhoncus congue lacus. Vivamus euismod, felis quis commodo
+viverra, dolor elit dictum ante, et mollis eros augue at est. Class aptent
+taciti sociosqu.
+    </myindentedparagraph>
+
+    <mytable>
+        <row>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+        </row>
+        <row>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+        </row>
+    </mytable>
+
+</document>

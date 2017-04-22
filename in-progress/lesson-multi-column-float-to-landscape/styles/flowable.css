@@ -1,0 +1,35 @@
+@page {
+    size: a4;
+    margin: 2cm;
+    padding: 0;
+}
+
+@page {
+    @top-center {
+        content: ""
+    }
+    @bottom-center {
+        content: ""
+    }
+}
+
+@page:left {
+    @bottom-left {
+        content: ""
+    }
+}
+
+@page:right {
+    @bottom-right {
+        content: ""
+    }
+}
+
+.floatable-next-landscape {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    outline: 3px solid blue;
+    text-align: center;
+}
