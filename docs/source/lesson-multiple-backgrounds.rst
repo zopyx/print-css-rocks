@@ -51,7 +51,7 @@ PDF files
                     <td>
                         <span class="converter-name">PrinceXML</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-multiple-backgrounds/prince.pdf">Download</a>
                     </td>
@@ -61,11 +61,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-multiple-backgrounds/images/princexml/thumb-prince.png" />
                             </a>
                           
-                           
-                              <div>
-                                Flying sheep :-)
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             
@@ -81,7 +77,7 @@ PDF files
                           
                            
                               <div>
-                                Does not render at all
+                                Does not render at all (no support for multiple background images)
                               </div>
                          
                     </td>
