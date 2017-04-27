@@ -135,7 +135,7 @@ PDF files
                     <td>
                         <span class="converter-name">Vivliostyle</span>
                         <br/>
-                        <span class="converter-status">OK</span>
+                        <span class="converter-status">ERROR</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-css-transformations/vivliostyle-output.pdf">Download</a>
                     </td>
@@ -161,7 +161,11 @@ PDF files
                                 <img class="preview" src="_static/lesson-css-transformations/images/vivliostyle/thumb-vivliostyle-4.png" />
                             </a>
                           
-                          
+                           
+                              <div>
+                                Regression error: images missing on last page
+                              </div>
+                         
                     </td>
                 </tr>
             

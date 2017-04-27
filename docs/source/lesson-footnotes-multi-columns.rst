@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">OK</span>
+                        <span class="converter-status">ERROR</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-footnotes-multi-columns/pdfreactor.pdf">Download</a>
                     </td>
@@ -59,7 +59,11 @@ PDF files
                                 <img class="preview" src="_static/lesson-footnotes-multi-columns/images/pdfreactor/thumb-pdfreactor-4.png" />
                             </a>
                           
-                          
+                           
+                              <div>
+                                Completely broken output
+                              </div>
+                         
                     </td>
                 </tr>
             
@@ -103,7 +107,7 @@ PDF files
                     <td>
                         <span class="converter-name">Vivliostyle</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-footnotes-multi-columns/vivliostyle-output.pdf">Download</a>
                     </td>
@@ -113,11 +117,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-footnotes-multi-columns/images/vivliostyle/thumb-vivliostyle.png" />
                             </a>
                           
-                           
-                              <div>
-                                does not support standard CSS multi columns
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

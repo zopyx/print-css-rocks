@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">OK</span>
+                        <span class="converter-status">ERROR</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-page-areas/pdfreactor.pdf">Download</a>
                     </td>
@@ -47,7 +47,11 @@ PDF files
                                 <img class="preview" src="_static/lesson-page-areas/images/pdfreactor/thumb-pdfreactor-1.png" />
                             </a>
                           
-                          
+                           
+                              <div>
+                                Produces empty pages
+                              </div>
+                         
                     </td>
                 </tr>
             

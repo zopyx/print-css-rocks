@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">with errors</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-right-to-left/pdfreactor.pdf">Download</a>
                     </td>
@@ -47,11 +47,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-right-to-left/images/pdfreactor/thumb-pdfreactor-1.png" />
                             </a>
                           
-                           
-                              <div>
-                                improper rendering and positing of numbers
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

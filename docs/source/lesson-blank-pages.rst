@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-blank-pages/pdfreactor.pdf">Download</a>
                     </td>
@@ -59,11 +59,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-blank-pages/images/pdfreactor/thumb-pdfreactor-4.png" />
                             </a>
                           
-                           
-                              <div>
-                                Issue with first right page, does not clear the blank pages
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             
@@ -71,7 +67,7 @@ PDF files
                     <td>
                         <span class="converter-name">PrinceXML</span>
                         <br/>
-                        <span class="converter-status">OK</span>
+                        <span class="converter-status">(OK)</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-blank-pages/prince.pdf">Download</a>
                     </td>
@@ -101,7 +97,11 @@ PDF files
                                 <img class="preview" src="_static/lesson-blank-pages/images/princexml/thumb-prince-5.png" />
                             </a>
                           
-                          
+                           
+                              <div>
+                                generates extra right blank page
+                              </div>
+                         
                     </td>
                 </tr>
             

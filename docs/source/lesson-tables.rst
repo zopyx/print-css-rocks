@@ -173,11 +173,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-tables/images/vivliostyle/thumb-vivliostyle-4.png" />
                             </a>
                           
-                           
-                              <div>
-                                No support for repeating table header and footer (https://github.com/vivliostyle/vivliostyle-formatter-issues/issues/24)
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

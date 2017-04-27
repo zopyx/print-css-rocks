@@ -219,7 +219,7 @@ PDF files
                     <td>
                         <span class="converter-name">Vivliostyle</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-hyphenation/vivliostyle-output.pdf">Download</a>
                     </td>
@@ -273,11 +273,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-hyphenation/images/vivliostyle/thumb-vivliostyle-9.png" />
                             </a>
                           
-                           
-                              <div>
-                                Vivliostyle does not support hyphenation right now due to the lack of hyphenation support in Webkit
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

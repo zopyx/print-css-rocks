@@ -69,7 +69,7 @@ PDF files
                     <td>
                         <span class="converter-name">Antennahouse</span>
                         <br/>
-                        <span class="converter-status">OK</span>
+                        <span class="converter-status">(OK)</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-texts-rotated-360-degrees/antennahouse.pdf">Download</a>
                     </td>
@@ -79,7 +79,11 @@ PDF files
                                 <img class="preview" src="_static/lesson-texts-rotated-360-degrees/images/antennahouse/thumb-antennahouse.png" />
                             </a>
                           
-                          
+                           
+                              <div>
+                                different disc size compared to all other converters
+                              </div>
+                         
                     </td>
                 </tr>
             

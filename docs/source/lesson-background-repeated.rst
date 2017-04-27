@@ -33,17 +33,17 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-background-repeated/pdfreactor.pdf">Download</a>
                     </td>
                     <td>
-                          
                            
-                              <div>
-                                does not cover the complete height
-                              </div>
-                         
+                            <a href="#" data-featherlight="_static/lesson-background-repeated/images/pdfreactor/pdfreactor.png" >
+                                <img class="preview" src="_static/lesson-background-repeated/images/pdfreactor/thumb-pdfreactor.png" />
+                            </a>
+                          
+                          
                     </td>
                 </tr>
             
@@ -87,7 +87,7 @@ PDF files
                     <td>
                         <span class="converter-name">Vivliostyle</span>
                         <br/>
-                        <span class="converter-status">OK</span>
+                        <span class="converter-status">ERROR</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-background-repeated/vivliostyle-output.pdf">Download</a>
                     </td>
@@ -97,7 +97,11 @@ PDF files
                                 <img class="preview" src="_static/lesson-background-repeated/images/vivliostyle/thumb-vivliostyle.png" />
                             </a>
                           
-                          
+                           
+                              <div>
+                                No background image support
+                              </div>
+                         
                     </td>
                 </tr>
             

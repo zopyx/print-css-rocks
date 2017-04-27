@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">(OK)</span>
+                        <span class="converter-status">ERROR</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-two-column-with-author-box/pdfreactor.pdf">Download</a>
                     </td>
@@ -65,7 +65,7 @@ PDF files
                           
                            
                               <div>
-                                Issue for footnotes in 2-col layout
+                                Contains trash on first three pages
                               </div>
                          
                     </td>

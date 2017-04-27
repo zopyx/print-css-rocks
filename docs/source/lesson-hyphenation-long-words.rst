@@ -63,7 +63,7 @@ PDF files
                     <td>
                         <span class="converter-name">PrinceXML</span>
                         <br/>
-                        <span class="converter-status">(OK)</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-hyphenation-long-words/prince.pdf">Download</a>
                     </td>
@@ -85,11 +85,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-hyphenation-long-words/images/princexml/thumb-prince-3.png" />
                             </a>
                           
-                           
-                              <div>
-                                minor problem with word overlapping with the right border
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             
@@ -131,7 +127,7 @@ PDF files
                     <td>
                         <span class="converter-name">Vivliostyle</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-hyphenation-long-words/vivliostyle-output.pdf">Download</a>
                     </td>
@@ -153,11 +149,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-hyphenation-long-words/images/vivliostyle/thumb-vivliostyle-3.png" />
                             </a>
                           
-                           
-                              <div>
-                                Vivliostyle does not support hyphenation right now due to the lack of hyphenation support in Webkit
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">OK</span>
+                        <span class="converter-status">ERROR</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-xml/pdfreactor.pdf">Download</a>
                     </td>
@@ -43,7 +43,11 @@ PDF files
                                 <img class="preview" src="_static/lesson-xml/images/pdfreactor/thumb-pdfreactor.png" />
                             </a>
                           
-                          
+                           
+                              <div>
+                                Issue rending XML at all
+                              </div>
+                         
                     </td>
                 </tr>
             
