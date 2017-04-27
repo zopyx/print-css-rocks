@@ -3,6 +3,7 @@
 p {
     text-align: justify;
     font-size: 16pt;
+    hyphens: none;
 }
 
 p.hyphenate {
