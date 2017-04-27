@@ -1,7 +1,7 @@
 all: pdfreactor prince vivliostyle antennahouse
 
 pdfreactor:
-	pdfreactor.py --userScript true  styles.css "" "" -i index.xml -o pdfreactor.pdf
+	pdfreactor.py --userStyleSheets true "" "" styles.css -i index.xml -o pdfreactor.pdf
 
 prince: 
 	prince -s styles.css  index.xml -o prince.pdf
