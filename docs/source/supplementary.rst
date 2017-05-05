@@ -19,6 +19,12 @@ Slides
 
       <iframe src="//www.slideshare.net/slideshow/embed_code/key/bmHH11fPovVhsa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques" title="CSS Paged Media - A review of tools and techniques" target="_blank">CSS Paged Media - A review of tools and techniques</a> </strong> from <strong><a href="//www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong> </div>
 
+- `PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht` - by Andreas Jung (Tekom Frühjahrstagung 2017)
+    
+    .. raw:: html 
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/gkL1cqytPE6CGV" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ajung/pdf-generierung-mit-xmlhtml-und-css-was-die-tools-knnen-und-was-nicht" title="PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht." target="_blank">PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht.</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/ajung">Andreas Jung</a></strong> </div>
+
 - `Automatisierte Printlayouts mit Webtechnologien <http://www.pagina-online.de/slides/2015-11-20_PrintCSS_Markupforum_Tobias-Fischer.html#/>`_ by Tobias Fischer (German only)
 
 - `Crossmedia Publishing mit HTML5 und CSS 3 <http://muenchen.ebookcamp.de/wp-content/uploads/sites/2/2015/02/eBookCamp_Tobias-Fischer_PrintCSS.pdf>`_ by Tobias Fischer (German only)
