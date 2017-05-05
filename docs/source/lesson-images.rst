@@ -54,8 +54,20 @@ PDF files
                             <a href="#" data-featherlight="_static/lesson-images/images/pdfreactor/pdfreactor-3.png" >
                                 <img class="preview" src="_static/lesson-images/images/pdfreactor/thumb-pdfreactor-3.png" />
                             </a>
+                           
+                            <a href="#" data-featherlight="_static/lesson-images/images/pdfreactor/pdfreactor-4.png" >
+                                <img class="preview" src="_static/lesson-images/images/pdfreactor/thumb-pdfreactor-4.png" />
+                            </a>
+                           
+                            <a href="#" data-featherlight="_static/lesson-images/images/pdfreactor/pdfreactor-5.png" >
+                                <img class="preview" src="_static/lesson-images/images/pdfreactor/thumb-pdfreactor-5.png" />
+                            </a>
                           
-                          
+                           
+                              <div>
+                                Supports PDF as image format
+                              </div>
+                         
                     </td>
                 </tr>
             
@@ -84,8 +96,16 @@ PDF files
                             <a href="#" data-featherlight="_static/lesson-images/images/princexml/prince-3.png" >
                                 <img class="preview" src="_static/lesson-images/images/princexml/thumb-prince-3.png" />
                             </a>
+                           
+                            <a href="#" data-featherlight="_static/lesson-images/images/princexml/prince-4.png" >
+                                <img class="preview" src="_static/lesson-images/images/princexml/thumb-prince-4.png" />
+                            </a>
                           
-                          
+                           
+                              <div>
+                                Does not support PDF as image format
+                              </div>
+                         
                     </td>
                 </tr>
             
@@ -98,24 +118,12 @@ PDF files
                         <a class="pdf-download" href="_static/lesson-images/antennahouse.pdf">Download</a>
                     </td>
                     <td>
-                           
-                            <a href="#" data-featherlight="_static/lesson-images/images/antennahouse/antennahouse-0.png" >
-                                <img class="preview" src="_static/lesson-images/images/antennahouse/thumb-antennahouse-0.png" />
-                            </a>
-                           
-                            <a href="#" data-featherlight="_static/lesson-images/images/antennahouse/antennahouse-1.png" >
-                                <img class="preview" src="_static/lesson-images/images/antennahouse/thumb-antennahouse-1.png" />
-                            </a>
-                           
-                            <a href="#" data-featherlight="_static/lesson-images/images/antennahouse/antennahouse-2.png" >
-                                <img class="preview" src="_static/lesson-images/images/antennahouse/thumb-antennahouse-2.png" />
-                            </a>
-                           
-                            <a href="#" data-featherlight="_static/lesson-images/images/antennahouse/antennahouse-3.png" >
-                                <img class="preview" src="_static/lesson-images/images/antennahouse/thumb-antennahouse-3.png" />
-                            </a>
                           
-                          
+                           
+                              <div>
+                                Supports PDF as image format
+                              </div>
+                         
                     </td>
                 </tr>
             
@@ -144,8 +152,16 @@ PDF files
                             <a href="#" data-featherlight="_static/lesson-images/images/vivliostyle/vivliostyle-3.png" >
                                 <img class="preview" src="_static/lesson-images/images/vivliostyle/thumb-vivliostyle-3.png" />
                             </a>
+                           
+                            <a href="#" data-featherlight="_static/lesson-images/images/vivliostyle/vivliostyle-4.png" >
+                                <img class="preview" src="_static/lesson-images/images/vivliostyle/thumb-vivliostyle-4.png" />
+                            </a>
                           
-                          
+                           
+                              <div>
+                                Does not support PDF as image format
+                              </div>
+                         
                     </td>
                 </tr>
             
