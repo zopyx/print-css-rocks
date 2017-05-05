@@ -34,6 +34,11 @@ div.readme
     word-break: break-word;
 }
 
+div.readme * {
+    font-weight: normal !important;
+    font-size: 1em !important
+}
+
 caption {
     text-align: left !important;
     font-weight: bold !important;
