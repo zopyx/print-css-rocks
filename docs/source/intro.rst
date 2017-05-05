@@ -63,11 +63,11 @@ Using this tutorial
 
 You can either download all the complete tutorials with samples from
 
-https://github.com/zopyx/css-paged-media-tutorial/releases
+https://github.com/zopyx/print-css-rocks/releases
 
 or you checkout the repository using git::
 
-    git clone git@github.com:zopyx/css-paged-media-tutorial.git
+    git clone git@github.com:zopyx/print-css-rocks.git
 
 The core examples work both with ```pdfreactor``, ``prince`` or ``run.sh`` (Antennahouse). 
 Ensure that the related binary/binaries are configured in the ``$PATH`` of your shell environment.
@@ -113,12 +113,12 @@ across all lessons for generating a PDF with one of the mentioned converters::
 Source code
 -----------
 
-- https://github.com/zopyx/css-paged-media-tutorial
+- https://github.com/zopyx/print-css-rocks
 
 Bugtracker
 -----------
 
-- https://github.com/zopyx/css-paged-media-tutorial/issues
+- https://github.com/zopyx/print-css-rocks/issues
 
 .. raw:: html
 
