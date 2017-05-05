@@ -13,7 +13,7 @@ Lesson: lesson-css-transformations3
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-css-transformations3
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-css-transformations3
 
 PDF files
 +++++++++

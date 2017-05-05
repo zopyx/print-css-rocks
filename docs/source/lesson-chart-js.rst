@@ -13,7 +13,7 @@ Lesson: lesson-chart-js
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-chart-js
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-chart-js
 
 PDF files
 +++++++++
@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-chart-js/pdfreactor.pdf">Download</a>
                     </td>
@@ -43,11 +43,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-chart-js/images/pdfreactor/thumb-pdfreactor.png" />
                             </a>
                           
-                           
-                              <div>
-                                Regression: empty page
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

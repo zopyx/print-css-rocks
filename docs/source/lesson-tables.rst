@@ -13,7 +13,7 @@ Lesson: lesson-tables
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-tables
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-tables
 
 PDF files
 +++++++++

@@ -13,7 +13,7 @@ Lesson: lesson-footnotes-multi-columns
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-footnotes-multi-columns
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-footnotes-multi-columns
 
 PDF files
 +++++++++

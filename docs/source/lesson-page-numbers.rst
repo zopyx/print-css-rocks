@@ -13,7 +13,7 @@ Lesson: lesson-page-numbers
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-page-numbers
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-page-numbers
 
 PDF files
 +++++++++

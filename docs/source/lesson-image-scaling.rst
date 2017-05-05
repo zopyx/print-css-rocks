@@ -13,7 +13,7 @@ Lesson: lesson-image-scaling
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-image-scaling
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-image-scaling
 
 PDF files
 +++++++++

@@ -13,7 +13,7 @@ Lesson: lesson-chapter-numbering
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-chapter-numbering
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-chapter-numbering
 
 PDF files
 +++++++++

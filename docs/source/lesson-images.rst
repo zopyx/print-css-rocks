@@ -13,7 +13,7 @@ Lesson: lesson-images
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-images
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-images
 
 PDF files
 +++++++++

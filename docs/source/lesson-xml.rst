@@ -13,7 +13,7 @@ Lesson: lesson-xml
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-xml
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-xml
 
 PDF files
 +++++++++
@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-xml/pdfreactor.pdf">Download</a>
                     </td>
@@ -43,11 +43,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-xml/images/pdfreactor/thumb-pdfreactor.png" />
                             </a>
                           
-                           
-                              <div>
-                                Issue rending XML at all
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

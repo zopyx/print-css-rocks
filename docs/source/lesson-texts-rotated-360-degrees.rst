@@ -13,7 +13,7 @@ Lesson: lesson-texts-rotated-360-degrees
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-texts-rotated-360-degrees
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-texts-rotated-360-degrees
 
 PDF files
 +++++++++

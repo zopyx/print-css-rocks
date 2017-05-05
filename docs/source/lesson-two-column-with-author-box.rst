@@ -13,7 +13,7 @@ Lesson: lesson-two-column-with-author-box
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-two-column-with-author-box
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-two-column-with-author-box
 
 PDF files
 +++++++++

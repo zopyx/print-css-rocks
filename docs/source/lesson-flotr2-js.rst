@@ -13,7 +13,7 @@ Lesson: lesson-flotr2-js
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-flotr2-js
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-flotr2-js
 
 PDF files
 +++++++++

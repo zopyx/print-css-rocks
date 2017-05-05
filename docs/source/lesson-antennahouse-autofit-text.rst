@@ -13,7 +13,7 @@ Lesson: lesson-antennahouse-autofit-text
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-antennahouse-autofit-text
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-antennahouse-autofit-text
 
 PDF files
 +++++++++

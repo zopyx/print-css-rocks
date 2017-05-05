@@ -13,7 +13,7 @@ Lesson: lesson-basic
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-basic
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-basic
 
 PDF files
 +++++++++

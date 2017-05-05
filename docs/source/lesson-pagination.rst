@@ -13,7 +13,7 @@ Lesson: lesson-pagination
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-pagination
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-pagination
 
 PDF files
 +++++++++

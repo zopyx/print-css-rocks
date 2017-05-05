@@ -13,7 +13,7 @@ Lesson: lesson-named-pages
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-named-pages
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-named-pages
 
 PDF files
 +++++++++

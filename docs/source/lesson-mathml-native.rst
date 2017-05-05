@@ -13,7 +13,7 @@ Lesson: lesson-mathml-native
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-mathml-native
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-mathml-native
 
 PDF files
 +++++++++

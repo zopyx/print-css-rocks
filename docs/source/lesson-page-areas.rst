@@ -13,7 +13,7 @@ Lesson: lesson-page-areas
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-page-areas
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-page-areas
 
 PDF files
 +++++++++
@@ -33,7 +33,7 @@ PDF files
                     <td>
                         <span class="converter-name">PDFreactor</span>
                         <br/>
-                        <span class="converter-status">ERROR</span>
+                        <span class="converter-status">OK</span>
                         <br/>
                         <a class="pdf-download" href="_static/lesson-page-areas/pdfreactor.pdf">Download</a>
                     </td>
@@ -43,11 +43,7 @@ PDF files
                                 <img class="preview" src="_static/lesson-page-areas/images/pdfreactor/thumb-pdfreactor.png" />
                             </a>
                           
-                           
-                              <div>
-                                Produces empty pages
-                              </div>
-                         
+                          
                     </td>
                 </tr>
             

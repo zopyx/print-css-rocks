@@ -13,7 +13,7 @@ Lesson: lesson-positioning
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-positioning
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-positioning
 
 PDF files
 +++++++++

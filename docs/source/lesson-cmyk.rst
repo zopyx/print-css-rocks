@@ -13,7 +13,7 @@ Lesson: lesson-cmyk
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-cmyk
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-cmyk
 
 PDF files
 +++++++++

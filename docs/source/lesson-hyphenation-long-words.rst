@@ -13,7 +13,7 @@ Lesson: lesson-hyphenation-long-words
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-hyphenation-long-words
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-hyphenation-long-words
 
 PDF files
 +++++++++

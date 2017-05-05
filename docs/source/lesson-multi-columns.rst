@@ -13,7 +13,7 @@ Lesson: lesson-multi-columns
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-multi-columns
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-multi-columns
 
 PDF files
 +++++++++

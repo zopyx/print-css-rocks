@@ -13,7 +13,7 @@ Lesson: lesson-complex-css
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-complex-css
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-complex-css
 
 PDF files
 +++++++++

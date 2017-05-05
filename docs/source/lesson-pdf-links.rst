@@ -13,7 +13,7 @@ Lesson: lesson-pdf-links
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-pdf-links
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-pdf-links
 
 PDF files
 +++++++++

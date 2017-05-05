@@ -13,7 +13,7 @@ Lesson: lesson-css-gradients
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-css-gradients
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-css-gradients
 
 PDF files
 +++++++++

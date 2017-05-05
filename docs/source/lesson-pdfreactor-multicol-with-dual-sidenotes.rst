@@ -13,7 +13,7 @@ Lesson: lesson-pdfreactor-multicol-with-dual-sidenotes
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-pdfreactor-multicol-with-dual-sidenotes
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-pdfreactor-multicol-with-dual-sidenotes
 
 PDF files
 +++++++++

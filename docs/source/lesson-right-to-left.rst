@@ -13,7 +13,7 @@ Lesson: lesson-right-to-left
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-right-to-left
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-right-to-left
 
 PDF files
 +++++++++

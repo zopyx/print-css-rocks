@@ -13,7 +13,7 @@ Lesson: lesson-css-zindex
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-css-zindex
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-css-zindex
 
 PDF files
 +++++++++

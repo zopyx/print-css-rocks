@@ -13,7 +13,7 @@ Lesson: lesson-cross-references
 Repository files
 ++++++++++++++++
 
-- https://github.com/zopyx/css-paged-media-tutorial/tree/master/lesson-cross-references
+- https://github.com/zopyx/print-css-rocks/tree/master/lesson-cross-references
 
 PDF files
 +++++++++
