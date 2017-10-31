@@ -1,0 +1,5 @@
+graphic {
+    -ro-replacedelement: image;
+    -ro-source: -ro-attr(source);
+    width: 100%
+}
