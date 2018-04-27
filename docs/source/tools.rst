@@ -11,7 +11,7 @@ Converters, tools and services
 PDFreactor
 ++++++++++
 
-* Current version: 9
+* Current version: 9.1
 * Website: http://www.pdfreactor.com
 * `CSS Compliance <http://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
 * Sample documents: http://www.pdfreactor.com/samples/
@@ -27,11 +27,12 @@ PDFreactor
   * Reasonable pricing.
   * Good and responsive support.
   * PDFreactor is now our premier choice in customer projects.
+  * PDFreactor introduced ZUGFred integration  
 
 PrinceXML
 +++++++++
 
-* Current version: 11 (revision 1)
+* Current version: 11 (revision 3)
 * Website: http://www.princexml.com
 * Sample documents: http://www.princexml.com/samples
 * `CSS Compliance <http://www.princexml.com/doc/properties/>`_
@@ -52,20 +53,25 @@ PrinceXML
 Antennahouse CSS Formatter
 ++++++++++++++++++++++++++
 
-* Current version: 6.4 (MR2)
+* Current version: 6.5 (MR4)
 * Website: http://www.antennahouse.com
 * `CSS Compliance <http://www.antennahouse.com/antenna1/css-conformance/>`_
 * Pricing:
 
   * AH Server license with one CPU: 5000 USD (+ 4000 USD per additional CPU)
+  * AH standalone license: 	1250 USD
   * AH Lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU) 
   * for all prices see `here <https://www.antennahouse.com/antenna1/prices/>`_
 
 * Personal rating:
 
-  * Perhaps the formatter with the best quality and typographical features
-    (in fact it is based on their own XSL-FO converter Antennahouse V 6.2).
-  * high price
+  * best available solution
+  * very compliant
+  * lots of specific extensions and features known from the standard Antennahouse
+    XSL-FO converter
+  * good and responsive support
+  * documentation is extensive although partly a bit unorganized or confusing
+
 
 Vivliostyle Formatter
 +++++++++++++++++++++
@@ -119,7 +125,7 @@ pdfChip
 Weasyprint
 ++++++++++
 
-* Current version: 0.36
+* Current version: 0.42
 * Website: http://www.weasyprint.org
 * Pricing:
 
