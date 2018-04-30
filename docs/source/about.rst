@@ -147,6 +147,14 @@ Contact
 | `www.zopyx.com <https://zopyx.com>`_
 | `@printcssrocks on Twitter <https://twitter.com/printcssrocks>`_
 
+
+Imprint and privacy statement
+-----------------------------
+
+`Imprint and privacy statement <https://www.zopyx.com/imprint>`_
+
+
+
 Contribute & participate
 ------------------------
 
