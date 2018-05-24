@@ -32,7 +32,7 @@ import sphinx_bootstrap_theme
 # ones.
 extensions = [
     'sphinx.ext.viewcode',
-    'sphinxcontrib.googleanalytics',
+#    'sphinxcontrib.googleanalytics',
 ]
 
 
@@ -376,5 +376,5 @@ epub_exclude_files = ['search.html']
 
 
 # Google analytics
-googleanalytics_id  = 'UA-65716-20'
-googleanalytics_enabled = True
+#googleanalytics_id  = 'UA-65716-20'
+#googleanalytics_enabled = True
