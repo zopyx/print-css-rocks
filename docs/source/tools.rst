@@ -32,22 +32,23 @@ PDFreactor
 PrinceXML
 +++++++++
 
-* Current version: 11 (revision 3)
+* Current version: 12 
 * Website: http://www.princexml.com
 * Sample documents: http://www.princexml.com/samples
 * `CSS Compliance <http://www.princexml.com/doc/properties/>`_
 * Pricing: 
 
-  * 4 CPU server license:    3800 USD
+  * server license (independent of #CPUs):    3800 USD
   * academic server license: 1900 USD
   * personal desktop license: 495 USD
+  * non-commercial license: free
 
 * Personal rating:
 
   * Similar quality and similar level of complicance as PDFreactor 
-  * Still poor and unstructured documentation
+  * Good and extensive documentation
   * Good and responsive support
-  * A bit too expensive compared to PDFreactor
+  * A bit overpriced compared to PDFreactor
   * We used PrinceXML for many years before we discovered and switched to PDFreactor
 
 Antennahouse CSS Formatter
