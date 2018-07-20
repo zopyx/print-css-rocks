@@ -46,15 +46,18 @@ renderer internals in order to implement an adaptive image layout.
 MathML support
 --------------
 
-Brought to the point: MathML support in all renderers is broken at the moment.
-Lots of formatting and layout issues with native renderers and renderers based
-on MathJax (Vivliostyle). It is questionable if MathML will ever work. The only
-future for MathML is a cross-plattform support for a Javascript based rendering
-engine like MathJax. However neither PrinceXML nor PDFreactor nor Antennahouse
-support MathJax. So the only recommendation for using MathML directly: forget
-it.  The only valid option is to convert MathML somehow to LaTeX and then SVG.
-MathML parts of your input should be replaced with a related SVG. However the
-toolchain here also is not straight forward here.
+Brought to the point: MathML support is supported by PrinceXML, PDFreactor and
+Antennahouse. PDFReactor and PrinceXML have various issues with MathML. Best
+support MathML support is given in Antennahouse but also with various rendering
+issues.
+
+It is questionable if MathML will ever work. The only future for MathML is a
+cross-plattform support for a Javascript based rendering engine like MathJax.
+However neither PrinceXML nor PDFreactor nor Antennahouse support MathJax. So
+the only recommendation for using MathML directly: forget it.  The only valid
+option is to convert MathML somehow to LaTeX and then SVG.  MathML parts of
+your input should be replaced with a related SVG. However the toolchain here
+also is not straight forward here.
 
 Forms
 -----
@@ -62,17 +65,16 @@ Forms
 PDF forms are widely available and used. PDFreactor is the only tool that can
 generate PDF files with forms support. 
 
-Line grids
-----------
+Baseline grids
+--------------
 
 Support for line grids or grids in general is an upcoming features. There is an
 W3C draft `CSS Line Grid Module Level 1
-<https://drafts.csswg.org/css-line-grid/>`_ in the making. The this time there
-is only support for line grids in `PDFreactor Version 8
+<https://drafts.csswg.org/css-line-grid/>`_ in the making. At this time there
+is only support for line grids in `PDFreactor Version 9
 <http://www.pdfreactor.com/product/doc_html/index.html#LineGridsAndSnapping>`_
-through vendor specific properties ``-ro-line-snap`` and ``-ro-line-grid``.
-The status of grid support in Antennahouse is unclear. No support for grids
-in PrinceXML and Vivliostyle.
+through vendor specific properties ``-ro-line-snap`` and ``-ro-line-grid`` and in
+Antennahouse through their own extension. 
 
 Multimedia (video and audio)
 ----------------------------
@@ -93,7 +95,7 @@ Advanced features like
 * accessible PDFs 
 * archive PDFs (PDF/A)
 
-are best supported by Antennahouse and PDFreactor.
+are best supported by Antennahouse, PrinceXML and PDFreactor.
 
 XML vs. HTML
 ------------
