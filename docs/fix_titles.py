@@ -16,8 +16,8 @@ for name in os.listdir(html_dir):
         title = nodes[0].text
         title += u' - CSS Paged Media Tutorial and Showcase - Andreas Jung, ZOPYX'
         nodes[0].text = title
-        print 'changed'
-        print fname
+        print('changed')
+        print(fname)
 
 
     nodes = root.xpath('//head')
