@@ -1,4 +1,4 @@
-all: pdfreactor prince antennahouse vivliostyle
+all: pdfreactor prince antennahouse 
 
 pdfreactor:
 	-pdfreactor.py -v --addLinks --addBookmarks --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf
@@ -40,7 +40,7 @@ push:
 
 docs: FORCE
 	git pull
-	virtualenv-2.7 .
+	python3 -m venv .
 	bin/pip install sphinx sphinx-bootstrap-theme ninja sphinxcontrib-googleanalytics lxml
 	cd docs; rm -fr build; make html; ../bin/python fix_titles.py
 	rm -fr /var/www/print-css-rocks/html
