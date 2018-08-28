@@ -28,11 +28,11 @@ images: FORCE
 	-convert -density 150 -quality 85 pdfreactor.pdf                                     images/pdfreactor/pdfreactor.png
 	-convert -density 150 -quality 85 prince.pdf                                         images/princexml/prince.png
 	-convert -density 150 -quality 85 antennahouse.pdf                                   images/antennahouse/antennahouse.png
-	-convert -density 150 -quality 85 vivliostyle-output.pdf                             images/vivliostyle/vivliostyle.png
+#	-convert -density 150 -quality 85 vivliostyle-output.pdf                             images/vivliostyle/vivliostyle.png
 	-convert -thumbnail 100x100 -background white -alpha remove pdfreactor.pdf           images/pdfreactor/thumb-pdfreactor.png
 	-convert -thumbnail 100x100 -background white -alpha remove prince.pdf               images/princexml/thumb-prince.png
 	-convert -thumbnail 100x100 -background white -alpha remove antennahouse.pdf         images/antennahouse/thumb-antennahouse.png
-	-convert -thumbnail 100x100 -background white -alpha remove vivliostyle-output.pdf   images/vivliostyle/thumb-vivliostyle.png
+#	-convert -thumbnail 100x100 -background white -alpha remove vivliostyle-output.pdf   images/vivliostyle/thumb-vivliostyle.png
 
 push: 
 	git push
