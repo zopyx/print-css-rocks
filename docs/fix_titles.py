@@ -34,6 +34,6 @@ for name in os.listdir(html_dir):
         head.append(node)
 
 
-    html = lxml.html.tostring(root)
-    with open(fname, 'wb') as fp:
-        fp.write(html.encode('utf8'))
+    html = lxml.html.tostring(root, encoding=str)
+    with open(fname, 'w') as fp:
+        fp.write(html)
