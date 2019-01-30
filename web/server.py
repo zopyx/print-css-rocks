@@ -126,8 +126,6 @@ async def index(request, lesson):
             with open(os.path.join(lesson_dir, 'index.xml')) as fp:
                 source = fp.read()
 
-        source = jinja2.Markup(source)
-
         params = dict(
             name=lesson,
             pdfs=pdfs,
