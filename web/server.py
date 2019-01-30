@@ -1,6 +1,7 @@
 import os
 from configparser import ConfigParser
 
+import jinja2
 from sanic import Sanic
 from sanic import response
 from sanic_session import Session
@@ -112,14 +113,30 @@ async def index(request, lesson):
             comp[section] = dict(name=section, pdf_file=pdf_file, status=status, message=message)
 
         has_css = os.path.exists(os.path.join(lesson_dir, 'styles.css'))
+        css_text = ''
+        if has_css:
+            with open(os.path.join(lesson_dir, 'styles.css')) as fp:
+                css_text = fp.read()
+
+        source = ''
+        if os.path.exists(os.path.join(lesson_dir, 'index.html')):
+            with open(os.path.join(lesson_dir, 'index.html')) as fp:
+                source = fp.read()
+        elif os.path.exists(os.path.join(lesson_dir, 'index.xml')):
+            with open(os.path.join(lesson_dir, 'index.xml')) as fp:
+                source = fp.read()
+
+        source = jinja2.Markup(source)
 
         params = dict(
             name=lesson,
             pdfs=pdfs,
             has_css=has_css,
+            css_text=css_text,
+            source=source, 
             mode=mode
             )
-
+    print(source)
     return dict(params=params) 
 
 if __name__ == '__main__':
