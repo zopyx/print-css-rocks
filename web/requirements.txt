@@ -1,0 +1,3 @@
+sanic
+sanic-jinja2
+sanic-session
