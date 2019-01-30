@@ -136,11 +136,12 @@ def get_lesson_data(lesson):
             has_css=has_css,
             css_text=css_text,
             source=source, 
+            readme=readme,
             mode=mode
             )
         return params
 
-        
+
 if __name__ == '__main__':
     app.static('/static', './static')
     app.run(host='0.0.0.0', port=8000, debug=True)
