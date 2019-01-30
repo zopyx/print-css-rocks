@@ -1,0 +1,9 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(OpenSans-Regular.ttf);
+}
+
+#kangaroo {
+    font-family: OpenSans;
+    font-size: 100pt;
+}

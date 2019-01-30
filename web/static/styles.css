@@ -26,6 +26,7 @@ li.L5, li.L6, li.L7, li.L8 {
   list-style-type: decimal !important;
 }
 
+.compliance,
 #pdf-files,
 #css-text,
 #source-text {
