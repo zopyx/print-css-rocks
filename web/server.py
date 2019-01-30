@@ -1,4 +1,5 @@
 import os
+import collections
 from configparser import ConfigParser
 
 import jinja2
@@ -63,9 +64,28 @@ async def download_pdf(request, lesson, filename):
     return await response.file(download_fn)
 
 
+@app.route('/lessons')
+@jinja.template('lessons.html')  # decorator method is staticmethod
+async def lessons(request):
+
+    compliance = collections.OrderedDict()
+    compliance['intro'] = []
+    compliance['advanced'] = []
+    compliance['special'] = []
+
+    for lesson in os.listdir(LESSON_ROOT):
+        if not lesson.startswith('lesson-'):
+            continue
+        lesson_data = get_lesson_data(lesson)
+        cmpl = lesson_data['compliance']
+        readme = lesson_data['readme']
+        category = lesson_data['category']
+        compliance[category].append(dict(name=lesson, converters=cmpl, readme=readme))
+    return dict(compliance=compliance)
+
 @app.route('/lesson/<lesson>')
 @jinja.template('lesson.html')  # decorator method is staticmethod
-async def index(request, lesson):
+async def lesson(request, lesson):
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     if not os.path.exists(lesson_dir):
         raise NotFound('Lession {} does not exist'.format(lesson))
@@ -82,7 +102,7 @@ def get_lesson_data(lesson):
         readme = open(readme_fn).read()
 
     pdfs = list()
-    comp = dict()
+    compliance = dict()
     mode = 'html'
     category = 'intro'
     if os.path.exists(conversion_ini):
@@ -114,7 +134,7 @@ def get_lesson_data(lesson):
                 images = [image for image in images if not image.startswith('thumb-')]
 
             pdfs.append(dict(name=section, pdf_file=pdf_file, status=status, message=message, images=images))
-            comp[section] = dict(name=section, pdf_file=pdf_file, status=status, message=message)
+            compliance[section] = dict(name=section, pdf_file=pdf_file, status=status, message=message)
 
         has_css = os.path.exists(os.path.join(lesson_dir, 'styles.css'))
         css_text = ''
@@ -131,13 +151,15 @@ def get_lesson_data(lesson):
                 source = fp.read()
 
         params = dict(
+            category=category,
             name=lesson,
             pdfs=pdfs,
             has_css=has_css,
             css_text=css_text,
             source=source, 
             readme=readme,
-            mode=mode
+            mode=mode,
+            compliance=compliance,
             )
         return params
 
