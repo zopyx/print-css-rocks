@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+        <link href="/static/lesson.css" type="text/css" rel="stylesheet"/>
+        <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+        <script src="//code.jquery.com/jquery-latest.js"></script>
+        <script src="/static/run_prettify.js" type="text/javascript" charset="utf-8"></script>
+        <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1>Lesson: {{params.name}}</h1>
+
+        <div class="alert alert-info">{{params.readme}}</div>
+
+        <h2>Repository files</h2>
+        <ul>
+            <a href="https://github.com/zopyx/print-css-rocks/tree/master/{{ params.name }}">
+                https://github.com/zopyx/print-css-rocks/tree/master/{{ params.name }}
+            </a>
+        </ul>
+
+        <h2>PDF files</h2>
+
+        <table class="table-bordered table-striped table">
+            <thead>
+                <tr>
+                    <th>Converter</th>
+                    <th>Status</th>
+                    <th>PDF Preview</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in params.pdfs %}
+                    <tr>
+                        <td>
+                            <span class="converter-name">{{ entry.name }}</span>
+                            <br/>
+                            <a class="pdf-download" href="{{request.url}}/download/{{ entry['pdf_file'] }}">Download</a>
+                        </td>
+                        <td>
+                            <span class="converter-status">{{ entry.status }}</span>
+                        </td>
+                        <td>
+                            {% for image in entry.images %} 
+                                <a href="#" data-featherlight="{{request.url}}/download/images/{{ entry.name.lower() }}/{{ image }}" >
+                                    <img class="preview" src="{{request.url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
+                                </a>
+                            {% endfor %}
+                            {% if entry.message %} 
+                                <div>
+                                    {{ entry.message }}
+                                </div>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+        {% if params.has_css %}
+            <h2>Stylesheet</h2>
+            <pre class="prettyprint lang-css">{{params.css_text}}</pre>
+        {% endif %}
+
+        {% if params.mode == 'html' %}
+            <h2>HTML input</h2>
+        {% endif %}
+        {% if params.mode == 'xml' %}
+            <h2>XML input</h2>
+        {% endif %}
+        <pre class="prettyprint lang-html">{{params.source | e }}</pre>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <footer>
+            &copy; 2019; <a href="https://www.zoypx.com">Andreas Jung, ZOPYX</a>
+        </footer>
+    </body>
+</html>
+
