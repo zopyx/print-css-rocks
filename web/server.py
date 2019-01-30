@@ -69,8 +69,12 @@ async def index(request, lesson):
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     if not os.path.exists(lesson_dir):
         raise NotFound('Lession {} does not exist'.format(lesson))
-    print(lesson)
+    return dict(params=get_lesson_data(lesson) )
 
+
+def get_lesson_data(lesson):
+
+    lesson_dir = os.path.join(LESSON_ROOT, lesson)
     conversion_ini = os.path.join(lesson_dir, 'conversion.ini')
     readme_fn = os.path.join(lesson_dir, 'README.rst')
     readme = None
@@ -134,9 +138,9 @@ async def index(request, lesson):
             source=source, 
             mode=mode
             )
-    print(source)
-    return dict(params=params) 
+        return params
 
+        
 if __name__ == '__main__':
     app.static('/static', './static')
     app.run(host='0.0.0.0', port=8000, debug=True)
