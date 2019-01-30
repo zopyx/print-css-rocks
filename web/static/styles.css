@@ -1,0 +1,18 @@
+h1 {
+    margin-bottom: 1em;
+}
+
+caption {
+    color: red;
+    font-size: 2em;
+    caption-side: top;
+}
+
+.readme {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+td.title {
+    max-width: 50%;
+}
