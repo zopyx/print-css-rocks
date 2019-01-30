@@ -2,6 +2,10 @@ h1 {
     margin-bottom: 1em;
 }
 
+table {
+    margin-bottom: 2em !important;
+}
+
 caption {
     color: red;
     font-size: 2em;
@@ -15,4 +19,19 @@ caption {
 
 td.title {
     max-width: 50%;
+}
+
+li.L0, li.L1, li.L2, li.L3,
+li.L5, li.L6, li.L7, li.L8 {
+  list-style-type: decimal !important;
+}
+
+#pdf-files,
+#css-text,
+#source-text {
+    width: 75%;
+}
+
+img.preview {
+    border: 1px solid #666;
 }

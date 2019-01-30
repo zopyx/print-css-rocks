@@ -13,7 +13,7 @@
 
         <h2>PDF files</h2>
 
-        <table class="table-bordered table-striped table">
+        <table class="table-bordered table-striped table" id="pdf-files">
             <thead>
                 <tr>
                     <th>Converter</th>
@@ -51,7 +51,7 @@
 
         {% if params.has_css %}
             <h2>Stylesheet</h2>
-            <pre class="prettyprint lang-css">{{params.css_text}}</pre>
+            <pre id="css-text" class="prettyprint linenums language-css">{{params.css_text}}</pre>
         {% endif %}
 
         {% if params.mode == 'html' %}
@@ -60,6 +60,6 @@
         {% if params.mode == 'xml' %}
             <h2>XML input</h2>
         {% endif %}
-        <pre class="prettyprint lang-html">{{params.source | e }}</pre>
+        <pre id="source-text" class="prettyprint linenums language-html">{{params.source | e }}</pre>
 
 {% endblock %}
