@@ -1,3 +1,6 @@
+.. image:: /static/banner.png
+    :class: banner
+
 Converters, tools and services
 ==============================
 
@@ -34,7 +37,7 @@ PrinceXML
 * Current version: 12 
 * Website: http://www.princexml.com
 * Sample documents: http://www.princexml.com/samples
-* `CSS Compliance <http://www.princexml.com/doc/properties/>`_
+* `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
 * Pricing: 
 
   * server license (independent of #CPUs):    3800 USD
@@ -55,7 +58,7 @@ Antennahouse CSS Formatter
 
 * Current version: 6.5 (MR4)
 * Website: http://www.antennahouse.com
-* `CSS Compliance <http://www.antennahouse.com/antenna1/css-conformance/>`_
+* `CSS & Compliance  <http://www.antennahouse.com/antenna1/css-conformance/>`_
 * Pricing:
 
   * AH Server license with one CPU: 5000 USD (+ 4000 USD per additional CPU)

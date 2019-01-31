@@ -1,3 +1,9 @@
+
+
+.. image:: /static/banner.png
+    :class: banner
+
+
 Blog articles
 =============
 

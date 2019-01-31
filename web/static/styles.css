@@ -125,6 +125,7 @@ img.ajung {
 }
 
 img.banner {
+    width: 500px;
     margin-top: 1em;
     margin-bottom: 2em;
 }

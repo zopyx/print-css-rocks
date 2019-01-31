@@ -1,3 +1,8 @@
+
+.. image:: /static/banner.png
+    :class: banner
+
+
 References and samples
 ======================
 
