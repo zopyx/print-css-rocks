@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,300,700);
+
+body {
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
 h1 {
     margin-bottom: 1em;
 }
@@ -6,15 +12,20 @@ table {
     margin-bottom: 2em !important;
 }
 
+img#banner {
+    max-height: 80px;
+    margin-right: 20px;
+}
+
 caption {
-    color: red;
+    color: #555;
     font-size: 2em;
     caption-side: top;
 }
 
 .readme {
     font-size: 0.8em;
-    color: #aaa;
+    color: #888;
 }
 
 td.title {
@@ -28,11 +39,34 @@ li.L5, li.L6, li.L7, li.L8 {
 
 .compliance,
 #pdf-files,
-#css-text,
-#source-text {
+#xcss-text,
+#xsource-text {
     width: 75%;
+}
+
+#body-wrapper {
+    margin-top: 120px;
+
+}
+
+#disqus-wrapper {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding: 2em;
+    background: #eee;
 }
 
 img.preview {
     border: 1px solid #666;
+}
+
+#projects-table td {
+    width: 25%;
+}
+
+#projects-table td img {
+    width: 80%;
+    text-align: left;
 }

@@ -13,6 +13,7 @@
 
         <h2>PDF files</h2>
 
+
         <table class="table-bordered table-striped table" id="pdf-files">
             <thead>
                 <tr>
@@ -49,17 +50,25 @@
             </tbody>
         </table>
 
-        {% if params.has_css %}
-            <h2>Stylesheet</h2>
-            <pre id="css-text" class="prettyprint linenums language-css">{{params.css_text}}</pre>
-        {% endif %}
+        <div class="row">
 
-        {% if params.mode == 'html' %}
-            <h2>HTML input</h2>
-        {% endif %}
-        {% if params.mode == 'xml' %}
-            <h2>XML input</h2>
-        {% endif %}
-        <pre id="source-text" class="prettyprint linenums language-html">{{params.source | e }}</pre>
+            <div class="col-sm-6">
+                {% if params.mode == 'html' %}
+                    <h2>HTML input</h2>
+                {% endif %}
+                {% if params.mode == 'xml' %}
+                    <h2>XML input</h2>
+                {% endif %}
+                <pre id="source-text" class="prettyprint linenums language-html">{{params.source | e }}</pre>
+            </div>
+
+            <div class="col-sm-6">
+                {% if params.has_css %}
+                    <h2>Stylesheet</h2>
+                    <pre id="css-text" class="prettyprint linenums language-css">{{params.css_text}}</pre>
+                {% endif %}
+            </div>
+
+        </div>
 
 {% endblock %}

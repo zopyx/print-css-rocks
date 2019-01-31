@@ -30,6 +30,37 @@ jinja = SanicJinja2(app)
 # jinja = SanicJinja2()
 # jinja.init_app(app)
 
+def render_rst(rst_filename):
+
+    from docutils import core
+    from docutils.writers.html4css1 import Writer,HTMLTranslator
+
+    class HTMLFragmentTranslator( HTMLTranslator ):
+        def __init__( self, document ):
+            HTMLTranslator.__init__( self, document )
+            self.head_prefix = ['','','','','']
+            self.body_prefix = []
+            self.body_suffix = []
+            self.stylesheet = []
+        def astext(self):
+            return ''.join(self.body)
+
+    html_fragment_writer = Writer()
+    html_fragment_writer.translator_class = HTMLFragmentTranslator
+
+    def reST_to_html( s ):
+        result = core.publish_string( s, writer = html_fragment_writer )
+        result = result.decode('utf8')
+        return result
+
+    fn = os.path.join(os.path.dirname(__file__), 'content', rst_filename)
+    if not os.path.exists(fn):
+        raise IOError('RST file {} not found'.format(fn))
+    with open(fn) as fp:
+        rst_data = fp.read()
+    return reST_to_html(rst_data)
+
+
 @app.route('/')
 @jinja.template('index.html')  # decorator method is staticmethod
 async def index(request):
@@ -38,6 +69,42 @@ async def index(request):
     request['flash']('warning message', 'warning')
     request['flash']('error message', 'error')
     return {'greetings': 'Hello, sanic!'}
+
+@app.route('/introduction')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def introduction(request):
+    return {'body': render_rst('intro.rst')}
+
+@app.route('/tools')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def tools(request):
+    return {'body': render_rst('tools.rst')}
+
+@app.route('/references')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def references(request):
+    return {'body': render_rst('references.rst')}
+
+@app.route('/related')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def related(request):
+    return {'body': render_rst('related.rst')}
+
+@app.route('/discussion')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def discussion(request):
+    return {'body': render_rst('discussion.rst')}
+
+@app.route('/blog')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def blog(request):
+    return {'body': render_rst('blog.rst')}
+
+@app.route('/about')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def about(request):
+    return {'body': render_rst('about.rst')}
+
 
 @app.route('/lesson/<lesson>/download/images/<vendor>/<filename>')
 async def download_image(request, lesson, vendor, filename):

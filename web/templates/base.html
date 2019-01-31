@@ -15,14 +15,67 @@
     </head>
     <body>
 
-        {% block body %}
-        {% endblock %}
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a href="/">
+                <img id="banner" src="/static/logo.png"/>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/introduction">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tools">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/references">References</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/related">Related information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/discussion">Discussion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/lessons">Lessons</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="container-fluid" id="body-wrapper">
+            {% block body %}
+            {% endblock %}
+
+            <div id="disqus-wrapper">
+                <div id="disqus_thread"></div>
+            </div>
+
+            <footer>
+                <hr/>
+                &copy; 2019; <a href="https://www.zopyx.com">Andreas Jung, ZOPYX</a>
+            </footer>
+        </div>
+
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-        <div id="disqus_thread"></div>
         <script>
         /**
         * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -45,10 +98,6 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-        <footer>
-            <hr/>
-            &copy; 2019; <a href="https://www.zopyx.com">Andreas Jung, ZOPYX</a>
-        </footer>
 
 
 
