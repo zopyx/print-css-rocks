@@ -1,25 +1,25 @@
 About this site
 ===============
 
-.. note:: Disclaimer
+.. note:: 
 
-    The author and maintainer of this site is not affiliated with any company or
-    vendor. All opionions expressed on this page are the opinion of the author and
-    the maintainer based year-long research and experience with various tools. All
-    results are based on experience and research. If you object any result or
-    opinion then please get in touch in order to discuss or correct a problem with
-    the site. I am happy to discuss details and to accept contributions for
-    improving this site of time.
+  The author and maintainer of this site is not affiliated with any company or
+  vendor. All opionions expressed on this page are the opinion of the author and
+  the maintainer based year-long research and experience with various tools. All
+  results are based on experience and research. If you object any result or
+  opinion then please get in touch in order to discuss or correct a problem with
+  the site. I am happy to discuss details and to accept contributions for
+  improving this site of time.
 
+Maintainer
++++++++++++
 
+This site is a private project of `Andreas Jung <https://about.me/andreasjung>`_.  
 
 .. image:: /static/ajung-med.jpg 
     :width: 150 px 
     :align: left
 
-
-This site is a private project of 
-`Andreas Jung <https://about.me/andreasjung>`_ .  
 
 Andreas Jung is the founder of ZOPYX Limited.  Upon completion of his studies
 in computer science and electrical engineering at the University of Saarland,
@@ -84,6 +84,8 @@ developments ever since.
     </tbody>
   </table>
 
+Related projects
+++++++++++++++++
 
 .. raw:: html
 
@@ -137,7 +139,7 @@ developments ever since.
   </table>
 
 Contact
--------
++++++++
 
 | Andreas Jung
 | Hundskapfklinge 33
@@ -148,14 +150,14 @@ Contact
 
 
 Imprint and privacy statement
------------------------------
++++++++++++++++++++++++++++++
 
 `Imprint and privacy statement <https://www.zopyx.com/imprint>`_
 
 
 
 Contribute & participate
-------------------------
+++++++++++++++++++++++++
 
 The print-css.rocks project is an open platform for spreading the word about
 "CSS Paged Media" and "Print CSS". Feel to contribute further lessons and
@@ -166,7 +168,7 @@ CSS community.
 
 
 Licence
--------
++++++++
 
 .. raw:: html
 

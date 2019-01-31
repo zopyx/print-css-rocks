@@ -92,3 +92,20 @@ footer {
 #footer-text {
     text-align: center;
 }
+
+div.section {
+    margin-bottom: 3em;
+}
+
+div.note {
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    background: #ddd;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.admonition-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
