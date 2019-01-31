@@ -1,6 +1,5 @@
-
 Converters, tools and services
-------------------------------
+==============================
 
 .. note::
 
@@ -9,7 +8,7 @@ Converters, tools and services
    experience, evaluation work and project work.
 
 PDFreactor
-++++++++++
+----------
 
 * Current version: 9.1
 * Website: http://www.pdfreactor.com
@@ -30,7 +29,7 @@ PDFreactor
   * PDFreactor introduced ZUGFred integration  
 
 PrinceXML
-+++++++++
+---------
 
 * Current version: 12 
 * Website: http://www.princexml.com
@@ -52,7 +51,7 @@ PrinceXML
   * We used PrinceXML for many years before we discovered and switched to PDFreactor
 
 Antennahouse CSS Formatter
-++++++++++++++++++++++++++
+--------------------------
 
 * Current version: 6.5 (MR4)
 * Website: http://www.antennahouse.com
@@ -75,7 +74,7 @@ Antennahouse CSS Formatter
 
 
 Vivliostyle Formatter
-+++++++++++++++++++++
+---------------------
 
 * Current version: 2017.2
 * Website: http://www.vivliostyle.com
@@ -91,8 +90,8 @@ Vivliostyle Formatter
   * Vivliostyle may become a game changer and perhaps "the next big thing" in publishing
 
 
-pdfChip 
-+++++++
+pdfChip
+-------
 
 * Current version. 1.2
 * Website: https://www.callassoftware.com/en/products/pdfchip
@@ -124,7 +123,7 @@ pdfChip
   * pdfChip is not included with the tests for the reasons given.
 
 Weasyprint
-++++++++++
+----------
 
 * Current version: 0.42
 * Website: http://www.weasyprint.org
@@ -144,7 +143,7 @@ Weasyprint
   * Weasyprint is not included with the tests for the reasona given.
 
 Docraptor
-+++++++++
+---------
 
 * Cloud-based conversion service running on top of PrinceXML
 * Website: https://docraptor.com/
@@ -171,7 +170,7 @@ Docraptor
 
 
 RenderX Cloudformatter
-++++++++++++++++++++++
+----------------------
 
 * Cloud-based conversion service
 * Website: http://www.renderx.com/tools/cloudformatter.html
