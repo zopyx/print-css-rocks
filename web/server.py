@@ -105,6 +105,10 @@ async def blog(request):
 async def about(request):
     return {'body': render_rst('about.rst')}
 
+@app.route('/support')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def about(request):
+    return {'body': render_rst('support.rst')}
 
 @app.route('/lesson/<lesson>/download/images/<vendor>/<filename>')
 async def download_image(request, lesson, vendor, filename):

@@ -17,9 +17,7 @@ Maintainer
 This site is a private project of `Andreas Jung <https://about.me/andreasjung>`_.  
 
 .. image:: /static/ajung-med.jpg 
-    :width: 150 px 
-    :align: left
-
+    :class: ajung
 
 Andreas Jung is the founder of ZOPYX Limited.  Upon completion of his studies
 in computer science and electrical engineering at the University of Saarland,
@@ -75,7 +73,10 @@ developments ever since.
         <td>
           <ul>
             <li>
-                <a href="https://www.produce-and-publish.com/information/training/generating-high-quality-pdf-documents-from-xml-and-html-using-css-paged-media">CSS Paged Media training, consulting and development</a>
+                <a href="https://print-css.com">Commercial support and training [EN]</a> 
+            </li>
+            <li>
+                <a href="https://print-css.de">Kommerzieller Support und Training [DE]</a> 
             </li>
 
           </ul>

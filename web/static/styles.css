@@ -109,3 +109,10 @@ div.note {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+img.ajung {
+    width: 200px;
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
