@@ -61,6 +61,7 @@ img.preview {
     border: 1px solid #666;
 }
 
+#about-table td,
 #projects-table td {
     width: 25%;
 }
