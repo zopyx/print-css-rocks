@@ -11,7 +11,7 @@ table {
     margin-bottom: 2em !important;
 }
 
-img#banner {
+img#logo {
     max-height: 80px;
     margin-right: 20px;
 }
@@ -128,4 +128,34 @@ img.banner {
     width: 500px;
     margin-top: 1em;
     margin-bottom: 2em;
+}
+
+#sidebar .banner {
+    width: 80%;
+}
+
+#sidebar .navigation-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+#sidebar #navigation-items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+#sidebar #navigation-items li.level-1 {
+    font-weight: bold;
+}
+
+#sidebar #navigation-items li.level-2 {
+    margin-left: 2em !important;
+}
+
+#sidebar #navigation-items li.level-3 {
+    margin-left: 4em !important;
 }

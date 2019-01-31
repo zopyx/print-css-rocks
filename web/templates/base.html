@@ -26,7 +26,7 @@
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <a href="/">
-                <img id="banner" src="/static/logo.png"/>
+                <img id="logo" src="/static/logo.png"/>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,10 +67,20 @@
         </nav>
 
         <div class="container-fluid" id="body-wrapper">
-            {% block body %}
-            {% endblock %}
-            <div id="disqus-wrapper">
-                <div id="disqus_thread"></div>
+            <div class="row">
+                <div class="col-sm-3" id="sidebar">
+                    <img src="/static/banner.png" class="banner"/>
+                    <span class="navigation-title">Navigation</span>
+                    <ul id="navigation-items">
+                    </ul>
+                </div>
+                <div class="col-sm-9" id="main">
+                    {% block body %}
+                    {% endblock %}
+                    <div id="disqus-wrapper">
+                        <div id="disqus_thread"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -88,6 +98,7 @@
 
         <script src="/static/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="/static/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="/static/local.js"></script>
 
         <script>
         /**

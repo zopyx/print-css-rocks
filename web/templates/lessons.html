@@ -3,6 +3,7 @@
     <h1>Lessons</h1>
 
     {% for category in compliance %}
+        <h2>{{ category.upper() }}</h2>
         <table class="table table-bordered compliance">
             <caption>{{ category.upper() }}</caption>
             <thead>
@@ -17,7 +18,9 @@
                 {% for row in compliance[category] %}
                     <tr>
                         <td class="title">      
-                            <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row['name']}}</a>
+                            <h3>
+                                <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row['name']}}</a>
+                            </h3>
                             {% if row['readme'] %}
                                 <div class="readme"> {{ row['readme'] | e }} </div>
                             {% endif %}
