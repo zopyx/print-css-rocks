@@ -62,15 +62,6 @@ def render_rst(rst_filename):
 
 
 @app.route('/')
-@jinja.template('index.html')  # decorator method is staticmethod
-async def index(request):
-    request['flash']('success message', 'success')
-    request['flash']('info message', 'info')
-    request['flash']('warning message', 'warning')
-    request['flash']('error message', 'error')
-    return {'greetings': 'Hello, sanic!'}
-
-@app.route('/introduction')
 @jinja.template('content.html')  # decorator method is staticmethod
 async def introduction(request):
     return {'body': render_rst('intro.rst')}
