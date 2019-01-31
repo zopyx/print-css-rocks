@@ -3,9 +3,10 @@
     <h1>Lessons</h1>
 
     {% for category in compliance %}
-        <h2>{{ category.upper() }}</h2>
         <table class="table table-bordered compliance">
-            <caption>{{ category.upper() }}</caption>
+            <caption>
+                <h2 class="caption">{{ category.upper() }}</h2>
+            </caption>
             <thead>
                 <tr>
                     <th>Lesson</th>

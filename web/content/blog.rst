@@ -1,7 +1,4 @@
-
-
-.. image:: /static/banner.png
-    :class: banner
+.. image:: /static/pixel.png
 
 
 Blog articles

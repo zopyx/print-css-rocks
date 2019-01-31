@@ -1,3 +1,6 @@
+.. image:: /static/pixel.png
+
+
 Integrating math formulas using MathJAX
 =======================================
 

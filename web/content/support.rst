@@ -1,3 +1,5 @@
+.. image:: /static/pixel.png
+
 Support options
 ===============
 

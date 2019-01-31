@@ -1,4 +1,5 @@
 import os
+import lxml.html
 import collections
 from configparser import ConfigParser
 
@@ -42,7 +43,11 @@ def render_rst(rst_filename):
     def reST_to_html( s ):
         result = core.publish_string( s, writer = html_fragment_writer )
         result = result.decode('utf8')
-        return result
+
+        root = lxml.html.fromstring(result)
+        nodes = root.xpath('//div[@class="document"]')
+        assert len(nodes) == 1
+        return lxml.html.tostring(nodes[0], encoding=str)
 
     fn = os.path.join(os.path.dirname(__file__), 'content', rst_filename)
     if not os.path.exists(fn):

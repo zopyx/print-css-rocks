@@ -1,5 +1,4 @@
-.. image:: /static/banner.png
-    :class: banner
+.. image:: /static/pixel.png
 
 Converters, tools and services
 ==============================

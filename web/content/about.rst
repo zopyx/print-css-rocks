@@ -1,3 +1,5 @@
+.. image:: /static/pixel.png
+
 About this site
 ===============
 
