@@ -19,16 +19,7 @@ if not os.path.exists(LESSON_ROOT):
 
 app = Sanic()
 Session(app)
-
 jinja = SanicJinja2(app)
-#
-# Specify the package name, if templates/ dir is inside module
-# jinja = SanicJinja2(app, pkg_name='sanicapp')
-# or use customized templates path
-# jinja = SanicJinja2(app, pkg_name='sanicapp', pkg_path='other/templates')
-# or setup later
-# jinja = SanicJinja2()
-# jinja.init_app(app)
 
 def render_rst(rst_filename):
 
@@ -100,6 +91,11 @@ async def about(request):
 @jinja.template('content.html')  # decorator method is staticmethod
 async def about(request):
     return {'body': render_rst('support.rst')}
+
+@app.route('/blog/<blog>')
+@jinja.template('content.html')  # decorator method is staticmethod
+async def about(request, blog):
+    return {'body': render_rst(blog)}
 
 @app.route('/lesson/<lesson>/download/images/<vendor>/<filename>')
 async def download_image(request, lesson, vendor, filename):

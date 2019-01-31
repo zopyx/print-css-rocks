@@ -19,7 +19,7 @@ Video
 Slides
 ++++++
 
-- `Publishing with CSS Paged Media – A review of existing tools and techniques (slides) <http://de.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques>`_ by Andreas Jung (XML Prague 2015)
+- `Publishing with CSS Paged Media – A review of existing tools and techniques (slides) <https://de.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques>`_ by Andreas Jung (XML Prague 2015)
 
     .. raw:: html 
 
@@ -44,7 +44,7 @@ Books
     
     .. raw:: html
 
-       <img src="http://www.pagina-online.de/fileadmin/_processed_/csm_Goetz_PrintCSS_Cover_919d071b68.jpg"/>
+       <img src="https://www.pagina-online.de/fileadmin/_processed_/csm_Goetz_PrintCSS_Cover_919d071b68.jpg"/>
 
 Standards and drafts
 ++++++++++++++++++++
