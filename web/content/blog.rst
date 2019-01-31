@@ -1,9 +1,8 @@
-CSS Paged Media Blog
-====================
-
 Blog articles
--------------
+=============
 
-.. toctree::
-    blog/2016-10-06/integrating-mathjax.rst
-    :maxdepth: 3
+2016 
+++++
+
+- `Integrating MathJAX with PrintCSS </blog/blog_2016-10-05-integrating-mathjax.rst>`_
+
