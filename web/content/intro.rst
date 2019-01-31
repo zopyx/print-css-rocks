@@ -1,3 +1,7 @@
+
+.. image:: /static/banner.png
+    :class: banner
+
 Introduction
 ============
 
