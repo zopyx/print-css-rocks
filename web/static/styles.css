@@ -17,8 +17,8 @@ img#banner {
 }
 
 caption {
-    color: #555;
-    font-size: 2em;
+    font-size: 1.6em;
+    font-weight: bold;
     caption-side: top;
 }
 
@@ -102,6 +102,11 @@ div.note {
     border: 1px solid #aaa;
     background: #ddd;
     padding: 1em;
+    margin-bottom: 3em;
+}
+
+.alert {
+
     margin-bottom: 3em;
 }
 
