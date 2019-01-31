@@ -10,6 +10,12 @@ Video
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/H-5_b9m3p1k" frameborder="0" allowfullscreen></iframe>
 
+- `Video interview with print-css.rocks maintainer Andreas Jung <https://www.publishingblog.ch/mit-css-hochwertige-print-layouts-formatieren-video-interview/>`_ 
+
+    .. raw:: html 
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/G2xcJ_xjAik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> by PublishingBlog.ch (2018)
+
 Slides
 ++++++
 
