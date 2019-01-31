@@ -2,7 +2,7 @@ References and samples
 ======================
 
 Vendor samples & Case studies
------------------------------
++++++++++++++++++++++++++++++
 
 - `PDFreactor samples <http://www.pdfreactor.com/samples/>`_
 
@@ -14,7 +14,7 @@ Vendor samples & Case studies
 
 
 Project references
-------------------
+++++++++++++++++++
 
 - References by `ZOPYX <https://www.zopyx.com>`_ (`Produce & Publish projects <https://www.produce-and-publish.com>`_):
 

@@ -150,11 +150,14 @@ a single HTML file (20 MB) using the DITA OT and converted it using all four
 converters (4 CPU box, 2.4 GHz, 8 GB RAM). The result PDF files have been 2200
 and 2400 pages. 
 
-==========   =========  ============  ===========
-PDFreactor   PrinceXML  Antennahouse  Vivliostyle
-==========   =========  ============  ===========
-150 secs     24 secs    220 secs      90 secs
-==========   =========  ============  ===========
+.. table:: 
+    :class: table table-bordered
+
+    ==========   =========  ============  ===========
+    PDFreactor   PrinceXML  Antennahouse  Vivliostyle
+    ==========   =========  ============  ===========
+    150 secs     24 secs    220 secs      90 secs
+    ==========   =========  ============  ===========
 
 Which tool should I choose?
 ---------------------------

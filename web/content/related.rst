@@ -2,7 +2,7 @@ Related information
 ===================
 
 Video
------
++++++
 
 - `Publishing with CSS Paged Media – A review of existing tools and techniques <https://www.youtube.com/watch?v=H-5_b9m3p1k>`_ by Andreas Jung (XML Prague 2015)
 
@@ -11,9 +11,9 @@ Video
       <iframe width="560" height="315" src="https://www.youtube.com/embed/H-5_b9m3p1k" frameborder="0" allowfullscreen></iframe>
 
 Slides
-------
+++++++
 
-- `Publishing with CSS Paged Media – A review of existing tools and techniques <http://de.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques>`_ by Andreas Jung (XML Prague 2015)
+- `Publishing with CSS Paged Media – A review of existing tools and techniques (slides) <http://de.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques>`_ by Andreas Jung (XML Prague 2015)
 
     .. raw:: html 
 
@@ -31,7 +31,7 @@ Slides
   _
 
 Books
------
++++++
 
 - `Print CSS. Das CSS paged media Modul <http://www.pagina-online.de/unternehmen/publikationen/printcss>`_  by Christin Götz, Tobias Ott (German only), Pagina GmbH, 38 €, ISBN 978-3938529089
 
@@ -41,7 +41,7 @@ Books
        <img src="http://www.pagina-online.de/fileadmin/_processed_/csm_Goetz_PrintCSS_Cover_919d071b68.jpg"/>
 
 Standards and drafts
---------------------
+++++++++++++++++++++
 
 - `CSS Paged Media Module Level 3 <https://www.w3.org/TR/css3-page/>`_
 - `Requirements for Latin Text Layout and Pagination <https://www.w3.org/TR/2014/WD-dpub-latinreq-20140930/>`_
@@ -51,7 +51,7 @@ Standards and drafts
 - `CSS Line Grid Module Level 1 <https://drafts.csswg.org/css-line-grid/>`_
 
 Articles
---------
+++++++++
 
 - `CSS Books <https://books.spec.whatwg.org/>`_
 - `Designing for Print with CSS <https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/>`_
@@ -64,8 +64,7 @@ Articles
 -  `List of CSS features required for paged media <https://www.w3.org/Style/2013/paged-media-tasks#page-spread>`_
 
 DITA
-----
-
+++++
 - `Converting DITA to PDF using CSS Paged Media <https://www.andreas-jung.com/contents/converting-dita-to-pdf>`_
 - `dita-css - An Oyxgen plugin for generating PDF from DITA using PrinceXML or Antennahouse <https://github.com/oxygenxml/dita-css>`_
 - `DITA Open Toolkit plugin to generate PDF output using CSS Paged Media by xml.rocks <https://github.com/xmlrocks/dita-ot-pdf-css-page>`_

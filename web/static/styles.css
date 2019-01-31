@@ -70,3 +70,16 @@ img.preview {
     width: 80%;
     text-align: left;
 }
+
+tt.literal,
+span.pre {
+    background: #ccc;
+
+}
+
+pre.literal-block,
+pre.code {
+    background: #ccc;
+    width: 50%;
+    padding: 1em;
+}
