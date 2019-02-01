@@ -9,10 +9,7 @@ $(document).ready(function() {
         var anchor = `heading-${counter}`;
         var tag = $(this).prop('tagName');
         var level = parseInt(tag[tag.length - 1]);
-        $(this).attr("name", anchor);
-        $(this).attr("id", anchor);
-        console.log(tag, level);
-
+        $(`<a name="${anchor}"/>`).insertBefore($(this));
 
         var text = $(this).text();
         var s = `<li class="level-${level}"><a href="#${anchor}">${text}</a></li>`;
