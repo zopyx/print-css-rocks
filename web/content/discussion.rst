@@ -121,9 +121,7 @@ Shapes and exclusions
 ++++++++++++++++++++++
 
 There is a `W3C CSS draft for shapes and exclusions <https://www.w3.org/TR/css3-exclusions/>`_ 
-however none of the converters support this draft sofar. Vivliostyle implements support
-for shapes and exclusions through `EPUB Adaptive Layout <http://www.idpf.org/epub/pgt/>`_ -
-however this approach is pretty weird.
+however none of the converters support this draft so far. 
 
 
 Better and more flexible support for floats 
@@ -155,11 +153,11 @@ and 2400 pages.
 .. table:: 
     :class: table table-bordered
 
-    ==========   =========  ============  ===========
-    PDFreactor   PrinceXML  Antennahouse  Vivliostyle
-    ==========   =========  ============  ===========
-    150 secs     24 secs    220 secs      90 secs
-    ==========   =========  ============  ===========
+    ==========   =========  ============  
+    PDFreactor   PrinceXML  Antennahouse  
+    ==========   =========  ============  
+    150 secs     24 secs    220 secs      
+    ==========   =========  ============  
 
 Which tool should I choose?
 ---------------------------
