@@ -39,6 +39,11 @@ print styles. The styles are kept as simple as impossible in order to demonstrat
 the functionality. Nice layout options are being omitted for the sake keeping
 everything as simple as possible.
 
+Version
+-------
+- V 2.0 (beta) - 01.02.2018
+
+
 Tools
 -----
 
