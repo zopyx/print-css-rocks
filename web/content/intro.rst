@@ -93,13 +93,6 @@ PrinceXML
 
   > prince index.html index.pdf
 
-Vivliostyle Formatter
-+++++++++++++++++++++
-
-.. code-block:: shell
-
-  > vivliostyle-formatter index.html
-
 
 Antennahouse CSS Formatter
 ++++++++++++++++++++++++++
@@ -114,7 +107,6 @@ across all lessons for generating a PDF with one of the mentioned converters::
 
     > make pdfreactor   -> generates `pdfreactor.pdf`
     > make prince       -> generates `prince.pdf`
-    > make vivliostyle  -> generates `vivliostyle-formatter.pdf`
     > make antennahouse -> generates `antennahouse.pdf`
 
 Source code
