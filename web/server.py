@@ -60,55 +60,55 @@ def render_rst(rst_filename):
 
 
 @app.route('/')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def introduction(request):
     return {'body': render_rst('intro.rst')}
 
 
 @app.route('/tools')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def tools(request):
     return {'body': render_rst('tools.rst')}
 
 
 @app.route('/references')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def references(request):
     return {'body': render_rst('references.rst')}
 
 
 @app.route('/related')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def related(request):
     return {'body': render_rst('related.rst')}
 
 
 @app.route('/discussion')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def discussion(request):
     return {'body': render_rst('discussion.rst')}
 
 
 @app.route('/blog')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def blog(request):
     return {'body': render_rst('blog.rst')}
 
 
 @app.route('/about')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def about(request):
     return {'body': render_rst('about.rst')}
 
 
 @app.route('/support')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def content(request):
     return {'body': render_rst('support.rst')}
 
 
 @app.route('/blog/<blog>')
-@jinja.template('content.html')  
+@jinja.template('content.html')
 async def blog_content(request, blog):
     return {'body': render_rst(blog)}
 
@@ -142,7 +142,7 @@ async def download_pdf(request, lesson, filename):
 
 
 @app.route('/lessons')
-@jinja.template('lessons.html')  
+@jinja.template('lessons.html')
 async def lessons(request):
 
     compliance = collections.OrderedDict()
@@ -163,7 +163,7 @@ async def lessons(request):
 
 
 @app.route('/lesson/<lesson>')
-@jinja.template('lesson.html')  
+@jinja.template('lesson.html')
 async def lesson(request, lesson):
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     if not os.path.exists(lesson_dir):
