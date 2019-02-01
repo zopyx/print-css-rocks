@@ -19,6 +19,7 @@ if not os.path.exists(LESSON_ROOT):
     raise ValueError('$LESSON_ROOT {}')
 
 app = Sanic()
+app.static('/static', './static')
 Session(app)
 jinja = SanicJinja2(app)
 
@@ -261,5 +262,4 @@ def get_lesson_data(lesson):
 
 
 if __name__ == '__main__':
-    app.static('/static', './static')
     app.run(host='0.0.0.0', port=8000, debug=True)
