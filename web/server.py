@@ -23,6 +23,12 @@ app.static('/static', './static')
 Session(app)
 jinja = SanicJinja2(app)
 
+lessons_ini = os.path.join(LESSON_ROOT, 'lessons.ini')
+with open(lessons_ini) as fp:
+    lines = fp.read().split('\n')
+lines = [line.strip() for line in lines if line.strip()]
+lessons_ordered = dict([(line, i) for i, line in enumerate(lines)])
+
 
 def render_rst(rst_filename):
 
@@ -160,6 +166,10 @@ async def lessons(request):
         category = lesson_data['category']
         compliance[category].append(
             dict(name=lesson, converters=cmpl, readme=readme))
+    
+    compliance['intro'] = sorted(compliance['intro'], key=lambda item: lessons_ordered.get(item['name'], 999))
+    compliance['advanced'] = sorted(compliance['advanced'], key=lambda item: lessons_ordered.get(item['name'], 999))
+    compliance['special'] = sorted(compliance['special'], key=lambda item: lessons_ordered.get(item['name'], 999))
     return dict(compliance=compliance)
 
 
