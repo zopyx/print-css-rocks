@@ -58,7 +58,7 @@ Antennahouse CSS Formatter
 
 * Current version: 6.6 (MR2)
 * Website: https://www.antennahouse.com
-* `CSS & Compliance  <https://www.antennahouse.com/antenna1/css-conformance/>`_
+* `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
 * Pricing:
 
   * AH Server license with one CPU: 5000 USD (+ 4000 USD per additional CPU)
