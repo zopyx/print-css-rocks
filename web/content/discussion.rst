@@ -123,7 +123,7 @@ Shapes and exclusions
 
 There is a `W3C CSS draft for shapes and exclusions <https://www.w3.org/TR/css3-exclusions/>`_ 
 however none of the converters support this draft sofar. Vivliostyle implements support
-for shapes and exclusions through <EPUB Adaptive Layout <http://www.idpf.org/epub/pgt/>`_ -
+for shapes and exclusions through `EPUB Adaptive Layout <http://www.idpf.org/epub/pgt/>`_ -
 however this approach is pretty weird.
 
 
