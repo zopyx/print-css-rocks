@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block body %}
-        <h1>Lesson: {{params.name}}</h1>
+        <h1>Lesson: {{lesson.name}}</h1>
 
-        <div class="alert alert-info">{{params.readme}}</div>
+        <div class="alert alert-info">{{lesson.readme}}</div>
 
         <h2>Repository files</h2>
         <ul>
-            <a href="https://github.com/zopyx/print-css-rocks/tree/master/{{ params.name }}">
-                     https://github.com/zopyx/print-css-rocks/tree/master/{{ params.name }}
+            <a href="https://github.com/zopyx/print-css-rocks/tree/master/{{ lesson.name }}">
+                     https://github.com/zopyx/print-css-rocks/tree/master/{{ lesson.name }}
             </a>
         </ul>
 
@@ -23,20 +23,20 @@
                 </tr>
             </thead>
             <tbody>
-                {% for entry in params.pdfs %}
+                {% for entry in lesson.pdfs %}
                     <tr>
                         <td>
                             <span class="converter-name">{{ entry.name }}</span>
                             <br/>
-                            <a class="pdf-download" href="{{request.url}}/download/{{ entry['pdf_file'] }}">Download</a>
+                            <a class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}">Download</a>
                         </td>
                         <td>
                             <span class="converter-status">{{ entry.status }}</span>
                         </td>
                         <td>
                             {% for image in entry.images %} 
-                                <a href="#" data-featherlight="{{request.url}}/download/images/{{ entry.name.lower() }}/{{ image }}" >
-                                    <img class="preview" src="{{request.url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
+                                <a href="#" data-featherlight="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" >
+                                    <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
                                 </a>
                             {% endfor %}
                             {% if entry.message %} 
@@ -53,19 +53,19 @@
         <div class="row">
 
             <div class="col-sm-6">
-                {% if params.mode == 'html' %}
+                {% if lesson.mode == 'html' %}
                     <h2>HTML input</h2>
                 {% endif %}
-                {% if params.mode == 'xml' %}
+                {% if lesson.mode == 'xml' %}
                     <h2>XML input</h2>
                 {% endif %}
-                <pre id="source-text" class="prettyprint linenums language-html">{{params.source | e }}</pre>
+                <pre id="source-text" class="prettyprint linenums language-html">{{lesson.source | e }}</pre>
             </div>
 
             <div class="col-sm-6">
-                {% if params.has_css %}
+                {% if lesson.has_css %}
                     <h2>Stylesheet</h2>
-                    <pre id="css-text" class="prettyprint linenums language-css">{{params.css_text}}</pre>
+                    <pre id="css-text" class="prettyprint linenums language-css">{{lesson.css_text}}</pre>
                 {% endif %}
             </div>
 

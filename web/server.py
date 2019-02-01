@@ -1,9 +1,9 @@
 import os
+import furl
 import lxml.html
 import collections
 from configparser import ConfigParser
 
-import jinja2
 from sanic import Sanic
 from sanic import response
 from sanic_session import Session
@@ -22,26 +22,28 @@ app = Sanic()
 Session(app)
 jinja = SanicJinja2(app)
 
+
 def render_rst(rst_filename):
 
     from docutils import core
-    from docutils.writers.html4css1 import Writer,HTMLTranslator
+    from docutils.writers.html4css1 import Writer, HTMLTranslator
 
-    class HTMLFragmentTranslator( HTMLTranslator ):
-        def __init__( self, document ):
-            HTMLTranslator.__init__( self, document )
-            self.head_prefix = ['','','','','']
+    class HTMLFragmentTranslator(HTMLTranslator):
+        def __init__(self, document):
+            HTMLTranslator.__init__(self, document)
+            self.head_prefix = ['', '', '', '', '']
             self.body_prefix = []
             self.body_suffix = []
             self.stylesheet = []
+
         def astext(self):
             return ''.join(self.body)
 
     html_fragment_writer = Writer()
     html_fragment_writer.translator_class = HTMLFragmentTranslator
 
-    def reST_to_html( s ):
-        result = core.publish_string( s, writer = html_fragment_writer )
+    def reST_to_html(s):
+        result = core.publish_string(s, writer=html_fragment_writer)
         result = result.decode('utf8')
 
         root = lxml.html.fromstring(result)
@@ -58,49 +60,58 @@ def render_rst(rst_filename):
 
 
 @app.route('/')
-@jinja.template('content.html')  # decorator method is staticmethod
+@jinja.template('content.html')  
 async def introduction(request):
     return {'body': render_rst('intro.rst')}
 
+
 @app.route('/tools')
-@jinja.template('content.html')  # decorator method is staticmethod
+@jinja.template('content.html')  
 async def tools(request):
     return {'body': render_rst('tools.rst')}
 
+
 @app.route('/references')
-@jinja.template('content.html')  # decorator method is staticmethod
+@jinja.template('content.html')  
 async def references(request):
     return {'body': render_rst('references.rst')}
 
+
 @app.route('/related')
-@jinja.template('content.html')  # decorator method is staticmethod
+@jinja.template('content.html')  
 async def related(request):
     return {'body': render_rst('related.rst')}
 
+
 @app.route('/discussion')
-@jinja.template('content.html')  # decorator method is staticmethod
+@jinja.template('content.html')  
 async def discussion(request):
     return {'body': render_rst('discussion.rst')}
 
+
 @app.route('/blog')
-@jinja.template('content.html')  # decorator method is staticmethod
+@jinja.template('content.html')  
 async def blog(request):
     return {'body': render_rst('blog.rst')}
 
+
 @app.route('/about')
-@jinja.template('content.html')  # decorator method is staticmethod
+@jinja.template('content.html')  
 async def about(request):
     return {'body': render_rst('about.rst')}
 
+
 @app.route('/support')
-@jinja.template('content.html')  # decorator method is staticmethod
-async def about(request):
+@jinja.template('content.html')  
+async def content(request):
     return {'body': render_rst('support.rst')}
 
+
 @app.route('/blog/<blog>')
-@jinja.template('content.html')  # decorator method is staticmethod
-async def about(request, blog):
+@jinja.template('content.html')  
+async def blog_content(request, blog):
     return {'body': render_rst(blog)}
+
 
 @app.route('/lesson/<lesson>/download/images/<vendor>/<filename>')
 async def download_image(request, lesson, vendor, filename):
@@ -111,8 +122,10 @@ async def download_image(request, lesson, vendor, filename):
 
     download_fn = os.path.join(lesson_dir, 'images', vendor, filename)
     if not os.path.exists(download_fn):
-        raise NotFound('Download filename {} does not exist'.format(download_fn))
+        raise NotFound(
+            'Download filename {} does not exist'.format(download_fn))
     return await response.file(download_fn)
+
 
 @app.route('/lesson/<lesson>/download/<filename>')
 async def download_pdf(request, lesson, filename):
@@ -123,12 +136,13 @@ async def download_pdf(request, lesson, filename):
 
     download_fn = os.path.join(lesson_dir, filename)
     if not os.path.exists(download_fn):
-        raise NotFound('Download filename {} does not exist'.format(download_fn))
+        raise NotFound(
+            'Download filename {} does not exist'.format(download_fn))
     return await response.file(download_fn)
 
 
 @app.route('/lessons')
-@jinja.template('lessons.html')  # decorator method is staticmethod
+@jinja.template('lessons.html')  
 async def lessons(request):
 
     compliance = collections.OrderedDict()
@@ -143,16 +157,31 @@ async def lessons(request):
         cmpl = lesson_data['compliance']
         readme = lesson_data['readme']
         category = lesson_data['category']
-        compliance[category].append(dict(name=lesson, converters=cmpl, readme=readme))
+        compliance[category].append(
+            dict(name=lesson, converters=cmpl, readme=readme))
     return dict(compliance=compliance)
 
+
 @app.route('/lesson/<lesson>')
-@jinja.template('lesson.html')  # decorator method is staticmethod
+@jinja.template('lesson.html')  
 async def lesson(request, lesson):
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     if not os.path.exists(lesson_dir):
         raise NotFound('Lession {} does not exist'.format(lesson))
-    return dict(params=get_lesson_data(lesson) )
+    request_url = get_request_url(request)
+    return dict(lesson=get_lesson_data(lesson), request_url=request_url)
+
+
+def get_request_url(request):
+    """ Deal with virtual hosting """
+    forwarded_host = request.headers.get('x-forwarded-host')
+    if not forwarded_host:
+        return request.url
+    f = furl.furl(request.url)
+    f.scheme = 'https'  # we assume public SSL/TLS
+    f.host = forwarded_host
+    f.port = None  # SSL
+    return f.tostr()
 
 
 def get_lesson_data(lesson):
@@ -188,16 +217,20 @@ def get_lesson_data(lesson):
             if not os.path.exists(generated_pdf):
                 print('--> No PDF file {}'.format(generated_pdf))
 
-            image_directory  = os.path.join(lesson_dir, 'images', section.lower())
+            image_directory = os.path.join(
+                lesson_dir, 'images', section.lower())
             images = []
             if os.path.exists(image_directory):
                 images = sorted(os.listdir(image_directory))
                 if not images:
                     print('--> No images found in {}'.format(image_directory))
-                images = [image for image in images if not image.startswith('thumb-')]
+                images = [
+                    image for image in images if not image.startswith('thumb-')]
 
-            pdfs.append(dict(name=section, pdf_file=pdf_file, status=status, message=message, images=images))
-            compliance[section] = dict(name=section, pdf_file=pdf_file, status=status, message=message)
+            pdfs.append(dict(name=section, pdf_file=pdf_file,
+                             status=status, message=message, images=images))
+            compliance[section] = dict(
+                name=section, pdf_file=pdf_file, status=status, message=message)
 
         has_css = os.path.exists(os.path.join(lesson_dir, 'styles.css'))
         css_text = ''
@@ -219,11 +252,11 @@ def get_lesson_data(lesson):
             pdfs=pdfs,
             has_css=has_css,
             css_text=css_text,
-            source=source, 
+            source=source,
             readme=readme,
             mode=mode,
             compliance=compliance,
-            )
+        )
         return params
 
 
