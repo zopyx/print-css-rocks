@@ -1,4 +1,5 @@
 .. image:: /static/pixel.png
+    :class: one-pixel
 
 
 Integrating math formulas using MathJAX

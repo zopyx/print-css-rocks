@@ -40,7 +40,7 @@ li.L5, li.L6, li.L7, li.L8 {
 #pdf-files,
 #css-text,
 #source-text {
-    width: 75%;
+    width: %;
 }
 
 #body-wrapper {
@@ -55,6 +55,10 @@ li.L5, li.L6, li.L7, li.L8 {
     border: 1px solid #aaa;
     padding: 2em;
     background: #eee;
+}
+
+img.one-pixel {
+    display: none;
 }
 
 img.preview {
@@ -94,9 +98,10 @@ footer {
     text-align: center;
 }
 
+section,
 div.section {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: 3em;
 }
 
 div.note {

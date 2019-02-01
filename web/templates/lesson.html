@@ -4,73 +4,78 @@
 
         <div class="alert alert-info">{{lesson.readme}}</div>
 
-        <h2>Repository files</h2>
-        <ul>
-            <a href="https://github.com/zopyx/print-css-rocks/tree/master/{{ lesson.name }}">
-                     https://github.com/zopyx/print-css-rocks/tree/master/{{ lesson.name }}
-            </a>
-        </ul>
+        <section>
+            <h2>Repository files</h2>
+            <ul>
+                <a href="https://github.com/zopyx/print-css-rocks/tree/master/{{ lesson.name }}">
+                        https://github.com/zopyx/print-css-rocks/tree/master/{{ lesson.name }}
+                </a>
+            </ul>
+        </section>
 
-        <h2>PDF files</h2>
+        <section>
+            <h2>PDF files</h2>
 
-
-        <table class="table-bordered table-striped table" id="pdf-files">
-            <thead>
-                <tr>
-                    <th>Converter</th>
-                    <th>Status</th>
-                    <th>PDF Preview</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for entry in lesson.pdfs %}
+            <table class="table-bordered table-striped table" id="pdf-files">
+                <thead>
                     <tr>
-                        <td>
-                            <span class="converter-name">{{ entry.name }}</span>
-                            <br/>
-                            <a class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}">Download</a>
-                        </td>
-                        <td>
-                            <span class="converter-status">{{ entry.status }}</span>
-                        </td>
-                        <td>
-                            {% for image in entry.images %} 
-                                <a href="#" data-featherlight="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" >
-                                    <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
-                                </a>
-                            {% endfor %}
-                            {% if entry.message %} 
-                                <div>
-                                    {{ entry.message }}
-                                </div>
-                            {% endif %}
-                        </td>
+                        <th>Converter</th>
+                        <th>Status</th>
+                        <th>PDF Preview</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    {% for entry in lesson.pdfs %}
+                        <tr>
+                            <td>
+                                <span class="converter-name">{{ entry.name }}</span>
+                                <br/>
+                                <a class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}">Download</a>
+                            </td>
+                            <td>
+                                <span class="converter-status">{{ entry.status }}</span>
+                            </td>
+                            <td>
+                                {% for image in entry.images %} 
+                                    <a href="#" data-featherlight="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" >
+                                        <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
+                                    </a>
+                                {% endfor %}
+                                {% if entry.message %} 
+                                    <div>
+                                        {{ entry.message }}
+                                    </div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
 
-        <div class="row">
-
-            <div class="col-sm-12">
-                {% if lesson.mode == 'html' %}
-                    <h2>HTML input</h2>
-                {% endif %}
-                {% if lesson.mode == 'xml' %}
-                    <h2>XML input</h2>
-                {% endif %}
-                <pre id="source-text" class="prettyprint linenums language-html">{{lesson.source | e }}</pre>
+        <section>
+            <div class="row">
+                <div class="col-sm-12">
+                    {% if lesson.mode == 'html' %}
+                        <h2>HTML input</h2>
+                    {% endif %}
+                    {% if lesson.mode == 'xml' %}
+                        <h2>XML input</h2>
+                    {% endif %}
+                    <pre id="source-text" class="prettyprint linenums language-html">{{lesson.source | e }}</pre>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row">
-            <div class="col-sm-12">
-                {% if lesson.has_css %}
-                    <h2>Stylesheet</h2>
-                    <pre id="css-text" class="prettyprint linenums language-css">{{lesson.css_text}}</pre>
-                {% endif %}
+        <section>
+            <div class="row">
+                <div class="col-sm-12">
+                    {% if lesson.has_css %}
+                        <h2>Stylesheet</h2>
+                        <pre id="css-text" class="prettyprint linenums language-css">{{lesson.css_text}}</pre>
+                    {% endif %}
+                </div>
+
             </div>
-
-        </div>
-
+        </section>
 {% endblock %}
