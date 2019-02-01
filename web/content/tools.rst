@@ -13,10 +13,10 @@ Converters, tools and services
 PDFreactor
 ----------
 
-* Current version: 9.1
-* Website: http://www.pdfreactor.com
-* `CSS Compliance <http://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
-* Sample documents: http://www.pdfreactor.com/samples/
+* Current version: 10
+* Website: https://www.pdfreactor.com
+* `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
+* Sample documents: https://www.pdfreactor.com/samples/
 * Pricing: 
 
   * 4 CPU server license: 2950 USD
@@ -56,15 +56,15 @@ PrinceXML
 Antennahouse CSS Formatter
 --------------------------
 
-* Current version: 6.5 (MR4)
-* Website: http://www.antennahouse.com
-* `CSS & Compliance  <http://www.antennahouse.com/antenna1/css-conformance/>`_
+* Current version: 6.6 (MR2)
+* Website: https://www.antennahouse.com
+* `CSS & Compliance  <https://www.antennahouse.com/antenna1/css-conformance/>`_
 * Pricing:
 
   * AH Server license with one CPU: 5000 USD (+ 4000 USD per additional CPU)
   * AH standalone license: 	1250 USD
   * AH Lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU) 
-  * for all prices see `here <https://www.antennahouse.com/antenna1/prices/>`_
+  * for all prices see `here <https://www.antennahouse.com/prices/>`_
 
 * Personal rating:
 
@@ -74,23 +74,6 @@ Antennahouse CSS Formatter
     XSL-FO converter
   * good and responsive support
   * documentation is extensive although partly a bit unorganized or confusing
-
-
-Vivliostyle Formatter
----------------------
-
-* Current version: 2017.2
-* Website: http://www.vivliostyle.com
-* Samples: http://www.vivliostyle.com/en/sample/
-* Documentation: http://www.vivliostyle.com/en/documentation/supported-features/
-* Pricing: to be announced
-
-* Personal rating:
-
-  * unrated because Vivliostyle by now is an appearently an unfinished product with
-    various issues compared to Antennahouse, PDFreactor or PrinceXML
-  * Detailed documentation missing so far.
-  * Vivliostyle may become a game changer and perhaps "the next big thing" in publishing
 
 
 pdfChip
@@ -158,6 +141,7 @@ Docraptor
 
   * Same PDF quality as PrinceXML, but DocRaptor does offer better JavaScript
     parsing on top of the PrinceXML engine.
+  * Docraptor is usually one PrinceXML version behind the official PrinceXML releases
   * Using DocRaptor requires sending your document to a third-party, but they
     can delete it immediately upon processing. Images and CSS must be placed on
     a (public) server for Docraptor to pick them up or they must be embedded
@@ -167,19 +151,5 @@ Docraptor
     images, CSS, fonts etc. instead of differentiating between source input and
     resources.
   * Pricing is based on conversion volume and appears reasonable. Not sure when
-    a self-hosted version of some other professional converter is cheaper when
-    a self-hosted version of some other professional converter is cheaper and
+    a self-hosted version of some other professional converter is cheaper and when
     the better option in the long run).  
-
-
-RenderX Cloudformatter
-----------------------
-
-* Cloud-based conversion service
-* Website: http://www.renderx.com/tools/cloudformatter.html
-* Status: unknown (website partly dysfunctional)
-
-* Personal rating:
-
-  * No experience
-

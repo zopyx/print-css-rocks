@@ -30,10 +30,9 @@ The support for Javascript inside the rendering tools is limited, very limited.
 PDFreactor and PrinceXML support common Javascript libraries like jQuery or
 other certified Javascript add-ons. In many case even simple Javascript add-ons
 like barcode generators just don't work or produce empty output or fail with
-some internal error messages. The situation is in general bad. Useful
-Javascript modules like MathJax for rendering MathML does not work at all.
-Vivliostyle does not support Javascript at the moment. The state of Javascript
-with Antennahouse is unknown.
+some internal error messages. The situation is in general mixed. Trial and error
+is need for checking the functionality and compatibility of individual Javascript
+modules.
 
 Images
 ------
