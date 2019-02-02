@@ -1,5 +1,6 @@
 import os
 import furl
+import inspect
 import lxml.html
 import collections
 from configparser import ConfigParser
@@ -69,55 +70,64 @@ def render_rst(rst_filename):
 @app.route('/')
 @jinja.template('content.html')
 async def introduction(request):
-    return {'body': render_rst('intro.rst')}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('intro.rst'), 'navigation': inside}
 
 
 @app.route('/tools')
 @jinja.template('content.html')
 async def tools(request):
-    return {'body': render_rst('tools.rst')}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('tools.rst'), 'navigation': inside}
 
 
 @app.route('/references')
 @jinja.template('content.html')
 async def references(request):
-    return {'body': render_rst('references.rst')}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('references.rst'), 'navigation': inside}
 
 
 @app.route('/related')
 @jinja.template('content.html')
 async def related(request):
-    return {'body': render_rst('related.rst')}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('related.rst'), 'navigation': inside}
 
 
 @app.route('/discussion')
 @jinja.template('content.html')
 async def discussion(request):
-    return {'body': render_rst('discussion.rst')}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('discussion.rst'), 'navigation': inside}
 
 
 @app.route('/blog')
 @jinja.template('content.html')
 async def blog(request):
-    return {'body': render_rst('blog.rst')}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('blog.rst'), 'navigation': inside}
 
 
 @app.route('/about')
 @jinja.template('content.html')
 async def about(request):
-    return {'body': render_rst('about.rst')}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('about.rst'), 'navigation': inside}
 
 
 @app.route('/support')
 @jinja.template('content.html')
-async def content(request):
-    return {'body': render_rst('support.rst')}
+async def support(request):
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('support.rst'), 'navigation': inside}
 
 
 @app.route('/blog/<blog>')
 @jinja.template('content.html')
 async def blog_content(request, blog):
-    return {'body': render_rst(blog)}
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst(blog), 'navigation': inside}
 
 
 @app.route('/lesson/<lesson>/download/images/<vendor>/<filename>')
@@ -151,6 +161,7 @@ async def download_pdf(request, lesson, filename):
 @app.route('/lessons')
 @jinja.template('lessons.html')
 async def lessons(request):
+    inside = inspect.stack()[0][0].f_code.co_name
 
     compliance = collections.OrderedDict()
     compliance['intro'] = []
@@ -170,17 +181,18 @@ async def lessons(request):
     compliance['intro'] = sorted(compliance['intro'], key=lambda item: lessons_ordered.get(item['name'], 999))
     compliance['advanced'] = sorted(compliance['advanced'], key=lambda item: lessons_ordered.get(item['name'], 999))
     compliance['special'] = sorted(compliance['special'], key=lambda item: lessons_ordered.get(item['name'], 999))
-    return dict(compliance=compliance)
+    return dict(compliance=compliance, navigation=inside)
 
 
 @app.route('/lesson/<lesson>')
 @jinja.template('lesson.html')
 async def lesson(request, lesson):
+    inside = inspect.stack()[0][0].f_code.co_name
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     if not os.path.exists(lesson_dir):
         raise NotFound('Lession {} does not exist'.format(lesson))
     request_url = get_request_url(request)
-    return dict(lesson=get_lesson_data(lesson), request_url=request_url)
+    return dict(lesson=get_lesson_data(lesson), request_url=request_url, navigation='lessons')
 
 
 def get_request_url(request):

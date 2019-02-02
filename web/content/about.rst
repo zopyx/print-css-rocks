@@ -1,8 +1,8 @@
 .. image:: /static/pixel.png
     :class: one-pixel
 
-About this site
-===============
+About print-css.rocks 
+=====================
 
 .. note:: 
 
