@@ -4,6 +4,8 @@ import inspect
 import lxml.html
 import collections
 from configparser import ConfigParser
+from docutils import core
+from docutils.writers.html4css1 import Writer, HTMLTranslator
 
 from sanic import Sanic
 from sanic import response
@@ -39,8 +41,6 @@ lessons_ordered = dict([(line, i) for i, line in enumerate(lines)])
 
 def render_rst(rst_filename):
 
-    from docutils import core
-    from docutils.writers.html4css1 import Writer, HTMLTranslator
 
     class HTMLFragmentTranslator(HTMLTranslator):
         def __init__(self, document):
