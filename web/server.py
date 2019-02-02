@@ -237,7 +237,7 @@ def get_lesson_data(lesson):
             category = CP.get('common', 'category')
 
         for section in CP.sections():
-            if section not in ('PDFreactor', 'PrinceXML', 'Vivliostyle', 'Antennahouse'):
+            if section not in ('PDFreactor', 'PrinceXML', 'Antennahouse'):
                 continue
 
             pdf_file = CP.get(section, 'pdf')
