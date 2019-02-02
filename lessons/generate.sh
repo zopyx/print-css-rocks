@@ -7,7 +7,7 @@ git rm -fr $generated_dir
 rm -fr $generated_dir
 mkdir -p $generated_dir
 
-for d in lesson-bas*
+for d in lesson-*
 do
     echo "*******************************************************************"
 	echo $d
