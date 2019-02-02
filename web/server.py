@@ -19,6 +19,12 @@ if not LESSON_ROOT:
 if not os.path.exists(LESSON_ROOT):
     raise ValueError('$LESSON_ROOT {}')
 
+LESSON_ROOT = os.path.abspath(LESSON_ROOT)
+GENERATED_ROOT = os.path.abspath(os.path.join(LESSON_ROOT, 'generated'))
+
+print('LESSON_ROOT=', LESSON_ROOT)
+print('GENERATED_ROOT=', GENERATED_ROOT)
+
 app = Sanic()
 app.static('/static', './static')
 Session(app)
@@ -133,7 +139,7 @@ async def blog_content(request, blog):
 @app.route('/lesson/<lesson>/download/images/<vendor>/<filename>')
 async def download_image(request, lesson, vendor, filename):
 
-    lesson_dir = os.path.join(LESSON_ROOT, lesson)
+    lesson_dir = os.path.join(GENERATED_ROOT, lesson)
     if not os.path.exists(lesson_dir):
         raise NotFound('Lession {} does not exist'.format(lesson))
 
@@ -147,7 +153,7 @@ async def download_image(request, lesson, vendor, filename):
 @app.route('/lesson/<lesson>/download/<filename>')
 async def download_pdf(request, lesson, filename):
 
-    lesson_dir = os.path.join(LESSON_ROOT, lesson)
+    lesson_dir = os.path.join(GENERATED_ROOT, lesson)
     if not os.path.exists(lesson_dir):
         raise NotFound('Lession {} does not exist'.format(lesson))
 
@@ -210,6 +216,8 @@ def get_request_url(request):
 def get_lesson_data(lesson):
 
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
+    generated_dir = os.path.join(GENERATED_ROOT, lesson)
+
     conversion_ini = os.path.join(lesson_dir, 'conversion.ini')
     readme_fn = os.path.join(lesson_dir, 'README.rst')
     readme = None
@@ -236,12 +244,12 @@ def get_lesson_data(lesson):
             status = CP.get(section, 'status')
             message = CP.get(section, 'message')
 
-            generated_pdf = os.path.join(lesson_dir, pdf_file)
+            generated_pdf = os.path.join(generated_dir, pdf_file)
             if not os.path.exists(generated_pdf):
                 print('--> No PDF file {}'.format(generated_pdf))
 
             image_directory = os.path.join(
-                lesson_dir, 'images', section.lower())
+                generated_dir, 'images', section.lower())
             images = []
             if os.path.exists(image_directory):
                 images = sorted(os.listdir(image_directory))
