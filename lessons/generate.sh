@@ -1,23 +1,23 @@
 #!/bin/bash
 
 set -x
-target=$PWD/generated
+generated_dir=$PWD/generated
 
-git rm -fr $target
-rm -fr $target
-mkdir -p $target
+git rm -fr $generated_dir
+rm -fr $generated_dir
+mkdir -p $generated_dir
 
 for d in lesson-bas*
 do
     echo "*******************************************************************"
 	echo $d
-    mkdir -p $target/$d
+    mkdir -p $generated_dir/$d
     cd $d 
     make 
     make images
-    cp -a *pdf $target/$d
-    cp -a images $target/$d
+    cp -a *pdf $generated_dir/$d
+    cp -a images $generated_dir/$d
     cd ..
 done
 
-git add $target
+git add $generated_dir
