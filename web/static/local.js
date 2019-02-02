@@ -27,4 +27,9 @@ $(document).ready(function() {
         return false;
 
     });
+
+    // Navigation
+    var nav_link = `#navigation-${NAVIGATION}`;
+    console.log($(nav_link));
+    $(nav_link).addClass('active');
 });

@@ -164,3 +164,8 @@ img.banner {
 #sidebar #navigation-items li.level-3 {
     margin-left: 4em !important;
 }
+
+a.nav-link.active {
+
+        font-weight: bold;
+}
