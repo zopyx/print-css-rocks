@@ -9,26 +9,22 @@ div {
 }
 
 #gradient1 {
-    background: -webkit-radial-gradient(60% 55%, circle closest-corner, red, green 20%, yellow 70%, black);
     background: radial-gradient(60% 55%, circle closest-corner, red, green 20%, yellow 70%, black);
 }
 
 #gradient2 {
-    background: -webkit-repeating-linear-gradient(red, red 11px, white 11px, white 22px);
     background: repeating-linear-gradient(red, red 11px, white 11px, white 22px);
 }
 
 #gradient3 {
-    background: -webkit-linear-gradient(left, red, blue 30%, green);
     background: linear-gradient(left, red, blue 30%, green);
 }
 
 #gradient4 {
-    background: -webkit-linear-gradient(225deg, red, green 20%, yellow 70%, black);
     background: linear-gradient(225deg, red, green 20%, yellow 70%, black);
 }
 
 #gradient5 {
-    background: -webkit-repeating-radial-gradient(#000000, #ffffff 10px, #000000 20px);
     background: repeating-radial-gradient(#000000, #ffffff 10px, #000000 20px);
 }
+
