@@ -13,7 +13,6 @@
 
 span.footnote { 
     float: footnote; 
-    counter-increment: footnote;
 }
 
 .footnote::footnote-call {
