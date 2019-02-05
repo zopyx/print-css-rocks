@@ -215,6 +215,7 @@ def get_request_url(request):
 
 def get_lesson_data(lesson):
 
+    print(lesson)
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     generated_dir = os.path.join(GENERATED_ROOT, lesson)
 
