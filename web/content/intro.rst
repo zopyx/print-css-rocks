@@ -41,7 +41,7 @@ everything as simple as possible.
 
 Version
 -------
-- V 2.0 (beta) - 01.02.2018
+- V 2.0 - 01.02.2018
 
 
 Tools
@@ -76,7 +76,7 @@ or you checkout the repository using git::
 
     git clone git@github.com:zopyx/print-css-rocks.git
 
-The core examples work both with ```pdfreactor``, ``prince`` or ``run.sh`` (Antennahouse). 
+The core examples work both with `pdfreactor`, `prince` or `run.sh` (Antennahouse). 
 Ensure that the related binary/binaries are configured in the ``$PATH`` of your shell environment.
 
 PDFreactor
