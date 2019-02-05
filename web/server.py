@@ -3,6 +3,7 @@ import furl
 import inspect
 import lxml.html
 import collections
+import configparser
 from configparser import ConfigParser
 from docutils import core
 from docutils.writers.html4css1 import Writer, HTMLTranslator
@@ -240,9 +241,12 @@ def get_lesson_data(lesson):
             if section not in ('PDFreactor', 'PrinceXML', 'Antennahouse'):
                 continue
 
-            pdf_file = CP.get(section, 'pdf')
-            status = CP.get(section, 'status')
-            message = CP.get(section, 'message')
+            try:
+                pdf_file = CP.get(section, 'pdf')
+                status = CP.get(section, 'status')
+                message = CP.get(section, 'message')
+            except configparser.NoOptionError as e:
+                raise ValueError('{}: {}'.format(e, lesson))
 
             generated_pdf = os.path.join(generated_dir, pdf_file)
             if not os.path.exists(generated_pdf):
