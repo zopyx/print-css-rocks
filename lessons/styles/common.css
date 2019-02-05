@@ -1,4 +1,9 @@
 @font-face {
+    font-family: Times;
+    src: url('times/TIMESR.ttf') format('truetype');
+}
+
+@font-face {
     font-family: Gentium;
     src: url('Gentium/GentiumPlus-I.ttf') format('truetype');
 }
