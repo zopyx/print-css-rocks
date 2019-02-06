@@ -1,73 +1,503 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link href="styles.css" rel="stylesheet" type="text/css" />
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
                        jax: ["input/MathML", "output/SVG"],
                 extensions: ["mml2jax.js"],
                     MathML: { extensions: ["content-mathml.js"] },
                        SVG: { blacker: 0 }
             });
         </script>
-        <script type="text/javascript" src="mathjax/MathJax.js"></script>
-    </head>
-    <body>
-        
-        <div class="mathmlcontainer flexcontainer">
-            <p><math> <mtable columnalign="left"> <mtr> <mtd> <mrow> <mrow> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <mi>a</mi> <mo>⁢</mo> <msup> <mi>x</mi> <mn>2</mn> </msup></mrow> <mo> + </mo> <mi>b</mi> <mo>⁢</mo> <mi>x</mi> </mrow> <mo> + </mo> <mi>c</mi> </mrow> <mo>=</mo> <mn>0</mn> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <mi>a</mi> <mo>⁢</mo> <msup> <mi>x</mi> <mn>2</mn> </msup></mrow> <mo> + </mo> <mi>b</mi> <mo>⁢</mo> <mi>x</mi> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> </mrow> <mo>=</mo> <mo>-</mo><mi> c</mi><mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <msup> <mi>x</mi> <mn>2</mn> </msup></mrow> <mo> + </mo> <mfrac> <mrow> <mi>b</mi> </mrow> <mi>a</mi> </mfrac> <mo>⁤</mo> <mi>x</mi> </mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <mo>=</mo> <mfrac> <mrow> <mo>-</mo><mi>c</mi> </mrow> <mi>a</mi> </mfrac> <mspace depth="1ex" height="0.5ex" width="2ex"></mspace><mrow><mtext mathcolor="red" mathsize="10pt">Divide out leading coefficient.</mtext> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <msup> <mi>x</mi> <mn>2</mn> </msup></mrow> <mo> + </mo> <mfrac> <mrow> <mi>b</mi> </mrow> <mi>a</mi> </mfrac> <mo>⁤</mo> <mi>x</mi> <mo> + </mo> <msup> <mfenced> <mfrac> <mrow> <mi>b</mi> </mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow> </mfrac> </mfenced> <mn>2</mn> </msup> </mrow> <mo>=</mo> <mfrac> <mrow> <mo>-</mo> <mi>c</mi> <mo>(</mo> <mn>4</mn> <mi>a</mi> <mo>)</mo> </mrow> <mrow> <mi>a</mi> <mo>(</mo> <mn>4</mn> <mi>a</mi> <mo>)</mo> </mrow></mfrac> </mrow> <mo> + </mo> <mfrac> <mrow> <msup> <mi>b</mi> <mn>2</mn> </msup> </mrow> <mrow> <mn>4</mn> <msup> <mi>a</mi> <mn>2</mn> </msup> </mrow></mfrac> <mspace depth="1ex" height="0.5ex" width="2ex"></mspace><mrow><mtext mathcolor="red" mathsize="10pt">Complete the square.</mtext> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <mo>(</mo> <mi>x</mi> <mo> + </mo> <mfrac> <mrow> <mi>b</mi> </mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow></mfrac> <mo>)</mo> <mo>(</mo> <mi>x</mi> <mo> + </mo> <mfrac> <mrow> <mi>b</mi> </mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow></mfrac> <mo>)</mo> <mo>=</mo> <mfrac> <mrow> <msup> <mi>b</mi> <mn>2</mn> </msup> <mo> - </mo> <mn>4</mn> <mi>a</mi> <mi>c</mi> </mrow> <mrow> <mn>4</mn> <msup> <mi>a</mi> <mn>2</mn> </msup> </mrow></mfrac> </mrow> <mspace depth="1ex" height="0.5ex" width="2ex"></mspace><mrow><mtext mathcolor="red" mathsize="10pt">Discriminant revealed.</mtext> </mrow> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <msup> <mrow> <mo>(</mo> <mi>x</mi> <mo> + </mo> <mfrac> <mrow> <mi>b</mi> </mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow></mfrac> <mo>)</mo> </mrow> <mn>2</mn> </msup> <mo>=</mo> <mfrac> <mrow> <msup> <mi>b</mi> <mn>2</mn> </msup> <mo> - </mo> <mn>4</mn> <mi>a</mi> <mi>c</mi> </mrow> <mrow> <mn>4</mn> <msup> <mi>a</mi> <mn>2</mn> </msup> </mrow></mfrac> </mrow> <mspace depth="1ex" height="0.5ex" width="2ex"></mspace><mrow><mtext mathcolor="red" mathsize="10pt"></mtext> </mrow> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <mrow> <mi>x</mi> <mo> + </mo> <mfrac> <mrow> <mi>b</mi> </mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow></mfrac> </mrow> <mo>=</mo> <msqrt> <mfrac> <mrow> <msup> <mi>b</mi> <mn>2</mn> </msup> <mo> - </mo> <mn>4</mn> <mi>a</mi> <mi>c</mi> </mrow> <mrow> <mn>4</mn> <msup> <mi>a</mi> <mn>2</mn> </msup> </mrow></mfrac> </msqrt> </mrow> <mspace depth="1ex" height="0.5ex" width="2ex"></mspace><mrow><mtext mathcolor="red" mathsize="10pt"></mtext> </mrow> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <mrow> <mi>x</mi> </mrow> <mo>=</mo> <mfrac> <mrow> <mo>-</mo><mi>b</mi> </mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow></mfrac> <mo>±</mo><mrow><mo>{</mo><mi>C</mi><mo>}</mo></mrow> <msqrt> <mfrac> <mrow> <msup> <mi>b</mi> <mn>2</mn> </msup> <mo> - </mo> <mn>4</mn> <mi>a</mi> <mi>c</mi> </mrow> <mrow> <mn>4</mn> <msup> <mi>a</mi> <mn>2</mn> </msup> </mrow></mfrac> </msqrt> </mrow> <mspace depth="1ex" height="0.5ex" width="2ex"></mspace><mrow><mtext mathcolor="red" mathsize="10pt">There's the vertex formula.</mtext> </mrow> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mrow> <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace> <mrow> <mi>x</mi> </mrow> <mo>=</mo> <mfrac> <mrow> <mo>-</mo> <mi> b</mi> <mo>±</mo><mrow><mo>{</mo><mi>C</mi><mo>}</mo></mrow> <msqrt> <msup> <mi>b</mi> <mn>2</mn> </msup> <mo> - </mo> <mn>4</mn> <mi>a</mi> <mi>c</mi> </msqrt></mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow></mfrac> </mrow> <mspace depth="1ex" height="0.5ex" width="2ex"></mspace> <mrow><mtext mathcolor="red" mathsize="10pt"></mtext> </mrow> </mrow> </mtd> </mtr> </mtable></math></p>
+    <script type="text/javascript" src="mathjax/MathJax.js"></script>
+</head>
 
-            <div>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+<body>
+
+    <div class="mathmlcontainer flexcontainer">
+        <p><math>
+                <mtable columnalign="left">
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mrow>
+                                        <mrow>
+                                            <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                            <mi>a</mi>
+                                            <mo>⁢</mo>
+                                            <msup>
+                                                <mi>x</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                        </mrow>
+                                        <mo> + </mo>
+                                        <mi>b</mi>
+                                        <mo>⁢</mo>
+                                        <mi>x</mi>
+                                    </mrow>
+                                    <mo> + </mo>
+                                    <mi>c</mi>
+                                </mrow>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                    <mi>a</mi>
+                                    <mo>⁢</mo>
+                                    <msup>
+                                        <mi>x</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                                <mo> + </mo>
+                                <mi>b</mi>
+                                <mo>⁢</mo>
+                                <mi>x</mi>
+                                <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                            </mrow>
+                            <mo>=</mo>
+                            <mo>-</mo>
+                            <mi> c</mi>
+                            <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                    <msup>
+                                        <mi>x</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                                <mo> + </mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mi>a</mi>
+                                </mfrac>
+                                <mo>⁤</mo>
+                                <mi>x</mi>
+                            </mrow>
+                            <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mo>-</mo>
+                                    <mi>c</mi>
+                                </mrow>
+                                <mi>a</mi>
+                            </mfrac>
+                            <mspace depth="1ex" height="0.5ex" width="2ex"></mspace>
+                            <mrow>
+                                <mtext mathcolor="red" mathsize="10pt">Divide out leading coefficient.</mtext>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mrow>
+                                        <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                    <mo> + </mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>b</mi>
+                                        </mrow>
+                                        <mi>a</mi>
+                                    </mfrac>
+                                    <mo>⁤</mo>
+                                    <mi>x</mi>
+                                    <mo> + </mo>
+                                    <msup>
+                                        <mfenced>
+                                            <mfrac>
+                                                <mrow>
+                                                    <mi>b</mi>
+                                                </mrow>
+                                                <mrow>
+                                                    <mn>2</mn>
+                                                    <mi>a</mi>
+                                                </mrow>
+                                            </mfrac>
+                                        </mfenced>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mo>-</mo>
+                                        <mi>c</mi>
+                                        <mo>(</mo>
+                                        <mn>4</mn>
+                                        <mi>a</mi>
+                                        <mo>)</mo>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>a</mi>
+                                        <mo>(</mo>
+                                        <mn>4</mn>
+                                        <mi>a</mi>
+                                        <mo>)</mo>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                            <mo> + </mo>
+                            <mfrac>
+                                <mrow>
+                                    <msup>
+                                        <mi>b</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                                <mrow>
+                                    <mn>4</mn>
+                                    <msup>
+                                        <mi>a</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                            </mfrac>
+                            <mspace depth="1ex" height="0.5ex" width="2ex"></mspace>
+                            <mrow>
+                                <mtext mathcolor="red" mathsize="10pt">Complete the square.</mtext>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo> + </mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>b</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>2</mn>
+                                            <mi>a</mi>
+                                        </mrow>
+                                    </mfrac>
+                                    <mo>)</mo>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo> + </mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>b</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>2</mn>
+                                            <mi>a</mi>
+                                        </mrow>
+                                    </mfrac>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <msup>
+                                                <mi>b</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                            <mo> - </mo>
+                                            <mn>4</mn>
+                                            <mi>a</mi>
+                                            <mi>c</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>4</mn>
+                                            <msup>
+                                                <mi>a</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                        </mrow>
+                                    </mfrac>
+                                </mrow>
+                                <mspace depth="1ex" height="0.5ex" width="2ex"></mspace>
+                                <mrow>
+                                    <mtext mathcolor="red" mathsize="10pt">Discriminant revealed.</mtext>
+                                </mrow>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                    <msup>
+                                        <mrow>
+                                            <mo>(</mo>
+                                            <mi>x</mi>
+                                            <mo> + </mo>
+                                            <mfrac>
+                                                <mrow>
+                                                    <mi>b</mi>
+                                                </mrow>
+                                                <mrow>
+                                                    <mn>2</mn>
+                                                    <mi>a</mi>
+                                                </mrow>
+                                            </mfrac>
+                                            <mo>)</mo>
+                                        </mrow>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <msup>
+                                                <mi>b</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                            <mo> - </mo>
+                                            <mn>4</mn>
+                                            <mi>a</mi>
+                                            <mi>c</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>4</mn>
+                                            <msup>
+                                                <mi>a</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                        </mrow>
+                                    </mfrac>
+                                </mrow>
+                                <mspace depth="1ex" height="0.5ex" width="2ex"></mspace>
+                                <mrow>
+                                    <mtext mathcolor="red" mathsize="10pt"></mtext>
+                                </mrow>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo> + </mo>
+                                        <mfrac>
+                                            <mrow>
+                                                <mi>b</mi>
+                                            </mrow>
+                                            <mrow>
+                                                <mn>2</mn>
+                                                <mi>a</mi>
+                                            </mrow>
+                                        </mfrac>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <msqrt>
+                                        <mfrac>
+                                            <mrow>
+                                                <msup>
+                                                    <mi>b</mi>
+                                                    <mn>2</mn>
+                                                </msup>
+                                                <mo> - </mo>
+                                                <mn>4</mn>
+                                                <mi>a</mi>
+                                                <mi>c</mi>
+                                            </mrow>
+                                            <mrow>
+                                                <mn>4</mn>
+                                                <msup>
+                                                    <mi>a</mi>
+                                                    <mn>2</mn>
+                                                </msup>
+                                            </mrow>
+                                        </mfrac>
+                                    </msqrt>
+                                </mrow>
+                                <mspace depth="1ex" height="0.5ex" width="2ex"></mspace>
+                                <mrow>
+                                    <mtext mathcolor="red" mathsize="10pt"></mtext>
+                                </mrow>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mo>-</mo>
+                                            <mi>b</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>2</mn>
+                                            <mi>a</mi>
+                                        </mrow>
+                                    </mfrac>
+                                    <mo>±</mo>
+                                    <mrow>
+                                        <mo>{</mo>
+                                        <mi>C</mi>
+                                        <mo>}</mo>
+                                    </mrow>
+                                    <msqrt>
+                                        <mfrac>
+                                            <mrow>
+                                                <msup>
+                                                    <mi>b</mi>
+                                                    <mn>2</mn>
+                                                </msup>
+                                                <mo> - </mo>
+                                                <mn>4</mn>
+                                                <mi>a</mi>
+                                                <mi>c</mi>
+                                            </mrow>
+                                            <mrow>
+                                                <mn>4</mn>
+                                                <msup>
+                                                    <mi>a</mi>
+                                                    <mn>2</mn>
+                                                </msup>
+                                            </mrow>
+                                        </mfrac>
+                                    </msqrt>
+                                </mrow>
+                                <mspace depth="1ex" height="0.5ex" width="2ex"></mspace>
+                                <mrow>
+                                    <mtext mathcolor="red" mathsize="10pt">There's the vertex formula.</mtext>
+                                </mrow>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <mrow>
+                                    <mspace depth="1ex" height="0.5ex" width="2.5ex"></mspace>
+                                    <mrow>
+                                        <mi>x</mi>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mo>-</mo>
+                                            <mi> b</mi>
+                                            <mo>±</mo>
+                                            <mrow>
+                                                <mo>{</mo>
+                                                <mi>C</mi>
+                                                <mo>}</mo>
+                                            </mrow>
+                                            <msqrt>
+                                                <msup>
+                                                    <mi>b</mi>
+                                                    <mn>2</mn>
+                                                </msup>
+                                                <mo> - </mo>
+                                                <mn>4</mn>
+                                                <mi>a</mi>
+                                                <mi>c</mi>
+                                            </msqrt>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>2</mn>
+                                            <mi>a</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </mrow>
+                                <mspace depth="1ex" height="0.5ex" width="2ex"></mspace>
+                                <mrow>
+                                    <mtext mathcolor="red" mathsize="10pt"></mtext>
+                                </mrow>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                </mtable>
+            </math></p>
+
+        <div>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <matrix>
-                  <matrixrow>
-                    <cn> 0 </cn> <cn> 1 </cn> <cn> 0 </cn>
-                  </matrixrow>
-                  <matrixrow>
-                    <cn> 0 </cn> <cn> 0 </cn> <cn> 1 </cn>
-                  </matrixrow>
-                  <matrixrow>
-                    <cn> 1 </cn> <cn> 0 </cn> <cn> 0 </cn>
-                  </matrixrow>
+                    <matrixrow>
+                        <cn> 0 </cn>
+                        <cn> 1 </cn>
+                        <cn> 0 </cn>
+                    </matrixrow>
+                    <matrixrow>
+                        <cn> 0 </cn>
+                        <cn> 0 </cn>
+                        <cn> 1 </cn>
+                    </matrixrow>
+                    <matrixrow>
+                        <cn> 1 </cn>
+                        <cn> 0 </cn>
+                        <cn> 0 </cn>
+                    </matrixrow>
                 </matrix>
-                </math>
-            </div>
+            </math>
+        </div>
 
-            <div>
-                <math> 
-                <apply> 
-                    <plus/> 
-                    <cn type="real"> 4.56 </cn> 
-                    <cn type="integer"> 4.56 </cn> 
-                    <cn type="rational"> 4 
-                    <sep/> 5 
-                    </cn> 
-                    <cn type="complex-cartesian"> 4 
-                    <sep/> 5 
-                    </cn> 
-                    <cn type="complex-polar"> 4.56 
-                    <sep/> 4.56 
-                    </cn> 
-                    <cn type="constant"> &pi; </cn> 
-                    <cn> &ExponentialE; </cn> 
-                    <cn> &ee; </cn> 
-                    <cn> &ImaginaryI; </cn> 
-                    <cn> &ii; </cn> 
-                    <cn> &gamma; </cn> 
-                    <cn> &infin; </cn> 
-                </apply> 
-                </math>
-            </div>
-
-            <div>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <div>
+            <math>
                 <apply>
-                <in/>
-                <cn type="complex-cartesian">17<sep/>29</cn>
-                <complexes/>
+                    <plus />
+                    <cn type="real"> 4.56 </cn>
+                    <cn type="integer"> 4.56 </cn>
+                    <cn type="rational"> 4
+                        <sep /> 5
+                    </cn>
+                    <cn type="complex-cartesian"> 4
+                        <sep /> 5
+                    </cn>
+                    <cn type="complex-polar"> 4.56
+                        <sep /> 4.56
+                    </cn>
+                    <cn type="constant"> &pi; </cn>
+                    <cn> &ExponentialE; </cn>
+                    <cn> &ee; </cn>
+                    <cn> &ImaginaryI; </cn>
+                    <cn> &ii; </cn>
+                    <cn> &gamma; </cn>
+                    <cn> &infin; </cn>
                 </apply>
-                </math>
+            </math>
+        </div>
+
+        <div>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <apply>
+                    <in />
+                    <cn type="complex-cartesian">17
+                        <sep />29</cn>
+                    <complexes />
+                </apply>
+            </math>
             <div>
 
             </div>
@@ -93,7 +523,7 @@
                     </munderover>
                     <mfrac>
                         <mrow>
-                            <mi>dx</mi>  
+                            <mi>dx</mi>
                         </mrow>
                         <mrow>
                             <mo>(</mo>
@@ -156,24 +586,48 @@
                     <mo> ( </mo>
                     <mtable>
                         <mtr>
-                            <mtd> <mn>9</mn> </mtd>
-                            <mtd> <mn>8</mn> </mtd>
-                            <mtd> <mn>6</mn> </mtd>
+                            <mtd>
+                                <mn>9</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>8</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>6</mn>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <mn>1</mn> </mtd>
-                            <mtd> <mn>2</mn> </mtd>
-                            <mtd> <mn>7</mn> </mtd>
+                            <mtd>
+                                <mn>1</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>2</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>7</mn>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <mn>4</mn> </mtd>
-                            <mtd> <mn>9</mn> </mtd>
-                            <mtd> <mn>2</mn> </mtd>
+                            <mtd>
+                                <mn>4</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>9</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>2</mn>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <mn>6</mn> </mtd>
-                            <mtd> <mn>0</mn> </mtd>
-                            <mtd> <mn>5</mn> </mtd>
+                            <mtd>
+                                <mn>6</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>0</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>5</mn>
+                            </mtd>
                         </mtr>
                     </mtable>
                     <mo> ) </mo>
@@ -183,24 +637,48 @@
                     <mo> [ </mo>
                     <mtable>
                         <mtr>
-                            <mtd> <mn>9</mn> </mtd>
-                            <mtd> <mn>8</mn> </mtd>
-                            <mtd> <mn>6</mn> </mtd>
+                            <mtd>
+                                <mn>9</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>8</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>6</mn>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <mn>1</mn> </mtd>
-                            <mtd> <mn>2</mn> </mtd>
-                            <mtd> <mn>7</mn> </mtd>
+                            <mtd>
+                                <mn>1</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>2</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>7</mn>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <mn>4</mn> </mtd>
-                            <mtd> <mn>9</mn> </mtd>
-                            <mtd> <mn>2</mn> </mtd>
+                            <mtd>
+                                <mn>4</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>9</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>2</mn>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <mn>6</mn> </mtd>
-                            <mtd> <mn>0</mn> </mtd>
-                            <mtd> <mn>5</mn> </mtd>
+                            <mtd>
+                                <mn>6</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>0</mn>
+                            </mtd>
+                            <mtd>
+                                <mn>5</mn>
+                            </mtd>
                         </mtr>
                     </mtable>
                     <mo> ] </mo>
@@ -211,28 +689,74 @@
                     <mo> [ </mo>
                     <mtable>
                         <mtr>
-                            <mtd> <msub><mi>a</mi> <mn>11</mn></msub> <mo>&minus;</mo> <mi>&lambda;</mi></mtd>
-                            <mtd> <mtext>&#x22ef;</mtext> </mtd>
-                            <mtd> <msub><mi>a</mi> <mn>1n</mn></msub></mtd>
+                            <mtd>
+                                <msub>
+                                    <mi>a</mi>
+                                    <mn>11</mn>
+                                </msub>
+                                <mo>&minus;</mo>
+                                <mi>&lambda;</mi>
+                            </mtd>
+                            <mtd>
+                                <mtext>&#x22ef;</mtext>
+                            </mtd>
+                            <mtd>
+                                <msub>
+                                    <mi>a</mi>
+                                    <mn>1n</mn>
+                                </msub>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <mtext>&#x22ee;</mtext> </mtd>
-                            <mtd> <mtext>&#x22f1;</mtext> </mtd>
-                            <mtd> <mtext>&#x22ee;</mtext> </mtd>
+                            <mtd>
+                                <mtext>&#x22ee;</mtext>
+                            </mtd>
+                            <mtd>
+                                <mtext>&#x22f1;</mtext>
+                            </mtd>
+                            <mtd>
+                                <mtext>&#x22ee;</mtext>
+                            </mtd>
                         </mtr>
                         <mtr>
-                            <mtd> <msub><mi>a</mi> <mn>n1</mn></msub> </mtd>
-                            <mtd> <mtext>&#x22ef;</mtext> </mtd>
-                            <mtd> <msub><mi>a</mi> <mn>nn</mn></msub> <mo>&minus;</mo> <mi>&lambda;</mi></mtd>
+                            <mtd>
+                                <msub>
+                                    <mi>a</mi>
+                                    <mn>n1</mn>
+                                </msub>
+                            </mtd>
+                            <mtd>
+                                <mtext>&#x22ef;</mtext>
+                            </mtd>
+                            <mtd>
+                                <msub>
+                                    <mi>a</mi>
+                                    <mn>nn</mn>
+                                </msub>
+                                <mo>&minus;</mo>
+                                <mi>&lambda;</mi>
+                            </mtd>
                         </mtr>
                     </mtable>
                     <mo> ] </mo>
                     <mtext>&nbsp;</mtext>
                     <mo> [ </mo>
                     <mtable>
-                        <mtr> <msub><mi>x</mi> <mn>1</mn></msub> </mtr>
-                        <mtr> <mtext>&#x22ee;</mtext> </mtr>
-                        <mtr> <msub><mi>x</mi> <mn>n</mn></msub> </mtr>
+                        <mtr>
+                            <msub>
+                                <mi>x</mi>
+                                <mn>1</mn>
+                            </msub>
+                        </mtr>
+                        <mtr>
+                            <mtext>&#x22ee;</mtext>
+                        </mtr>
+                        <mtr>
+                            <msub>
+                                <mi>x</mi>
+                                <mn>n</mn>
+                            </msub>
+                        </mtr>
                     </mtable>
                     <mo> ] </mo>
                     <mo>=</mo>
@@ -352,12 +876,30 @@
                     <mo stretchy="false">|</mo>
                     <mi>x</mi>
                     <mo stretchy="false">|</mo>
-                    <mo>=</mo>  
+                    <mo>=</mo>
                     <mo> { </mo>
                     <mtable>
-                        <mtr> <mi>+x</mi> <mtext>, if </mtext><mi>x</mi><mo>&#62;</mo><mn>0</mn></mtr>
-                        <mtr> <mn>0</mn> <mtext>, if </mtext><mi>x</mi><mo>=</mo><mn>0</mn></mtr>
-                        <mtr> <mi>&minus;x</mi> <mtext>, if </mtext><mi>x</mi><mo>&#60;</mo><mn>0</mn></mtr>
+                        <mtr>
+                            <mi>+x</mi>
+                            <mtext>, if </mtext>
+                            <mi>x</mi>
+                            <mo>&#62;</mo>
+                            <mn>0</mn>
+                        </mtr>
+                        <mtr>
+                            <mn>0</mn>
+                            <mtext>, if </mtext>
+                            <mi>x</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </mtr>
+                        <mtr>
+                            <mi>&minus;x</mi>
+                            <mtext>, if </mtext>
+                            <mi>x</mi>
+                            <mo>&#60;</mo>
+                            <mn>0</mn>
+                        </mtr>
                     </mtable>
                 </math>
             </div>
@@ -368,10 +910,10 @@
                     <mi>j</mi>
                     <mi>&omega;</mi>
                     <mo stretchy="false">)</mo>
-                    <mo>=</mo>  
+                    <mo>=</mo>
                     <mo> { </mo>
                     <mtable>
-                        <mtr> 
+                        <mtr>
                             <msup>
                                 <mi>x</mi>
                                 <msub>
@@ -406,7 +948,7 @@
                                 <mi>&sigma;</mi>
                             </msub>
                         </mtr>
-                </mtable>
+                    </mtable>
                 </math>
             </div>
             <div>
@@ -445,7 +987,7 @@
                             </mrow>
                         </mfrac>
                     </mrow>
-                 </math>
+                </math>
             </div>
             <div>
                 <math>
@@ -493,17 +1035,17 @@
                         </munderover>
                         <mfrac>
                             <mrow>
-                            <msup>
-                                <mi>q</mi>
                                 <msup>
-                                    <mrow>
-                                        <mi>k</mi>
-                                        <mo>+</mo>
-                                        <mi>k</mi>
-                                    </mrow>
-                                    <mn>2</mn>
+                                    <mi>q</mi>
+                                    <msup>
+                                        <mrow>
+                                            <mi>k</mi>
+                                            <mo>+</mo>
+                                            <mi>k</mi>
+                                        </mrow>
+                                        <mn>2</mn>
+                                    </msup>
                                 </msup>
-                            </msup>
                             </mrow>
                             <mrow>
                                 <mo>(</mo>
@@ -583,6 +1125,7 @@
                 </math>
             </div>
         </div>
-        
-    </body>
+
+</body>
+
 </html>
