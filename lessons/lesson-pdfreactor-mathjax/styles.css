@@ -1,0 +1,101 @@
+@page:first {
+    padding-top: 45mm;
+}
+
+p {
+    break-after: avoid;
+}
+
+body > h2 {
+    break-before: page;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 15mm;
+    text-align: center;
+    margin-bottom: 110mm;
+}
+
+.qrcode {
+    -ro-replacedelement: qrcode;
+    -ro-qrcode-quality: high;
+}
+
+.intro {
+    width: 100%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border: none;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.introIcon {
+    width: 135px;
+    height: 135px;
+}
+
+.intro td {
+    margin: 0px;
+    border: none;
+    padding: 8px 0px 16px 0px;
+    color: black;
+}
+
+.introNames td {
+    padding: 1ex;
+    vertical-align: top;
+}
+
+.introNames span {
+    font-size: 18px;
+    color: rgb(49,49,49);
+}
+
+.introNames span:nth-child(n+2) {
+    font-size: 7px;
+}
+
+.introNames span:nth-child(n+2)::before {
+    content: "\A";
+    white-space: pre;
+}
+
+.intro a {
+    color: black;
+}
+
+.barcodeTable {
+    width: 90%;
+    border: none;
+    table-layout: fixed;
+}
+
+.barcodeTable * {
+    border: none;
+    text-align: center;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.mathmlcontainer > * {
+    margin: 12mm 5mm;
+}
+
+.svgIcons {
+    text-align: center;
+}
+
+.svgIcons > img {
+    width: 75mm;
+    margin: 5mm;
+}
