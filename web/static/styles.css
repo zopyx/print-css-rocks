@@ -169,3 +169,8 @@ a.nav-link.active {
 
         font-weight: bold;
 }
+
+cite {
+    font-style: italic;
+    background: #ddd;
+}
