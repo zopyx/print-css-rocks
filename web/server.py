@@ -123,6 +123,12 @@ async def about(request):
     return {'body': render_rst('about.rst'), 'navigation': inside}
 
 
+@app.route('/contributing')
+@jinja.template('content.html')
+async def contributing(request):
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('contributing.rst'), 'navigation': inside}
+
 @app.route('/support')
 @jinja.template('content.html')
 async def support(request):
