@@ -1,4 +1,4 @@
-@page:first {
+@page: first {
     padding-top: 45mm;
 }
 
@@ -6,7 +6,7 @@ p {
     break-after: avoid;
 }
 
-body > h2 {
+body>h2 {
     break-before: page;
     margin-top: 0;
 }
@@ -53,7 +53,7 @@ h1 {
 
 .introNames span {
     font-size: 18px;
-    color: rgb(49,49,49);
+    color: rgb(49, 49, 49);
 }
 
 .introNames span:nth-child(n+2) {
@@ -87,7 +87,7 @@ h1 {
     align-items: baseline;
 }
 
-.mathmlcontainer > * {
+.mathmlcontainer>* {
     margin: 12mm 5mm;
 }
 
@@ -95,7 +95,7 @@ h1 {
     text-align: center;
 }
 
-.svgIcons > img {
+.svgIcons>img {
     width: 75mm;
     margin: 5mm;
 }
