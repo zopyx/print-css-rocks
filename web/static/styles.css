@@ -174,3 +174,9 @@ cite {
     font-style: italic;
     background: #ddd;
 }
+
+@media only screen and (max-width: 800px) {
+  #sidebar {
+    display: none;
+  }
+}
