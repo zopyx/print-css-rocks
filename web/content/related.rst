@@ -43,6 +43,8 @@ Slides
 Books
 +++++
 
+- `Introduction toi CSS for Paged Media (Antennahouse, XMLPrague 2018 edition) <http://www.xmlprague.cz/wp-content/uploads/www.xmlprague.cz/2018/02/CSS-Print.pdf>`_ 
+
 - `Print CSS. Das CSS paged media Modul <http://www.pagina-online.de/unternehmen/publikationen/printcss>`_  by Christin Götz, Tobias Ott (German only), Pagina GmbH, 38 €, ISBN 978-3938529089
 
     
