@@ -30,6 +30,5 @@ $(document).ready(function() {
 
     // Navigation
     var nav_link = `#navigation-${NAVIGATION}`;
-    console.log($(nav_link));
     $(nav_link).addClass('active');
 });
