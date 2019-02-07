@@ -28,9 +28,8 @@
                     {% for entry in lesson.pdfs %}
                         <tr>
                             <td>
-                                <span class="converter-name">{{ entry.name }}</span>
-                                <br/>
-                                <a class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}">Download</a>
+                                <span class="converter-name">{{ entry.name }}</span>&nbsp;
+                                <a title="Download PDF" class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}"><i class="far fa-file-pdf"></i></a>
                             </td>
                             <td>
                                 <span class="converter-status">{{ entry.status }}</span>
