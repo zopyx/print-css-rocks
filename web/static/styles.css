@@ -83,7 +83,7 @@ span.pre {
 
 pre.literal-block,
 pre.code {
-    background: #9aa560;
+    background: #e1e5ef;
     width: 100%;
     padding: 1em;
 }
@@ -179,4 +179,8 @@ cite {
   #sidebar {
     display: none;
   }
+}
+
+#twitter {
+    margin-top: 2em;
 }
