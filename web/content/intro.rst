@@ -1,6 +1,9 @@
 .. image:: /static/pixel.png
     :class: one-pixel
 
+.. image:: /static/banner.png
+   :class: banner
+
 Introduction
 ============
 
@@ -9,6 +12,7 @@ using the "CSS Paged Media" approach where the complete styling
 and layout information is kept in cascading stylesheets (CSS).
 In addition we show what different tools produce with identical data.
 This gives an impression on functionality and output quality.
+
 
 What is CSS Paged Media
 -----------------------

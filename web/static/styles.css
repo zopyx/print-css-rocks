@@ -129,16 +129,6 @@ img.ajung {
     margin-bottom: 2em;
 }
 
-img.banner {
-    width: 500px;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
-#sidebar .banner {
-    width: 80%;
-}
-
 #sidebar .navigation-title {
     font-size: 1.2em;
     font-weight: bold;
@@ -183,4 +173,9 @@ cite {
 
 #twitter {
     margin-top: 2em;
+}
+
+img.banner {
+    margin-bottom: 2em;
+    width: 100%
 }
