@@ -7,12 +7,14 @@
 @page:left {
     @bottom-left {
          content: counter(page) " of " counter(pages);
+         font-family: Arial, Sans Serif;
     }
 }
 
 @page:right {
     @bottom-right {
          content: counter(page) " of " counter(pages);
+         font-family: Arial, Sans Serif;
     }
 }
 
