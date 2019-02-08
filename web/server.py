@@ -42,7 +42,6 @@ lessons_ordered = dict([(line, i) for i, line in enumerate(lines)])
 
 def render_rst(rst_filename):
 
-
     class HTMLFragmentTranslator(HTMLTranslator):
         def __init__(self, document):
             HTMLTranslator.__init__(self, document)
@@ -57,7 +56,7 @@ def render_rst(rst_filename):
     html_fragment_writer = Writer()
     html_fragment_writer.translator_class = HTMLFragmentTranslator
 
-    def reST_to_html(s):
+    def rest_to_html(s):
         result = core.publish_string(s, writer=html_fragment_writer)
         result = result.decode('utf8')
 
@@ -66,12 +65,19 @@ def render_rst(rst_filename):
         assert len(nodes) == 1
         return lxml.html.tostring(nodes[0], encoding=str)
 
-    fn = os.path.join(os.path.dirname(__file__), 'content', rst_filename)
-    if not os.path.exists(fn):
-        raise IOError('RST file {} not found'.format(fn))
-    with open(fn) as fp:
-        rst_data = fp.read()
-    return reST_to_html(rst_data)
+
+    if not rst_filename:
+        return u''
+    elif rst_filename.endswith('.rst'):
+        fn = os.path.join(os.path.dirname(__file__), 'content', rst_filename)
+        if not os.path.exists(fn):
+            raise IOError('RST file {} not found'.format(fn))
+        with open(fn) as fp:
+            rst_data = fp.read()
+        return rest_to_html(rst_data)
+    else:
+        return rest_to_html(rst_filename)
+        
 
 
 @app.route('/')
@@ -186,10 +192,11 @@ async def lessons(request):
             continue
         lesson_data = get_lesson_data(lesson)
         cmpl = lesson_data['compliance']
-        readme = lesson_data['readme']
+        readme_raw = lesson_data['readme']
+        readme = render_rst(lesson_data['readme'])
         category = lesson_data['category']
         compliance[category].append(
-            dict(name=lesson, converters=cmpl, readme=readme))
+            dict(name=lesson, converters=cmpl, readme=readme, readme_raw=readme_raw))
     
     compliance['intro'] = sorted(compliance['intro'], key=lambda item: lessons_ordered.get(item['name'], 999))
     compliance['advanced'] = sorted(compliance['advanced'], key=lambda item: lessons_ordered.get(item['name'], 999))
@@ -228,9 +235,11 @@ def get_lesson_data(lesson):
     conversion_ini = os.path.join(lesson_dir, 'conversion.ini')
     readme_fn = os.path.join(lesson_dir, 'README.rst')
     readme = None
+    readme_raw = None
     if os.path.exists(readme_fn):
         readme = open(readme_fn).read()
-
+        readme_raw = render_rst(readme)
+    
     pdfs = list()
     compliance = dict()
     mode = 'html'
@@ -295,6 +304,7 @@ def get_lesson_data(lesson):
             css_text=css_text,
             source=source,
             readme=readme,
+            readme_raw=readme_raw,
             mode=mode,
             compliance=compliance,
         )
