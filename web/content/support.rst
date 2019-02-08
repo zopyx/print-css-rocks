@@ -27,11 +27,18 @@ developments ever since.
 Contact
 +++++++
 
-| Andreas Jung
-| D-72074 Tübingen
-| Phone: +49 07071 79376
-| Email: info@zopyx.com
-| Web: `www.zopyx.com <https://zopyx.com>`_
-| Twitter: `@printcssrocks <https://twitter.com/printcssrocks>`_
+.. raw:: html
 
-
+    <div id="contact">
+        Andreas Jung
+        <br/>
+        Hundskapfklinge 33
+        <br/>
+        D-72074 Tübingen
+        <br/>
+        <i class="fas fa-envelope"></i><a href="mailto:info@zopyx.com"> info@zopyx.com</a>
+        <br/>
+        <i class="fab fa-twitter"></i><a href="https://twitter.com/printcssrocks"> @printcssrocks</a>
+        <br/>
+        <i class="fas fa-globe"></i><a href="https://zopyx.com"> www.zopyx.com </a>
+    </div>
