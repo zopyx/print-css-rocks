@@ -143,6 +143,10 @@ img.ajung {
     margin-top: 1em;
 }
 
+#sidebar #navigation-items li {
+    padding-bottom: 0.25em;
+}
+
 #sidebar #navigation-items li.level-1 {
     font-weight: bold;
 }
