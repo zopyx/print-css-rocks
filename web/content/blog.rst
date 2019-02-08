@@ -5,6 +5,12 @@
 Blog articles
 =============
 
+2019 
+++++
+
+- `Rendering MathML using MathJAX in PDFreactor </blog/blog_2019-02-08-pdfreactor-mathjax.rst>`_
+
+
 2016 
 ++++
 
