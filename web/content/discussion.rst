@@ -4,6 +4,15 @@
 Discussion
 ==========
 
+
+.. raw:: html
+
+    <div id="forum" class="alert alert-info">
+        <h1>print-css.rocks discussion forum</h1>
+        The public discussion forum about PrintCSS, CSS Paged Media is available at 
+        <a href="https://forum.print-css.rocks">forum.print-css.rocks</a>
+    </div>
+
 Standards and proprietary extensions
 ------------------------------------
 
@@ -173,3 +182,10 @@ needed in your projects. So there is no general recommendation possible. The
 choice of a tool depends on your requirements and budget.  (ZOPYX offers a
 vendor-neutral consulting on CSS Paged Media issues).
 
+.. raw:: html
+
+    <div id="forum" class="alert alert-info">
+        <h1>print-css.rocks discussion forum</h1>
+        The public discussion forum about PrintCSS, CSS Paged Media is available at 
+        <a href="https://forum.print-css.rocks">forum.print-css.rocks</a>
+    </div>

@@ -5,6 +5,7 @@ About print-css.rocks
 =====================
 
 .. note:: 
+  :class: alert-info
 
   The author and maintainer of this site is not affiliated with any company or
   vendor. All opionions expressed on this page are the opinion of the author and
@@ -12,7 +13,7 @@ About print-css.rocks
   results are based on experience and research. If you object any result or
   opinion then please get in touch in order to discuss or correct a problem with
   the site. I am happy to discuss details and to accept contributions for
-  improving this site of time.
+  improving this site over time.
 
 Maintainer
 +++++++++++
@@ -142,32 +143,6 @@ Related projects
       </tr>
   </table>
 
-Contact
-+++++++
-
-.. raw:: html
-
-    <div id="contact">
-        Andreas Jung
-        <br/>
-        Hundskapfklinge 33
-        <br/>
-        D-72074 Tübingen
-        <br/>
-        <i class="fas fa-envelope"></i><a href="mailto:info@zopyx.com"> info@zopyx.com</a>
-        <br/>
-        <i class="fab fa-twitter"></i><a href="https://twitter.com/printcssrocks"> @printcssrocks</a>
-        <br/>
-        <i class="fas fa-globe"></i><a href="https://zopyx.com"> www.zopyx.com </a>
-    </div>
-
-
-Imprint and privacy statement
-+++++++++++++++++++++++++++++
-
-`Imprint and privacy statement <https://www.zopyx.com/imprint>`_
-
-
 
 Contribute & participate
 ++++++++++++++++++++++++
@@ -188,3 +163,34 @@ Licence
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">print-css.rocks</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.aboutme.com/andreasjung" property="cc:attributionName" rel="cc:attributionURL">Andreas Jung</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/zopyx/print-css-rocks" rel="dct:source">https://github.com/zopyx/print-css-rocks</a>.
 
 
+.. image:: /static/pixel.png
+    :class: one-pixel
+
+Professional support
+====================
+
+
+Professional and commercial support is available from the maintainer of 
+print-css.rocks project,  `Andreas Jung <https://about.me/andreasjung>`_.  
+
+- `Professional support, training and consulting [EN] <https://print-css.com>`_
+- `Professionelle Unterstützung, Training und Beratung [DE] <https://print-css.DE>`_
+
+Contact
++++++++
+
+.. raw:: html
+
+    <div id="contact">
+        Andreas Jung/ZOPYX
+        <br/>
+        Hundskapfklinge 33
+        <br/>
+        D-72074 Tübingen
+        <br/>
+        <i class="fas fa-envelope"></i><a href="mailto:info@zopyx.com"> info@zopyx.com</a>
+        <br/>
+        <i class="fab fa-twitter"></i><a href="https://twitter.com/printcssrocks"> @printcssrocks</a>
+        <br/>
+        <i class="fas fa-globe"></i><a href="https://zopyx.com"> www.zopyx.com </a>
+    </div>
