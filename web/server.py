@@ -186,6 +186,9 @@ async def lessons(request):
     compliance['intro'] = []
     compliance['advanced'] = []
     compliance['special'] = []
+    compliance['pdfreactor'] = []
+    compliance['antennahouse'] = []
+    compliance['princexml'] = []
 
     for lesson in os.listdir(LESSON_ROOT):
         if not lesson.startswith('lesson-'):
@@ -197,10 +200,9 @@ async def lessons(request):
         category = lesson_data['category']
         compliance[category].append(
             dict(name=lesson, converters=cmpl, readme=readme, readme_raw=readme_raw))
-    
-    compliance['intro'] = sorted(compliance['intro'], key=lambda item: lessons_ordered.get(item['name'], 999))
-    compliance['advanced'] = sorted(compliance['advanced'], key=lambda item: lessons_ordered.get(item['name'], 999))
-    compliance['special'] = sorted(compliance['special'], key=lambda item: lessons_ordered.get(item['name'], 999))
+
+    for key in ('intro', 'advanced', 'special', 'princexml', 'antennahouse', 'pdfreactor'):
+        compliance[key] = sorted(compliance[key], key=lambda item: lessons_ordered.get(item['name'], 999))
     return dict(compliance=compliance, navigation=inside)
 
 
