@@ -194,6 +194,8 @@ async def lessons(request):
         if not lesson.startswith('lesson-'):
             continue
         lesson_data = get_lesson_data(lesson)
+        if not lesson_data:
+            continue
         cmpl = lesson_data['compliance']
         readme_raw = lesson_data['readme']
         readme = render_rst(lesson_data['readme'])
