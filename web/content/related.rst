@@ -95,13 +95,13 @@ Vendor samples & Case studies
 
 - PDFreactor
 
-  - `samples <http://www.pdfreactor.com/samples/>`_
-  - `case studies <http://www.pdfreactor.com/case-studies/>`_
+  - `Samples <http://www.pdfreactor.com/samples/>`_
+  - `Case studies <http://www.pdfreactor.com/case-studies/>`_
   - `Sample: Product catalog <http://www.pdfreactor.com/wp-content/uploads/pdf/noindex/boesch-preisliste-2013.pdf>`_   
   
 - PrinceXML
 
-  - `PrinceXML samples <http://www.princexml.com/samples/>`_
+  - `Samples PrinceXML <http://www.princexml.com/samples/>`_
 
 - Antennahouse
   

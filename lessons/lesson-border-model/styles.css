@@ -1,0 +1,36 @@
+@import url("../styles/a5.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.outer {
+    margin-bottom: 3em;
+    outline: 1px solid #555;
+    hyphens: auto;
+    text-align: justify;
+    background:  #eee;
+}
+
+.container {
+    margin-bottom: 1em;
+    width: 50%;
+    background: #ddd;
+    outline: 1px dashed green;
+}
+
+
+#small-border {
+    border: 5px solid blue;
+    padding: 20px;
+    margin: 20px;
+}
+
+#large-border {
+    padding: 30px;
+    border: 20px solid pink;
+    margin: 50px;
+}
