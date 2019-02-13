@@ -5,23 +5,23 @@
 Integrating math formulas using MathJAX
 =======================================
 
-The support for MathML in CSS Paged Media renderers differs a lot. Antennahouse
-has perhaps the best MathML implementation but it lacks support for rendering
-formulas in LaTeX notation. Vivliostyle ships with build-in MathJAX support
-while the MathML renderer of PrinceXML and PDFreactor have a poor output
+Support for MathML in CSS Paged Media varies widely. Antennahouse
+has perhaps the best MathML implementation, but lacks support for rendering
+formulas in LaTeX notation. Vivliostyle offers built-in MathJAX support,
+while the MathML renderers of PrinceXML and PDFreactor have only poor output
 quality.
 
 `MathJAX <http://mathjax.org>`_ is a Javascript rendering solution for
-rendering formulas - both in MathML and LaTeX notation - within a browser in a very good quality.
-So how to integrate MathJAX into a PDF conversion workflow. Unfortunately
-only PDFreactor and PrinceXML support Javascript but also only for a selected
+rendering formulas within a browser in both MathML and LaTeX notation - and in very good quality.
+So, how to integrate MathJAX into a PDF conversion workflow? Unfortunately,
+only PDFreactor and PrinceXML offer support for Javascript - and only for a selected
 number of Javascript add-ons.
 
-So here is the blueprint for generating PDF documents with arbitrary CSS Paged Media renderers:
+As such, the blueprint for generating PDF documents with arbitrary CSS Paged Media renderers is as follows:
 
-- you need to iterate over all formulas of your source document and extract
-  each formula into  a dedicated input HTML file. Here is an example document
-  (taken from the MathJAX tests directory, we assume that MathJAX is installed
+- You will need to iterate over all formulas of your source document and extract
+  each formula into  a dedicated input HTML file. Below is an example document
+  (taken from the MathJAX tests directory, since we are assuming that MathJAX will be installed
   locally).
 
 .. code-block:: html 
@@ -37,10 +37,10 @@ So here is the blueprint for generating PDF documents with arbitrary CSS Paged M
 
     <script type="text/x-mathjax-config">
     //
-    //  Do NOT use this page as a template for your own pages.  It includes
-    //  code that is needed for testing your site's installation of MathJax,
-    //  and that should not be used in normal web pages.  Use sample.html as
-    //  the example for how to call MathJax in your own pages.
+    //  Do NOT use this page as a template for your own pages. It includes
+    //  code that is needed for testing the installation of MathJax on your site,
+    //  and this should not be used in normal web pages.  Use sample.html as
+    //  the example for calling MathJax on your own site.
     //
     MathJax.HTML.Cookie.Set("menu",{});
     MathJax.Hub.Config({
@@ -117,25 +117,25 @@ So here is the blueprint for generating PDF documents with arbitrary CSS Paged M
     </body>
     </html>
 
-- you convert the input file using `WKHtmltoPDF  <http://wkhtmltopdf.org/>`_ to PDF
+- Convert the input file to PDF using `WKHtmltoPDF  <http://wkhtmltopdf.org/>`_
 
 .. code-block:: shell
 
     wkhtmltopdf in.html --javascript-delay 25000 out.pdf
 
-- the generated ``out.pdf`` PDF file now contains the rendered formula. The problem is that you
+- The generated ``out.pdf`` PDF file will now contain the rendered formula. The problem is now that we
   need to crop the PDF to its bounding boxes. This can be accomplished using 
-  `pdfcrop.pl <ftp://ftp.tu-chemnitz.de/pub/tex/support/pdfcrop/pdfcrop.pl>`_. ``pdfcrop`` is small
-  Perl script that can manipulate the borders of a given PDF document. In our case we need to remove 
+  `pdfcrop.pl <ftp://ftp.tu-chemnitz.de/pub/tex/support/pdfcrop/pdfcrop.pl>`_. ``pdfcrop`` is a small
+  Perl script that can manipulate the borders of a PDF document. In our case, we need to remove 
   all borders using
 
 .. code-block:: shell
 
     pdfcrop.pl --margins 0 out.pdf out2.pdf
 
-- the cropped PDF file ``out2.pdf`` can now be used with most CSS Paged Media renderers as standard
+- The cropped PDF file ``out2.pdf`` can now be used with most CSS Paged Media renderers as a standard
   image (you can convert the PDF file to PNG/JPG/GIF using tools like ``ImageMagick`` if your 
-  renderer does not support PDF as image format).
+  renderer does not support PDF as an image format).
 
 .. code-block:: html
   
@@ -150,13 +150,13 @@ or
 Alternative solution
 --------------------
 
-There is another option to generate SVG from MathML or LaTeX using the
-``text2svg`` script that comes from the NodeJS ``mathjax-node`` module. The
+There is another option for generating SVG from MathML or LaTeX using the
+``text2svg`` script that comes from the NodeJS ``mathjax-node`` module. This
 approach is described `here
 <http://askubuntu.com/questions/33196/how-to-convert-latex-equations-to-svg#answer-762113>`_.
-The generated SVG files appear to be a bit strange. They render properly inside a browser
-but can not be displayed using standard image tools (at least on MacOSX).
+Note that the resulting SVG files appear a little strange. They render properly inside a browser,
+but cannot be displayed using standard image tools (at least on MacOSX).
 
 .. note::
 
-   This rendering approach is completely ignorant about PDF accessibility.
+   This rendering approach does not take PDF accessibility into account.

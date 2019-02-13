@@ -1,47 +1,45 @@
 .. image:: /static/pixel.png
     :class: one-pixel
-
-.. image:: /static/banner.png
+ 
+ .. image:: /static/banner.png
    :class: banner
 
 Introduction
 ============
 
 This tutorial shows how to generate PDF documents from XML/HTML
-using the "CSS Paged Media" approach where the complete styling
+using the "CSS Paged Media" approach, whereby the complete styling
 and layout information is kept in cascading stylesheets (CSS).
-In addition we show what different tools produce with identical data.
-This gives an impression on functionality and output quality.
-
+It will also show the results produced by different tools with identical
+data, providing an impression of functionality and output quality.
 
 What is CSS Paged Media
 -----------------------
 
-Short version: CSS Paged Media (a W3C standard) is a way to generate
-PDF documents from XML/HTML as input and CSS for styling. Consider it as
-an extension for CSS for print purposes. So it is obvious that CSS Paged Media
-must deal with print aspects like pagination, page formats, page regions or 
-other print specific aspects.
+In brief: CSS Paged Media (a W3C standard) is a way of generating
+PDF documents using XML/HTML as input and CSS for styling. It can be thought of as
+an extension of CSS for print purposes. As such, it is obvious that CSS Paged Media
+must deal with print-related considerations such as pagination, page formats, page regions 
+and other print-specific details.
 
 Usecases for CSS Paged Media
 ----------------------------
 
-- text-oriented publications (books, newspapers, documentation etc.).
-- layout-oriented publictions (flyers, brochures, web-to-print applications)
-- technical documentation 
-- etc.
+- Text-oriented publications (books, newspapers, documentation, etc.).
+- Layout-oriented publications (flyers, brochures, web-to-print applications)
+- Technical documentation 
+- Etc.
 
 Status of this tutorial
 -----------------------
 
-This tutorial is work-in-progress and based on the "CSS Paged Media"
+This tutorial is work-in-progress and is based on the "CSS Paged Media"
 workshop given for the first time at the XML London 2015 conference.
-The tutorial is split into various aspects of CSS Paged Media and usually
-contains a sample ``index.html`` with example data suitable for the purpose
-of a particiular lesson and a ``styles.css`` file holding the specific
-print styles. The styles are kept as simple as impossible in order to demonstrate
-the functionality. Nice layout options are being omitted for the sake keeping
-everything as simple as possible.
+The tutorial is subdivided into the various aspects of CSS Paged Media, with most parts
+containing a sample ``index.html`` with appropriate example data for the purpose
+of a particular lesson and a ``styles.css`` file containing the specific
+print styles. The styles are kept as simple as possible in order to demonstrate
+functionality. Sophisticated layout options have been omitted for the sake of simplicity.
 
 Version
 -------
@@ -51,36 +49,36 @@ Version
 Tools
 -----
 
-There are various CSS Paged Media converters on the market. However we focus on
-tools that are widely used and that provide a reasonable quality
-for professional use. Another (personal) requirement is also that tools should
-work cross-platform on multiple operating systems (Mac OSX, Linux, Windows).
-Tests do not include tools that only work on a single operating system or
-platform for inclusion as a library.
+There are various CSS Paged Media converters on the market. However, we will focus on
+tools that are widely used and that provide reasonable quality for
+professional use. Another (personal) requirement is that tools should
+work cross-platform, on multiple operating systems (Mac OSX, Linux, Windows).
+The tests do not include tools that only work on a single operating system or
+platform.
 
-This tutorial covers and compares the following four tools:
+This tutorial covers and compares the following three tools:
 
 - PDFreactor 10.0.10722.2
 - PrinceXML 12.4
 - Antennahouse 6.6 MR2
 
-This tutorial does not cover installation issues. Please refer to
+This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
-of evaluation. Depending on the converter the generated PDF documents will
-contain a watermark or a vendor specific message or icon.
+of evaluation. Depending on the converter, the resulting PDF documents may
+contain a watermark or a vendor-specific message or icon.
 
 Using this tutorial
 -------------------
 
-You can either download all the complete tutorials with samples from
+You can download all of the complete tutorials with examples from
 
 https://github.com/zopyx/print-css-rocks/releases
 
-or you checkout the repository using git::
+or check out the repository using git::
 
     git clone git@github.com:zopyx/print-css-rocks.git
 
-The core examples work both with `pdfreactor`, `prince` or `run.sh` (Antennahouse). 
+The core examples work with all three tools, ```pdfreactor``, ``prince`` and ``run.sh`` (Antennahouse). 
 Ensure that the related binary/binaries are configured in the ``$PATH`` of your shell environment.
 
 PDFreactor
@@ -106,8 +104,8 @@ Antennahouse CSS Formatter
   > run.sh -d index.html  -o out.pdf
 
 
-Each of ``lesson-...`` directories contains a ``Makefile`` that can be used in the same
-across all lessons for generating a PDF with one of the mentioned converters::
+Each of the ``lesson-...`` directories contains a ``Makefile`` that can be used in the same way
+across all lessons for generating a PDF with one of the featured converters:
 
     > make pdfreactor   -> generates `pdfreactor.pdf`
     > make prince       -> generates `prince.pdf`
