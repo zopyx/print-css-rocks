@@ -128,6 +128,30 @@ Weasyprint
     some money in PDFreactor or PrinceXML.
   * Weasyprint is not included in the tests for the reasona given.
 
+
+
+Versatype Converter (formerly known as Vivliostyle Converter)
+-------------------------------------------------------------
+
+* Website: https://www.trim-marks.com
+* Pricing: undisclosed
+
+
+
+The last editions of print-css.rocks also covered the `Vivliostyle` converter by Vivliostyle.
+Support for Vivliostyle has been removed in this edition of print-css.rocks
+because the Vivliostyle project broke up in 2018 into a non-commercial
+open-source project focused on pagination within the browser keeping the
+Vivliostyle brand and into a new commercial business called `Trim-Marks` with
+a rebranding of the former „Vivliostyle Converter“ as „Versatype Converter“.
+See https://vivliostyle.org/blog/2018/03/26/a-new-beginning/ for details.
+Unfortunately Trim-Marks failed so far providing any public information about
+their „Versatype Converter“ converter related to functionality and pricing.
+For this reason there is no coverage on „Versatype Converter“ in this
+edition. This might change in the future if Trim-Marks takes some care about
+public visible information.
+
+
 Docraptor
 ---------
 

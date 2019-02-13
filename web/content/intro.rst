@@ -1,7 +1,7 @@
 .. image:: /static/pixel.png
     :class: one-pixel
  
- .. image:: /static/banner.png
+.. image:: /static/banner.png
    :class: banner
 
 Introduction
