@@ -6,8 +6,8 @@ Converters, tools and services
 
 .. note::
 
-   The opinions expressed under "Personal rating" are those of the maintainer
-   of this project (Andreas Jung). The ratings are mostly based on personal
+   The opinions expressed under "Personal review" are those of the maintainer
+   of this project (Andreas Jung). The ratings are based mainly on personal
    experience, evaluation work and project work.
 
 PDFreactor
@@ -19,17 +19,17 @@ PDFreactor
 * Sample documents: https://www.pdfreactor.com/samples/
 * Pricing: 
 
-  * 4 CPU server license: 2950 USD
-  * personal non-commercial license: free
+  * 4 CPU server licence: 2950 USD
+  * Personal non-commercial licence: free
 
-* Personal rating:
+* Personal review:
 
   * Excellent workhorse, very compliant and complete implementation of the CSS Paged Media standard.
-  * Extensive and good documentation (Javascript API could be better documented with examples).
+  * Good-quality, extensive documentation (Javascript API could be better documented with examples).
   * Reasonable pricing.
   * Good and responsive support.
-  * PDFreactor is now our premier choice in customer projects.
-  * PDFreactor introduced ZUGFred integration  
+  * PDFreactor is now our premier choice for customer projects.
+  * PDFreactor has introduced ZUGFred integration.  
 
 PrinceXML
 ---------
@@ -40,17 +40,17 @@ PrinceXML
 * `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
 * Pricing: 
 
-  * server license (independent of #CPUs):    3800 USD
-  * academic server license: 1900 USD
-  * personal desktop license: 495 USD
-  * non-commercial license: free
+  * Server licence (independent of #CPUs):    3800 USD
+  * Academic server licence: 1900 USD
+  * Personal desktop licence: 495 USD
+  * Non-commercial licence: Free
 
-* Personal rating:
+* Personal review:
 
-  * Similar quality and similar level of complicance as PDFreactor 
-  * Good and extensive documentation
+  * Similar quality and level of complicance to PDFreactor 
+  * Good-quality, extensive documentation
   * Good and responsive support
-  * A bit overpriced compared to PDFreactor
+  * A little overpriced in comparison to PDFreactor
   * We used PrinceXML for many years before we discovered and switched to PDFreactor
 
 Antennahouse CSS Formatter
@@ -61,19 +61,19 @@ Antennahouse CSS Formatter
 * `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
 * Pricing:
 
-  * AH Server license with one CPU: 5000 USD (+ 4000 USD per additional CPU)
+  * AH server license with one CPU: 5000 USD (+ 4000 USD per additional CPU)
   * AH standalone license: 	1250 USD
-  * AH Lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU) 
-  * for all prices see `here <https://www.antennahouse.com/prices/>`_
+  * AH lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU) 
+  * For a complete list of prices, see `here <https://www.antennahouse.com/prices/>`_
 
-* Personal rating:
+* Personal review:
 
-  * best available solution
-  * very compliant
-  * lots of specific extensions and features known from the standard Antennahouse
+  * Best available solution
+  * Very compliant
+  * Lots of specific extensions and features known from the standard Antennahouse
     XSL-FO converter
-  * good and responsive support
-  * documentation is extensive although partly a bit unorganized or confusing
+  * Good and responsive support
+  * Documentation is extensive, although a little unorganized or confusing in parts
 
 
 pdfChip
@@ -81,32 +81,32 @@ pdfChip
 
 * Current version. 1.2
 * Website: https://www.callassoftware.com/en/products/pdfchip
-* Pricing: the various pdfChip versions are artificially limited (you pay
+* Pricing: The various pdfChip versions are artificially limited (you pay
   for document volume and usage):
 
-  * pdfChip S (1000 pages per hour, 25 pages per document, barcode support limited): 5.000 EUR                            
-  * pdfChip M (5000 pages per hour, 250 pages per document): 10.000 EUR
-  * pdfChip L (25000 pages per hour, 1500 pages per document): 15.000 EUR
-  * pdfChip XL/Enterprise (unlimited):  25.000 EUR
+  * pdfChip S (1000 pages per hour, 25 pages per document, barcode support limited): 5,000 EUR                            
+  * pdfChip M (5000 pages per hour, 250 pages per document): 10,000 EUR
+  * pdfChip L (25000 pages per hour, 1500 pages per document): 15,000 EUR
+  * pdfChip XL/Enterprise (unlimited):  25,000 EUR
 
 * Personal rating:
 
-  * pdfChip does not claim to implement (the whole) CSS Paged Media standard.
-    Instead they rely on the Webkit browser engine and implement a lot of
+  * pdfChip does not claim to implement the (whole) CSS Paged Media standard.
+    Instead, they rely on the Webkit browser engine and implement a lot of
     features using the -webkit CSS prefix.
-  * An absurd pricing policy that is hard to beat. Entry level costs 5.000 EUR and is
-    is crippled down to 25 pages per document. What the fuck...this is ripping of
+  * An absurd pricing policy that is hard to get your head around. Entry level costs 5,000 EUR
+    and is crippled to 25 pages per document. What the fuck...this is ripping off
     customers.
-  * We evaluated pdfChip several times and there is not much that we could not
-    do with PrinceXML or PDFreactor. It seems that pdfChip provides a better
-    support for Javascript libraries since it is based on the Webkit engine while
+  * We evaluated pdfChip several times and it does not provide much that we could not
+    do with PrinceXML or PDFreactor. It seems that pdfChip provides better
+    support for Javascript libraries, since it is based on the Webkit engine, while
     PDFreactor or PrinceXML implement their own rendering engine.
-  * In my opinion not worth a single EUR...PDFreactor or PrinceXML are in general
-    the better option (you get PDFreactor for less than 3000 USD without any
-    limitation compared to a castrated pdfChip version (limited to #pages per document
-    and # documents per hour).
-  * pdfChip appears like a completely overpriced barcode generator.
-  * pdfChip is not included with the tests for the reasons given.
+  * In my opinion, it is not worth a single euro. PDFreactor or PrinceXML are, in general,
+    the better options (you can get PDFreactor for less than 3000 USD and without any
+    limitations, compared to a castrated pdfChip version (limited to #pages per document
+    and #documents per hour)).
+  * pdfChip gives the impression of being a completely overpriced barcode generator.
+  * pdfChip is not included in the tests for the reasons given.
 
 Weasyprint
 ----------
@@ -115,18 +115,18 @@ Weasyprint
 * Website: http://www.weasyprint.org
 * Pricing:
 
-  * free, open-source
+  * Free, open-source
 
-* Personal rating:
+* Personal review:
 
-  * Free alternative with a PDF rendering quality that is average.
+  * Free alternative offering an average PDF rendering quality.
   * Weasyprint only implements a subset of the CSS Paged Media standard
   * Various errors found during evaluation.
-  * If you need a cheap and average PDF engine then Weasyprint might be
-    an option. Don't use it for professional enterprise projects. Tinkering
+  * If you need a cheap and average PDF engine, Weasyprint might be
+    an option. Avoid using it for professional enterprise projects. Tinkering
     with bugs and limitations costs more time, money and nerves than investing
-    some money for PDFreactor or PrinceXML.
-  * Weasyprint is not included with the tests for the reasona given.
+    some money in PDFreactor or PrinceXML.
+  * Weasyprint is not included in the tests for the reasona given.
 
 Docraptor
 ---------
@@ -139,17 +139,17 @@ Docraptor
 
 * Personal rating:
 
-  * Same PDF quality as PrinceXML, but DocRaptor does offer better JavaScript
+  * Same PDF quality as PrinceXML, but DocRaptor offers better JavaScript
     parsing on top of the PrinceXML engine.
   * Docraptor is usually one PrinceXML version behind the official PrinceXML releases
-  * Using DocRaptor requires sending your document to a third-party, but they
+  * Using DocRaptor requires your document to be sent to a third-party, but they
     can delete it immediately upon processing. Images and CSS must be placed on
-    a (public) server for Docraptor to pick them up or they must be embedded
-    with the HTML using data URIs (https://css-tricks.com/data-uris/). My
+    a (public) server for Docraptor to retrieve them or else embedded
+    in the HTML using data URIs (https://css-tricks.com/data-uris/). My
     recommendation to Docraptor: provide an API for accepting a self-contained
-    ZIP archive containing the HTML source and all related resources like
-    images, CSS, fonts etc. instead of differentiating between source input and
+    ZIP archive containing the HTML source and all related resources such as
+    images, CSS, fonts, etc., instead of differentiating between source input and
     resources.
-  * Pricing is based on conversion volume and appears reasonable. Not sure when
-    a self-hosted version of some other professional converter is cheaper and when
-    the better option in the long run).  
+  * Pricing is based on conversion volume and appears reasonable. Overall verdict undecided
+    given that self-hosted versions of other professional converters are cheaper and may be
+    the better option in the long run.
