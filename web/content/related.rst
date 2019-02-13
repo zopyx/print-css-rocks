@@ -27,13 +27,13 @@ Slides
 
     .. raw:: html 
 
-      <iframe src="//www.slideshare.net/slideshow/embed_code/key/bmHH11fPovVhsa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques" title="CSS Paged Media - A review of tools and techniques" target="_blank">CSS Paged Media - A review of tools and techniques</a> </strong> from <strong><a href="//www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong> </div>
+      <iframe src="//www.slideshare.net/slideshow/embed_code/key/bmHH11fPovVhsa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques" title="CSS Paged Media - A review of tools and techniques" target="_blank">CSS Paged Media - A review of tools and techniques</a> </strong> by <strong><a href="//www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong> </div>
 
-- `PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht` - by Andreas Jung (Tekom Frühjahrstagung 2017)
+- `PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht` - by Andreas Jung (Tekom spring conference 2017)
     
     .. raw:: html 
 
-        <iframe src="//www.slideshare.net/slideshow/embed_code/key/gkL1cqytPE6CGV" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ajung/pdf-generierung-mit-xmlhtml-und-css-was-die-tools-knnen-und-was-nicht" title="PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht." target="_blank">PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht.</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/ajung">Andreas Jung</a></strong> </div>
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/gkL1cqytPE6CGV" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ajung/pdf-generierung-mit-xmlhtml-und-css-was-die-tools-knnen-und-was-nicht" title="PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht." target="_blank">PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht.</a> </strong> by <strong><a target="_blank" href="https://www.slideshare.net/ajung">Andreas Jung</a></strong> </div>
 
 - `Automatisierte Printlayouts mit Webtechnologien <http://www.pagina.gmbh/slides/2015-11-20_PrintCSS_Markupforum_Tobias-Fischer.html#/>`_ by Tobias Fischer (German only)
 
@@ -42,8 +42,6 @@ Slides
 
 Books
 +++++
-
-- `Introduction toi CSS for Paged Media (Antennahouse, XMLPrague 2018 edition) <http://www.xmlprague.cz/wp-content/uploads/www.xmlprague.cz/2018/02/CSS-Print.pdf>`_ 
 
 - `Print CSS. Das CSS paged media Modul <http://www.pagina-online.de/unternehmen/publikationen/printcss>`_  by Christin Götz, Tobias Ott (German only), Pagina GmbH, 38 €, ISBN 978-3938529089
 
@@ -82,7 +80,6 @@ DITA
 - `DITA Open Toolkit plugin to generate PDF output using CSS Paged Media by xml.rocks <https://github.com/xmlrocks/dita-ot-pdf-css-page>`_
 
 
-
 .. image:: /static/pixel.png
     :class: one-pixel
 
@@ -117,5 +114,6 @@ Project references
 
    - all PDF files on `Onkopedia [DE] <https://onkopedia.com>`_ and `Onkopedia [EN] <https://onkopedia-guidelines.info>`_  e.g. this document on `cancer [DE]  <https://www.onkopedia.com/de/onkopedia/guidelines/mammakarzinom-des-mannes/@@view/pdf/index.pdf?filename=mammakarzinom-des-mannes.pdf>`_
    - `Produce & Publish references <https://www.produce-and-publish.com/showcase/references>`_
+
 
 
