@@ -1,36 +1,35 @@
 .. image:: /static/pixel.png
     :class: one-pixel
 
-About print-css.rocks 
-=====================
+About this site
+===============
 
 .. note:: 
-  :class: alert-info
 
   The author and maintainer of this site is not affiliated with any company or
-  vendor. All opionions expressed on this page are the opinion of the author and
-  the maintainer based year-long research and experience with various tools. All
-  results are based on experience and research. If you object any result or
-  opinion then please get in touch in order to discuss or correct a problem with
-  the site. I am happy to discuss details and to accept contributions for
-  improving this site over time.
+  vendor. All opinions expressed on this page are those of the author and
+  maintainer based on years-long research and experience with a variety of tools.
+  All results are based on experience and research. If you object to any of the results or
+  opinions expressed, please get in touch to discuss or rectify the issue.
+  I am happy to discuss specific details and accept contributions for
+  improving the site over time.
 
 Maintainer
 +++++++++++
 
-This site is a private project of `Andreas Jung <https://about.me/andreasjung>`_.  
+This site is a private project by `Andreas Jung <https://about.me/andreasjung>`_.  
 
 .. image:: /static/ajung-med.jpg 
     :class: ajung
 
-Andreas Jung is the founder of ZOPYX Limited.  Upon completion of his studies
+Andreas Jung is the founder of ZOPYX Limited. Upon completing his studies
 in computer science and electrical engineering at the University of Saarland,
-Andreas worked predominantly in the area of electronic publishing, gaining
-experience with different publishers and in different roles (Infeurope,
-Saarbrücker Daily Newspaper Publishing House and Printing Press, Haufe-Lexware
-GmbH).  In 2004, Andreas Jung founded ZOPYX Limited and has been realising
-sophisticated solutions in the area of web portals (intranet, internet,
-extranet) as well as in electronic publishing and diverse individual software
+Andreas pursued a career in electronic publishing, gaining
+experience with a variety of publishers and in a variety of roles (Infeurope,
+Saarbrücker Zeitung Publishing House and Printing Press, Haufe-Lexware
+GmbH). Andreas founded ZOPYX Limited in 2004. He has been implementing
+sophisticated solutions for web portals (intranet, internet,
+extranet), electronic publishing and diverse individual software
 developments ever since.
 
 .. raw:: html
@@ -39,7 +38,7 @@ developments ever since.
     <thead>
       <tr>
         <th>Skills</th>
-        <th>Areas of activity</th>
+        <th>Areas of expertise</th>
         <th>Services</th>
         <th>Training</th>
       </tr>
@@ -54,16 +53,16 @@ developments ever since.
             <li>Postgres, MongoDB, MySQL, noSQL databases
             <li>XML
             <li>PDF generation 
-            <li>all web technologies (HTML, Javascript, jQuery, Highstocks, Highcharts)
+            <li>All web technologies (HTML, Javascript, jQuery, Highstocks, Highcharts)
            </ul>
         </td>
         <td>
           <ul>
-            <li>Back-end software development</li>
+            <li>Backend software development</li>
             <li>Architecture</li>
             <li>Project management</li>
             <li>Consulting</li>
-            <li>Training, incl. hands-on training</li>
+            <li>Training (incl. practical training)</li>
           </ul>
         </td>
         <td>
@@ -71,7 +70,7 @@ developments ever since.
             <li>Python and Plone software development</li>
             <li>Electronic publishing solutions</li>
             <li>XML based publishing</li>
-            <li>web applications and portals</li>
+            <li>Web applications and portals</li>
           </ul>
         </td>
         <td>
@@ -134,7 +133,7 @@ Related projects
             and toolbox.      
         </td>
         <td>
-            Our XML content-managment solution based on the open-source
+            Our XML content management solution based on the open-source
             CMS <a href="https://plone.org">Plone</a>      
         </td>
         <td>
@@ -144,14 +143,21 @@ Related projects
   </table>
 
 
+Legal information and privacy statement
++++++++++++++++++++++++++++++
+
+`Legal information and privacy statement <https://www.zopyx.com/imprint>`_
+
+
+
 Contribute & participate
 ++++++++++++++++++++++++
 
 The print-css.rocks project is an open platform for spreading the word about
-"CSS Paged Media" and "Print CSS". Feel to contribute further lessons and
-showcases, pointers to documentation and resource etc.  You can either contact
-me directly or you fork the project on Github and see me some pull requests.
-print-css.rocks is supposed to be a living and growing project for the Print
+CSS Paged Media and Print CSS. Please feel free to contribute further lessons and
+showcases and to point other users to documentation, resources, etc.  You can contact
+me directly or fork the project on Github and send me some pull requests.
+print-css.rocks is intended as a living, growing project for the Print
 CSS community.
 
 
@@ -160,11 +166,7 @@ Licence
 
 .. raw:: html
 
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">print-css.rocks</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.aboutme.com/andreasjung" property="cc:attributionName" rel="cc:attributionURL">Andreas Jung</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/zopyx/print-css-rocks" rel="dct:source">https://github.com/zopyx/print-css-rocks</a>.
-
-
-.. image:: /static/pixel.png
-    :class: one-pixel
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">print-css.rocks</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.aboutme.com/andreasjung" property="cc:attributionName" rel="cc:attributionURL">Andreas Jung</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on works available at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/zopyx/print-css-rocks" rel="dct:source">https://github.com/zopyx/print-css-rocks</a>.
 
 Professional support
 ====================
@@ -194,3 +196,5 @@ Contact
         <br/>
         <i class="fas fa-globe"></i><a href="https://zopyx.com"> www.zopyx.com </a>
     </div>
+
+
