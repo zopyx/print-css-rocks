@@ -144,7 +144,7 @@ Related projects
 
 
 Legal information and privacy statement
-+++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++
 
 `Legal information and privacy statement <https://www.zopyx.com/imprint>`_
 
