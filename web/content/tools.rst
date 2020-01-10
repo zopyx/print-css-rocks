@@ -13,7 +13,7 @@ Converters, tools and services
 PDFreactor
 ----------
 
-* Current version: 10
+* Current version: 10.1
 * Website: https://www.pdfreactor.com
 * `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
 * Sample documents: https://www.pdfreactor.com/samples/
@@ -34,7 +34,7 @@ PDFreactor
 PrinceXML
 ---------
 
-* Current version: 12 
+* Current version: 13.1
 * Website: http://www.princexml.com
 * Sample documents: http://www.princexml.com/samples
 * `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
@@ -56,7 +56,7 @@ PrinceXML
 Antennahouse CSS Formatter
 --------------------------
 
-* Current version: 6.6 (MR2)
+* Current version: 6.6 (MR10)
 * Website: https://www.antennahouse.com
 * `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
 * Pricing:

@@ -43,7 +43,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 
 Version
 -------
-- V 2.0 - 01.02.2018
+- V 3.0 - 01.02.2020
 
 
 Tools
@@ -58,9 +58,9 @@ platform.
 
 This tutorial covers and compares the following three tools:
 
-- PDFreactor 10.0.10722.2
-- PrinceXML 12.4
-- Antennahouse 6.6 MR2
+- PDFreactor 10.1.10722.9
+- PrinceXML 13.1
+- Antennahouse 6.6 MR10
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
