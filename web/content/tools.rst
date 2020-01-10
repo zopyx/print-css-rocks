@@ -79,7 +79,7 @@ Antennahouse CSS Formatter
 pdfChip
 -------
 
-* Current version. 1.2
+* Current version. 2.1
 * Website: https://www.callassoftware.com/en/products/pdfchip
 * Pricing: The various pdfChip versions are artificially limited (you pay
   for document volume and usage):
