@@ -118,6 +118,13 @@ Antennahouse CSS Formatter
   > run.sh -d index.html  -o out.pdf
 
 
+Weasyprint
+++++++++++
+
+.. code-block:: shell
+
+  > weasyprint index.html index.pdf
+
 Each of the ``lesson-...`` directories contains a ``Makefile`` that can be used in the same way
 across all lessons for generating a PDF with one of the featured converters:
 
@@ -126,6 +133,7 @@ across all lessons for generating a PDF with one of the featured converters:
     > make pdfreactor       # generates `pdfreactor.pdf`
     > make prince           # generates `prince.pdf`
     > make antennahouse     # generates `antennahouse.pdf`
+    > make weasyprint       # generates `weasyprint.pdf`
 
 Source code
 -----------
