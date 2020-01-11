@@ -43,7 +43,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 
 Version
 -------
-- V 3.0 - 01.02.2020
+- V 3.0 - 2020/01/11
 
 
 Tools
