@@ -115,7 +115,7 @@ Antennahouse CSS Formatter
 
 .. code-block:: shell
 
-  > run.sh -d index.html  -o out.pdf
+  > run.sh -d index.html  -o index.pdf
 
 
 Weasyprint
