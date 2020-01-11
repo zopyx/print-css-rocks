@@ -107,9 +107,11 @@ Antennahouse CSS Formatter
 Each of the ``lesson-...`` directories contains a ``Makefile`` that can be used in the same way
 across all lessons for generating a PDF with one of the featured converters:
 
-    > make pdfreactor   -> generates `pdfreactor.pdf`
-    > make prince       -> generates `prince.pdf`
-    > make antennahouse -> generates `antennahouse.pdf`
+.. code-block:: shell
+
+    > make pdfreactor       # generates `pdfreactor.pdf`
+    > make prince           # generates `prince.pdf`
+    > make antennahouse     # generates `antennahouse.pdf`
 
 Source code
 -----------
