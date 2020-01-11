@@ -6,7 +6,7 @@
 
     <div class="jumbotron">
       <h1 class="display-4">PrintCSS workshop at XMLPrague 2020<h1>
-      <p class="lead">@print-css.rocks will host a three hour PrintCSS workshop at XMLPrague on Wednesday, 13.02.2019.</p>
+      <p class="lead">@printcssrocks will host a three hour PrintCSS workshop at XMLPrague on Wednesday, 13.02.2019.</p>
       <hr class="my-4">
       <p class="lead">
         <a class="btn btn-primary btn-lg" href="https://www.xmlprague.cz/" role="button">Learn more</a>
