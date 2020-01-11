@@ -111,7 +111,7 @@ pdfChip
 Weasyprint
 ----------
 
-* Current version: 44
+* Current version: 51
 * Website: http://www.weasyprint.org
 * Pricing:
 
