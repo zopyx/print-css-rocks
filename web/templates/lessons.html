@@ -14,6 +14,7 @@
                         <th>PDFreactor</th>
                         <th>PrinceXML</th>
                         <th>Antennahouse</th>
+                        <th>Weasyprint</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,6 +41,11 @@
                             <td class="converter-status">
                                 {% if row['converters'].get('Antennahouse') %}
                                     {{ row['converters']['Antennahouse']['status'] }}
+                                {% endif %}
+                            </td>
+                            <td class="converter-status">
+                                {% if row['converters'].get('Weasyprint') %}
+                                    {{ row['converters']['Weasyprint']['status'] }}
                                 {% endif %}
                             </td>
                         </tr>

@@ -189,6 +189,7 @@ async def lessons(request):
     compliance['pdfreactor'] = []
     compliance['antennahouse'] = []
     compliance['princexml'] = []
+    compliance['weasyprint'] = []
 
     for lesson in os.listdir(LESSON_ROOT):
         if not lesson.startswith('lesson-'):
@@ -203,7 +204,7 @@ async def lessons(request):
         compliance[category].append(
             dict(name=lesson, converters=cmpl, readme=readme, readme_raw=readme_raw))
 
-    for key in ('intro', 'advanced', 'special', 'princexml', 'antennahouse', 'pdfreactor'):
+    for key in ('intro', 'advanced', 'special', 'princexml', 'antennahouse', 'pdfreactor', 'weasyprint'):
         compliance[key] = sorted(compliance[key], key=lambda item: lessons_ordered.get(item['name'], 999))
     return dict(compliance=compliance, navigation=inside)
 
@@ -257,7 +258,7 @@ def get_lesson_data(lesson):
             category = CP.get('common', 'category')
 
         for section in CP.sections():
-            if section not in ('PDFreactor', 'PrinceXML', 'Antennahouse'):
+            if section not in ('PDFreactor', 'PrinceXML', 'Antennahouse', 'Weasyprint'):
                 continue
 
             try:
