@@ -74,6 +74,7 @@ This tutorial covers and compares the following three tools:
 - PDFreactor 10.1.10722.9
 - PrinceXML 13.1
 - Antennahouse 6.6 MR10
+- Weasyprint 0.42.3 (included for the first time. The results are not checked for compliance...without valuation)
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
