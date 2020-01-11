@@ -192,7 +192,7 @@ Contact
         <br/>
         <i class="fas fa-envelope"></i><a href="mailto:info@zopyx.com"> info@zopyx.com</a>
         <br/>
-        <i class="fab fa-twitter"></i><a href="https://twitter.com/printcssrocks"> @printcssrocks</a>
+        <i class="fab fa-twitter"></i><a href="https://twitter.com/printcssrocks">&nbsp;@printcssrocks</a>
         <br/>
         <i class="fas fa-globe"></i><a href="https://zopyx.com"> www.zopyx.com </a>
     </div>
