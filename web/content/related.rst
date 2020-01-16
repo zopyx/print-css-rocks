@@ -38,6 +38,8 @@ Slides
 - `Automatisierte Printlayouts mit Webtechnologien <http://www.pagina.gmbh/slides/2015-11-20_PrintCSS_Markupforum_Tobias-Fischer.html#/>`_ by Tobias Fischer (German only)
 
 - `Crossmedia Publishing mit HTML5 und CSS 3 <http://muenchen.ebookcamp.de/wp-content/uploads/sites/2/2015/02/eBookCamp_Tobias-Fischer_PrintCSS.pdf>`_ by Tobias Fischer (German only)
+
+- `PrintCSS in der Praxis <https://www.pagina.gmbh/slides/2019-03-20_PrintCSS_ppf2019_Sandmann-Goetz.pdf>`_ by Christin Sandmann-Götz (German only)
   _
 
 Books
