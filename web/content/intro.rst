@@ -69,7 +69,7 @@ work cross-platform, on multiple operating systems (Mac OSX, Linux, Windows).
 The tests do not include tools that only work on a single operating system or
 platform.
 
-This tutorial covers and compares the following three tools:
+This tutorial covers and compares the following four tools:
 
 - PDFreactor 10.1.10722.9
 - PrinceXML 13.1
@@ -92,7 +92,7 @@ or check out the repository using git::
 
     git clone git@github.com:zopyx/print-css-rocks.git
 
-The core examples work with all three tools, ```pdfreactor``, ``prince`` and ``run.sh`` (Antennahouse). 
+The core examples work with all four tools, `weasyprint`, `pdfreactor`, `prince` and `run.sh` (Antennahouse). 
 Ensure that the related binary/binaries are configured in the ``$PATH`` of your shell environment.
 
 PDFreactor
