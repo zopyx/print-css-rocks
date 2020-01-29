@@ -3,4 +3,4 @@ install:
 	bin/pip install -r requirements.txt
 
 serve:
-	bin/gunicorn server:app --bind 0.0.0.0:8000 --worker-class sanic.worker.GunicornWorker
+	LESSON_ROOT=../lessons bin/gunicorn server:app --bind 0.0.0.0:8000 --worker-class sanic.worker.GunicornWorker
