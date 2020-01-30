@@ -2,4 +2,4 @@ include ../Makefile
 
 
 prince:
-	-prince index.html -s prince.css -o prince.pdf
+	-prince --javascript --script=../javascript/prince.js index.html -o prince.pdf

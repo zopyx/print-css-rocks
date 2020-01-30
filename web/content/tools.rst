@@ -15,6 +15,7 @@ PDFreactor
 
 * Current version: 10.1
 * Website: https://www.pdfreactor.com
+* Docker images: https://hub.docker.com/r/realobjects/pdfreactor
 * `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
 * Sample documents: https://www.pdfreactor.com/samples/
 * Pricing: 
@@ -36,6 +37,7 @@ PrinceXML
 
 * Current version: 13.1
 * Website: http://www.princexml.com
+* Docker images: https://hub.docker.com/r/yeslogic/prince
 * Sample documents: http://www.princexml.com/samples
 * `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
 * Pricing: 
@@ -58,6 +60,7 @@ Antennahouse CSS Formatter
 
 * Current version: 6.6 (MR10)
 * Website: https://www.antennahouse.com
+* Docker images: https://hub.docker.com/r/antennahouse/ahfcmd
 * `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
 * Pricing:
 
