@@ -32,6 +32,11 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: NotoColorEmoji;
+    src: url("NotoColorEmoji/NotoColorEmoji.ttf") format('truetype');
+}
+
 @page {
     @bottom-center {
         content: "https://print-css.rocks";
