@@ -14,11 +14,6 @@
     src: url(Forum-Regular.ttf);
 }
 
-@font-face {
-    font-family: Emoji;
-    src: url("../styles/TwitterEmoji/TwitterEmoji.ttf") format('truetype');
-}
-
 #block1 {
     font-family: Font1;
     font-size: 36pt;
@@ -37,19 +32,3 @@
     color: orange;
 }
 
-.emoji {
-    font-family: Emoji;
-    margin-bottom: 1em;
-}
-
-.size1 {
-    font-size: 1em;
-}
-
-.size2 {
-    font-size: 2em;
-}
-
-.size3 {
-    font-size: 3em;
-}
