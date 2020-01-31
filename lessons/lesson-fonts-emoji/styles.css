@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Emoji;
+    src: url("TwitterEmoji.ttf") format('truetype');
+}
+
+
+.emoji {
+    font-family: Emoji;
+    margin-bottom: 1em;
+}
+
+.size1 {
+    font-size: 1em;
+}
+
+.size2 {
+    font-size: 2em;
+}
+
+.size3 {
+    font-size: 3em;
+}
