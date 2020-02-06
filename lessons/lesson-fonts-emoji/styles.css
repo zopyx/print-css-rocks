@@ -1,6 +1,8 @@
+@import url("../styles/a4.css");
+
 @font-face {
     font-family: Emoji;
-    src: url("TwitterEmoji.ttf") format('truetype');
+    src: url("TwitterEmoji.ttf") format('opentype');
 }
 
 
