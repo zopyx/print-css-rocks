@@ -14,7 +14,7 @@ h1 {
 }
 
 @page Bizarre {
-    size: a5 landscape;
+    size: 148mm 105mm;
     background: blue;
     color: pink;
     border: 3px dashed yellow;
