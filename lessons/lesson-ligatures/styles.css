@@ -12,16 +12,19 @@ div.demo {
     float: left;
     width: 45%;
     min-width: 45%;
+    font-kerning: none;
 }
 
 .with-ligatures {
     -ah-ligature-mode: auto;
     -webkit-font-kerning: auto;
+    font-kerning: none;
 }
 
 
 .without-ligatures {
     -ah-ligature-mode: none;
+    font-variant-ligatures: none;
 }
 
 .serif {
