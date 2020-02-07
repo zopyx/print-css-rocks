@@ -1,0 +1,35 @@
+@import url("../styles/a4.css");
+
+table {
+    page-break-after: always;
+}
+
+@page:left {
+    prince-rotate-body: 270deg; 
+}
+
+@page:right {
+    prince-rotate-body: 90deg; 
+}
+
+
+/* CSS Document */ 
+
+/* Long table */
+table#long-table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table#long-table th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    background: #ddd;
+}
+
+table#long-table th,
+table#long-table td {
+    border: 1px solid grey;
+    padding: 0.5em;
+}
