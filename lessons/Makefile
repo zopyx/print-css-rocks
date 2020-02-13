@@ -10,7 +10,7 @@ antennahouse:
 	-run.sh -d  index.html -o antennahouse.pdf
 
 weasyprint:
-	-weasyprint  index.html weasyprint.pdf
+	-weasyprint  -e utf-8 index.html weasyprint.pdf
 
 
 clean:

@@ -16,6 +16,7 @@ div.demo {
 }
 
 .with-ligatures {
+    font-variant-ligatures: normal;
     -ah-ligature-mode: auto;
     -webkit-font-kerning: auto;
     font-kerning: none;
@@ -23,6 +24,7 @@ div.demo {
 
 
 .without-ligatures {
+    font-variant-ligatures: none;
     -ah-ligature-mode: none;
     font-variant-ligatures: none;
 }
