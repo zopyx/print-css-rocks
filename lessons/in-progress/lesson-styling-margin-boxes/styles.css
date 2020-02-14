@@ -4,7 +4,6 @@
     position: running(footer);
     font-size: 8pt;
     text-align: justify;
-    border: 1px dashed pink;
     padding: 0;
     margin: 0;
     height: 3cm;
@@ -13,7 +12,6 @@
 }
 
 #running2 {
-    border: 1px dashed pink;
     position: running(footer2);
     text-align: justify;
     font-size: 6pt;
@@ -37,25 +35,23 @@
     margin-bottom: 5cm;
 
     @bottom-left {
-        border: 1px solid red;
         width: 30%;
         content: element(footer);
         vertical-align: top;
     }
     @bottom-right {
-        border: 1px solid red;
         width: 30%;
         content: element(footer2);
         vertical-align: top;
     }
 
     @bottom-center {
-        border: 1px solid red;
         content: "the page is " counter(page);
         vertical-align: top;
         border-bottom: 5px solid blue;
         display: table-cell;
         vertical-align: bottom;
+        margin-bottom: 2cm;
     }
 
 }
