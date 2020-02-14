@@ -3,21 +3,31 @@
 #running {
     position: running(footer);
     font-size: 8pt;
-    vertical-align: bottom;
     text-align: justify;
     border: 1px dashed pink;
     padding: 0;
     margin: 0;
+    height: 3cm;
+    border-bottom: 5px solid blue;
+    display: table;
 }
 
 #running2 {
     border: 1px dashed pink;
     position: running(footer2);
-    vertical-align: top;
+    text-align: justify;
     font-size: 6pt;
     color: blue;
     padding: 0;
     margin: 0;
+    height: 3cm;
+    border-bottom: 5px solid blue;
+    display: table;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 @page {
@@ -30,16 +40,22 @@
         border: 1px solid red;
         width: 30%;
         content: element(footer);
+        vertical-align: top;
     }
     @bottom-right {
         border: 1px solid red;
         width: 30%;
         content: element(footer2);
+        vertical-align: top;
     }
 
     @bottom-center {
         border: 1px solid red;
-        content: "the page is" counter(page);
+        content: "the page is " counter(page);
+        vertical-align: top;
+        border-bottom: 5px solid blue;
+        display: table-cell;
+        vertical-align: bottom;
     }
 
 }
