@@ -1,0 +1,45 @@
+@import url("../styles/a4.css");
+
+#running {
+    position: running(footer);
+    font-size: 8pt;
+    vertical-align: bottom;
+    text-align: justify;
+    border: 1px dashed pink;
+    padding: 0;
+    margin: 0;
+}
+
+#running2 {
+    border: 1px dashed pink;
+    position: running(footer2);
+    vertical-align: top;
+    font-size: 6pt;
+    color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+@page {
+    border: 1px solid blue;
+
+    size: a4;
+    margin-bottom: 5cm;
+
+    @bottom-left {
+        border: 1px solid red;
+        width: 30%;
+        content: element(footer);
+    }
+    @bottom-right {
+        border: 1px solid red;
+        width: 30%;
+        content: element(footer2);
+    }
+
+    @bottom-center {
+        border: 1px solid red;
+        content: "the page is" counter(page);
+    }
+
+}
