@@ -2,13 +2,11 @@
 
 #running {
     position: running(footer);
-    font-size: 8pt;
     text-align: justify;
     padding: 0;
     margin: 0;
-    height: 3cm;
-    border-bottom: 5px solid blue;
     display: table;
+    font-size: 4pt;
 }
 
 #running2 {
@@ -18,8 +16,6 @@
     color: blue;
     padding: 0;
     margin: 0;
-    height: 3cm;
-    border-bottom: 5px solid blue;
     display: table;
 }
 
@@ -37,22 +33,25 @@
     @bottom-left {
         width: 30%;
         content: element(footer);
-        vertical-align: top;
+        border: 3px solid blue;
         margin-bottom: 2cm;
+        vertical-align: bottom;
     }
     @bottom-right {
         width: 30%;
         content: element(footer2);
-        vertical-align: top;
+        margin-bottom: 2cm;
+        border: 3px solid blue;
+        vertical-align: bottom;
     }
 
     @bottom-center {
         content: "the page is " counter(page);
-        vertical-align: top;
-        border-bottom: 5px solid blue;
-        display: table-cell;
-        vertical-align: bottom;
         margin-bottom: 2cm;
+        border: 3px solid blue;
+        vertical-align: bottom;
+        color: blue;
+        font-size: 20pt;
     }
 
 }
