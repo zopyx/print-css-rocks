@@ -20,7 +20,7 @@ PDFreactor
 * Sample documents: https://www.pdfreactor.com/samples/
 * Pricing: 
 
-  * 4 CPU server licence: 2950 USD
+  * 4 CPU cores server licence: 2950 USD
   * Personal non-commercial licence: free
 
 * Personal review:
@@ -42,7 +42,7 @@ PrinceXML
 * `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
 * Pricing: 
 
-  * Server licence (independent of #CPUs):    3800 USD
+  * Server licence (independent of #CPUs and #cores):    3800 USD
   * Academic server licence: 1900 USD
   * Personal desktop licence: 495 USD
   * Non-commercial licence: Free
@@ -64,7 +64,7 @@ Antennahouse CSS Formatter
 * `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
 * Pricing:
 
-  * AH server license with one CPU: 5000 USD (+ 4000 USD per additional CPU)
+  * AH server license with one CPU, ∞ cores: 5000 USD (+ 4000 USD per additional CPU)
   * AH standalone license: 	1250 USD
   * AH lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU) 
   * For a complete list of prices, see `here <https://www.antennahouse.com/prices/>`_
