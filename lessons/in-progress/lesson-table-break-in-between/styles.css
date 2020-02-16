@@ -1,0 +1,94 @@
+@import url("../styles/a4.css");
+
+table {
+    page-break-after: always;
+}
+
+td.rowspan {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+/* CSS Document */ 
+
+table.complex { 
+  border-left: 1px solid #808080; 
+  border-right: 1px solid #808080; 
+  border-bottom: 1px solid #808080; 
+  max-width: 100%;
+} 
+
+table.complex caption { 
+  padding: .25em; 
+  border-top: 1px solid #808080; 
+  border-left: 1px solid #808080; 
+  border-right: 1px solid #808080; 
+  background-color: #FFFFFF; 
+} 
+
+
+table.complex td, table.complex th { 
+  padding: .125em; 
+  margin: 0; 
+  width: 10%; 
+  background-color: #FFFFFF; 
+  border-right: 1px solid #C0C0C0; 
+  border-top: 1px solid #C0C0C0; 
+  border-bottom: 1px solid #C0C0C0; 
+} 
+
+table.complex th.label { 
+  text-align: right; 
+  padding-right: .25em; 
+} 
+
+table.complex th.title { 
+  text-align: center; 
+} 
+
+table.complex td.qty { 
+  text-align: center; 
+} 
+
+table.complex td.cost, table.complex th.approval { 
+  text-align: right; 
+  padding-right: .25em; 
+} 
+
+table.complex td.total { 
+  font-weight: bold; 
+  text-align: right; 
+  padding-right: .25em; 
+} 
+
+
+table.complex th.sub { 
+  text-align: right; 
+  padding-right: .25em; 
+} 
+
+table.complex th.sect { 
+  text-align: Left; 
+  background-color: #C0C0C0; 
+  border-top: 1px solid #808080; 
+} 
+
+/* Long table */
+table#long-table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table#long-table th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    background: #ddd;
+}
+
+table#long-table th,
+table#long-table td {
+    border: 1px solid grey;
+    padding: 0.5em;
+}
+    
