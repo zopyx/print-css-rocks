@@ -7,6 +7,7 @@ table {
 td.rowspan {
     break-inside: avoid;
     page-break-inside: avoid;
+    border: 3px solid blue !important;
 }
 
 /* CSS Document */ 
