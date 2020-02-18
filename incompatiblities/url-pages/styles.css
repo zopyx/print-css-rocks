@@ -1,0 +1,11 @@
+.page {
+    page-break-after: always;
+}
+
+@page {
+    @bottom-center {
+        font-size: 12pt;
+        color: blue;
+        content: "Page " counter(page) " of " target-counter(url("#end"), page);
+    }
+}            
