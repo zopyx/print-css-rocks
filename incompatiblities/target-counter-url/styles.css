@@ -2,6 +2,12 @@
     page-break-after: always;
 }
 
+/* needed by Weasyprint ihttps://github.com/Kozea/WeasyPrint/issues/1062 */
+div::before { 
+    content: target-counter(url(#end), page);
+    display: none;
+}
+
 @page {
     @bottom-center {
         font-size: 12pt;
