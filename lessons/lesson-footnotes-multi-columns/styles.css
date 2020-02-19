@@ -5,6 +5,7 @@ div.multicol {
     text-align: justify;
     hyphens: auto;
     page-break-after: always;
+    border: 1px dashed red;
 }
 
 
@@ -19,13 +20,22 @@ h1 {
     column-rule: 4px solid #ff00ff;
 }
 
+.fill-auto {
+    column-fill: auto;
+}
+
+.fill-balanced {
+    column-fill: balance;
+
+}
+
 @page {
-    counter-reset: footnote 0;
 }
 
 @page {
     @footnote {
         border-top: dashed red 1px;
+        margin-top: 1em;
         float: bottom;
         -ah-float: after column auto-move;
     }
