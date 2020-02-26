@@ -2,16 +2,16 @@
     :class: one-pixel
  
      
-.. raw:: html
-
-    <div class="jumbotron">
-      <h1 class="display-4">PrintCSS workshop at XMLPrague 2020<h1>
-      <p class="lead">@printcssrocks will host a 90 minute PrintCSS workshop at XMLPrague on Wednesday, 13.02.2019.</p>
-      <hr class="my-4">
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="https://www.xmlprague.cz/day1-2020/#printcsstut" role="button">Learn more</a>
-      </p>
-    </div>
+#.. raw:: html
+#
+#    <div class="jumbotron">
+#      <h1 class="display-4">PrintCSS workshop at XMLPrague 2020<h1>
+#      <p class="lead">@printcssrocks will host a 90 minute PrintCSS workshop at XMLPrague on Wednesday, 13.02.2019.</p>
+#      <hr class="my-4">
+#      <p class="lead">
+#        <a class="btn btn-primary btn-lg" href="https://www.xmlprague.cz/day1-2020/#printcsstut" role="button">Learn more</a>
+#      </p>
+#    </div>
 
 .. image:: /static/banner.png
    :class: banner
