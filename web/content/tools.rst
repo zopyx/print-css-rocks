@@ -58,7 +58,7 @@ PrinceXML
 Antennahouse CSS Formatter
 --------------------------
 
-* Current version: 6.6 (MR10)
+* Current version: 7.0 R1
 * Website: https://www.antennahouse.com
 * Docker images: https://hub.docker.com/r/antennahouse/ahfcmd
 * `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
