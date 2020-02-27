@@ -12,13 +12,15 @@ antennahouse:
 weasyprint:
 	-weasyprint  -e utf-8 index.html weasyprint.pdf
 
+pagedjs:
+	-pagedjs-cli -i index.html -o pagedjs.pdf
 
 clean:
 	find . -name \*.pdf -exec rm {} \;
 
 images: FORCE
 	-rm -fr images
-	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/weasyprint
+	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/weasyprint images/pagedjs
 	echo 1 >images/placeholder
 	$(eval OPTS :=-density 150 -quality 85)
 	$(eval OPTS2 := +profile "icc")
@@ -27,10 +29,12 @@ images: FORCE
 	-convert $(OPTS) prince.pdf             $(OPTS2) images/princexml/prince.png
 	-convert $(OPTS) antennahouse.pdf       $(OPTS2) images/antennahouse/antennahouse.png
 	-convert $(OPTS) weasyprint.pdf         $(OPTS2) images/weasyprint/weasyprint.png
+	-convert $(OPTS) pagedjs.pdf            $(OPTS2) images/pagedjs/pagedjs.png
 	-convert $(THUMBOPTS)  pdfreactor.pdf         $(OPTS2) images/pdfreactor/thumb-pdfreactor.png
 	-convert $(THUMBOPTS)  prince.pdf     		  $(OPTS2) images/princexml/thumb-prince.png
 	-convert $(THUMBOPTS)  antennahouse.pdf 	  $(OPTS2) images/antennahouse/thumb-antennahouse.png
 	-convert $(THUMBOPTS)  weasyprint.pdf     	  $(OPTS2) images/weasyprint/thumb-weasyprint.png
+	-convert $(THUMBOPTS)  pagedjs.pdf     	      $(OPTS2) images/pagedjs/thumb-pagedjs.png
 
 FORCE:
 
