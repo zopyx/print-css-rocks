@@ -1,4 +1,5 @@
-all: pdfreactor prince antennahouse  weasyprint pagedjs
+all: pdfreactor prince antennahouse  weasyprint pagedjs typeset.sh
+
 
 pdfreactor:
 	-pdfreactor.py  --addLinks --addBookmarks --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf
@@ -14,6 +15,9 @@ weasyprint:
 
 pagedjs:
 	-timeout --foreground -s 9 10 pagedjs-cli -i index.html -o pagedjs.pdf
+
+typeset.sh:
+	-typeset.sh.phar render:html --allow-local /home -rx index.html typeset.pdf
 
 clean:
 	find . -name \*.pdf -exec rm {} \;
