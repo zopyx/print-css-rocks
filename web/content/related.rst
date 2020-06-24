@@ -18,7 +18,14 @@ Video
 
     .. raw:: html 
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/G2xcJ_xjAik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> by PublishingBlog.ch (2018)
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/G2xcJ_xjAik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br/>by PublishingBlog.ch (2018)
+
+- `Print CSS – Disruption oder Hype? (Aufzeichnung Webinar) with Tobias Ott and Tobias Fischer, Pagina GmbH (DE only) <https://www.vsd.ch/2020/05/28/webinar-am-28-mai-2020-satzautomation-mit-printcss-disruption-oder-hype/>`_
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5qkN2QqGIHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
 
 Slides
 ++++++
