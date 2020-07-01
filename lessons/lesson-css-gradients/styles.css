@@ -10,7 +10,7 @@ div {
 
 #gradient1 {
     background: -webkit-radial-gradient(60% 55%, circle closest-corner, red, green 20%, yellow 70%, black);
-    background: radial-gradient(60% 55%, circle closest-corner, red, green 20%, yellow 70%, black);
+    background: radial-gradient(circle closest-corner at 60% 55%, red, green 20%, yellow 70%, black);
 }
 
 #gradient2 {
