@@ -13,11 +13,11 @@ div {
 }
 
 #gradient2 {
-    background: repeating-linear-gradient(red, red 11px, white 11px, white 22px);
+    background: repeating-linear-gradient(45deg, #3f87a6, #ebf8e1 15%, #f69d3c 20%);
 }
 
 #gradient3 {
-    background: linear-gradient(left, red, blue 30%, green);
+    background: linear-gradient(to right, black, white);
 }
 
 #gradient4 {
