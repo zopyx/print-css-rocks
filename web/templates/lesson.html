@@ -35,11 +35,13 @@
                                 <span class="converter-status">{{ entry.status }}</span>
                             </td>
                             <td  data-featherlight-gallery data-featherlight-filter="a">
-                                {% for image in entry.images %} 
-                                <a href="#" class="gallery-{{entry.name|lower}}" data-featherlight="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" >
-                                        <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
-                                    </a>
-                                {% endfor %}
+                                <div class="spotlight-group">
+                                    {% for image in entry.images %} 
+                                    <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" >
+                                            <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
+                                        </a>
+                                    {% endfor %}
+                                </div>
                                 {% if entry.message %} 
                                     <div>
                                         {{ entry.message }}
