@@ -187,3 +187,7 @@ img.banner {
 .converter-status {
    text-align: center;
 }
+
+#spotlight {
+    background: white !important;
+}
