@@ -30,7 +30,7 @@ PDFreactor
   * Reasonable pricing.
   * Good and responsive support.
   * PDFreactor is now our premier choice for customer projects.
-  * PDFreactor has introduced ZUGFerd integration.  
+  * PDFreactor has integrated ZUGFerd integration.  
 
 PrinceXML
 ---------
