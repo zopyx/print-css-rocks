@@ -191,3 +191,7 @@ img.banner {
 #spotlight {
     background: white !important;
 }
+
+.pane img {
+    border: 2px dashed #aaa !important;
+}
