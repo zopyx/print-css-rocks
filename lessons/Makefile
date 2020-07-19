@@ -17,7 +17,7 @@ pagedjs:
 	-timeout --foreground -s 9 10 pagedjs-cli -i index.html -o pagedjs.pdf
 
 typeset.sh:
-	-typeset.sh.phar render:html --allow-local /home -rx index.html typeset.pdf
+	-typeset.sh.phar render:html --allow-local /home --allow-local /Users -rx index.html typeset.pdf
 
 clean:
 	find . -name \*.pdf -exec rm {} \;
