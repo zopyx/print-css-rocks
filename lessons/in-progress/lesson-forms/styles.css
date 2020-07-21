@@ -6,3 +6,11 @@
 form, form input { 
     -ro-pdf-format: pdf; 
 }
+
+input[type="text"] {
+    width: 40%;
+}
+
+div.row {
+    margin-bottom: 1em;
+}
