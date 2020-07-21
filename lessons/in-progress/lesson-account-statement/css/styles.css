@@ -1,0 +1,52 @@
+@import "fonts.css";
+
+.statement,
+.addendum {
+    page-break-after: always;
+}
+
+.statement {
+    page: statement;
+}
+
+.statement-cgls {
+    page: statement-cgls;
+}
+
+
+.addendum {
+    page: addendum;
+}
+
+/* general page size and margins */
+
+@page {
+    size: 8.5in 11in;
+    margin-bottom: 20.26pt;
+    margin-top: 105.38pt;
+}
+
+/* First statement page has a custom margin-top */
+@page :first {
+    margin-top: 20.26pt;
+}
+
+/* same for CGLS page */
+@page statement-cgls {
+    margin-top: 20.26pt;
+}
+
+/* ATT: page 1 is usually a right page. But for the statements
+ * page 1 should be left page that's why we swap :right and :left
+ * in order to get left/right margins on left/right pages right
+ */
+
+@page :right{
+    margin-left: 73.22pt;
+    margin-right: 36.14pt;
+}
+
+@page :left {
+    margin-left: 36.14pt;
+    margin-right: 73.22pt;
+}

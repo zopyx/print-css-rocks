@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reporting demo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/statement.css" />
+        <link rel="stylesheet" href="css/addendum.css" />
+
+        <style type="text/css">
+            @page statement {
+                @bottom-right {
+                    content: "Page " counter(page) " of " target-counter(url("#end"), page);
+                }
+            }
+        </style>
+
+    </head>
+
+    <body lang="en">
+         
+            <article>
+    <section class="statement">
+        <div>
+    <div class="footer">
+        <div>ZOPYX Global Enterprise<br/>Phone: (+49) 7071 793376, Fax: (+49) 7071 793376,  Website: www.zopyx.com<br />Email: info@zopyx.com</div>
+    </div>
+
+    <div class="head1-left">
+        <!--
+            <img src="logo.png" />
+        -->
+        <img src="assets/LogoSizingSample.tif" />
+    </div>
+
+    <div class="head1-right">
+        <div class="head-title">Statement of Account</div>
+        <div class="head-date">January 01, 2019 to March 31, 2019</div>
+    </div>
+
+    <div class="head2-left">
+        <div class="sequence-number">000024</div>
+        <div>HHKO MFIU</div>
+        <div>2888 XMYVFEJ FI</div>
+        <div>AXYDTPL QP  G4I 2U8</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="head2-right">
+        <div class="advisor-title" xpath=".//YFAS_TITLE">Your Financial Advisor</div>
+        <div class="advisor-outer">
+            <div class="advisor">
+                <div>ANDRE SULLIVAN</div>
+                <div>BIG BUSINESS INC</div>
+                <div>123 ARLINGTON ST</div>
+                <div>NANAIMO BC B1A 2CB</div>
+                <div></div>
+                <div></div>
+                <div>Telephone Number</div>
+                <div>(299)  753-1124</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer">&nbsp;</div>
+
+    <div class="two-tables">
+        <table class="accounting table-left">
+    <caption>
+        <span>Investor Information</span>
+    </caption>
+    <thead>
+        <tr class="headers">
+            <th class="text-left">Account Type</th>
+            <th class="text-left">Account Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="headers border-bottom" >
+            <td class="text-left text-10 bold">Self-Directed Tax Free Savings Acct</td>
+            <td class="text-left text-10 bold">19570</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        
+            <tr class="border-bottom">
+                <td colspan="2">
+                    <div class="text-left bold">Administrator Account Number</div>
+                    <div class="text-left">N1F4011Q</div>
+                    These investments are registered in the name of FIDELITY CLEARING CANADA ULC on your behalf.
+                </td>
+            </tr>
+        
+        
+        
+    </tfoot>
+</table>
+        <table class="accounting table-right">
+    <caption>
+        <span>Account Value</span>
+    </caption>
+    <tbody>
+        <tr class="border-bottom">
+            <td class="text-left text-10">
+              Closing Market Value This<br />Period
+            </td>
+            <td class="text-right text-10">
+              $7,047.73
+            </td>
+        </tr>
+        <tr class="border-bottom">
+            <td class="text-left">
+              Opening Balance
+            </td>
+            <td class="text-right">
+              $6,070.12
+            </td>
+        </tr>
+        <tr class="border-bottom">
+            <td class="text-left">
+              Book Cost
+            </td>
+            <td class="text-right">
+              $6,390.75
+            </td>
+        </tr>
+    </tbody>
+</table>
+        <div style="clear: both"></div>
+    </div>
+
+    <table class="accounting account-summary">
+    <caption>
+        <span>Account Summary</span>
+    </caption>
+    <thead>
+        <tr class="headers border-bottom">
+            <th class="text-left">Fund Name</th>
+            <th class="text-center">DSC</th>
+            <th class="text-right">Book<br />Cost ($)</th>
+            <th class="text-right">Average<br />Cost ($)</th>
+            <th class="text-right">Unit<br />Balance</th>
+            <th class="text-right">Unit<br />Price ($)</th>
+            <th class="text-right">Market<br />Value ($)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="border-bottom">
+            <td colspan="7" class="text-7 text-left">Canadian $ Investments</td>
+        </tr>
+        
+        <tr class="border-bottom">
+            <td class="text-left">Matco Small Cap Fund Series F MAT401</td>
+            <td class="text-center">N</td>
+            <td class="text-right">6,390.75</td>
+            <td class="text-right">15.9821</td>
+            <td class="text-right">399.869</td>
+            <td class="text-right">17.6251</td>
+            <td class="text-right">7,047.73</td>
+        </tr>
+        <tr class="border-bottom">
+            <td class="text-left" colspan="2"></td>
+            <td class="text-right" colspan="1"></td>
+            <td class="text-right" colspan="4"></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="text-7" colspan="7">"<b>Book cost</b>" means the total amount paid to purchase an investment, including any transaction charges related to the purchase, adjusted for reinvested distributions, return of capital and corporate reorganizations.<br />The book (original) cost shown in this statement may not be suitable for income tax purposes, as it may not reflect all required adjustments. It is important for you to keep records of all of your investment transactions and consult your income tax advisor to properly determine your gains and losses for income tax purposes.<br /><br />"<b>Market value</b>" is the price at which an investment can be sold on the open market at a specific point in time. The market value of an investment fund is its<br />"<b>Net Asset Value</b>". This is usually calculated by investment managers once per day/week/month.</td>
+        </tr>
+    </tfoot>
+</table>
+
+    
+
+    
+
+    <table class="accounting transaction-summary">
+    <caption>
+        <span>Transaction Summary</span>
+    </caption>
+    <thead>
+        <tr class="headers">
+            <th class="text-left">Fund Name</th>
+            <th class="text-right">Purchases &<br />Transfers-In ($)</th>
+            <th class="text-right">Redemptions &<br />Transfers-Out ($)</th>
+            <th class="text-right">Income<br />Distribution ($)</th>
+            <th class="text-right">Capital Gain<br />Distribution ($)</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr class="border-bottom">
+                <td class="text-7 text-left">Matco Small Cap Fund Series F MAT401</td>
+                <td class="text-7 text-right">0.00</td>
+                <td class="text-7 text-right">0.00</td>
+                <td class="text-7 text-right">0.00</td>
+                <td class="text-7 text-right">217.65</td>
+            </tr>
+        
+    </tbody>
+    <tfoot>
+        <tr class="border-bottom">
+            <td class="text-7" colspan="5">Any switch activity within your account is reported in the transaction details section of your statement.</td>
+        </tr>
+    </tfoot>
+</table>
+    <table class="accounting transaction-details layout-fixed">
+    <caption>
+        <span>Transaction Details</span>
+    </caption>
+    <thead>
+        <tr class="headers">
+            <th class="text-left">Trade Date</th>
+            <th class="text-left" style="width: 25%">Transaction Type</th>
+            <th class="text-right">Gross<br />Amount ($)</th>
+            <th class="text-right">Deductions<br />Amount ($)</th>
+            <th class="text-right">Net<br />Amount ($)</th>
+            <th class="text-right">Unit<br />Price ($)</th>
+            <th class="text-right">Transaction<br />Units</th>
+            <th class="text-right">Unit<br />Balance</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        
+            <tr>
+                <td colspan="8" class="text-10 bold extra-top-padding extra-bottom-padding">Matco Small Cap Fund Series F MAT401</td>
+            </tr>
+            
+
+                
+                    <tr class="border-bottom">
+                        <td colspan="7" class="text-left" >
+                            <span class="footnote-marker"> </span>
+                            Opening Balance
+                        </td>
+                        <td class="text-right">387.491</td>
+                    </tr>
+                
+            
+
+                
+                    <tr class="border-bottom">
+                        <td class="text-left" >
+                            <span class="footnote-marker"> </span>
+                            02/27/2019
+                        </td>
+                        <td class="text-left">Capital Gain Distribution</td>
+                        <td class="text-right">217.65</td>
+                        <td class="text-right">0.00</td>
+                        <td class="text-right">217.65</td>
+                        <td class="text-right">17.5834</td>
+                        <td class="text-right">12.378</td>
+                        <td class="text-right">399.869</td>
+                    </tr>
+
+                
+            
+
+                
+                    <tr class="border-top border-bottom">
+                        <td colspan="7" class="text-left" >
+                            <span class="footnote-marker"> </span>
+                            Closing Balance
+                        </td>
+                        <td class="text-right">399.869</td>
+                    </tr>
+                
+            
+        
+    </tbody>
+    <tfoot>
+        <tr class="">
+            <td class="text-7" colspan="8"></td>
+        </tr>
+    </tfoot>
+</table>
+
+    <div>Please review your statement of account carefully.  If there is any information that does not match your records, contact your Financial Advisor or our Client Services department within 60 days.</div>
+    <div></div>
+    <div></div>
+
+</div>
+        <div id="end"></div>
+    </section>
+
+    
+
+
+    <!-- MAT.PDF as two images
+    <div class="addendum-images">
+        <img src="MAT_INSERT_20190331_V1-0.png"/>
+        <img src="MAT_INSERT_20190331_V1-1.png"/>
+    </div>
+    -->
+
+    <!-- generated MAT document through HTML
+    <section class="addendum">
+        <div>
+    <div class="letter-logo">
+        <img src="logo.png" />
+    </div>
+
+    <div class="letter-footer">
+        400, 407 - 8 Avenue SW | Calgary, Alberta | T2P 1E5 | P. 403.539.5740 |
+        <span class="footer-link">www.matcofinancialinc.com</span>
+    </div>
+
+    <div class="letter" lang="en">
+        <h1>Quarterly Package as of March 31, 2019</h1>
+        <h2>Market Update</h2>
+        <p>
+            The transition from calendar 2018 to 2019, from a capital markets perspective, has been an eventful one. The theme of heightened market volatility experienced over the last eighteen months remained prevalent as the baton was passed from one year to the
+            next. More specifically, the month of December was one of the worst performing months for North American equity markets in over 30 years. However, this volatility paved the way for a market bounce in January. This magnitude of market turbulence
+            could be characterized as late cycle behavior. With that in mind, let's take a closer look at some of the recent economic and market developments.
+        </p>
+        <p>
+            As mentioned, global equity markets experienced welcome respite in January, after a torrid end to 2018. Both developed and emerging market equities had a strong first quarter, gaining over 10% in total return terms. The primary drivers for the valuation
+            bounce in equity markets was the U.S. Federal Reserve, who articulated that they may exhibit more patience in their approach to increasing interest rates. This was further reinforced by a similar shift in tone at both the Bank of Canada and
+            the European Central Bank. This shift in global monetary policy rhetoric has been driven by two predominant factors. First and foremost, the International Monetary Fund has recently warned that a slowing in global growth may come to fruition
+            in 2019; economic data released throughout the first quarter has reinforced this notion. Secondly, it seems that the market turbulence experienced in the month of December also had a material impact. Although the mandate of central banks around
+            the world is to utilize interest to target stable inflation and a healthy labor market, they have now shown that their policies are not immune to the changing health and stability of capital markets.
+        </p>
+        <p>
+            Economically speaking, the U.S. continues to be one of the strongest contributors to global growth, as fundamentals remain robust. Notably, the U.S. unemployment rate at a 40 year low, GDP growth is still hovering around a healthy level of 2% and corporate
+            earnings remain in positive territory. However, this strength in economic fundamentals and corporate earnings becomes increasing difficult to sustain. In fact, looking out to the first quarter of 2019, analysts are anticipating the first year-over-year
+            decline in U.S. corporate earnings. History would also suggest that the transition from late expansion to soft economic landing has proven to be a challenging period to navigate. Central banks recognize this challenge, and appear to be willing
+            to adjust their policy to promote a soft landing. Whether this will be a successful endeavor is likely a story for late 2019 and early 2020.
+        </p>
+        <p>
+            Looking outside U.S. borders, concerns over a slowdown in China have not dissipated. Fourth quarter real GDP in China was announced at 6.4% year-over-year, the lowest level of growth since the Financial Crisis of 2009. The slowing pace of economic growth
+            is partly a domestic story; however the uncertainty surrounding U.S. and China trade negotiations has also contributed. As a result, the People's Bank of China announced that it would cut their Reserve Requirement Ratio, a mechanism aimed
+            at stimulating the domestic economy. Further stimulus measures are expected as we progress through 2019. When speaking to the economic landscape outside of North America, one would be remiss not to mention the developments in Europe. The European
+            Union and the U.K. continue to approach the Brexit deadline of March 31, without any signs of an agreed upon deal or resolution. Whether this will result in a hard Brexit or a second referendum is difficult to ascertain, however these developments
+            have contributed to political uncertainty and hampered economic growth on the margin.
+        </p>
+        <p>
+            The presence of political uncertainty impacting capital markets is not a new phenomenon. However, the rise of populism and protectionism in the geo-political landscape has led to increased political activity, but perhaps not a great deal of productivity.
+            Only time will tell how long the political world is willing to endure this experiment and at what cost. In the meantime, we continue to focus on economic fundamentals, which remain strong. However, they also suggest that we are in the late
+            stages of the economic expansion and warrant prudence in positioning one's portfolio. As always, we are focused on long-term risk management, a core principle within our investment philosophy.
+        </p>
+        <h2>Client Service Update</h2>
+        <p>
+            If you have not used your entire RRSP contribution room since 1991, you can carry forward the unused amount to 2019. Therefore, your RRSP contribution limit for 2019 may be more than the 2019 maximum of $26,500 depending on your personal situation. Check
+            your latest CRA "2018 Notice of Assessment" for your available RRSP contribution room.
+        </p>
+        <p>
+            The maximum TFSA contribution limit for 2019 is $6,000. If you have any unused TFSA contribution room or have made any withdrawals in the previous calendar year (excluding qualifying transfers), you are eligible to make a larger contribution.
+        </p>
+        <div class="letter-closing">
+            <p>
+                Sincerely,
+            </p>
+            <img class="letter-signature" src="letter-signature.png"/>
+            <p>
+                Jason Vincent, PFP, TEP President & COO
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+    -->
+</article> 
+        
+    </body>
+</html>

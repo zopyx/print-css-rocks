@@ -1,0 +1,304 @@
+@import "fonts.css";
+
+body {
+    font-size: 8pt;
+    font-family: Arial;
+}
+
+.head1-left {
+    position: absolute;
+    top: 0;
+    /* left indent for image */
+    left: -30pt; 
+}
+
+.head1-left img {
+    /* Width of top-left 50% table (investor information) */
+    max-width: 245.40pt;
+    height: auto;
+}
+
+/* text in box should vertically aligned bottom with a height of 51.63pt.
+ * Using `top` here should have the same effect.
+ */
+.head1-right {
+    position: absolute;
+    text-align: right;
+    top: 14pt;
+    right: 0;
+    vertical-align: bottom;
+}
+
+.head-title {
+    font-family: "Lucida Grande";
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+.head-date {
+    font-family: "Lucida Grande";
+    font-size: 10pt;
+}
+
+.head2-left {
+    position: absolute;
+    top: 4cm;
+    left: 0;
+    width: 40%;
+    font-family: Arial;
+    font-size: 9pt;
+}
+
+.head2-right {
+    position: absolute;
+    text-align: right;
+    top: 93.40pt;
+    right: 0;
+    font-family: "Lucida Grande"
+}
+/* vertical spacer on first page where the tables start.
+ * Address, advisor etc. have an absolute positioning.
+ */
+.spacer {
+    height: 264.25pt;
+}
+
+/* Vertical spacer on CGLS page */
+.spacer2 {
+    height: 30mm;
+}
+
+/* turn .footer into a running element */
+.footer {
+    position: running(footer);
+    font-size: 9pt;
+    font-family: Arial;
+}
+
+.advisor {
+    border-right: thin solid grey;
+    text-transform: uppercase;
+    margin-right: -5px;
+    padding-right: 3px;
+    font-size: 9pt;
+    line-height: 1.4em;
+}
+
+.advisor-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 11pt;
+    margin-bottom: 0.25em;
+}
+
+.sequence-number {
+    font-family: Monaco;
+    color: grey;
+    font-size: 6pt; 
+    text-align: right;
+}
+
+table.accounting {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25.81pt;
+    font-family: Arial;
+    font-size: 8pt;
+    margin-bottom: 25.81pt;
+    break-inside: avoid;
+}
+
+table.layout-fixed {
+    table-layout: fixed;
+}
+
+table.accounting tr {
+    padding: 0;
+    margin: 0;
+}
+
+table.accounting th,
+table.accounting td {
+    max-width: 20%;
+}
+
+table.accounting caption {
+    text-align: left;
+    border-top: 0.6pt solid #5972b2;
+    margin-bottom: 1em;
+}
+
+table.accounting caption span {
+    font-family: goudyoldstylet;
+    background: #5972b2;
+    font-weight: bold;
+    font-size: 10pt;
+    color: white;
+    display: inline-block;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+table.accounting .headers th {
+    font-family: "Lucida Grande";
+    font-weight: bold;
+    font-style: italic;
+}
+
+table.accounting td {
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+table.accounting tfoot td {
+    padding-top: 1em;
+}
+
+/* Investor/Account information 50|50 tables implemented
+ * as left/right float within their #two-tables container
+ */
+
+.two-tables .table-left {
+    float: left;
+    width: 245.40pt;
+}
+
+.two-tables .table-right {
+    float: right;
+    width: 245.40pt;
+}
+
+/* general table cell decoration with borders */
+
+.border-top td {
+    border-top: 1px solid black;
+}
+
+.border-bottom td {
+    border-bottom: 1px solid black;
+}
+
+/* text alignment within a cell */
+
+table.accounting .text-left {
+    text-align: left
+}
+
+table.accounting .text-right {
+    text-align: right;
+}
+
+table.accounting .text-center {
+    text-align: center;
+}
+
+table.accounting .extra-top-padding {
+    padding-top: 1em;
+}
+
+
+table.accounting .extra-bottom-padding {
+    padding-bottom: 1em;
+}
+
+table.width-50 {
+    width: 245.40pt;
+}
+
+/* defines font classes by pt size for general usage */
+
+.text-7 {
+    font-size: 7pt;
+}
+
+.text-8 {
+    font-size: 8pt;
+}
+
+.text-9 {
+    font-size: 10pt;
+}
+
+
+.text-10 {
+    font-size: 10pt;
+}
+
+/* text/font decorations */
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* needed for Weasyprint (#1062)*/
+table::before {
+    content: target-counter(url(#end), page);
+    display: none;
+}
+
+.chart {
+    border-bottom: 1px solid black;
+    margin-bottom: 2em;
+}
+
+.chart img {
+    max-width: 100%
+}
+
+.footnote-marker {
+    display: inline-block;
+    width: 0.5em;
+}
+
+.cgls-head {
+    margin-bottom: 4em;
+}
+
+@page statement {
+
+    margin-bottom: 30mm;
+
+    @bottom-left {
+        content: element(footer);
+        vertical-align: bottom;
+        display: table-cell;
+        border-bottom: thin solid grey;
+        font-family: Arial;
+        margin-bottom: 1cm;
+        height: 1.5cm;
+    }
+    @bottom-right {
+        font-family: Arial;
+        font-size: 8pt;
+        border-bottom: thin solid grey;
+        vertical-align: bottom;
+        width: 3cm;
+        height: 1.5cm;
+        display: table-cell;
+        content: "Page " counter(page) " of " counter(pages);
+        margin-bottom: 1cm;
+    }
+}
+
+@page statement-cgls {
+
+    margin-bottom: 30mm;
+
+    @bottom-left {
+        content: element(footer);
+        vertical-align: bottom;
+        display: table-cell;
+        border-bottom: thin solid grey;
+        font-family: Arial;
+        margin-bottom: 1cm;
+        height: 1.5cm;
+    }
+}

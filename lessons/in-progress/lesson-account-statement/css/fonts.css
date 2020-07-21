@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("../fonts/LucidaGrande.ttf") format("truetype");
+}
+@font-face {
+  font-family: goudyoldstylet;
+  src: url("../fonts/GOUDYOLDSTYLET-REGULAR.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: goudyoldstylet;
+  font-weight: bold;
+  src: url("../fonts/GOUDYOLDSTYLET-BOLD.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: goudyoldstylet;
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/GOUDYOLDSTYLE-BOLDITALIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: gothamrounded;
+  src: url("../fonts/GOTHAMROUNDED-MEDIUM.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: Arial;
+  src: url("../fonts/ArialUnicode.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Monaco;
+  src: url("../fonts/monaco.ttf") format("truetype");
+}

@@ -1,0 +1,85 @@
+@import "fonts.css";
+
+@page {
+  size: 8.5in 11in;
+  margin: 0.5in;
+  margin-top: 1in;
+}
+
+body {
+  font-size: 9pt;
+}
+
+.letter {
+  font-family: "Lucida Grande";
+}
+
+h1 {
+  font-size: 9pt;
+  text-align: center;
+  font-weight: bold;
+  break-after: avoid;
+}
+
+h2 {
+  font-size: 8pt;
+  font-weight: bold;
+  break-after: avoid;
+}
+
+p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.footer-link {
+  color: #be945b;
+}
+
+div.letter {
+  line-height: 1.6em;
+}
+
+.letter-logo {
+  position: running(letter-logo);
+  text-align: center;
+}
+
+.letter-logo img {
+  width: 30mm;
+  height: auto;
+}
+
+.letter-footer {
+  position: running(letter-footer);
+  font-size: 8pt;
+  font-family: "Lucida Grande";
+  text-align: center;
+}
+
+.letter-signature {
+  width: 3cm;
+  display: block;
+}
+
+.letter p {
+  break-inside: avoid;
+}
+
+.letter-closing {
+  break-inside: avoid;
+}
+
+@page addendum {
+  @bottom-center {
+    content: element(letter-footer);
+  }
+
+  @top-center {
+    content: element(letter-logo);
+  }
+}
+
+.addendum-images img {
+    width: 100%;
+}
