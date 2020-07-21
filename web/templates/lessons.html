@@ -15,6 +15,8 @@
                         <th>PrinceXML</th>
                         <th>Antennahouse</th>
                         <th>Weasyprint</th>
+                        <th>PagedJS</th>
+                        <th>Typeset.sh</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,6 +48,16 @@
                             <td class="converter-status">
                                 {% if row['converters'].get('Weasyprint') %}
                                     {{ row['converters']['Weasyprint']['status'] }}
+                                {% endif %}
+                            </td>
+                            <td class="converter-status">
+                                {% if row['converters'].get('PagedJS') %}
+                                    {{ row['converters']['PagedJS']['status'] }}
+                                {% endif %}
+                            </td>
+                            <td class="converter-status">
+                                {% if row['converters'].get('Typeset.sh') %}
+                                    {{ row['converters']['Typeset.sh']['status'] }}
                                 {% endif %}
                             </td>
                         </tr>
