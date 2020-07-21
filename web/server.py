@@ -283,8 +283,6 @@ def get_lesson_data(lesson):
                     print('--> No images found in {}'.format(image_directory))
                 images = [
                     image for image in images if not image.startswith('thumb-')]
-            else:
-                import pdb; pdb.set_trace() 
 
             pdfs.append(dict(name=section, pdf_file=pdf_file,
                              status=status, message=message, images=images))
