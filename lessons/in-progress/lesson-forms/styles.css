@@ -7,6 +7,16 @@ form, form input {
     -ro-pdf-format: pdf; 
 }
 
+fieldset {
+    border: 2px solid pink;
+    padding: 1em;
+}
+
+legend {
+    font-weight: bold;
+    font-height: 1.2em;
+}
+
 input[type="text"] {
     width: 40%;
 }

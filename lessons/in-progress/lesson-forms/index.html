@@ -4,36 +4,44 @@
     </head>
     <body>
         <form name="foo" method="POST">
+            <fieldset>
+                <legend>Test form</legend>
 
-            <div class="row">
-                First name:
-                <input type="text" name="firstname" value="" placeholder="Firstname"/>
-            </div>
-            <div class="row">
-                Last name:
-                <input type="text" name="lastname" value="" placeholder="Lastname"/>
-            </div>
-            <div class="row">
-                <input type="checkbox"> Married? 
-            </div>
-            <div class="row">
-                Gender:
-                <br/>
-                <input type="radio" name="gender" value="male">Male 
-                <input type="radio" name="gender" value="female">Female
-                <input type="radio" name="gender" value="diverse">Diverse
-            </div>
-            <div class="row">
-                Text SELECT 
-                <select name="testdata">
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-            <div class="row">
-                <input type="submit" value="Save"/>
-            </div>
+                <div class="row">
+                    First name:
+                    <input type="text" name="firstname" value="" placeholder="Firstname"/>
+                </div>
+                <div class="row">
+                    Last name:
+                    <input type="text" name="lastname" value="" placeholder="Lastname"/>
+                </div>
+                <div class="row">
+                    <input type="checkbox"> Married? 
+                </div>
+                <div class="row">
+                    Gender:
+                    <br/>
+                    <input type="radio" name="gender" value="male">Male 
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="diverse">Diverse
+                </div>
+                <div class="row">
+                    Text SELECT 
+                    <select name="testdata">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div class="row">
+                    Comment
+                    <br/>
+                    <textarea rows="5" cols="60"></textarea>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Save"/>
+                </div>
+            </fieldset>
         </form>
     </body>
 </html>
