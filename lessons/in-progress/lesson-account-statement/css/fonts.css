@@ -30,7 +30,3 @@
   src: url("../fonts/ArialUnicode.ttf") format("opentype");
 }
 
-@font-face {
-  font-family: Monaco;
-  src: url("../fonts/monaco.ttf") format("truetype");
-}
