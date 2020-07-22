@@ -78,7 +78,7 @@ body {
 }
 
 .advisor {
-    border-right: thin solid grey;
+    border-right: 1pt solid grey;
     text-transform: uppercase;
     margin-right: -5px;
     padding-right: 3px;
@@ -270,7 +270,7 @@ table::before {
         content: element(footer);
         vertical-align: bottom;
         display: table-cell;
-        border-bottom: thin solid grey;
+        border-bottom: 1pt solid grey;
         font-family: Arial;
         margin-bottom: 1cm;
         height: 1.5cm;
@@ -278,7 +278,7 @@ table::before {
     @bottom-right {
         font-family: Arial;
         font-size: 8pt;
-        border-bottom: thin solid grey;
+        border-bottom: 1pt solid grey;
         vertical-align: bottom;
         width: 3cm;
         height: 1.5cm;
@@ -296,7 +296,7 @@ table::before {
         content: element(footer);
         vertical-align: bottom;
         display: table-cell;
-        border-bottom: thin solid grey;
+        border-bottom: 1pt solid grey;
         font-family: Arial;
         margin-bottom: 1cm;
         height: 1.5cm;
