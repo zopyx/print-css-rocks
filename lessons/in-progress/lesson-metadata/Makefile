@@ -1,13 +1,13 @@
 all: prince pdfreactor antennahouse typeset.sh weasyprint pagedjs
 
 prince:
-	prince index.html --tagged-pdf -o prince.pdf
+	prince --tagged-pdf index.html --tagged-pdf -o prince.pdf
 
 antennahouse:
 	run.sh -d index.html >antennahouse.pdf
 
 pdfreactor:
-	pdfreactor.py -i index.html -o pdfreactor.pdf
+	pdfreactor.py --addTags -i index.html -o pdfreactor.pdf
 
 weasyprint:
 	weasyprint index.html weasyprint.pdf
