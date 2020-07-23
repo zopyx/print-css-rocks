@@ -7,7 +7,7 @@ antennahouse:
 	run.sh -d index.html -pdfver PDF1.7/UA-1:2014 >antennahouse.pdf
 
 pdfreactor:
-	pdfreactor.py --addTags -i index.html -o pdfreactor.pdf
+	pdfreactor.py --addTags  --conformance PDFUA1 -i index.html -o pdfreactor.pdf
 
 weasyprint:
 	weasyprint index.html weasyprint.pdf
