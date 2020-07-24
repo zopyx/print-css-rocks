@@ -16,5 +16,5 @@ pagedjs:
 	pagedjs-cli index.html -o pagedjs.pdf
 
 typeset.sh:
-	typeset.sh.phar render:html -rx index.html typeset.pdf
+	typeset.sh.phar render:html --allow-local / -rx index.html typeset.pdf
 

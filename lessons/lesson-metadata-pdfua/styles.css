@@ -1,12 +1,5 @@
-@page {
-    size: 210mm 297mm; /* A4 */
-}
+@import url("../styles/a5.css");
 
-@font-face {
-    font-family: Forum;
-    src: url(Forum-Regular.ttf);
-}
-
-body {
-    font-family: Forum;
+img {
+    width: 75%;
 }

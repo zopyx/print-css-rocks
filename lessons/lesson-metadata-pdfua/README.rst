@@ -9,3 +9,6 @@ usually named a *tagged PDF*.
 
 Check the *Makefile* in the Github repository (link above) for investigating the related
 commandline parameters for PDF/UA and tagged PDF.
+
+We used the *PAC Checker* (https://www.access-for-all.ch/ch/pdf-werkstatt/pdf-accessibility-checker-pac.html) 
+for checking PDF/UA compliance.
