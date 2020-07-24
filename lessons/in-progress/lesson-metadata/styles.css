@@ -1,0 +1,12 @@
+@page {
+    size: 210mm 297mm; /* A4 */
+}
+
+@font-face {
+    font-family: Forum;
+    src: url(Forum-Regular.ttf);
+}
+
+body {
+    font-family: Forum;
+}
