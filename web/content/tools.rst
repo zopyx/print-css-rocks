@@ -18,6 +18,10 @@ PDFreactor
 * Docker images: https://hub.docker.com/r/realobjects/pdfreactor
 * `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
 * Sample documents: https://www.pdfreactor.com/samples/
+* Supported PDF profiles: 
+  `PDF/A <https://www.pdfreactor.com/product/doc_html/index.html#PDFAConformance>`_,
+  `PDF/X <https://www.pdfreactor.com/product/doc_html/index.html#PDFXConformance>`_,
+  `PDF/UA <https://www.pdfreactor.com/product/doc_html/index.html#PDFUAConformance>`_
 * Pricing: 
 
   * 4 CPU cores server licence: 2950 USD
@@ -32,14 +36,15 @@ PDFreactor
   * PDFreactor is now our premier choice for customer projects.
   * PDFreactor has integrated ZUGFerd integration.  
 
-PrinceXML
----------
+Prince
+------
 
 * Current version: 13.1
 * Website: http://www.princexml.com
 * Docker images: https://hub.docker.com/r/yeslogic/prince
 * Sample documents: http://www.princexml.com/samples
 * `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
+* Supported `PDF profiles <https://www.princexml.com/doc/prince-output/#pdf-versions-and-profiles>`_
 * Pricing: 
 
   * Server licence (independent of #CPUs and #cores):    3800 USD
@@ -58,10 +63,11 @@ PrinceXML
 Antennahouse CSS Formatter
 --------------------------
 
-* Current version: 7.0 R1
+* Current version: 7.0 MR3
 * Website: https://www.antennahouse.com
 * Docker images: https://hub.docker.com/r/antennahouse/ahfcmd
 * `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
+* Supported `PDF profiles <https://www.antenna.co.jp/AHF/help/v70e/ahf-pdf.html>`_
 * Pricing:
 
   * AH server license with one CPU, ∞ cores: 5000 USD (+ 4000 USD per additional CPU)
@@ -168,6 +174,8 @@ Docraptor
 
   * Same PDF quality as PrinceXML, but DocRaptor offers better JavaScript
     parsing on top of the PrinceXML engine.
+  * Docraptor currently support PrinceXML version 11 and 12 under the hood through two
+    different conversion pipelines (`6` and `7`). See https://docraptor.com/documentation/api
   * Docraptor is usually one PrinceXML version behind the official PrinceXML releases
   * Using DocRaptor requires your document to be sent to a third-party, but they
     can delete it immediately upon processing. Images and CSS must be placed on
