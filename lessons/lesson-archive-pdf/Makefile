@@ -1,20 +1,11 @@
-all: prince pdfreactor antennahouse typeset.sh weasyprint pagedjs
+all: prince pdfreactor antennahouse 
 
 prince:
-	prince --tagged-pdf --pdf-profile 'PDF/UA-1' index.html --tagged-pdf -o prince.pdf
+	prince --tagged-pdf --pdf-profile 'PDF/A-3b' index.html --tagged-pdf -o prince.pdf
 
 antennahouse:
-	run.sh -d index.html -pdfver PDF1.7/UA-1:2014 >antennahouse.pdf
+	run.sh -d index.html -pdfver PDF1.7/A-3b:2012 >antennahouse.pdf
 
 pdfreactor:
-	pdfreactor.py --addTags  --conformance PDFUA1 -i index.html -o pdfreactor.pdf
-
-weasyprint:
-	weasyprint index.html weasyprint.pdf
-
-pagedjs:
-	pagedjs-cli index.html -o pagedjs.pdf
-
-typeset.sh:
-	typeset.sh.phar render:html --allow-local / -rx index.html typeset.pdf
+	pdfreactor.py --conformance PDFA3B -i index.html -o pdfreactor.pdf
 
