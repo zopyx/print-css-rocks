@@ -1,14 +1,7 @@
-This example shows two things. First, it demonstrates how to generate PDF
-metadata directly from HTML <meta> elements.  This works out-of-the-box with
-all converters. Some converters all you to specify the metadata through their
-API or through commandline parameters. Second, the example demonstrates how to
-generate a PDF with UA (universal accesiblity) profile (support for screen readers).
-Only Antennahouse, PDFreactor and PrinceXML support the PDF/UA profile as an optional
-conversion option. This is usually combined with the inclusion of *tagged content* which is
-usually named a *tagged PDF*.
+Support for "archive PDF" aka PDF/A profile is available for Prince, Antennahouse and 
+PDFreactor.
 
 Check the *Makefile* in the Github repository (link above) for investigating the related
-commandline parameters for PDF/UA and tagged PDF.
+commandline parameters for PDF/A. 
 
-We used the *PAC Checker* (https://www.access-for-all.ch/ch/pdf-werkstatt/pdf-accessibility-checker-pac.html) 
-for checking PDF/UA compliance.
+We used the *VeraPDF Checker* (https://verapdf.org) for checking PDF/A compliance.
