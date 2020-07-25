@@ -10,7 +10,7 @@ div.g {
 }
 
 #gradient1 {
-    background: radial-gradient(circle closest-corner at 50% 55%, red, green 20%, yellow 70%, black);
+    background: radial-gradient(circle closest-corner at 50% 50%, red, green 20%, yellow 70%, black);
 }
 
 #gradient2 {
