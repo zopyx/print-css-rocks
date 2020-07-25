@@ -1,15 +1,16 @@
 @import url("../styles/a5.css");
 
 div {
-    width: 3cm;
-    height: 3cm;
+    width: 10cm;
+    height: 10cm;
     border: 1px solid blue;
     margin-right: 1em;
     margin-bottom: 1em;
+    page-break-after: always;
 }
 
 #gradient1 {
-    background: radial-gradient(60% 55%, circle closest-corner, red, green 20%, yellow 70%, black);
+    background: radial-gradient(circle closest-corner at 50% 55%, red, green 20%, yellow 70%, black);
 }
 
 #gradient2 {
@@ -26,5 +27,42 @@ div {
 
 #gradient5 {
     background: repeating-radial-gradient(#000000, #ffffff 10px, #000000 20px);
+}
+
+#gradient6 {
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            transparent 0,
+            transparent 25%,
+            dodgerblue 0,
+            dodgerblue 50%
+       ),
+       repeating-linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 25%,
+            tomato 0,
+            tomato 50%
+        ),
+        repeating-linear-gradient(
+            transparent 0,
+            transparent 25%,
+            gold 0,
+            gold 50%
+        ), white;
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
+}
+
+#gradient7 {
+    background-color:silver;
+        background-image:
+        radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+        radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+        background-size: 100px 50px;
 }
 
