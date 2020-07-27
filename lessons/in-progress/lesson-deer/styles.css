@@ -1,0 +1,945 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #F0E6DC;
+    background: radial-gradient(at 76% 28%,#FFE2B2 -37%,rgba(226, 157, 117, 0.77) 101%);;
+    height: 100%;
+}
+
+/*Colors*/
+.floor-grass {
+    background: #e45b3b;
+}
+
+.container {
+    height: 530px;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+}
+
+.container > .floor-grass {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e45b3b;
+}
+
+#deer-wrapper {
+    height: 510px;
+    width: 763px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+
+#sun {
+    position: fixed;
+    right: 20%;
+    top: 20%;
+    height: 137px;
+    width: 137px;
+    background: #E4593A;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 10px solid #E89880;
+}
+
+
+#deer .body {
+    position: absolute;
+    height: 116px;
+    width: 289px;
+    background: #C8906F;
+    top: 228px;
+    left: 266px;
+    border-top-right-radius: 78px;
+}
+
+#deer .body:after {
+    content: "";
+    height: 61px;
+    position: absolute;
+    width: 139px;
+    background: #E1B49D;
+    bottom: 0;
+    left: 59px;
+    border-radius: 34px 34px 0 0;
+}
+
+#deer .body:before {
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 197px;
+    border: solid;
+    border-width: 0 3px 13px 1px;
+    border-color: transparent transparent #E1B49D transparent;
+    z-index: 99;
+}
+
+#deer .body .bottom {
+    position: absolute;
+    height: 128px;
+    width: 160px;
+    background: #C8906F;
+    right: -14px;
+    top: -12px;
+    border-radius: 50%;
+}
+
+#deer .bottom:after {
+    content: "";
+    position: absolute;
+    height: 96px;
+    width: 108px;
+    background: #C8906F;
+    border-radius: 50%;
+    right: -1px;
+    top: 39px;
+}
+
+#deer .bottom:before {
+    content: "";
+    position: absolute;
+    height: 122px;
+    width: 93px;
+    background: #C8906F;
+    border-radius: 50%;
+    right: -5px;
+    top: 20px;
+    z-index: 99;
+    transform: rotate(6deg);
+}
+
+#deer .loin {
+    position: absolute;
+    top: 220px;
+    height: 8px;
+    width: 205px;
+    background: #B67E5D;
+    left: 266px;
+    z-index: -1;
+    border-top: 1px solid #AB7656;
+}
+
+#deer .tail {
+    position: absolute;
+    top: 279px;
+    height: 44px;
+    width: 21px;
+    right: 180px;
+    background: #B67E5B;
+    border-radius: 0 0 0 100%;
+    transform: rotate(-42deg);
+}
+
+#deer .legs .leg {
+    position: absolute;
+}
+
+#deer .legs .leg-1,
+#deer .legs .leg-2 {
+    background: #c8906f;
+}
+
+#deer .legs .leg-1 {
+    top: 335px;
+    width: 137px;
+    height: 32px;
+    left: 188px;
+    border-radius: 66px 0 69px 0;
+}
+
+
+#deer .legs .leg-2 {
+    top: 343px;
+    height: 89px;
+    width: 21px;
+    background: #98644C;
+    left: 291px;
+    border-bottom-right-radius: 21px;
+    z-index: -7;
+}
+
+#deer .legs .leg-2:after {
+    content: "";
+    position: absolute;
+    height: 84px;
+    width: 20px;
+    background: #98644C;
+    right: -7px;
+    transform: rotate(10deg);
+    top: -8px;
+    border-bottom-right-radius: 6px;
+}
+
+#deer .legs .leg-2:before {
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 24px;
+    right: -13px;
+    background: #98644C;
+    top: 56px;
+    border-bottom-right-radius: 100%;
+    z-index: -2;
+}
+
+#deer .legs .leg-3 {
+    right: 295px;
+    top: 344px;
+    height: 72px;
+    width: 73px;
+    background: #98644C;
+    border-bottom-left-radius: 89%;
+}
+
+#deer .legs .leg-3:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 26px;
+    width: 27px;
+    background: #98644C;
+    z-index: -1;
+    left: 72px;
+    border-top-right-radius: 100%;
+}
+
+#deer .legs .leg-3:before {
+    content: "";
+    background: #98644C;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -30px;
+    top: 51px;
+    border-bottom-right-radius: 100%;
+}
+
+#deer .legs .leg-3 .detail {
+    position: absolute;
+    right: -6px;
+    background: #98644C;
+    width: 20px;
+    height: 20px;
+    top: 39px;
+    transform: rotate(43deg);
+}
+
+#deer .legs .leg-3 .detail:after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    width: 19px;
+    height: 9px;
+    background: #98644C;
+    transform: rotate(20deg);
+    top: -3px;
+}
+
+#deer .legs .leg-4 {
+    left: 467px;
+    top: 327px;
+    background: #C8906F;
+    width: 86px;
+    height: 71px;
+    z-index: 999999999;
+    /* border-bottom-left-radius: 94%; */
+    border-radius: 0 0 0 103% / 0 0 0 100%;
+    transform: rotate(-3deg);
+}
+
+#deer .legs .leg-4:after {
+    content: "";
+    transform: rotate(3deg);
+    top: 38px;
+    right: -29px;
+    background: #C8906F;
+    width: 35px;
+    height: 34px;
+    position: absolute;
+    border-radius: 0 93% 0 5px;
+}
+
+#deer .legs .leg-4:before {
+    content: "";
+    position: absolute;
+    height: 43px;
+    width: 58px;
+    right: -47px;
+    top: -4px;
+    transform: rotate(52deg);
+    border-radius: 50%;
+    border-bottom: 12px solid #C8906F;
+    z-index: 1000;
+}
+
+#deer .legs .leg-4 .detail-1 {
+    position: absolute;
+    background: #C8906F;
+    height: 28px;
+    width: 10px;
+    right: -6px;
+    top: 21px;
+    transform: rotate(-30deg);
+    z-index: 100;
+}
+
+
+#deer .legs .leg-4 .detail-2 {
+    position: absolute;
+    background: #C8906F;
+    height: 20px;
+    width: 20px;
+    right: -35px;
+    top: 46px;
+    transform: rotate(3deg);
+    border-radius: 0 0 100% 0;
+}
+
+
+#deer .hooves .hoof {
+    position: absolute;
+    background: #7A564A;
+}
+
+#deer .hooves .hoof-1 {
+    width: 28px;
+    height: 59px;
+    top: 366px;
+    left: 224px;
+    transform: skewX(48deg);
+    z-index: -3;
+}
+
+#deer .hooves .hoof-1:after {
+    position: absolute;
+    left: 20px;
+    background: #7A564A;
+    height: 57px;
+    width: 9px;
+    top: 0;
+    content: "";
+    transform: rotate(8deg);
+}
+
+#deer .hooves .hoof-1:before {
+     position: absolute;
+     content: "";
+     /* background: red; */
+     height: 0;
+     width: 0;
+     border-style: solid;
+     border-color: transparent #7A564B transparent transparent;
+     border-width: 10px 10px 10px 0px;
+     left: 25px;
+     transform: skew(-48deg);
+     top: 31px;
+ }
+
+#deer .hooves .hoof-1 .claw {
+    position: absolute;
+    background: #3E2B25;
+    width: 15px;
+    height: 20px;
+    transform: skew(-48deg);
+    top: 39px;
+    left: 25px;
+    z-index: 100;
+}
+
+#deer .hooves .hoof-1 .claw:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #3E2B25;
+    border-width: 20px 0 0 14px;
+    left: 14px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+#deer .hooves .hoof-2 {
+    height: 62px;
+    width: 16px;
+    top: 421px;
+    left: 291px;
+    z-index: -10;
+    border-radius: 10px 0 0 0;
+}
+
+#deer .hooves .hoof-2:before {
+    content: "";
+    background: #7A564A;
+    position: absolute;
+    height: 69px;
+    width: 5px;
+    right: -2px;
+    transform: rotate(5deg);
+    top: -7px;
+}
+
+#deer .hooves .hoof-2:after {
+    content: "";
+    /* background: red; */
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent transparent rgb(127, 85, 72) transparent;
+    border-width: 0 10px 10px 10px;
+    right: -9px;
+}
+
+#deer .hooves .hoof-2 .claw,
+#deer .hooves .hoof-3 .claw,
+#deer .hooves .hoof-4 .claw {
+    position: absolute;
+    background: #3E2B25;
+    width: 17px;
+    height: 23px;
+    bottom: -23px;
+    right: -1px;
+}
+
+#deer .hooves .hoof-2 .claw:before,
+#deer .hooves .hoof-3 .claw:before,
+#deer .hooves .hoof-4 .claw:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #3E2B25 transparent transparent;
+    border-width: 23px 11px 0 21px;
+    left: -31px;
+    position: absolute;
+    top: -1px;
+}
+
+#deer .hooves .hoof-3 {
+    top: 400px;
+    left: 441px;
+    width: 18px;
+    height: 73px;
+    transform: skew(-25deg);
+    z-index: -3;
+}
+
+
+#deer .hooves .hoof-3:after {
+    content: "";
+    height: 75px;
+    width: 16px;
+    position: absolute;
+    background: #7A564A;
+    transform: rotate(8deg);
+    left: 8px;
+    top: 0;
+}
+
+#deer .hooves .hoof-3:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #7A564A;
+    border-width: 22px 0 0 29px;
+    left: 0;
+    position: absolute;
+    bottom: -10px;
+}
+#deer .hooves .hoof-3 .claw {
+    transform: skew(25deg);
+    bottom: -33px;
+    right: -4px;
+}
+
+#deer .hooves .hoof-4 {
+    left: 555px;
+    top: 396px;
+    height: 87px;
+    width: 16px;
+}
+
+#deer .hooves .hoof-4:before {
+    content: "";
+    width: 10px;
+    height: 90px;
+    position: absolute;
+    left: -4px;
+    background: #7A564A;
+    transform: rotate(-4deg);
+    top: -3px;
+}
+
+#deer .hooves .hoof-4:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #7A564A;
+    border-width: 25px 0 0 26px;
+    left: 0;
+    bottom: -1px;
+}
+
+#deer .hooves .hoof-4 .claw {
+    bottom: -23px;
+    right: 0;
+}
+
+
+#deer .neck {
+    position: absolute;
+    width: 126px;
+    height: 74px;
+    background: #C8906F;
+    border-radius: 333px 100px 100px 359px / 131px 50px 50px 172px;
+    top: 199px;
+    left: 189px;
+    transform: rotate(38deg);
+    z-index: 10;
+}
+
+#deer .neck-hair {
+    position: absolute;
+    width: 159px;
+    height: 79px;
+    background: #B67E5D;
+    border-radius: 100px 126px / 50px 53px;
+    top: 156px;
+    left: 211px;
+    transform: rotate(56deg);
+    transform-origin: left;
+    z-index: -100;
+}
+
+#deer .neck-hair .hair {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #B67E5D transparent transparent;
+    border-width: 14px 14px 14px 0;
+    transform: rotate(-13deg);
+}
+
+#deer .head .ears {
+    position: absolute;
+    top: -1px;
+    left: -21px;
+    width: 54px;
+    background: #C8906F;
+    height: 22px;
+    border-top-left-radius: 100%;
+    transform: rotate(31deg);
+    z-index: -50;
+}
+
+#deer .head .ears:after {
+    content: "";
+    width: 53px;
+    height: 15px;
+    background: #E1B49D;
+    position: absolute;
+    top: 7px;
+    left: -1px;
+    border-top-left-radius: 100%;
+    transform: rotate(2deg);
+}
+
+
+span.ears:before {
+    content: "";
+    width: 37px;
+    height: 9px;
+    background: #E1B49D;
+    position: absolute;
+    top: 20px;
+    left: -1px;
+    border-bottom-left-radius: 100%;
+    transform: rotate(0deg);
+}
+
+#deer .neck-hair .hair-1 {
+    left: 40px;
+    top: 58px;
+}
+
+#deer .neck-hair .hair-2 {
+    left: 56px;
+    top: 61px;
+}
+
+#deer .neck-hair .hair-3 {
+    left: 70px;
+    top: 61px;
+}
+
+
+#deer .head {
+    position: absolute;
+    background: #C8906F;
+    width: 50px;
+    height: 85px;
+    top: 128px;
+    left: 200px;
+    z-index: -100;
+    border-radius: 66% 16px 0 0 / 40% 22px 0 0;
+}
+
+#deer .head .face {
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    width: 100px;
+    height: 40px;
+    background: #C8906F;
+    transform: rotate(26deg);
+    border-radius: 86px 20px 89px 4px;
+}
+
+#deer .head .face:after {
+    position: absolute;
+    left: 38px;
+    top: 11px;
+    height: 30px;
+    width: 65px;
+    background: #C8906F;
+    content: "";
+    transform: rotate(-26deg);
+    border-radius: 0 50% 48% 0 / 0 78% 114% 0;
+}
+
+#deer .head .face:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 36px 13px 25px;
+    border-color: transparent;
+    left: 44px;
+    border-bottom-color: #B67D5B;
+    position: absolute;
+    transform: rotate(2deg);
+    z-index: 9999;
+    top: 43px;
+}
+
+
+#deer .head .face .detail {
+    position: absolute;
+    top: 46px;
+    left: 97px;
+    width: 22px;
+    height: 43px;
+    background: #C8906F;
+    z-index: 99999999;
+    transform: rotate(105deg);
+}
+
+
+#deer .head .face .detail-2 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    background: #C8906F;
+    border-radius: 86px 35px 76px 4px;
+    z-index: -100;
+}
+
+#deer .head .face .detail:after {
+    content: "";
+    background: #C8906F;
+    top: 41px;
+    width: 10px;
+    height: 73px;
+    left: 7px;
+    position: absolute;
+    transform: rotate(-13deg);
+    border-radius: 6px / 4px;
+}
+
+#deer .head .eye {
+    position: absolute;
+    top: 14px;
+    width: 9px;
+    left: 38px;
+    height: 6px;
+    background: #3E2B25;
+    border-radius: 10px 33px 20px 25px / 10px 20px 10px 13px;
+    transform: rotate(-31deg);
+}
+
+/*Horns*/
+
+#deer .horns {
+    position: absolute;
+    top: 121px;
+    left: 239px;
+    background: #3D2C25;
+    width: 17px;
+    height: 20px;
+    transform: rotate(33deg);
+    z-index: -100;
+}
+
+#deer .horns .horn-1 {
+    position: absolute;
+    width: 22px;
+    height: 12px;
+    background: #3D2C25;
+    top: -11px;
+    left: -5px;
+}
+
+#deer .horns .horn-2 {
+    position: absolute;
+    top: -5px;
+    left: -118px;
+    width: 118px;
+    height: 100px;
+    background: transparent;
+    transform: rotate(8deg);
+    border-radius: 50% 0 50% 50%;
+    border-bottom: 0;
+    border-right: 0;
+    box-shadow: -5px -13px 0 #3D2C25;
+}
+#deer .horns .horn-3 {
+    position: absolute;
+    height: 13px;
+    width: 83px;
+    background: #3D2C25;
+    top: -14px;
+    left: -67px;
+    transform: rotate(7deg);
+}
+
+#deer .horns .horn-4 {
+    position: absolute;
+    height: 50px;
+    width: 53px;
+    top: -49px;
+    left: -137px;
+    border-radius: 50%;
+    box-shadow: 10px -1px 0 #3D2C25;
+    transform: rotate(6deg);
+}
+
+#deer .horns .horn-5 {
+    position: absolute;
+    top: -111px;
+    left: -48px;
+    width: 118px;
+    height: 100px;
+    background: transparent;
+    transform: rotate(186deg);
+    border-radius: 50% 0 50% 50%;
+    border-bottom: 0;
+    border-right: 0;
+    box-shadow: -5px -13px 0 #3D2C25;
+}
+
+#deer .horns .horn-6 {
+    position: absolute;
+    top: -57px;
+    left: -89px;
+    width: 100px;
+    height: 83px;
+    background: transparent;
+    transform: rotate(42deg);
+    border-radius: 50% 0 50% 50%;
+    border-bottom: 0;
+    border-right: 0;
+    box-shadow: -1px -10px 0 #3D2C25;
+}
+
+#deer .horns .horn-7 {
+    position: absolute;
+    top: -46px;
+    left: 21px;
+    width: 37px;
+    height: 25px;
+    background: transparent;
+    transform: rotate(188deg);
+    border-radius: 50% 50% 50% 50%;
+    border-bottom: 0;
+    border-right: 0;
+    box-shadow: 0px -12px 0 #3D2C25;
+}
+
+#deer .horns .horn-7:after {
+    content: "";
+    position: absolute;
+    position: absolute;
+    top: 3px;
+    left: -28px;
+    width: 75px;
+    height: 53px;
+    background: transparent;
+    transform: rotate(120deg);
+    border-radius: 50% 50% 50% 50%;
+    border-bottom: 0;
+    border-right: 0;
+    box-shadow: 0px 8px 0 #3D2C25;
+}
+
+#deer .horns .horn-8 {
+    position: absolute;
+    height: 34px;
+    width: 39px;
+    top: -96px;
+    left: -56px;
+    border-radius: 50%;
+    box-shadow: 9px 0px 0 #3D2C25;
+    transform: rotate(25deg);
+}
+
+
+#deer .head .nose {
+    position: absolute;
+    background: #3E2925;
+    width: 18px;
+    height: 18px;
+    border-radius: 50% / 50%;
+    top: -2px;
+    left: 82px;
+    z-index: 999999;
+}
+
+#deer .head .nose:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #C8906F;
+    position: absolute;
+    border-radius: 61%;
+    top: 7px;
+    left: -8px;
+}
+
+#deer .head .nose:before {
+    content: "";
+    position: absolute;
+    background: #C8906F;
+    width: 10px;
+    height: 10px;
+    top: 6px;
+    left: -6px;
+    transform: rotate(45deg);
+}
+#deer .head .nose .detail-nose {
+    position: absolute;
+    background: #C8906F;
+    width: 13px;
+    height: 12px;
+    top: 9px;
+    left: 6px;
+    transform: rotate(-10deg);
+    border-bottom-right-radius: 50%;
+}
+
+
+/*Grass*/
+#deer-wrapper #grass-container {
+    position: absolute;
+    bottom: 0;
+    width: 380px;
+    height: 75px;
+    left: 50%;
+    margin-left: -162px;
+}
+
+#grass-container .grass {
+    border-color: transparent transparent #e45b3b transparent;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-width: 0 9px 48px 4px;
+    display: block;
+    position: absolute;
+}
+
+#grass-container .inside-grass {
+    left: 261px;
+    position: absolute;
+}
+
+#grass-container .grass.left {
+    transform: rotate(-41deg);
+}
+
+#grass-container .grass.right {
+    transform: rotate(41deg);
+}
+
+
+#grass-container .grass-1.left,
+#grass-container .grass-2.left,
+#grass-container .grass-3.left {
+    top: 32px;
+    border-width: 0 7px 52px 7px;
+}
+
+#grass-container .grass-1.left {
+    left: 25px;
+}
+
+#grass-container .grass-1.right {
+    right: -2px;
+    top: 32px;
+}
+
+#grass-container .grass-2 {
+    top: 45px;
+    border-width: 0 7px 32px 4px;
+}
+
+#grass-container .grass-2.left {
+    left: 11px;
+    border-width: 0 7px 52px 7px;
+}
+
+#grass-container .grass-2.right {
+    right: -9px;
+}
+
+#grass-container .grass-3 {
+    left: -4px;
+}
+
+#grass-container .grass-3.right {
+    right: -39px;
+}
+
+#grass-container .grass-4 {
+    top: 46px;
+    left: -12px;
+    border-width: 0 6px 34px 5px;
+}
+
