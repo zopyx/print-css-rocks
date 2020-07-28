@@ -44,7 +44,7 @@ Prince
 * Docker images: https://hub.docker.com/r/yeslogic/prince
 * Sample documents: http://www.princexml.com/samples
 * `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
-* Supported `PDF profiles <https://www.princexml.com/doc/prince-output/#pdf-versions-and-profiles>`_
+* Supported `PDF profiles Prince <https://www.princexml.com/doc/prince-output/#pdf-versions-and-profiles>`_
 * Pricing: 
 
   * Server licence (independent of #CPUs and #cores):    3800 USD
@@ -67,7 +67,7 @@ Antennahouse CSS Formatter
 * Website: https://www.antennahouse.com
 * Docker images: https://hub.docker.com/r/antennahouse/ahfcmd
 * `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
-* Supported `PDF profiles <https://www.antenna.co.jp/AHF/help/v70e/ahf-pdf.html>`_
+* Supported `PDF profiles Antennahouse <https://www.antenna.co.jp/AHF/help/v70e/ahf-pdf.html>`_
 * Pricing:
 
   * AH server license with one CPU, ∞ cores: 5000 USD (+ 4000 USD per additional CPU)
