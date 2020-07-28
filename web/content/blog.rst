@@ -5,6 +5,12 @@
 Blog articles
 =============
 
+2020
+++++
+
+- `Outlook for 2020 </blog/blog_2020-07-28-outlook.rst>`_
+
+
 2019 
 ++++
 
