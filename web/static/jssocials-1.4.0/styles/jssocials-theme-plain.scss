@@ -1,0 +1,61 @@
+@import "shares";
+
+$color: #acacac !default;
+$hover-color: darken($color, 10%) !default;
+$count-box-bg: #f5f5f5 !default;
+$count-arrow-size: .5em !default;
+$count-box-height: 2.5em;
+$count-arrow-offset: $count-arrow-size - .1em !default;
+$round-size: .3em !default;
+$transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out !default;
+
+.jssocials-share-link {
+    padding: .5em .6em;
+    border-radius: $round-size;
+    border: 2px solid $color;
+    color: $color;
+    transition: $transition;
+
+    &:hover, &:focus, &:active {
+        border: 2px solid $hover-color;
+        color: $hover-color;
+    }
+}
+
+.jssocials-share-count-box {
+    position: relative;
+    height: $count-box-height;
+    padding: 0 .3em;
+    margin-left: $count-arrow-offset;
+    background: $count-box-bg;
+    border-radius: $round-size;
+    transition: $transition;
+
+    &:hover {
+        background: darken($count-box-bg, 5%);
+
+        &:after {
+            border-color: transparent darken($count-box-bg, 5%) transparent transparent;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: $count-box-height / 2 - $count-arrow-size;
+        left: -$count-arrow-offset;
+        width: 0;
+        height: 0;
+        border-width: $count-arrow-size $count-arrow-size $count-arrow-size 0;
+        border-style: solid;
+        border-color: transparent $count-box-bg transparent transparent;
+        transform: rotate(360deg);
+        transition: $transition;
+    }
+
+    .jssocials-share-count {
+        line-height: $count-box-height;
+        color: $color;
+    }
+}
