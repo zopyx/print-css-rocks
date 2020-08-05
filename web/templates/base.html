@@ -22,14 +22,9 @@
         <link href="/static/styles.css" type="text/css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="/static/jssocials.css" />
-        <link rel="stylesheet" type="text/css" href="/static/jssocials-theme-flat.css" />
-        <link rel="stylesheet" type="text/css" href="/static/fontawesome-free-5.14.0-web/css/font-awesome.min.css" />
-
         <script src="/static/jquery-latest.js"></script>
         <script src="/static/run_prettify.js" type="text/javascript" charset="utf-8"></script>
         <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js" type="text/javascript" charset="utf-8"></script>
-        <script src="/static/jssocials.min.js"></script>
     </head>
     <body>
 
@@ -90,8 +85,6 @@
                 <div class="col-sm-9" id="main">
                     {% block body %}
                     {% endblock %}
-                    <div id="share">
-                    </div>
                 </div>
             </div>
 
@@ -115,12 +108,6 @@
         <script src="/static/local.js"></script>
         <script type="text/javascript">NAVIGATION = "{{navigation}}"</script>
 
-        <script>
-        $("#share").jsSocials({
-            shares: ["twitter", "facebook", "linkedin"]
-        });
-        </script>
-
 <!-- Matomo -->
 	<script type="text/javascript">
 	  var _paq = window._paq || [];
@@ -137,7 +124,6 @@
 	  })();
 	</script>
 	<!-- End Matomo Code -->
-
     </body>
 </html>
 
