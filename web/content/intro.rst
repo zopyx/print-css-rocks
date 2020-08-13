@@ -6,8 +6,8 @@
    :class: banner
 
 
-Introduction
-============
+Introduction to PrintCSS and CSS Paged Media
+============================================
 
 This tutorial shows how to generate PDF documents from XML/HTML
 using the "CSS Paged Media" approach, whereby the complete styling
