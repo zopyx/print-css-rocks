@@ -1,4 +1,4 @@
 include ../Makefile
 
 antennahouse:
-	run.sh -d index_ah.html -s antennahouse.css >antennahouse.pdf
+	run.sh -d index.html -s antennahouse.css >antennahouse.pdf
