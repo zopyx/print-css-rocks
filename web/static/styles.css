@@ -196,3 +196,13 @@ img.banner {
 .pane img {
     border: 2px dashed #aaa !important;
 }
+
+/* PrintCSS.live */
+
+#printcsslive {
+    margin-top: 2em;
+}
+
+#printcsslivelogo {
+    max-width: 200px;
+}
