@@ -146,7 +146,7 @@ across all lessons for generating a PDF with one of the featured converters:
     > make pagedjs          # generates `pagedjs.pdf`
 
 
-home Source code
+Source code
 -----------
 
 - https://github.com/zopyx/print-css-rocks
