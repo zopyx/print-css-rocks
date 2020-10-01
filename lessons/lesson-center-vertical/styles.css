@@ -5,6 +5,7 @@
     height: 10cm;
     margin: 0 auto;
     width: 10cm;
+    page-break-after: always;
 }
 
 img {

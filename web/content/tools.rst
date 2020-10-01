@@ -129,14 +129,41 @@ Weasyprint
 * Personal review:
 
   * Free alternative offering an average PDF rendering quality.
-  * Weasyprint only implements a subset of the CSS Paged Media standard
-  * Various errors found during evaluation.
-  * If you need a cheap and average PDF engine, Weasyprint might be
-    an option. Avoid using it for professional enterprise projects. Tinkering
-    with bugs and limitations costs more time, money and nerves than investing
-    some money in PDFreactor or PrinceXML.
-  * Weasyprint is not included in the tests for the reasona given.
+  * Weasyprint still implements only a subset of the common Paged Media
+    features. On the other hand, Weasyprint is a solid tool if you only need
+    average PDF quality or if you do not have any fancy layout requirements.
 
+Typeset.sh
+----------
+
+* Current version: 0.11.1
+* Website: https://typeset.sh
+*  Pricing: 500 EUR (server license)
+
+* Personal review:
+
+  * Typeset.sh is a work-in-progress product and moving fast 
+  * Jacob Siefer - the author of Typeset.sh - is very responsive
+  * Similar to Weasyprint, Typeset.sh has its rough edges and requires more work. 
+    Typeset.sh is too young in order to value the product but I am  happy to see it  
+    growing steadly.
+
+Paged.js
+--------
+
+* Current version : 0.1.1 (pagedjs-cli)
+* Website: https://pagedjs.org
+* Pricing: free
+
+* Personal review:
+  
+  * The `PagedJS` is project is different from all other renders because it
+    uses underlaying browser technology (Chromium) for rendering PDF. The main
+    advantance is that you can directly make use of decent browser and CSS
+    technology.
+  * `PagedJS` is a new project and work-in-progress. I am very happy to see this project
+    growing and moving into the right direction.
+    
 
 
 Versatype Converter (formerly known as Vivliostyle Converter)

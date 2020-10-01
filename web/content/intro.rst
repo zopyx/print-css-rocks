@@ -45,7 +45,8 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 
 Version
 -------
-- V 3.1 - 2020/08/01
+
+- V 4.0 beta 1 - 2020/11/01
 
 
 Tools
@@ -62,10 +63,10 @@ This tutorial covers and compares the following four tools:
 
 - PDFreactor 10.1.10722.15
 - PrinceXML 13.5
-- Antennahouse 7.0 R1
-- Weasyprint 51 (included for the first time. The results are not checked for compliance...without valuation)
-- Typeset.sh 0.8.1
-- PageJS (CLI) 0.1.0
+- Antennahouse 7.0 MR2
+- Weasyprint 51 
+- PagedJS 0.1.1 (included for the first time. The results are not checked for compliance...without valuation)
+- Typeset.sh  0.11.1 (included for the first time. The results are not checked for compliance...without valuation)
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
@@ -116,6 +117,22 @@ Weasyprint
 
   > weasyprint index.html index.pdf
 
+PagedJS
++++++++
+
+.. code-block:: shell
+
+  > pagedjs-cli index.html  -o index.pdf
+
+
+Typeset.sh
+++++++++++
+
+.. code-block:: shell
+
+  > typeset.sh.phar render:html --allow-local / -rx index.html typeset.pdf
+
+
 Each of the ``lesson-...`` directories contains a ``Makefile`` that can be used in the same way
 across all lessons for generating a PDF with one of the featured converters:
 
@@ -125,8 +142,11 @@ across all lessons for generating a PDF with one of the featured converters:
     > make prince           # generates `prince.pdf`
     > make antennahouse     # generates `antennahouse.pdf`
     > make weasyprint       # generates `weasyprint.pdf`
+    > make typeset.sh       # generates `typeset.pdf`
+    > make pagedjs          # generates `pagedjs.pdf`
 
-Source code
+
+home Source code
 -----------
 
 - https://github.com/zopyx/print-css-rocks
