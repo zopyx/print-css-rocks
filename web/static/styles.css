@@ -43,6 +43,10 @@ li.L5, li.L6, li.L7, li.L8 {
     width: 100%;
 }
 
+.compliance th {
+    vertical-align: top !important;
+}
+
 #body-wrapper {
     margin-top: 120px;
 
