@@ -192,6 +192,25 @@ img.banner {
 .converter-status {
    text-align: center;
 }
+/*
+.converter-status-OK {
+}
+
+.converter-status-OK:after {
+    color: green;
+    content: "\2713";
+}
+
+.converter-status-ERROR:after {
+    color: red;
+    content: "\1F6AB";
+}
+
+.converter-status-UNSUPPORTED:after {
+    color: red;
+    content: "\1F6AB";
+}
+*/
 
 #spotlight {
     background: white !important;
