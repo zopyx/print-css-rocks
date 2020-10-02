@@ -124,7 +124,7 @@ async def blog(request):
 
 @app.route('/showcases')
 @jinja.template('content.html')
-async def blog(request):
+async def showcases(request):
     inside = inspect.stack()[0][0].f_code.co_name
     return {'body': render_rst('showcases.rst'), 'navigation': inside}
 

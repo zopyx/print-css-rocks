@@ -1,8 +1,8 @@
 .. image:: /static/pixel.png
     :class: one-pixel
 
-PrintCSS show cases
-===================
+Showcase
+========
 
 .. note::
 
