@@ -229,3 +229,16 @@ img.banner {
 #printcsslivelogo {
     max-width: 200px;
 }
+
+/* Show cases */
+.showcase-preview {
+    width: 140px;
+    border: 1px solid grey;
+    margin-right: 10px;
+}
+
+.pdf-icon {
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

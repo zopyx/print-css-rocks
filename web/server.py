@@ -122,6 +122,13 @@ async def blog(request):
     return {'body': render_rst('blog.rst'), 'navigation': inside}
 
 
+@app.route('/showcases')
+@jinja.template('content.html')
+async def blog(request):
+    inside = inspect.stack()[0][0].f_code.co_name
+    return {'body': render_rst('showcases.rst'), 'navigation': inside}
+
+
 @app.route('/about')
 @jinja.template('content.html')
 async def about(request):
