@@ -44,9 +44,6 @@ Medical guidelines generated from DOCX/XML.
             <a class="spotlight" data-theme="white" href="/static/showcases/onkopedia-0.png">
                 <img class="showcase-preview" src="/static/showcases/onkopedia-0.png"/>
             </a>
-            <a class="spotlight" data-theme="white" href="/static/showcases/onkopedia-1.png">
-                <img class="showcase-preview" src="/static/showcases/onkopedia-1.png"/>
-            </a>
             <a class="spotlight" data-theme="white" href="/static/showcases/onkopedia-2.png">
                 <img class="showcase-preview" src="/static/showcases/onkopedia-2.png"/>
             </a>
