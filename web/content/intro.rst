@@ -5,6 +5,10 @@
 .. image:: /static/banner.png
    :class: banner
 
+.. note::
+
+   This is a beta version. We added support for the
+   converters PagedJS, Typeset.sh and Weasyprint.
 
 Introduction to PrintCSS and CSS Paged Media
 ============================================
