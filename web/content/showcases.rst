@@ -59,3 +59,31 @@ Medical guidelines generated from DOCX/XML.
         </div>
     </div>
 
+Prototype of a journal
+----------------------
+
+.. raw::  html
+
+    <a href="/static/showcases/swp.pdf" class="pdf">
+        <img class="pdf-icon" src="/static/pdficon.png" title="PDF" alt="PDF">
+    </a>
+    <div data-featherlight-gallery data-featherlight-filter="a">
+        <div class="spotlight-group">
+            <a class="spotlight" data-theme="white" href="/static/showcases/swp-4.png">
+                <img class="showcase-preview" src="/static/showcases/swp-4.png"/>
+            </a>
+            <a class="spotlight" data-theme="white" href="/static/showcases/swp-5.png">
+                <img class="showcase-preview" src="/static/showcases/swp-5.png"/>
+            </a>
+            <a class="spotlight" data-theme="white" href="/static/showcases/swp-8.png">
+                <img class="showcase-preview" src="/static/showcases/swp-8.png"/>
+            </a>
+            <a class="spotlight" data-theme="white" href="/static/showcases/swp-9.png">
+                <img class="showcase-preview" src="/static/showcases/swp-9.png"/>
+            </a>
+            <a class="spotlight" data-theme="white" href="/static/showcases/swp-16.png">
+                <img class="showcase-preview" src="/static/showcases/swp-16.png"/>
+            </a>
+        </div>
+    </div>
+
