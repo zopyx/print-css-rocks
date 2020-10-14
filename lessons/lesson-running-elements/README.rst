@@ -7,3 +7,6 @@ sixteen page area. The running element itself is removed from the page flow.
 Note: PrinceXML has different view on how to treat a `page-break-before` on the first
 page (which is an error in my opinion).
 
+Further reading:
+
+- `PrintCSS: Running headers and footers <https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62>`_
