@@ -50,7 +50,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 4.0 beta 1 - 2020/11/01
+- V 4.0 beta 2 - 2020/11/02
 
 
 Tools
