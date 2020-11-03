@@ -68,7 +68,7 @@ This tutorial covers and compares the following four tools:
 - PDFreactor 10.1.10722.15
 - PrinceXML 13.5
 - Antennahouse 7.0 MR2
-- Weasyprint 52 
+- Weasyprint 52.1
 - PagedJS 0.1.1 (included for the first time. The results are not checked for compliance...without valuation)
 - Typeset.sh  0.13.0 (included for the first time. The results are not checked for compliance...without valuation)
 
