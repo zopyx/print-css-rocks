@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style type="text/css">
+            :root {
+                --main-color: blue;
+                --main-size: 17px;
+            }
+
+            h1 {
+                color: var(--main-color);
+            }
+
+            .size-1 {
+                font-size: var(--main-size);
+            }
+            .size-2 {
+                font-size: calc(var(--main-size) * 2);
+            }
+            .size-3 {
+                font-size: calc(var(--main-size) * 3);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1 class="size-1">Hello world</h1>
+        <h1 class="size-2">Hello world</h1>
+        <h1 class="size-3">Hello world</h1>
+    </body>
+</html>
