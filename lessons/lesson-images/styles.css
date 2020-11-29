@@ -32,3 +32,16 @@ h1 {
 .rotate-135 {
     transform: rotate(135deg)        
 }
+
+.portrait {
+    width: 30%;
+    height: auto;
+}
+
+.round-25 {
+    border-radius: 25%;
+}
+
+.round-50 {
+    border-radius: 50%;
+}
