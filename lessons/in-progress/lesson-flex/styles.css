@@ -1,13 +1,16 @@
-#container {
-    display: flex;
-    width: 100%;
-    border: 1px solid blue;
-    justify-content: space-between;
+.wrapper {
+  display: flex;
 }
-
-.item {
-    display: flex;
-    flex-direction: row;
-    width: 20%;
-    border: 1px solid red;
+.wrapper > div {
+  font-size: 4vh;
+  color: white;
+  background: hotpink;
+  margin: .1em;
+  padding: .3em;
+  border-radius: 3px;
+  flex: 1;
 }
+.wrapper .wrapper > div {
+  background: pink;
+  color: hotpink;
+  }
