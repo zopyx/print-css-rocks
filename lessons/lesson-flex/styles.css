@@ -1,16 +1,20 @@
+@import url("../styles/a4.css");
+
 .wrapper {
   display: flex;
 }
+
 .wrapper > div {
   font-size: 40px;
   color: white;
   background: hotpink;
-  margin: .1em;
-  padding: .3em;
+  margin: 0.1em;
+  padding: 0.3em;
   border-radius: 3px;
   flex: 1;
 }
+
 .wrapper .wrapper > div {
   background: pink;
   color: hotpink;
-  }
+}
