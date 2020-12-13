@@ -2,7 +2,7 @@
   display: flex;
 }
 .wrapper > div {
-  font-size: 4vh;
+  font-size: 40px;
   color: white;
   background: hotpink;
   margin: .1em;
