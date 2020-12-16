@@ -50,7 +50,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 4.0 beta 2 - 2020/11/02
+- V 4.0 beta 3 - 2020/12/16
 
 
 Tools
@@ -65,12 +65,12 @@ platform.
 
 This tutorial covers and compares the following four tools:
 
-- PDFreactor 10.1.10722.15
-- PrinceXML 13.5
-- Antennahouse 7.0 MR2
-- Weasyprint 52.1
+- PDFreactor 11.
+- PrinceXML 13.6
+- Antennahouse 7.0 MR6
+- Weasyprint 52.2
 - PagedJS 0.1.1 (included for the first time. The results are not checked for compliance...without valuation)
-- Typeset.sh  0.13.0 (included for the first time. The results are not checked for compliance...without valuation)
+- Typeset.sh  0.14.3 (included for the first time. The results are not checked for compliance...without valuation)
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
