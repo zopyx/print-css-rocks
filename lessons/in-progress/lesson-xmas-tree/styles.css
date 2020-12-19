@@ -1,0 +1,671 @@
+
+@import url("../styles/a4.css");
+body, h1 {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+/*
+-- Mixin Xmas-ball
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+/*
+-- Text
+*/
+h1 {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 42px;
+  line-height: 60px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1::before, h1::after {
+  content: '❆';
+  margin: 0 10px;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*
+-- Card Styles
+*/
+.card-container {
+  height: 675px;
+  width: 675px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 8px double #fff;
+  border-radius: 20px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  /*Overflow on Circle on Safari*/
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+/*
+-- Snow --
+*/
+.snow-flakes-1, .snow-flakes-2 {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  z-index: 20;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.snow-flakes-1 {
+  top: 0;
+  box-shadow: 537px 623px 6px 1px #fff, 322px 412px 6px 5px #fff, 445px 436px 6px 8px #fff, 231px 509px 6px 4px #fff, 108px 546px 6px 8px #fff, 476px 604px 6px 7px #fff, 481px 230px 6px 6px #fff, 97px 362px 6px 4px #fff, 526px 178px 6px 5px #fff, 659px 478px 6px 1px #fff, 260px 99px 6px 6px #fff, 208px 668px 6px 3px #fff, 629px 218px 6px 5px #fff, 40px 231px 6px 1px #fff, 491px 620px 6px 6px #fff, 415px 206px 6px 1px #fff, 387px 415px 6px 7px #fff, 534px 501px 6px 5px #fff, 675px 622px 6px 4px #fff, 273px 216px 6px 8px #fff, 347px 568px 6px 7px #fff, 125px 411px 6px 2px #fff, 542px 263px 6px 3px #fff, 402px 700px 6px 4px #fff, 236px 367px 6px 2px #fff, 40px 297px 6px 4px #fff, 123px 341px 6px 7px #fff, 547px 325px 6px 2px #fff, 162px 39px 6px 4px #fff, 556px 331px 6px 7px #fff;
+  -moz-animation: moveDown 15s ease infinite;
+  -webkit-animation: moveDown 15s ease infinite;
+  animation: moveDown 15s ease infinite;
+}
+
+.snow-flakes-2 {
+  top: -700px;
+  box-shadow: 576px 686px 6px 3px #fff, 333px 44px 6px 5px #fff, 559px 75px 6px 4px #fff, 54px 287px 6px 8px #fff, 341px 515px 6px 3px #fff, 436px 582px 6px 2px #fff, 29px 320px 6px 2px #fff, 225px 21px 6px 3px #fff, 289px 301px 6px 4px #fff, 411px 667px 6px 1px #fff, 38px 269px 6px 7px #fff, 2px 617px 6px 6px #fff, 520px 3px 6px 2px #fff, 641px 530px 6px 6px #fff, 687px 538px 6px 2px #fff, 113px 230px 6px 3px #fff, 374px 143px 6px 3px #fff, 133px 606px 6px 1px #fff, 363px 623px 6px 7px #fff, 408px 363px 6px 6px #fff, 70px 504px 6px 1px #fff, 268px 142px 6px 3px #fff, 218px 545px 6px 8px #fff, 545px 587px 6px 8px #fff, 299px 87px 6px 2px #fff, 86px 158px 6px 7px #fff, 276px 193px 6px 4px #fff, 61px 133px 6px 6px #fff, 473px 301px 6px 3px #fff, 686px 298px 6px 8px #fff;
+  -moz-animation: moveDown 13s ease infinite;
+  -webkit-animation: moveDown 13s ease infinite;
+  animation: moveDown 13s ease infinite;
+  animation-delay: 2s;
+}
+
+/*
+-- Xmas Balls
+*/
+.xmas-ball {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+}
+
+.ball-0, .ball-1, .ball-2, .ball-3, .ball-4, .ball-5, .ball-6, .ball-7, .ball-8, .ball-9, .ball-10 {
+  -webkit-animation: Blink .5s infinite;
+  -moz-animation: Blink .5s infinite;
+  animation: Blink .5s infinite;
+}
+
+.ball-0 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #fbc02d;
+  border: 6px solid #f9a825;
+  margin: auto;
+  position: relative;
+  top: 15px;
+  z-index: 6;
+}
+
+.ball-1 {
+  height: 20px;
+  width: 20px;
+  background-color: #f48fb1;
+  border: 4px solid #f06292;
+  bottom: 22px;
+  right: 10px;
+}
+
+.ball-2 {
+  height: 15px;
+  width: 15px;
+  background-color: #b39ddb;
+  border: 4px solid #9575cd;
+  bottom: 26px;
+  right: 55px;
+}
+
+.ball-3 {
+  height: 30px;
+  width: 30px;
+  background-color: #90caf9;
+  border: 4px solid #64b5f6;
+  bottom: 50px;
+  left: 18px;
+}
+
+.ball-4 {
+  height: 25px;
+  width: 25px;
+  background-color: #90caf9;
+  border: 4px solid #64b5f6;
+  bottom: 20px;
+  left: 70px;
+}
+
+.ball-5 {
+  height: 15px;
+  width: 15px;
+  background-color: #ffab91;
+  border: 4px solid #ff8a65;
+  top: 6px;
+  left: 0px;
+}
+
+.ball-6 {
+  height: 20px;
+  width: 20px;
+  background-color: #66bb6a;
+  border: 4px solid #4caf50;
+  top: 51px;
+  right: 73px;
+}
+
+.ball-7 {
+  height: 10px;
+  width: 10px;
+  background-color: #90caf9;
+  border: 4px solid #64b5f6;
+  top: 18px;
+  right: 90px;
+}
+
+.ball-8 {
+  height: 15px;
+  width: 15px;
+  background-color: #f48fb1;
+  border: 4px solid #f06292;
+  top: 30px;
+  right: 15px;
+}
+
+.ball-9 {
+  height: 10px;
+  width: 10px;
+  background-color: #b39ddb;
+  border: 4px solid #9575cd;
+  top: 8px;
+  left: 30px;
+}
+
+.ball-10 {
+  height: 20px;
+  width: 20px;
+  background-color: #ffab91;
+  border: 4px solid #ff8a65;
+  top: 25px;
+  right: 90px;
+}
+
+/*
+-- Tree Styles
+*/
+.tree-container {
+  bottom: 12px;
+  position: relative;
+}
+
+.tree-p1, .tree-p2, .tree-p3, .tree-p4 {
+  text-align: center;
+}
+
+.tree-p1 li, .tree-p2 li, .tree-p3 li, .tree-p4 li {
+  overflow: hidden;
+}
+
+.tree-p1 li:first-child, .tree-p2 li:first-child, .tree-p3 li:first-child, .tree-p4 li:first-child {
+  position: relative;
+  left: 5px;
+}
+
+.tree-p1 li:nth-child(2), .tree-p2 li:nth-child(2), .tree-p3 li:nth-child(2), .tree-p4 li:nth-child(2) {
+  position: relative;
+  right: 5px;
+}
+
+.tree-left-branch, .tree-right-branch {
+  background-color: #2e7d32;
+  position: relative;
+}
+
+.tree-left-branch {
+  transform: skew(-30deg);
+  left: 60px;
+  border-bottom: 10px solid #1b5e20;
+  border-left: 10px solid #1b5e20;
+  border-bottom-left-radius: 25px;
+}
+
+.tree-right-branch {
+  transform: skew(30deg);
+  right: 60px;
+  border-bottom: 10px solid #1b5e20;
+  border-right: 10px solid #1b5e20;
+  border-bottom-right-radius: 25px;
+}
+
+.tree-right-branch::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(27, 94, 32, 0.2);
+  right: 0;
+  border-bottom-right-radius: 15px;
+}
+
+.tree-right-branch:first-child::after {
+  width: 15px;
+}
+
+.tree-right-branch:nth-child(2)::after {
+  width: 20px;
+}
+
+.tree-right-branch:nth-child(3)::after {
+  width: 25px;
+}
+
+.tree-right-branch.stubborn::after {
+  width: 30px;
+}
+
+/*
+-- Tree Part 1 Sizes
+*/
+.tree-p1 .tree-left-branch, .tree-p1 .tree-right-branch {
+  width: 100px;
+  height: 110px;
+}
+
+.tree-p1 ul {
+  height: 119px;
+}
+
+/*
+-- Tree Part 2 Sizes
+*/
+.tree-p2 .tree-left-branch, .tree-p2 .tree-right-branch {
+  width: 140px;
+  height: 95px;
+}
+
+.tree-p2 ul {
+  height: 104px;
+}
+
+/*
+-- Tree Part 3 Sizes
+*/
+.tree-p3 {
+  z-index: 1;
+}
+
+.tree-p3 .tree-left-branch, .tree-p3 .tree-right-branch {
+  width: 175px;
+  height: 95px;
+}
+
+.tree-p3 ul {
+  height: 104px;
+}
+
+/*
+-- Tree Part 4 Sizes
+*/
+.tree-p4 {
+  z-index: 2;
+  position: relative;
+}
+
+.tree-p4 .tree-left-branch, .tree-p4 .tree-right-branch {
+  width: 200px;
+  height: 65px;
+}
+
+.tree-p4 ul {
+  height: 75px;
+}
+
+/*
+-- Tree Wood Styles
+*/
+.wood {
+  height: 70px;
+  width: 55px;
+  background-color: #a98274;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: auto;
+  border-left: 10px solid #795548;
+  border-bottom: 10px solid #795548;
+  border-right: 10px solid #795548;
+  position: relative;
+}
+
+.wood::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(121, 85, 72, 0.2);
+  width: 25px;
+  right: 0;
+}
+
+/*
+-- Present Styles 1
+*/
+.present-container-1 {
+  position: absolute;
+  z-index: 1;
+  right: 105px;
+  bottom: 30px;
+}
+
+.present-container-1 .tie {
+  width: 20px;
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}
+
+.present-container-1 .tie::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 5px solid #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+
+.present-container-1 .tie::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 5px solid #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
+.present-container-1 .lid {
+  width: 120px;
+  height: 35px;
+  border-radius: 6px;
+  z-index: 2;
+  position: relative;
+  background: radial-gradient(circle, #4caf50 0.25em, rgba(255, 255, 255, 0) 0.25em, rgba(255, 255, 255, 0) 0.5em, rgba(102, 187, 106, 0.7) 0.5em, rgba(102, 187, 106, 0.7) 0.6em, rgba(255, 255, 255, 0) 0.6em) 0 0, radial-gradient(circle, #66bb6a 0.25em, rgba(255, 255, 255, 0) 0.25em, rgba(255, 255, 255, 0) 0.5em, rgba(76, 175, 80, 0.7) 0.5em, rgba(76, 175, 80, 0.7) 0.6em, rgba(255, 255, 255, 0) 0.6em) 1em 1em, radial-gradient(circle, rgba(76, 175, 80, 0.7) 0.125em, rgba(255, 255, 255, 0) 0.125em) 1em 0, radial-gradient(circle, rgba(102, 187, 106, 0.7) 0.1em, rgba(255, 255, 255, 0) 0.1em) 0 1em;
+  background-color: #fff;
+  background-size: 2em 2em;
+  background-repeat: repeat;
+}
+
+.present-container-1 .lid::after {
+  content: '';
+  width: 100px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 10px;
+  bottom: -6px;
+}
+
+.present-container-1 .box {
+  width: 100px;
+  height: 70px;
+  background-color: #f44336;
+  margin: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/*
+-- Present Styles 2
+*/
+.present-container-2 {
+  position: absolute;
+  right: 146px;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.present-container-2 .tie {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}
+
+.present-container-2 .tie::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+
+.present-container-2 .tie::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
+.present-container-2 .lid {
+  width: 160px;
+  height: 30px;
+  background-color: #f44336;
+  border-radius: 6px;
+  z-index: 2;
+  position: relative;
+}
+
+.present-container-2 .lid::after {
+  content: '';
+  width: 140px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 10px;
+  bottom: -6px;
+}
+
+.present-container-2 .box {
+  width: 140px;
+  height: 60px;
+  margin: auto;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  overflow: hidden;
+  box-shadow: 8px -20px 50px 5px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #f44336 0.3em, rgba(232, 58, 37, 0) 0.3em) 0 1em, linear-gradient(-135deg, #f44336 0.3em, rgba(232, 58, 37, 0) 0.3em) 0 1em, radial-gradient(circle at 1.79em 1.85em, #f44336 0.255em, rgba(232, 58, 37, 0) 0.261em) 0 -1em, radial-gradient(circle at 0.21em 1.85em, #f44336 0.255em, rgba(232, 58, 37, 0) 0.261em) 0 -1em, linear-gradient(135deg, #66bb6a 0.3em, rgba(152, 204, 150, 0) 0.3em) 1em 0, linear-gradient(-135deg, #66bb6a 0.3em, rgba(152, 204, 150, 0) 0.3em) 1em 0, radial-gradient(circle at 1.79em 1.85em, #66bb6a 0.255em, rgba(152, 204, 150, 0) 0.261em) 1em 0, radial-gradient(circle at 0.21em 1.85em, #66bb6a 0.255em, rgba(152, 204, 150, 0) 0.261em) 1em 0;
+  background-size: 2em 2em;
+  background-color: #fff;
+  background-repeat: repeat;
+}
+
+/*
+-- Blink Xmas Balls
+*/
+@-webkit-keyframes Blink {
+  50% {
+    filter: brightness(130%);
+  }
+}
+@-moz-keyframes Blink {
+  50% {
+    filter: brightness(130%);
+  }
+}
+@keyframes Blink {
+  50% {
+    filter: brightness(130%);
+  }
+}
+/*
+-- Change Background Gradient
+*/
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*
+-- Snow Fall
+*/
+@-webkit-keyframes moveDown {
+  0% {
+    -webkit-transform: translateY(-50em);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 154px 593px 6px 6px #fff, 436px 525px 6px 1px #fff, 159px 441px 6px 4px #fff, 505px 429px 6px 8px #fff, 567px 575px 6px 7px #fff, 572px 190px 6px 2px #fff, 250px 520px 6px 2px #fff, 113px 624px 6px 1px #fff, 209px 90px 6px 8px #fff, 121px 335px 6px 6px #fff, 426px 516px 6px 4px #fff, 59px 130px 6px 3px #fff, 361px 341px 6px 6px #fff, 444px 584px 6px 2px #fff, 565px 140px 6px 1px #fff, 295px 545px 6px 5px #fff, 644px 541px 6px 5px #fff, 573px 348px 6px 3px #fff, 5px 155px 6px 5px #fff, 656px 43px 6px 8px #fff, 324px 459px 6px 2px #fff, 114px 615px 6px 6px #fff, 165px 439px 6px 7px #fff, 172px 215px 6px 1px #fff, 165px 490px 6px 2px #fff, 76px 305px 6px 1px #fff, 237px 590px 6px 4px #fff, 542px 698px 6px 1px #fff, 493px 669px 6px 4px #fff, 398px 657px 6px 8px #fff;
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translateY(50em);
+    opacity: 0.1;
+  }
+}
+@-moz-keyframes moveDown {
+  0% {
+    -moz-transform: translateY(-50em);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 88px 144px 6px 2px #fff, 343px 496px 6px 5px #fff, 458px 670px 6px 7px #fff, 387px 374px 6px 1px #fff, 580px 336px 6px 6px #fff, 139px 471px 6px 1px #fff, 607px 625px 6px 2px #fff, 224px 405px 6px 4px #fff, 153px 592px 6px 5px #fff, 143px 663px 6px 3px #fff, 604px 115px 6px 8px #fff, 339px 698px 6px 4px #fff, 420px 107px 6px 3px #fff, 162px 383px 6px 3px #fff, 425px 17px 6px 8px #fff, 367px 473px 6px 4px #fff, 679px 461px 6px 8px #fff, 679px 385px 6px 3px #fff, 338px 667px 6px 2px #fff, 171px 99px 6px 3px #fff, 8px 466px 6px 7px #fff, 381px 690px 6px 2px #fff, 615px 159px 6px 6px #fff, 299px 36px 6px 7px #fff, 520px 205px 6px 3px #fff, 34px 671px 6px 5px #fff, 441px 234px 6px 8px #fff, 698px 342px 6px 3px #fff, 479px 86px 6px 5px #fff, 67px 276px 6px 5px #fff;
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    -moz-transform: translateY(50em);
+    opacity: 0.1;
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(-50em);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 637px 244px 6px 5px #fff, 420px 220px 6px 1px #fff, 646px 527px 6px 7px #fff, 225px 590px 6px 4px #fff, 328px 323px 6px 1px #fff, 244px 232px 6px 5px #fff, 138px 552px 6px 3px #fff, 105px 27px 6px 2px #fff, 283px 354px 6px 6px #fff, 563px 88px 6px 4px #fff, 410px 45px 6px 4px #fff, 658px 177px 6px 6px #fff, 606px 446px 6px 7px #fff, 596px 340px 6px 7px #fff, 556px 175px 6px 2px #fff, 685px 151px 6px 8px #fff, 551px 361px 6px 5px #fff, 415px 560px 6px 2px #fff, 399px 53px 6px 6px #fff, 103px 402px 6px 2px #fff, 483px 38px 6px 7px #fff, 415px 330px 6px 1px #fff, 138px 317px 6px 7px #fff, 203px 124px 6px 1px #fff, 198px 268px 6px 4px #fff, 246px 393px 6px 4px #fff, 183px 202px 6px 2px #fff, 618px 289px 6px 1px #fff, 613px 40px 6px 3px #fff, 461px 494px 6px 8px #fff;
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(50em);
+    opacity: 0.1;
+  }
+}
