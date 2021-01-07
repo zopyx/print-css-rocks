@@ -9,7 +9,7 @@ httptools==0.1.1
 httpx==0.15.4
 idna==2.10
 Jinja2==2.11.2
-lxml==4.5.2
+lxml==4.6.2
 MarkupSafe==1.1.1
 multidict==4.7.6
 orderedmultidict==1.0.1
