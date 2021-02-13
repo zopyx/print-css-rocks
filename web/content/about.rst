@@ -101,6 +101,9 @@ Related projects
           <img src="/static/zopyx.png"/>
         </td>
         <td>
+          <img src="/static/medical-publishing.png" />
+        </td>
+        <td>
           <img src="/static/pp.png" />
         </td>
         <td>
@@ -115,6 +118,9 @@ Related projects
             <a href="https://www.zopyx.com">www.zopyx.com</a>
         </td>
         <td>
+            <a href="https://medical-publishing.com">www.medical-publishing.com</a>
+        </td>
+        <td>
             <a href="https://www.produce-and-publish.com">www.produce-and-publish.com</a>
         </td>
         <td>
@@ -127,6 +133,9 @@ Related projects
       <tr>
         <td>
             ZOPYX homepage      
+        </td>
+        <td>
+            Medical Publishing Solutions
         </td>
         <td>
             Our single-source multi-channel publishing solutions
