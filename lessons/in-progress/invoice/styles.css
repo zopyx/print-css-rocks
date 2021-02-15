@@ -29,7 +29,6 @@
         content: element(bottom-left);
         vertical-align: top;
         padding-top: 2.5mm;
-        border: 1px solid blue;
         border-top: 3px solid blue;
     }
 
@@ -37,7 +36,6 @@
         content: element(bottom-center);
         vertical-align: top;
         padding-top: 2.5mm;
-        border: 1px solid blue;
         border-top: 3px solid blue;
     }
 
@@ -45,7 +43,6 @@
         content: element(bottom-right);
         vertical-align: top;
         padding-top: 2.5mm;
-        border: 1px solid blue;
         border-top: 3px solid blue;
     }
 }
@@ -113,6 +110,18 @@ body {
 #footer-right {
     font-size: 6pt;
 }
+
+#footer-left {
+    width: 50mm;
+}
+#footer-center {
+    width: 71mm;
+}
+
+#footer-right {
+    width: 70mm;
+}
+
 
 #customer-address {
     float: left;
