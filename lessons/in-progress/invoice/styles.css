@@ -1,0 +1,68 @@
+@page {
+    size: A4;
+    margin-top: 50mm;
+    margin-bottom: 20mm;
+
+    @top-left {
+        content: element(head-left);
+    }
+
+    @top-right {
+        content: element(head-right);
+    }
+
+    @bottom-left{
+        content: element(bottom-left);
+        width: 35%;
+        vertical-align: top;
+    }
+
+    @bottom-center {
+        content: element(bottom-center);
+        width: 30%;
+        vertical-align: top;
+    }
+
+    @bottom-right {
+        content: element(bottom-right);
+        width: 35%;
+        vertical-align: top;
+    }
+}
+
+body {
+    background: blue;
+    font-family: Arial;
+}
+
+#head-left {
+    position: running(head-left);
+}
+
+#head-right {
+    position: running(head-right);
+}
+
+#head-right img {
+    width: 20mm;
+    height: auto;
+}
+
+#footer-left {
+    position: running(bottom-left);
+}
+
+#footer-center {
+    position: running(bottom-center);
+}
+
+
+#footer-right {
+    position: running(bottom-right);
+}
+
+#footer-left,
+#footer-center,
+#footer-right {
+    font-size: 6pt;
+}
