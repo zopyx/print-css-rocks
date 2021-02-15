@@ -1,38 +1,57 @@
 @page {
     size: A4;
-    margin-top: 50mm;
-    margin-bottom: 20mm;
+    margin-top: 80mm;
+    margin-bottom: 25mm;
 
     @top-left {
         content: element(head-left);
+        width: 35%;
+        vertical-align: top;
+        padding-top: 10mm;
     }
 
     @top-right {
         content: element(head-right);
+        width: 25%;
+        text-align: right;
+        right: 0;
+        vertical-align: top;
+        padding-top: 10mm;
+    }
+
+    @top-center {
+        content: element(head-center);
+        margin-top: 30mm;
+        width: 100%;
     }
 
     @bottom-left{
         content: element(bottom-left);
-        width: 35%;
         vertical-align: top;
+        padding-top: 2.5mm;
+        border: 1px solid blue;
+        border-top: 3px solid blue;
     }
 
     @bottom-center {
         content: element(bottom-center);
-        width: 30%;
         vertical-align: top;
+        padding-top: 2.5mm;
+        border: 1px solid blue;
+        border-top: 3px solid blue;
     }
 
     @bottom-right {
         content: element(bottom-right);
-        width: 35%;
         vertical-align: top;
+        padding-top: 2.5mm;
+        border: 1px solid blue;
+        border-top: 3px solid blue;
     }
 }
 
 body {
-    background: blue;
-    font-family: Arial;
+    font-family: Sans-Serif;
 }
 
 #head-left {
@@ -46,7 +65,35 @@ body {
 #head-right img {
     width: 20mm;
     height: auto;
+    text-align: right;
+    border: 3px solid red;
+    display: block;
+    float: right;
 }
+
+#delivery {
+    position: running(head-center);
+    width: 100%;
+    border-bottom: 3px solid red;
+}
+
+#delivery1,
+#delivery2,
+#delivery3 {
+    display: inline-block;
+    width: 32%;
+}
+
+#delivery2 {
+    font-size: 8pt;
+}
+
+
+#delivery3 {
+    font-size: 8pt;
+}
+
+
 
 #footer-left {
     position: running(bottom-left);
@@ -66,3 +113,20 @@ body {
 #footer-right {
     font-size: 6pt;
 }
+
+#customer-address {
+    float: left;
+}
+
+#address2 {
+    width: 50%;
+    float: right;
+}
+
+#address2 .key {
+    display: inline-block;
+}
+
+#address2 .value {
+}
+
