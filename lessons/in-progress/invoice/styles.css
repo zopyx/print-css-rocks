@@ -2,6 +2,8 @@
     size: A4;
     margin-top: 80mm;
     margin-bottom: 25mm;
+    margin-left: 10mm;
+    margin-right: 10mm;
 
     @top-left {
         content: element(head-left);
@@ -49,6 +51,8 @@
 
 body {
     font-family: Sans-Serif;
+    padding: 0;
+    margin: 0;
 }
 
 #head-left {
@@ -63,7 +67,6 @@ body {
     width: 20mm;
     height: auto;
     text-align: right;
-    border: 3px solid red;
     display: block;
     float: right;
 }
@@ -78,16 +81,22 @@ body {
 #delivery2,
 #delivery3 {
     display: inline-block;
-    width: 32%;
+}
+
+#delivery1 {
+    font-size: 9pt;
+    width: 35%;
 }
 
 #delivery2 {
     font-size: 8pt;
+    width: 35%;
 }
 
 
 #delivery3 {
     font-size: 8pt;
+    width: 28%;
 }
 
 
@@ -112,7 +121,7 @@ body {
 }
 
 #footer-left {
-    width: 50mm;
+    width: 60mm;
 }
 #footer-center {
     width: 71mm;
@@ -139,3 +148,10 @@ body {
 #address2 .value {
 }
 
+table.footer td {
+    padding: 0;
+    margin: 0;
+}
+#footer-left .col1 {
+    width: 10mm;
+}
