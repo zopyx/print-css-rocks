@@ -136,6 +136,10 @@ img.logo {
 }
 
 div.notice {
+    break-inside: avoid;
+}
+
+div.notice-headline {
     font-size: 1.2em;
     font-weight: bold;
     color: green;
@@ -272,4 +276,13 @@ div.notice {
 
 .dark-blue {
     background: lightcyan;
+}
+
+#pricing {
+    float: right;
+}
+
+#pricing label {
+    font-weight: bold;
+    text-align: right;
 }
