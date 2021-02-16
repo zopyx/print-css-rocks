@@ -4,6 +4,8 @@
     margin-bottom: 25mm;
     margin-left: 10mm;
     margin-right: 10mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
 
     @top-left {
         content: element(header);
@@ -19,27 +21,68 @@ body {
     font-family: Sans-Serif;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
 }
 
 #header {
     position: running(header);
     vertical-align: top;
-    border: 1px solid green;
     /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
     width: 190mm;
     /* margin-top of @page */
     height: 80mm;
 }
 
-.header.row {
+#header1 {
+    width: 100%;
+}
+
+#header-address {
+}
+
+#header-qr {
+    width: 80mm;
+}
+
+img.qr {
+    width:30mm; 
+}
+
+#header-logo {
+    width: 30mm;
+}
+
+img.logo {
+    width: 100%;
+}
+
+#header2 {
+    width: 100%;
+    border-bottom: 3px solid orange;
+}
+
+#delivery1 {
 
 }
+
+#delivery2 {
+    font-size: 9pt;
+    vertical-align: bottom;
+}
+
+#delivery3 {
+    font-size: 9pt;
+    vertical-align: bottom;
+}
+
+#delivery3 .label {
+    display: inline-block;
+    width: 8em;
+}
+
 
 #footer {
     position: running(footer);
     vertical-align: top;
-    border-top: 3px solid blue;
     padding-top: 3mm;
     /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
     width: 190mm;
@@ -61,4 +104,23 @@ body {
 
 #footer-col3 {
     width: 80mm;
+}
+
+#customer1 {
+    float: left;
+    width: 90mm;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+#customer2 {
+    float: right; 
+    width: 70mm;
+    vertical-align: top;
+    font-size: 9pt;
+}
+
+#customer2 .label {
+    display: inline-block;
+    width: 8em;
 }
