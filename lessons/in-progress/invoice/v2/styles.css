@@ -282,7 +282,10 @@ div.notice-headline {
     float: right;
 }
 
-#pricing label {
+#pricing .label {
     font-weight: bold;
+}
+
+#pricing .price {
     text-align: right;
 }
