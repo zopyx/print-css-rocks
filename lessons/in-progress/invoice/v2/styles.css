@@ -198,16 +198,22 @@ div.notice-headline {
   width: 10mm;
 }
 
+.dimensions-container {
+    padding:  0em; 
+
+}
+
 .dimensions,
 .dimensions td,
 .dimensions th,
-.dimentsions tr {
+.dimensions tr {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
 .dimensions {
-  width: 100%;
+    width: 100%;
+
 }
 
 .dimensions .col1 {
