@@ -1,0 +1,64 @@
+@page {
+    size: A4;
+    margin-top: 80mm;
+    margin-bottom: 25mm;
+    margin-left: 10mm;
+    margin-right: 10mm;
+
+    @top-left {
+        content: element(header);
+    }
+
+    @bottom-left{
+        content: element(footer);
+    }
+
+}
+
+body {
+    font-family: Sans-Serif;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+#header {
+    position: running(header);
+    vertical-align: top;
+    border: 1px solid green;
+    /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
+    width: 190mm;
+    /* margin-top of @page */
+    height: 80mm;
+}
+
+.header.row {
+
+}
+
+#footer {
+    position: running(footer);
+    vertical-align: top;
+    border-top: 3px solid blue;
+    padding-top: 3mm;
+    /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
+    width: 190mm;
+    /* margin-bottom of @page */
+    height: 25mm;
+    font-size: 7pt;
+}
+
+.footer-col {
+    display: inline-block;
+    /* (21 cm - 2 * margin) / 3 */
+    vertical-align: top;
+}
+
+#footer-col1,
+#footer-col2 {
+    width: 53mm;
+}
+
+#footer-col3 {
+    width: 80mm;
+}
