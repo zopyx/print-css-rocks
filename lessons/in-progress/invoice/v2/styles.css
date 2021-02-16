@@ -6,6 +6,7 @@
     margin-right: 10mm;
     padding-top: 5mm;
     padding-bottom: 5mm;
+    font-family: Sans-Serif,Arial,Helvetica;
 
     @top-left {
         content: element(header);
@@ -13,6 +14,15 @@
 
     @bottom-left{
         content: element(footer);
+    }
+
+    @top-right {
+
+        content: "Seite "  counter(page) " von " counter(pages);
+        width: 30mm;
+        vertical-align: top;
+        height: 10mm;
+        padding-bottom: 1em;
     }
 
 }
@@ -136,6 +146,8 @@ div.notice {
 
 .general {
     width: 100%;
+    margin-bottom: 10mm;
+    break-inside: avoid;
 }
 
 .general th {
