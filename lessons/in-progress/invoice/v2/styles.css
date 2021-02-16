@@ -89,6 +89,7 @@ img.logo {
     /* margin-bottom of @page */
     height: 25mm;
     font-size: 7pt;
+    border-top: 3px solid pink;
 }
 
 .footer-col {
@@ -123,4 +124,11 @@ img.logo {
 #customer2 .label {
     display: inline-block;
     width: 8em;
+}
+
+div.notice {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+    padding-bottom: 0.5em;
 }
