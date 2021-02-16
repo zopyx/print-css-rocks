@@ -89,7 +89,6 @@ img.logo {
     /* margin-bottom of @page */
     height: 25mm;
     font-size: 7pt;
-    border-top: 3px solid pink;
 }
 
 .footer-col {
@@ -130,5 +129,129 @@ div.notice {
     font-size: 1.2em;
     font-weight: bold;
     color: green;
-    padding-bottom: 0.5em;
+}
+
+/* inner tables */
+
+.general {
+    width: 100%;
+}
+
+.general th {
+    font-size: 7pt;
+    font-weight: normal;
+}
+
+.general td {
+    font-size: 7pt;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+
+.general,
+.general td,
+.general th,
+.general tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.general .col1 {
+    width: 60mm;
+}
+
+.general .col2 {
+    width: 13mm;
+}
+
+.general .col3 {
+    width: 25mm;
+}
+
+.general .col4 {
+    width: 22mm;
+}
+
+.general .col5 {
+    width: 22mm;
+}
+
+.general .col6 {
+    width: 17mm;
+}
+
+.general .col7 {
+    width: 10mm;
+}
+
+.dimensions,
+.dimensions td,
+.dimensions th,
+.dimentsions tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+.dimensions .col1 {
+    width: 10mm;
+}
+
+.dimensions .col2 {
+    width: 5mm;
+}
+
+.dimensions .col3 {
+    width: 25mm;
+}
+
+.dimensions .col4 {
+    width: 15mm;
+}
+
+.dimensions .col5 {
+    width: 10mm;
+}
+
+
+.dimensions .col6 {
+    width: 10mm;
+}
+
+.dimensions .col7 {
+    width: 25mm;
+}
+.dimensions .col8 {
+    width: 20mm;
+}
+.dimensions .col9 {
+    width: 10mm;
+}
+.dimensions .col10 {
+    width: 30mm;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.light-blue {
+    background: lightblue;
+}
+
+.dark-blue {
+    background: blue;
 }
