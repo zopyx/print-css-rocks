@@ -194,6 +194,10 @@ div.notice {
 
 }
 
+.dimensions {
+    width: 100%;
+}
+
 .dimensions .col1 {
     width: 10mm;
 }
@@ -253,5 +257,5 @@ div.notice {
 }
 
 .dark-blue {
-    background: blue;
+    background: lightcyan;
 }
