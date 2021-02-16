@@ -1,291 +1,284 @@
 @page {
-    size: A4;
-    margin-top: 80mm;
-    margin-bottom: 25mm;
-    margin-left: 10mm;
-    margin-right: 10mm;
-    padding-top: 5mm;
-    padding-bottom: 5mm;
-    font-family: Sans-Serif,Arial,Helvetica;
+  size: A4;
+  margin-top: 80mm;
+  margin-bottom: 25mm;
+  margin-left: 10mm;
+  margin-right: 10mm;
+  padding-top: 5mm;
+  padding-bottom: 5mm;
+  font-family: Sans-Serif, Arial, Helvetica;
 
-    @top-left {
-        content: element(header);
-    }
+  @top-left {
+    content: element(header);
+  }
 
-    @bottom-left{
-        content: element(footer);
-    }
+  @bottom-left {
+    content: element(footer);
+  }
 
-    @top-right {
-
-        content: "Seite "  counter(page) " von " counter(pages);
-        width: 30mm;
-        vertical-align: top;
-        height: 10mm;
-        padding-bottom: 1em;
-    }
-
+  @top-right {
+    content: "Seite " counter(page) " von " counter(pages);
+    width: 30mm;
+    vertical-align: top;
+    height: 10mm;
+    padding-bottom: 1em;
+  }
 }
 
 body {
-    font-family: Sans-Serif,Arial,Helvetica;
-    padding: 0;
-    margin: 0;
+  font-family: Sans-Serif, Arial, Helvetica;
+  padding: 0;
+  margin: 0;
 }
 
 #header {
-    position: running(header);
-    vertical-align: top;
-    /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
-    width: 190mm;
-    /* margin-top of @page */
-    height: 80mm;
+  position: running(header);
+  vertical-align: top;
+  /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
+  width: 190mm;
+  /* margin-top of @page */
+  height: 80mm;
 }
 
 #header1 {
-    width: 100%;
+  width: 100%;
 }
 
 #header-address {
 }
 
 #header-qr {
-    width: 80mm;
+  width: 80mm;
 }
 
 img.qr {
-    width:30mm; 
+  width: 30mm;
 }
 
 #header-logo {
-    width: 30mm;
+  width: 30mm;
 }
 
 img.logo {
-    width: 100%;
+  width: 100%;
 }
 
 #header2 {
-    width: 100%;
-    border-bottom: 3px solid orange;
+  width: 100%;
+  border-bottom: 3px solid orange;
 }
 
 #delivery1 {
-
 }
 
 #delivery2 {
-    font-size: 9pt;
-    vertical-align: bottom;
+  font-size: 9pt;
+  vertical-align: bottom;
 }
 
 #delivery3 {
-    font-size: 9pt;
-    vertical-align: bottom;
+  font-size: 9pt;
+  vertical-align: bottom;
 }
 
 #delivery3 .label {
-    display: inline-block;
-    width: 8em;
+  display: inline-block;
+  width: 8em;
 }
 
-
 #footer {
-    position: running(footer);
-    vertical-align: top;
-    padding-top: 3mm;
-    /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
-    width: 190mm;
-    /* margin-bottom of @page */
-    height: 25mm;
-    font-size: 7pt;
+  position: running(footer);
+  vertical-align: top;
+  padding-top: 3mm;
+  /* A4 width - 2 * margin = 21cm - 2 * 10 mm */
+  width: 190mm;
+  /* margin-bottom of @page */
+  height: 25mm;
+  font-size: 7pt;
 }
 
 .footer-col {
-    display: inline-block;
-    /* (21 cm - 2 * margin) / 3 */
-    vertical-align: top;
+  display: inline-block;
+  /* (21 cm - 2 * margin) / 3 */
+  vertical-align: top;
 }
 
 #footer-col1,
 #footer-col2 {
-    width: 53mm;
+  width: 53mm;
 }
 
 #footer-col3 {
-    width: 80mm;
+  width: 80mm;
 }
 
 #customer1 {
-    float: left;
-    width: 90mm;
-    vertical-align: top;
-    font-weight: bold;
+  float: left;
+  width: 90mm;
+  vertical-align: top;
+  font-weight: bold;
 }
 
 #customer2 {
-    float: right; 
-    width: 70mm;
-    vertical-align: top;
-    font-size: 9pt;
+  float: right;
+  width: 70mm;
+  vertical-align: top;
+  font-size: 9pt;
 }
 
 #customer2 .label {
-    display: inline-block;
-    width: 8em;
+  display: inline-block;
+  width: 8em;
 }
 
 div.notice {
-    break-inside: avoid;
+  break-inside: avoid;
 }
 
 div.notice-headline {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: green;
-    padding-top: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: green;
+  padding-top: 1em;
 }
 
 /* inner tables */
 
 .general {
-    width: 100%;
-    margin-bottom: 10mm;
-    break-inside: avoid;
-    page-break-inside: avoid;
+  width: 100%;
+  margin-bottom: 10mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .general th {
-    font-size: 7pt;
-    font-weight: normal;
+  font-size: 7pt;
+  font-weight: normal;
 }
 
 .general td {
-    font-size: 7pt;
-    font-weight: normal;
-    vertical-align: top;
+  font-size: 7pt;
+  font-weight: normal;
+  vertical-align: top;
 }
-
 
 .general,
 .general td,
 .general th,
 .general tr {
-    border: 1px solid black;
-    border-collapse: collapse;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 .general .col1 {
-    width: 60mm;
+  width: 60mm;
 }
 
 .general .col2 {
-    width: 13mm;
+  width: 13mm;
 }
 
 .general .col3 {
-    width: 25mm;
+  width: 25mm;
 }
 
 .general .col4 {
-    width: 22mm;
+  width: 22mm;
 }
 
 .general .col5 {
-    width: 22mm;
+  width: 22mm;
 }
 
 .general .col6 {
-    width: 17mm;
+  width: 17mm;
 }
 
 .general .col7 {
-    width: 10mm;
+  width: 10mm;
 }
 
 .dimensions,
 .dimensions td,
 .dimensions th,
 .dimentsions tr {
-    border: 1px solid black;
-    border-collapse: collapse;
-
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 .dimensions {
-    width: 100%;
+  width: 100%;
 }
 
 .dimensions .col1 {
-    width: 10mm;
+  width: 10mm;
 }
 
 .dimensions .col2 {
-    width: 5mm;
+  width: 5mm;
 }
 
 .dimensions .col3 {
-    width: 25mm;
+  width: 25mm;
 }
 
 .dimensions .col4 {
-    width: 15mm;
+  width: 15mm;
 }
 
 .dimensions .col5 {
-    width: 10mm;
+  width: 10mm;
 }
 
-
 .dimensions .col6 {
-    width: 10mm;
+  width: 10mm;
 }
 
 .dimensions .col7 {
-    width: 25mm;
+  width: 25mm;
 }
 .dimensions .col8 {
-    width: 20mm;
+  width: 20mm;
 }
 .dimensions .col9 {
-    width: 10mm;
+  width: 10mm;
 }
 .dimensions .col10 {
-    width: 30mm;
+  width: 30mm;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold !important;
 }
 
 .left {
-    text-align: left;
+  text-align: left !important;
 }
 
 .right {
-    text-align: right;
+  text-align: right !important;
 }
 
 .center {
-    text-align: center;
+  text-align: center !important;
 }
 
 .light-blue {
-    background: lightblue;
+  background: lightblue;
 }
 
 .dark-blue {
-    background: lightcyan;
+  background: lightcyan;
 }
 
 #pricing {
-    float: right;
+  float: right;
 }
 
 #pricing .label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #pricing .price {
-    text-align: right;
+  text-align: right;
 }
