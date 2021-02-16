@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: Sans-Serif;
+    font-family: Sans-Serif,Arial,Helvetica;
     padding: 0;
     margin: 0;
 }
@@ -129,6 +129,7 @@ div.notice {
     font-size: 1.2em;
     font-weight: bold;
     color: green;
+    padding-top: 1em;
 }
 
 /* inner tables */
