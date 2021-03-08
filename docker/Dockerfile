@@ -27,3 +27,9 @@ RUN vivliostyle --version
 
 RUN npm install -g pagedjs-cli
 RUN pagedjs-cli --version
+
+RUN wget -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=unix_installer&jre=false"
+RUN tar xfz pdfreactor.tgz
+run apt install -y openjdk-15-jre
+run java --version
+RUN PDFreactor/bin/pdfreactorwebservice start
