@@ -11,16 +11,14 @@ RUN /tmp/python/bin/pip3 install pp.server
 
 RUN ls /tmp/python/bin
 RUN /tmp/python/bin/pip3 install weasyprint
-RUN /tmp/python/bin/weasyprint --version
 
 
-RUN wget -O prince.deb https://www.princexml.com/download/prince_14-1_ubuntu20.04_amd64.deb
+RUN wget -q -O prince.deb https://www.princexml.com/download/prince_14-1_ubuntu20.04_amd64.deb
 RUN apt install -y ./prince.deb
 RUN prince --version
 
-RUN wget -O speedata.zip https://download.speedata.de/dl/speedata-publisher-linux-amd64-4.2.0.zip
+RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-linux-amd64-4.2.0.zip
 RUN unzip speedata.zip
-RUN speedata-publisher/bin/sp --version
 
 RUN npm install -g @vivliostyle/cli
 RUN vivliostyle --version
@@ -28,8 +26,12 @@ RUN vivliostyle --version
 RUN npm install -g pagedjs-cli
 RUN pagedjs-cli --version
 
-RUN wget -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=unix_installer&jre=false"
-RUN tar xfz pdfreactor.tgz
-run apt install -y openjdk-15-jre
-run java --version
-RUN PDFreactor/bin/pdfreactorwebservice start
+#RUN wget -q -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=windows-x64_installer&jre=true&archive=true"
+#RUN tar xfz pdfreactor.tgz
+#RUN PDFreactor/bin/pdfreactorwebservice start
+
+RUN prince --version
+RUN vivliostyle --version
+RUN pagedjs-cli --version
+RUN /tmp/python/bin/weasyprint --version
+RUN speedata-publisher/bin/sp --version
