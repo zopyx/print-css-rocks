@@ -9,8 +9,8 @@ RUN /tmp/python/bin/pip3 install wheel pp.server hypercorn weasyprint
 RUN wget -q -O prince.deb https://www.princexml.com/download/prince_14-1_ubuntu20.04_amd64.deb; apt install -y ./prince.deb
 RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-linux-amd64-4.2.0.zip; unzip speedata.zip
 
-RUN npm install  -g pagedjs-cli
-RUN npm install  -g @vivliostyle/cli
+RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install  -g pagedjs-cli
+RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install  -g @vivliostyle/cli
 
 #RUN wget -q -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=windows-x64_installer&jre=true&archive=true"
 #RUN tar xfz pdfreactor.tgz
