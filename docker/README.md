@@ -19,6 +19,11 @@ The REST API is documented here:
 
 https://pypi.org/project/pp.server/
 
+The Swagger/OpenUI interface for introspecting the API can be found under
+
+http://host:8000/docs
+
+
 ## Python client bindings
 
 The Python 3 client bindings can be found here:
