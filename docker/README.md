@@ -11,7 +11,7 @@ the Produce & Publish REST server API
 
 ## Running the container
 
-   docker run -p 8000:8000 zopyx/print-css-rocks
+   > docker run -p 8000:8000 zopyx/print-css-rocks
 
 ## REST API 
 
