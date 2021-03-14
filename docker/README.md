@@ -1,4 +1,4 @@
-# print-css-rocks docker container
+# print-css.rocks Docker container
 
 This Docker container contains the following converters, served through
 the Produce & Publish REST server API
@@ -30,4 +30,8 @@ The Python 3 client bindings can be found here:
 
 https://pypi.org/project/pp.client-python/
 
- 
+## Contact
+
+Andreas Jung/ZOPYX
+info@zopyx.com
+www.print-css.rocks 
