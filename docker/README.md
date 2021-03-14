@@ -32,6 +32,8 @@ https://pypi.org/project/pp.client-python/
 
 ## Contact
 
-Andreas Jung/ZOPYX
-info@zopyx.com
-www.print-css.rocks 
+  Andreas Jung/ZOPYX
+
+  info@zopyx.com
+  
+  www.print-css.rocks 
