@@ -8,3 +8,9 @@ push:
 	docker push zopyx/print-css-rocks
 
 
+serve:
+#	-docker pull zopyx/print-css-rocks
+	-docker stop pp-server
+	-docker kill pp-server
+	-docker rm pp-server
+	docker run -p 8000:8000 --name pp-server zopyx/print-css-rocks

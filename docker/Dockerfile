@@ -17,5 +17,7 @@ RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 #RUN tar xfz pdfreactor.tgz
 #RUN PDFreactor/bin/pdfreactorwebservice start
 
+RUN apt install -y tini
 ADD start-server.sh /
-ENTRYPOINT ["/bin/bash", "/start-server.sh"]
+#ENTRYPOINT ["/bin/bash", "/start-server.sh"]
+ENTRYPOINT ["tini", "-v", "--", "/start-server.sh"]
