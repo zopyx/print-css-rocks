@@ -4,6 +4,7 @@ export PATH=$PATH:\
 /:\
 /tmp/python/bin:\
 /speedata-publisher/bin:\
+/node_modules/.bin
 
 sp --version
 weasyprint --version
