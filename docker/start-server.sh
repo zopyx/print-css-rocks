@@ -6,11 +6,5 @@ export PATH=$PATH:\
 /speedata-publisher/bin:\
 /node_modules/.bin
 
-sp --version
-weasyprint --version
-pagedjs-cli --version
-prince --version
-vivliostyle --version
-
 hypercorn pp.server.server:app --bind 0.0.0.0:8000
 
