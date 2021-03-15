@@ -1,12 +1,24 @@
 FROM ubuntu:latest
+LABEL maintainer="info@zopyx.com"
+
 ENV TZ=Europe/Kiev
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apt update; apt upgrade -y; apt-get install -y build-essential python3-dev python3-pip python3-setuptools python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info python3-dev python3-venv wget npm unzip curl tini; apt-get clean
+RUN apt update; apt upgrade -y; \
+    apt-get install -y build-essential python3-dev python3-pip python3-setuptools \
+        python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 \
+        libgdk-pixbuf2.0-0 libffi-dev shared-mime-info python3-dev python3-venv \
+        wget npm unzip curl tini; \
+    apt-get clean
+
 RUN python3 -m venv /tmp/python
 RUN /tmp/python/bin/pip3 install wheel pp.server hypercorn weasyprint
 
-RUN wget -q -O prince.deb https://www.princexml.com/download/prince_14-1_ubuntu20.04_amd64.deb; apt install -y ./prince.deb; rm prince.deb
-RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-linux-amd64-4.2.0.zip; unzip speedata.zip; rm speedata.zip
+RUN wget -q -O prince.deb https://www.princexml.com/download/prince_14-1_ubuntu20.04_amd64.deb; \
+    apt install -y ./prince.deb; \
+    rm prince.deb
+RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-linux-amd64-4.2.0.zip; \
+    unzip speedata.zip; \
+    rm speedata.zip
 
 RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   pagedjs-cli
 RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
@@ -16,8 +28,7 @@ RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 #RUN tar xfz pdfreactor.tgz
 #RUN PDFreactor/bin/pdfreactorwebservice start
 
-RUN find / -name pagedjs-cli
-
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
+EXPOSE 8000/tcp
 ENTRYPOINT ["tini", "-p", "SIGKILL", "-v", "--", "/start-server.sh"]
