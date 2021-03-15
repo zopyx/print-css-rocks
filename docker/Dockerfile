@@ -18,6 +18,15 @@ RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 
 RUN find / -name pagedjs-cli
 
+RUN apt-get install -y alien
+RUN wget -q -O ah.rpm.gz https://www.antenna.co.jp/xml/download/ahf70/MR6a-b5542f03-61c9-40df-a3ef-2f92fb917817/AHFormatterV70_64-7.0E-MR6a.x86_64.rpm.gz
+RUN gzip -d ah.rpm
+RUN alien -i ah.rpm
+RUN ls /usr/AHFormatterV70_64/
+RUN apt-get install -y rpl
+RUN rpl '@@HOME@@' '/usr/AHFormatterV70_64' /usr/AHFormatterV70_64/run.sh
+RUN /usr/AHFormatterV70_64/run.sh
+
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
 ENTRYPOINT ["tini", "-p", "SIGKILL", "-v", "--", "/start-server.sh"]
