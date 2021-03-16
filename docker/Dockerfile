@@ -7,7 +7,7 @@ RUN apt update; apt upgrade -y; \
     apt-get install -y build-essential python3-dev python3-pip python3-setuptools \
         python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 \
         libgdk-pixbuf2.0-0 libffi-dev shared-mime-info python3-dev python3-venv \
-        alien rpl wget npm unzip curl tini; \
+        php alien rpl wget npm unzip curl tini; \
     apt-get clean
 
 RUN python3 -m venv /tmp/python
@@ -34,10 +34,8 @@ RUN wget -q -O ah.rpm.gz "https://www.antenna.co.jp/xml/download/ahf71-69f6cc18-
         rm ah.rpm.gz; \
         rpl '@@HOME@@' '/usr/AHFormatterV71_64' /usr/AHFormatterV71_64/run.sh
 
-RUN wget -q -O /usr/bin/typeset.sh.phar http://typeset.sh/phar/demo/jung-Zt5gSfTm5Eyt8x08ducHR
-RUN chmod +x /usr/bin/typeset.sh.phar
-RUN apt install -y php
-RUN /usr/bin/typeset.sh.phar
+RUN wget -q -O /usr/bin/typeset.sh.phar http://typeset.sh/phar/demo/jung-Zt5gSfTm5Eyt8x08ducHR \;
+    chmod +x /usr/bin/typeset.sh.phar; \
 
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
