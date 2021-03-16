@@ -31,7 +31,7 @@ RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 RUN wget -q -O ah.rpm.gz "https://www.antenna.co.jp/xml/download/ahf71-69f6cc18-0cc2-43fb-aa37-05caa420802d/R1/AHFormatterV71_64-7.1E-R1.x86_64.rpm.gz" ; \
         gzip -d ah.rpm; \
         alien -i ah.rpm; \
-        rm ah.rpm.gz; \
+        rm ah.rpm; \
         rpl '@@HOME@@' '/usr/AHFormatterV71_64' /usr/AHFormatterV71_64/run.sh
 
 RUN wget -q -O /usr/bin/typeset.sh.phar http://typeset.sh/phar/demo/jung-Zt5gSfTm5Eyt8x08ducHR ; \
