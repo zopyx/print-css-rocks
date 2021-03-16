@@ -34,7 +34,7 @@ RUN wget -q -O ah.rpm.gz "https://www.antenna.co.jp/xml/download/ahf71-69f6cc18-
         rm ah.rpm.gz; \
         rpl '@@HOME@@' '/usr/AHFormatterV71_64' /usr/AHFormatterV71_64/run.sh
 
-RUN wget -q -O /usr/bin/typeset.sh.phar http://typeset.sh/phar/demo/jung-Zt5gSfTm5Eyt8x08ducHR \;
+RUN wget -q -O /usr/bin/typeset.sh.phar http://typeset.sh/phar/demo/jung-Zt5gSfTm5Eyt8x08ducHR ; \
     chmod +x /usr/bin/typeset.sh.phar; 
 
 ADD start-server.sh /
