@@ -1,5 +1,5 @@
 build: 
-	docker build -t zopyx/print-css-rocks .
+	docker build -t zopyx/print-css-rocks . --build-arg TS_DOWNLOAD=${TS_DOWNLOAD} --build-arg AH_DOWNLOAD=${AH_DOWNLOAD}
 
 build-clean: 
 	docker build --no-cache -t zopyx/print-css-rocks .
