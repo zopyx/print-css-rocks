@@ -34,7 +34,7 @@ RUN echo $AH_DOWNLOAD
 RUN wget -q -O ah.rpm.gz ${AH_DOWNLOAD} ; \
         gzip -d ah.rpm; \
         alien -i ah.rpm; \
-        rm ah.rpm.gz; \
+        rm ah.rpm; \
         rpl '@@HOME@@' '/usr/AHFormatterV71_64' /usr/AHFormatterV71_64/run.sh
 
 ARG TS_DOWNLOAD
