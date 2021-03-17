@@ -30,12 +30,13 @@ RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 
 ARG AH_DOWNLOAD
 ENV AH_DOWNLOAD=$AH_DOWNLOAD
-RUN echo $AH_DOWNLOAD
 RUN wget -q -O ah.rpm.gz ${AH_DOWNLOAD} ; \
         gzip -d ah.rpm; \
         alien -i ah.rpm; \
         rm ah.rpm; \
         rpl '@@HOME@@' '/usr/AHFormatterV71_64' /usr/AHFormatterV71_64/run.sh
+COPY AHFormatter.lic /usr/AHFormatterV71_64/etc/AHFormatter.lic
+
 
 ARG TS_DOWNLOAD
 ENV TS_DOWNLOAD=$TS_DOWNLOAD
@@ -46,4 +47,5 @@ RUN wget -q -O /usr/bin/typeset.sh.phar ${TS_DOWNLOAD} ; \
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
 EXPOSE 8000/tcp
+run ls  -la /usr/AHFormatterV71_64/etc
 ENTRYPOINT ["tini", "-p", "SIGKILL", "-v", "--", "/start-server.sh"]
