@@ -5,7 +5,11 @@ export PATH=$PATH:\
 /tmp/python/bin:\
 /speedata-publisher/bin:\
 /node_modules/.bin:\
-/usr/AHFormatterV71_64
+/usr/AHFormatterV71_64:\
+/app/PDFreactor/clients/cli
+
+chmod a+rx /app/PDFreactor/clients/cli/pdfreactor.py
+ls -la /app/PDFreactor/clients/cli
 
 hypercorn pp.server.server:app --bind 0.0.0.0:8000
 
