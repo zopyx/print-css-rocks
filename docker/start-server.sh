@@ -7,5 +7,5 @@ export PATH=$PATH:\
 /node_modules/.bin:\
 /usr/AHFormatterV71_64
 
-hypercorn pp.server.server:app --bind 0.0.0.0:8000
+hypercorn pp.server.server:app --bind 0.0.0.0:8000 --access-logfile /data/access.log --error-logfile /data/error.log --workers 1
 
