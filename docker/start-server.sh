@@ -11,5 +11,5 @@ export PATH=$PATH:\
 chmod a+rx /app/PDFreactor/clients/cli/pdfreactor.py
 ls -la /app/PDFreactor/clients/cli
 
-hypercorn pp.server.server:app --bind 0.0.0.0:8000
+hypercorn pp.server.server:app --bind 0.0.0.0:8000 --access-logfile /data/access.log --error-logfile /data/error.log --workers 1
 

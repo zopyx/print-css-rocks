@@ -45,7 +45,9 @@ RUN wget -q -O /usr/bin/typeset.sh.phar ${TS_DOWNLOAD} ; \
     chmod +x /usr/bin/typeset.sh.phar; 
 
 ADD start-server.sh /
+
+run mkdir /data
 RUN chmod a+rx /start-server.sh
+
 EXPOSE 8000/tcp
-run ls  -la /usr/AHFormatterV71_64/etc
 ENTRYPOINT ["tini", "-p", "SIGKILL", "-v", "--", "/start-server.sh"]
