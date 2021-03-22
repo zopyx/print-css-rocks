@@ -24,10 +24,9 @@ RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   pagedjs-cli
 RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 
 
-#RUN wget -q -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=windows-x64_installer&jre=true&archive=true"
-#RUN tar xfz pdfreactor.tgz
 #RUN PDFreactor/bin/pdfreactorwebservice start
 
+# Antennahouse
 ARG AH_DOWNLOAD
 ENV AH_DOWNLOAD=$AH_DOWNLOAD
 RUN wget -q -O ah.rpm.gz ${AH_DOWNLOAD} ; \
@@ -37,12 +36,26 @@ RUN wget -q -O ah.rpm.gz ${AH_DOWNLOAD} ; \
         rpl '@@HOME@@' '/usr/AHFormatterV71_64' /usr/AHFormatterV71_64/run.sh
 COPY AHFormatter.lic /usr/AHFormatterV71_64/etc/AHFormatter.lic
 
-
+# Typeset.sh
 ARG TS_DOWNLOAD
 ENV TS_DOWNLOAD=$TS_DOWNLOAD
 RUN echo $TS_DOWNLOAD
 RUN wget -q -O /usr/bin/typeset.sh.phar ${TS_DOWNLOAD} ; \
     chmod +x /usr/bin/typeset.sh.phar; 
+
+# Calibre
+RUN wget -q -nv -O- https://download.calibre-ebook.com/linux-installer.sh | bash /dev/stdin
+
+RUN cat /etc/os-release
+RUN apt install -y default-jre
+RUN java --version
+
+
+RUN wget -q -O pdfreactor.zip "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=windows-x64_installer&jre=true&archive=true"
+RUN ls -la
+RUN unzip pdfreactor.zip
+RUN find . -name pdfreactor.jar
+RUN java -jar ./PDFreactor/lib/pdfreactor.jar
 
 ADD start-server.sh /
 
