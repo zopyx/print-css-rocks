@@ -57,6 +57,7 @@ RUN find . -name pdfreactor.jar
 
 ADD pdfreactor.sh /
 ADD test.html /
+ADD licensekey.txt /
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh /pdfreactor.sh
 #RUN /pdfreactor.sh file:///test.html out.pdf
