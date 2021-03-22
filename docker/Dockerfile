@@ -7,7 +7,7 @@ RUN apt update; apt upgrade -y; \
     apt-get install -y build-essential python3-dev python3-pip python3-setuptools \
         python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 \
         libgdk-pixbuf2.0-0 libffi-dev shared-mime-info python3-dev python3-venv \
-        php alien rpl wget npm unzip curl tini; \
+        default-jre php alien rpl wget npm unzip curl tini; \
     apt-get clean
 
 RUN python3 -m venv /tmp/python
@@ -52,15 +52,15 @@ RUN java --version
 
 
 RUN wget -q -O pdfreactor.zip "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=windows-x64_installer&jre=true&archive=true"
-RUN ls -la
 RUN unzip pdfreactor.zip
 RUN find . -name pdfreactor.jar
-RUN java -jar ./PDFreactor/lib/pdfreactor.jar
 
+ADD pdfreactor.sh /
+ADD test.html /
 ADD start-server.sh /
+RUN chmod a+rx /start-server.sh /pdfreactor.sh
+#RUN /pdfreactor.sh file:///test.html out.pdf
 
-run mkdir /data
-RUN chmod a+rx /start-server.sh
-
+RUN mkdir /data
 EXPOSE 8000/tcp
 ENTRYPOINT ["tini", "-p", "SIGKILL", "-v", "--", "/start-server.sh"]
