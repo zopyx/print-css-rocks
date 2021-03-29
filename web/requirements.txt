@@ -13,7 +13,7 @@ lxml>=4.6.2
 MarkupSafe==1.1.1
 multidict==4.7.6
 orderedmultidict==1.0.1
-Pygments==2.7.1
+Pygments==2.7.4
 rfc3986==1.4.0
 sanic==20.9.0
 sanic-jinja2==0.8.0
