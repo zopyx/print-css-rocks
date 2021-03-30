@@ -23,11 +23,6 @@ RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-l
 RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   pagedjs-cli
 RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 
-
-#RUN wget -q -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=windows-x64_installer&jre=true&archive=true"
-#RUN tar xfz pdfreactor.tgz
-#RUN PDFreactor/bin/pdfreactorwebservice start
-
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
 EXPOSE 8000/tcp
