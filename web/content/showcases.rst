@@ -32,7 +32,7 @@ This document show a personalized account statement generated from XML data.
 Invoice
 ---------
 
-An example invoice with repeating header and footer section
+An example invoice with repeating header and footer section.
 
 .. raw::  html
 
@@ -82,6 +82,13 @@ Medical guidelines generated from DOCX/XML.
 
 Prototype of a journal
 ----------------------
+
+This prototype shows some features:
+
+- multi-column layout
+- column spans
+- footnotes
+- image floats
 
 .. raw::  html
 
