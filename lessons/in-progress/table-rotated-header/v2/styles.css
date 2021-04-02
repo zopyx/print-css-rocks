@@ -1,0 +1,63 @@
+@page {
+  size: A4;
+  margin-top: 80mm;
+  margin-bottom: 25mm;
+  margin-left: 10mm;
+  margin-right: 10mm;
+  padding-top: 5mm;
+  padding-bottom: 5mm;
+  font-family: Sans-Serif, Arial, Helvetica;
+
+  @top-left {
+    content: element(header);
+  }
+
+  @bottom-left {
+    content: element(footer);
+  }
+
+  @top-right {
+    content: "Seite " counter(page) " von " counter(pages);
+    width: 30mm;
+    vertical-align: top;
+    height: 10mm;
+    padding-bottom: 1em;
+  }
+}
+
+body {
+  font-family: Sans-Serif, Arial, Helvetica;
+  padding: 0;
+  margin: 0;
+}
+
+table, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table {
+    width: 50%;
+}
+
+  .rotated-header th {
+    height: 240px;
+    vertical-align: bottom;
+    text-align: left;
+    line-height: 1;
+  }
+
+  .rotated-header-container {
+    width: 75px;
+  }
+
+  .rotated-header-content {
+    width: 300px;
+    transform-origin: bottom left;
+    /*transform: translateX(75px) rotate(-45deg);*/
+    transform: translateX(20px) rotate(-45deg);
+  }
+
+  .rotated-header td:not(:first-child) {
+    text-align: right;
+  }
