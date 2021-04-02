@@ -60,26 +60,26 @@ Prince
   * A little overpriced in comparison to PDFreactor
   * We used PrinceXML for many years before we discovered and switched to PDFreactor
 
-Antennahouse CSS Formatter
---------------------------
+Antenna House CSS Formatter
+---------------------------
 
-* Current version: 7.0 MR3
+* Current version: 7.1 R1
 * Website: https://www.antennahouse.com
-* Docker images: https://hub.docker.com/r/antennahouse/ahfcmd
-* `CSS & Compliance  <https://www.antennahouse.com/product/ahf66/ahf-css6.html>`_
-* Supported `PDF profiles Antennahouse <https://www.antenna.co.jp/AHF/help/v70e/ahf-pdf.html>`_
+* Docker images: https://hub.docker.com/r/antennahouse/ahfcmd71
+* `CSS & Compliance  <https://www.antenna.co.jp/AHF/help/en/ahf-css6.html>`_
+* Supported `PDF profiles Antenna House <https://www.antenna.co.jp/AHF/help/en/ahf-pdf.html>`_
 * Pricing:
 
   * AH server license with one CPU, ∞ cores: 5000 USD (+ 4000 USD per additional CPU)
-  * AH standalone license: 	1250 USD
   * AH lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU) 
-  * For a complete list of prices, see `here <https://www.antennahouse.com/prices/>`_
+  * AH standalone license (includes GUI preview on Windows): 	1250 USD (Lite: 400 USD)
+  * For a complete list of prices, see `here <https://www.antennahouse.com/pricing/>`_
 
 * Personal review:
 
   * Best available solution
   * Very compliant
-  * Lots of specific extensions and features known from the standard Antennahouse
+  * Lots of specific extensions and features known from the standard Antenna House
     XSL-FO converter
   * Good and responsive support
   * Documentation is extensive, although a little unorganized or confusing in parts
