@@ -1,0 +1,41 @@
+@page {
+  size: A4;
+  margin: 10mm;
+  font-family: Sans-Serif, Arial, Helvetica;
+}
+
+body {
+  font-family: Sans-Serif, Arial, Helvetica;
+  padding: 0;
+  margin: 0;
+}
+
+table, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    vertical-align: bottom;
+}
+
+th>div {
+    border: 1px solid blue;
+    max-width: 10em;
+    text-align: left;
+}
+
+div.img {
+    height: 5cm;
+    border: 2px solid blue;
+    width: 10mm; 
+    margin-left: 20mm;
+}
+
+img {
+    height: 100%;
+}
