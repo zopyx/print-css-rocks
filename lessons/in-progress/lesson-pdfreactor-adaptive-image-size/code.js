@@ -5,7 +5,7 @@
 
 function adapt_image_sizes() {
     var MIN_FACTOR = 0.10; /* Scale down to max 70% */
-    var MIN_DIFF = 0.02;
+    var MIN_DIFF = 0.01;
     var SELECTOR = "div.figure > img";
     var imgList = document.querySelectorAll(SELECTOR);
     for (var i = 0; i < imgList.length; i++) {
