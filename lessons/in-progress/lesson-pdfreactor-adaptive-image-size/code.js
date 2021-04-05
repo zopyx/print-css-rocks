@@ -48,32 +48,6 @@ function adapt_image_sizes() {
     }
 }
 
-function autofit() {       
-    var containers = document.querySelectorAll(".autofit");
- 
-    for (var i = 0; i < containers.length; i++) {
-        var container = containers[i];
-        var style = window.getComputedStyle(container).getPropertyValue("white-space");
-       
-        if (style == "pre-line") {
-            var newText = container.innerHTML.trim();
-            container.innerHTML = newText
-        }
-        var content = container.querySelector(".content");
- 
-        const containerHeight = ro.layout.getBoxDescriptions(container)[0].contentRect.height;
-        var contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
-        var fontSize = parseInt(window.getComputedStyle(content).fontSize);
-         
-        while (contentHeight > containerHeight) {
-            console.log('fontsize', fontSize);
-            fontSize = fontSize * 0.9;
-            content.style.fontSize = fontSize + "pt";
-            contentHeight = ro.layout.getBoxDescriptions(content)[0].marginRect.height;
-        }
-    }
-}
-
 
 /* MAIN */
 
