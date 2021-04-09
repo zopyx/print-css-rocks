@@ -1,0 +1,26 @@
+body {
+    font-size: 12pt;
+}
+
+
+#content {
+    column-count: 2;
+    column-fill: auto;
+}
+
+.headline {
+    font-size: 1.2rem;
+    color: blue;
+    margin-bottom: 1rem;
+}
+
+.block {
+    font-size: 0.9rem;
+    color: orange; 
+    break-inside: avoid-column;
+    -ah-break-inside: avoid;
+}
+
+.allow-break {
+    break-inside: auto;
+}
