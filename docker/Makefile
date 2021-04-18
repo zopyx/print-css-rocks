@@ -3,6 +3,7 @@ TOPDIR=$(PWD)
 build: 
 	-cp /usr/local/AHFormatterV71/etc/AHFormatter.lic .
 	-cp /usr/AHFormatterV71_64/etc/AHFormatter.lic .
+#	-cp /Applications/PDFreactor/jetty/lib/ext/licensekey.txt .
 	docker build -t zopyx/print-css-rocks . --build-arg TS_DOWNLOAD=${TS_DOWNLOAD} --build-arg AH_DOWNLOAD=${AH_DOWNLOAD}
 
 build-clean: 
