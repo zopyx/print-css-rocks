@@ -1,0 +1,22 @@
+TOPDIR=$(PWD)
+
+build: 
+#	-cp /usr/local/AHFormatterV71/etc/AHFormatter.lic .
+	-cp /usr/AHFormatterV72_64/etc/AHFormatter.lic .
+#	-cp /Applications/PDFreactor/jetty/lib/ext/licensekey.txt .
+	-cp /opt/PDFreactor/jetty/lib/ext/licensekey.txt .
+	docker build -f Dockerfile-full -t zopyx/print-css-rocks-full . --build-arg TS_DOWNLOAD=${TS_DOWNLOAD} --build-arg AH_DOWNLOAD=${AH_DOWNLOAD}
+
+build-clean: 
+	docker build -f Dockerfile-full --no-cache -t zopyx/print-css-rocks-full .
+
+push:
+	docker push zopyx/print-css-rocks-full
+
+
+serve:
+#	-docker pull zopyx/print-css-rocks
+	-docker stop pp-server-full
+	-docker kill pp-server-full
+	-docker rm pp-server-full
+	docker run -p 8000:8000 --name pp-server-full zopyx/print-css-rocks-full

@@ -9,6 +9,7 @@ export PATH=$PATH:\
 /app/PDFreactor/clients/cli
 
 chmod a+rx /app/PDFreactor/clients/cli/pdfreactor.py
+ls -la  /app/PDFreactor/clients/cli/pdfreactor.py
 
 /tmp/python/bin/pip3 install -U pp.server
 
