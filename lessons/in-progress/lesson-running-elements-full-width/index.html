@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style type="text/css">
+
+            :root {
+                --margin: 20mm;
+                --margin-top: 70mm;
+                --header-margin: 10mm;
+                --header-border: 10mm;
+            }
+            @page {
+                size: a4;
+                margin: var(--margin);
+                margin-top: var(--margin-top);
+                border: var(--header-border) solid red;
+            }
+
+            #header {
+                position: running(header);
+                border: var(--header-border) solid green;
+                height: calc( var(--margin-top) - var(--header-margin) - 2 * var(--header-border) );
+                margin-top: var(--header-margin);
+            }
+
+            @page {
+                @top-left {
+                    content: element(header);
+                    vertical-align: top
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            Hello world
+        </div>
+    </body>
+</html>
