@@ -51,8 +51,8 @@ RUN apt install -y default-jre
 RUN java --version
 
 
-RUN wget -q -O pdfreactor.zip "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=windows-x64_installer&jre=true&archive=true"
-RUN unzip pdfreactor.zip
+RUN wget -q -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=unix_installer&jre=false"
+RUN tar xfvz pdfreactor.tgz
 RUN find . -name pdfreactor.jar
 
 ADD pdfreactor.sh /

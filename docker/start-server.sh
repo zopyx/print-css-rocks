@@ -6,12 +6,13 @@ export PATH=$PATH:\
 /speedata-publisher/bin:\
 /node_modules/.bin:\
 /usr/AHFormatterV71_64:\
-/app/PDFreactor/clients/cli
+/PDFreactor/clients/cli\
 
-chmod a+rx /app/PDFreactor/clients/cli/pdfreactor.py
-ls -la  /app/PDFreactor/clients/cli/pdfreactor.py
+chmod a+rx /PDFreactor/clients/cli/pdfreactor.py
 
-/tmp/python/bin/pip3 install -U pp.server
+/PDFreactor/bin/pdfreactorwebservice start
+
+/tmp/python/bin/pip3 install --pre -U pp.server
 
 hypercorn pp.server.server:app --bind 0.0.0.0:8000 --access-logfile /data/access.log --error-logfile /data/error.log --workers 1
 
