@@ -10,6 +10,20 @@ RUN apt update; apt upgrade -y; \
         wget npm unzip curl tini; \
     apt-get clean
 
+ADD chromium.pref /etc/apt/preferences.d/chromium.pref
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
+
+RUN echo "deb http://deb.debian.org/debian buster main" >> /etc/apt/sources.list.d/debian.list && \
+ echo "deb http://deb.debian.org/debian buster-updates main" >> /etc/apt/sources.list.d/debian.list && \
+ echo "deb http://deb.debian.org/debian-security buster/updates main" >> /etc/apt/sources.list.d/debian.list && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DCC9EFBF77E11517 && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138 && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50 && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A && \
+ apt update && \
+ apt install chromium -y && \
+ apt-get clean && rm -rf /var/cache/apk/*
+
 RUN python3 -m venv /tmp/python
 RUN /tmp/python/bin/pip3 install --no-cache wheel pp.server hypercorn weasyprint
 
@@ -36,20 +50,6 @@ RUN /tmp/python/bin/pip3 install -U pp.server
 
 
 
-ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
-
-ADD chromium.pref /etc/apt/preferences.d/chromium.pref
-
-RUN echo "deb http://deb.debian.org/debian buster main" >> /etc/apt/sources.list.d/debian.list && \
- echo "deb http://deb.debian.org/debian buster-updates main" >> /etc/apt/sources.list.d/debian.list && \
- echo "deb http://deb.debian.org/debian-security buster/updates main" >> /etc/apt/sources.list.d/debian.list && \
- apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DCC9EFBF77E11517 && \
- apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138 && \
- apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50 && \
- apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A && \
- apt update && \
- apt install chromium -y && \
- apt-get clean && rm -rf /var/cache/apk/*
 
 
 ADD start-server.sh /
