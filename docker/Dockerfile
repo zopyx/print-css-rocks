@@ -34,6 +34,24 @@ RUN useradd -u ${uid} -g ${group} -s /bin/sh -m ${user} # <--- the '-m' create a
 
 RUN /tmp/python/bin/pip3 install -U pp.server
 
+
+
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
+
+ADD chromium.pref /etc/apt/preferences.d/chromium.pref
+
+RUN echo "deb http://deb.debian.org/debian buster main" >> /etc/apt/sources.list.d/debian.list && \
+ echo "deb http://deb.debian.org/debian buster-updates main" >> /etc/apt/sources.list.d/debian.list && \
+ echo "deb http://deb.debian.org/debian-security buster/updates main" >> /etc/apt/sources.list.d/debian.list && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DCC9EFBF77E11517 && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138 && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50 && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A && \
+ apt update && \
+ apt install chromium -y && \
+ apt-get clean && rm -rf /var/cache/apk/*
+
+
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
 
