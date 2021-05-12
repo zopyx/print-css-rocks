@@ -46,12 +46,6 @@ ARG gid=1000
 RUN groupadd -g ${gid} ${group}
 RUN useradd -u ${uid} -g ${group} -s /bin/sh -m ${user} # <--- the '-m' create a user home directory
 
-RUN /tmp/python/bin/pip3 install -U pp.server
-
-
-
-
-
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
 
