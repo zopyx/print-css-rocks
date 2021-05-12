@@ -11,7 +11,7 @@ RUN apt update; apt upgrade -y; \
     apt-get clean
 
 RUN python3 -m venv /tmp/python
-RUN /tmp/python/bin/pip3 install wheel pp.server hypercorn weasyprint
+RUN /tmp/python/bin/pip3 install --no-cache wheel pp.server hypercorn weasyprint
 
 RUN wget -q -O prince.deb https://www.princexml.com/download/prince_14.1-1_ubuntu20.04_amd64.deb; \
     apt install -y ./prince.deb; \
@@ -20,10 +20,23 @@ RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-l
     unzip speedata.zip; \
     rm speedata.zip
 
+
 RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   pagedjs-cli
 RUN export PUPPETEER_SKIP_DOWNLOAD='true' && npm install   @vivliostyle/cli
 
+# Set user and group
+ARG user=appuser
+ARG group=appuser
+ARG uid=1000
+ARG gid=1000
+RUN groupadd -g ${gid} ${group}
+RUN useradd -u ${uid} -g ${group} -s /bin/sh -m ${user} # <--- the '-m' create a user home directory
+
+RUN /tmp/python/bin/pip3 install -U pp.server
+
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
+
+USER ${uid}:${gid}
 EXPOSE 8000/tcp
 ENTRYPOINT ["tini", "-p", "SIGKILL", "-v", "--", "/start-server.sh"]

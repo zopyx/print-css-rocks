@@ -1,0 +1,16 @@
+{
+  "name": "print-css-rocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vivliostyle/cli": "^3.5.0",
+    "pagedjs-cli": "^0.1.1"
+  }
+}
+
