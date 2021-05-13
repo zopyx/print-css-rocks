@@ -7,7 +7,7 @@ RUN apt update; apt upgrade -y; \
     apt-get install -y build-essential python3-dev python3-pip python3-setuptools \
         python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 \
         php libgdk-pixbuf2.0-0 libffi-dev shared-mime-info python3-dev python3-venv \
-        php7.4-xml php-gd \ 
+        php7.4-xml php-gd default-jre \ 
         alien rpl wget npm unzip curl tini; \
     apt-get clean
 
@@ -69,12 +69,9 @@ RUN wget -q -O /usr/bin/typeset.sh.phar ${TS_DOWNLOAD} ; \
 RUN wget -q -nv -O- https://download.calibre-ebook.com/linux-installer.sh | bash /dev/stdin
 
 # PDFreactor
-RUN cat /etc/os-release
-RUN apt install -y default-jre
-RUN java --version
-
-RUN wget -q -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=unix_installer&jre=false"
-RUN tar xfvz pdfreactor.tgz
+RUN wget -q -O pdfreactor.tgz "https://www.pdfreactor.com/download/get/?product=pdfreactor&type=unix_installer&jre=false"; \
+    tar xfvz pdfreactor.tgz; \
+    rm pdfreactor.tgz
 
 ADD pdfreactor.sh /
 ADD licensekey.txt /PDFreactor/jetty/lib/ext
@@ -83,8 +80,6 @@ RUN chown -R ${uid}:${gid} /PDFreactor
 
 ADD start-server.sh /
 RUN chmod a+rx /start-server.sh
-
-RUN /tmp/python/bin/pip3 install --no-cache -U pp.server 
 
 USER ${uid}:${gid}
 EXPOSE 8000/tcp
