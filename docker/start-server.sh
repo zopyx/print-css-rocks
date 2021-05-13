@@ -12,7 +12,7 @@ chmod a+rx /PDFreactor/clients/cli/pdfreactor.py
 
 /PDFreactor/bin/pdfreactorwebservice start
 
-/tmp/python/bin/pip3 install --pre -U pp.server
+export PP_SPOOL_DIRECTORY=/tmp
 
-hypercorn pp.server.server:app --bind 0.0.0.0:8000 --access-logfile /data/access.log --error-logfile /data/error.log --workers 1
+hypercorn pp.server.server:app --bind 0.0.0.0:8000 --access-logfile /tmp/access.log --error-logfile /tmp/error.log --workers 1
 

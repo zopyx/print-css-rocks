@@ -19,4 +19,4 @@ serve:
 	-docker stop pp-server-full
 	-docker kill pp-server-full
 	-docker rm pp-server-full
-	docker run -p 8000:8000 --name pp-server-full zopyx/print-css-rocks-full
+	docker run --rm -ti -p 8000:8000 --name pp-server-full --security-opt seccomp=./chrome.json zopyx/print-css-rocks-full
