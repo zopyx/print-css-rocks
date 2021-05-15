@@ -215,3 +215,19 @@ Docraptor
   * Pricing is based on conversion volume and appears reasonable. Overall verdict undecided
     given that self-hosted versions of other professional converters are cheaper and may be
     the better option in the long run.
+
+
+Vivliostyle
+-----------
+  * Current version:
+
+    * Vivliostyle CLI 3.4
+    * Vivliostyle.js 2.8
+
+  * Website: https://vivliostyle.org
+  * Pricing: free, open-source
+  * CSS Compliance: https://docs.vivliostyle.org/#/supported-css-features
+  * Sample documents: https://vivliostyle.org/samples/
+  * Supported PDF profiles:
+
+    * PDF/X: https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-for-print-pdfx-1a-format
