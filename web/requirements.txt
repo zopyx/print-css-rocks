@@ -22,4 +22,4 @@ six==1.15.0
 sniffio==1.1.0
 ujson==3.2.0
 uvloop==0.14.0
-websockets==8.1
+websockets==9.1
