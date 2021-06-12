@@ -30,7 +30,7 @@ RUN /tmp/python/bin/pip3 install --no-cache wheel pp.server hypercorn weasyprint
 RUN wget -q -O prince.deb https://www.princexml.com/download/prince_14.1-1_ubuntu20.04_amd64.deb; \
     apt install -y ./prince.deb; \
     rm prince.deb
-RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-linux-amd64-4.2.0.zip; \
+RUN wget -q -O speedata.zip https://download.speedata.de/dl/speedata-publisher-linux-amd64-4.4.1.zip; \
     unzip speedata.zip; \
     rm speedata.zip
 
