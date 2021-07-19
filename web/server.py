@@ -198,6 +198,7 @@ async def lessons(request):
     compliance['antennahouse'] = []
     compliance['princexml'] = []
     compliance['weasyprint'] = []
+    compliance['vivliostyle'] = []
 
     for lesson in os.listdir(LESSON_ROOT):
         if not lesson.startswith('lesson-'):
@@ -266,7 +267,7 @@ def get_lesson_data(lesson):
             category = CP.get('common', 'category')
 
         for section in CP.sections():
-            if section not in ('PDFreactor', 'PrinceXML', 'Antennahouse', 'Weasyprint', 'PagedJS', 'Typeset.sh'):
+            if section not in ('PDFreactor', 'PrinceXML', 'Antennahouse', 'Weasyprint', 'PagedJS', 'Typeset.sh', "vivliostyle"):
 
                 continue
 
