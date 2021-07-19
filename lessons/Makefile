@@ -27,7 +27,7 @@ clean:
 
 images: FORCE
 	-rm -fr images
-	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/weasyprint images/pagedjs images/typeset.sh
+	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/weasyprint images/pagedjs images/typeset.sh images/vivliostyle
 	echo 1 >images/placeholder
 	$(eval OPTS :=-density 150 -quality 85)
 	$(eval OPTS2 := +profile "icc")
