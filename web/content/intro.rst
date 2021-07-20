@@ -133,6 +133,13 @@ Typeset.sh
 
   > typeset.sh.phar render:html --allow-local / -rx index.html typeset.pdf
 
+Vivliostyle
++++++++++++
+
+.. code-block:: shell
+
+  > vivliostyle build --output vivliostyle.pdf index.html
+
 
 Each of the ``lesson-...`` directories contains a ``Makefile`` that can be used in the same way
 across all lessons for generating a PDF with one of the featured converters:
@@ -145,6 +152,7 @@ across all lessons for generating a PDF with one of the featured converters:
     > make weasyprint       # generates `weasyprint.pdf`
     > make typeset.sh       # generates `typeset.pdf`
     > make pagedjs          # generates `pagedjs.pdf`
+    > make vivliostyle      # generates `vivliostyle.pdf`
 
 
 Source code
