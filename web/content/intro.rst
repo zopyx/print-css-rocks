@@ -7,9 +7,6 @@
 
 .. note::
 
-   This is a beta version. We added support for the
-   converters PagedJS, Typeset.sh and Weasyprint.
-
 Introduction to PrintCSS and CSS Paged Media
 ============================================
 
@@ -68,9 +65,10 @@ This tutorial covers and compares the following four tools:
 - PDFreactor 11.2.2
 - PrinceXML 14.2
 - Antennahouse 7.1 R1
-- Weasyprint 52.5
-- PagedJS 0.1.1 
-- Typeset.sh  0.16.9 
+- Weasyprint 53 beta 2
+- PagedJS 0.1.3 
+- Typeset.sh  0.16.12
+- Vivliostyle 3.5.1
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
