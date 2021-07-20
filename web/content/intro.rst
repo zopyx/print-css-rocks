@@ -5,7 +5,6 @@
 .. image:: /static/banner.png
    :class: banner
 
-.. note::
 
 Introduction to PrintCSS and CSS Paged Media
 ============================================
@@ -47,7 +46,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 4.1 - 2021/05/15
+- V 4.2 - 2021/08/20
 
 
 Tools
