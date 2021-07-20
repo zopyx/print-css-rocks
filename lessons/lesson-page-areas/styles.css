@@ -2,6 +2,7 @@
 
 @page {
     border: 1px solid blue;
+    color: black;
     font-size: 8pt;
 
     @top-left-corner {
