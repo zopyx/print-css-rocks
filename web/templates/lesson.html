@@ -2,7 +2,7 @@
 {% block body %}
         <h1>{{lesson.name.replace('lesson-', '')}}</h1>
 
-        <div class="alert alert-info">{{lesson.readme_raw }}</div>
+        <div class="alert alert-info">{{lesson.readme_raw | safe }}</div>
 
         <section>
             <h2>Repository files</h2>

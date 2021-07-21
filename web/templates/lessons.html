@@ -40,7 +40,7 @@
                                     <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row['name'].replace('lesson-', '')}}</a>
                                 </h3>
                                 {% if row['readme'] %}
-                                    <div class="readme"> {{ row['readme']  }} </div>
+                                    <div class="readme"> {{ row['readme'] | safe  }} </div>
                                 {% endif %}
                             </td>
 
