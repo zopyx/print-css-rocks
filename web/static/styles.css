@@ -268,3 +268,11 @@ img.banner {
 .status-text {
     margin-right: 1em;
 }
+
+#pdf-files th.status {
+    width: 100px;
+}
+
+#pdf-files th.converter{
+    width: 200px;
+}
