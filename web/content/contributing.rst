@@ -14,7 +14,7 @@ CSS community.
 Setting up your own environment
 -------------------------------
 
-You need a decent Python 3 installation (Python 3.6 or 3.7) for installing the print-css.rocks setup
+You need a decent Python 3 installation (Python 3.7 or higher) for installing the print-css.rocks setup
 locally. It might be necessary to installed the `libxml2` and `libxslt` packages on Linux (including
 their dev packages) or using Homebrew on MacOSX.
 
@@ -78,6 +78,7 @@ which contains for each supported converter a dedicated section like
 
    [common]
    category = intro
+   title = Lesson on ....
 
    [PDFreactor]
    status = OK
@@ -94,8 +95,17 @@ which contains for each supported converter a dedicated section like
    pdf = antennahouse.pdf
    message =
 
-The section keys `PDFreactor`, `PrinceXML` and `Antennahouse` are
-case-sensitive. The `status` option is usually `OK`, `ERROR` or `UNSUPPORTED`
+The section keys 
+
+- `PDFreactor` 
+- `PrinceXML` 
+- `Antennahouse`
+- `PagedJS`
+- `Typeset.sh`
+- `WeasyPrint`
+- `Vivliostyle`
+
+are case-sensitive. The `status` option is usually `OK`, `ERROR` or `UNSUPPORTED`
 by definition. However the value can be an arbitrary string. The values for `pdf` should
 remain untouched. In case of an error you may add a custom `message` option. The `message`
 option - even if empty - is mandatory.

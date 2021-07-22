@@ -18,3 +18,4 @@ starlette==0.14.2
 toml==0.10.2
 typing-extensions==3.10.0.0
 wsproto==1.0.0
+pygments
