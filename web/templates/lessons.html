@@ -48,7 +48,11 @@
                                 <td class="converter-status">
                                     {% if c in row['converters'] %}
                                         <span class="converter-status-{{ row['converters'][c]['status']}}">
-                                            {{ row['converters'][c]['status'] }}
+                                            <img class="status-icon" 
+                                                 src="/static/{{row['converters'][c]['status'].lower()}}.svg" 
+                                                 alt="{{row['converters'][c]['status']}}"
+                                                 title="Status: {{row['converters'][c]['status']}}"
+                                            />
                                         </span>
                                     {% endif %}
                                 </td>

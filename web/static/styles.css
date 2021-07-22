@@ -252,3 +252,7 @@ img.banner {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.status-icon {
+    width: 3em;
+}
