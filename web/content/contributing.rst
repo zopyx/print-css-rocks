@@ -132,6 +132,10 @@ is equivalent to running the following manually on the console:
     make pdfreactor
     make prince
     make antennahouse
+    make weasyprint
+    make pagedjs
+    make vivliostyle
+    make typeset.sh
 
 There is an additional Makefile target `images` which will convert all PDF files to PNG (for usage within
 the web application).
