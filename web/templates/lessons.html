@@ -61,6 +61,12 @@
                     {% endfor %}
                 </tbody>
             </table>
+            <div class="icon-legend">
+                <img class="status-icon-small" src="/static/ok.svg"> <span class="status-text">OK</span>
+                <img class="status-icon-small" src="/static/(ok).svg"> <span class="status-text">OK with issues</span>
+                <img class="status-icon-small" src="/static/error.svg"> <span class="status-text">Error</span>
+                <img class="status-icon-small" src="/static/unsupported.svg"> <span class="status-text">Unsupported</span>
+            </div>
         {% endif %}
     {% endfor %}
 

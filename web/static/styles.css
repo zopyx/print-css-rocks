@@ -254,5 +254,17 @@ img.banner {
 }
 
 .status-icon {
-    width: 3em;
+    width: 2em;
+}
+
+.icon-legend {
+    margin-bottom: 2em;
+}
+
+.status-icon-small {
+    width: 1.5em;
+}
+
+.status-text {
+    margin-right: 1em;
 }
