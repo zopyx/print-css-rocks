@@ -32,7 +32,13 @@
                                 <a title="Download PDF" class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}"><i class="far fa-file-pdf"></i></a>
                             </td>
                             <td class="converter-status">
-                                <span class="converter-status">{{ entry.status }}</span>
+                                <span class="converter-status-{{ entry.status }}">
+                                    <img class="status-icon" 
+                                         src="/static/{{ entry.status.lower() }}.svg" 
+                                         alt="{{ entry.status }}"
+                                         title="Status: {{ entry.status }}"
+                                    />
+                                </span>
                             </td>
                             <td  data-featherlight-gallery data-featherlight-filter="a">
                                 <div class="spotlight-group" data-title="{{lesson.name.replace('lesson-', '').upper()}}: {{entry.name}}">
@@ -53,6 +59,12 @@
                     {% endfor %}
                 </tbody>
             </table>
+            <div class="icon-legend">
+                <img class="status-icon-small" src="/static/ok.svg"> <span class="status-text">OK</span>
+                <img class="status-icon-small" src="/static/(ok).svg"> <span class="status-text">OK with issues</span>
+                <img class="status-icon-small" src="/static/error.svg"> <span class="status-text">Error</span>
+                <img class="status-icon-small" src="/static/unsupported.svg"> <span class="status-text">Unsupported</span>
+            </div>
         </section>
 
         <section>
