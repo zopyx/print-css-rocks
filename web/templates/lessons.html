@@ -25,7 +25,7 @@
                         <tr>
                             <td class="title">      
                                 <h3>
-                                    <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row['name'].replace('lesson-', '')}}</a>
+                                    <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row.title }}</a>
                                 </h3>
                                 {% if row['readme'] %}
                                     <div class="readme"> {{ row['readme'] | safe  }} </div>

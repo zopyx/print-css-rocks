@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block body %}
-        <h1>{{lesson.name.replace('lesson-', '')}}</h1>
+        <h1>{{ lesson.title }}</h1>
 
         <div class="alert alert-info">{{lesson.readme_raw | safe }}</div>
 
