@@ -332,8 +332,9 @@ def get_lesson_data(lesson):
                 pdf_file = CP.get(section, "pdf")
                 status = CP.get(section, "status")
                 message = CP.get(section, "message")
-            except configparser.NoOptionUNSUPPORTED as e:
-                raise ValueUNSUPPORTED("{}: {}".format(e, lesson))
+#            except configparser.NoOption as e:
+            except Exception as e:
+                raise ValueError("{}: {}".format(e, lesson))
 
             generated_pdf = os.path.join(generated_dir, pdf_file)
             if not os.path.exists(generated_pdf):
