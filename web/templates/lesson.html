@@ -41,10 +41,10 @@
                                 </span>
                             </td>
                             <td  data-featherlight-gallery data-featherlight-filter="a">
-                                <div class="spotlight-group" data-title="{{lesson.name.replace('lesson-', '').upper()}}: {{entry.name}}">
+                                <div class="spotlight-group" data-title="{{lesson.title.upper()}}: {{entry.name}}">
                                     {% for image in entry.images %} 
                                         <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" 
-                                            data-title="{{entry.name}}-{{lesson.name}} Page {{loop.index}}/{{entry.images|length}}">
+                                            data-title="{{lesson.title}} - Page {{loop.index}}/{{entry.images|length}}">
                                                 <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
                                         </a>
                                     {% endfor %}
