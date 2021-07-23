@@ -281,6 +281,6 @@ img.banner {
     width: 200px;
 }
 
-.center {
-    vertical-align: center;
+table.compliance th.center {
+    text-align: center ;
 }
