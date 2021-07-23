@@ -1,1 +1,1 @@
-This example shows a nested grid.
+This example shows a CSS flex layout.
