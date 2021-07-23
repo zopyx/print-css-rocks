@@ -1,8 +1,11 @@
 @import url("../styles/a5.css");
 
 div.g {
+    position: absolute;
     width: 10cm;
     height: 10cm;
+    left: 15mm;
+    top: 20mm;
     border: 1px solid blue;
     margin-right: 1em;
     margin-bottom: 1em;
