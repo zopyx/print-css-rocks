@@ -280,3 +280,7 @@ img.banner {
 #pdf-files th.converter{
     width: 200px;
 }
+
+.center {
+    vertical-align: center;
+}
