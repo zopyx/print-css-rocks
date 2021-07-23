@@ -236,7 +236,7 @@ async def lessons(request: Request):
         readme = render_rst(lesson_data["readme"])
         category = lesson_data["category"]
         compliance[category].append(
-            dict(name=lesson, converters=cmpl, readme=readme, readme_raw=readme_raw, title=lesson_data['title'])
+            dict(name=lesson, converters=cmpl, readme=readme, readme_raw=readme_raw, title=lesson_data['title'], description=lesson_data['description'])
         )
 
     for key in (
@@ -302,6 +302,7 @@ def get_lesson_data(lesson):
     mode = "html"
     category = "intro"
     title = lesson
+    description = None
     if os.path.exists(conversion_ini):
         CP = ConfigParser()
         CP.read(conversion_ini)
@@ -311,7 +312,8 @@ def get_lesson_data(lesson):
             category = CP.get("common", "category")
         if CP.has_option("common", "title"):
             title = CP.get("common", "title")
-
+        if CP.has_option("common", "description"):
+            description = CP.get("common", "description")
 
         for section in CP.sections():
             if section not in (
@@ -376,6 +378,7 @@ def get_lesson_data(lesson):
             category=category,
             name=lesson,
             title=title or lesson,
+            description=description,
             pdfs=pdfs,
             has_css=has_css,
             css_text=css_text,
