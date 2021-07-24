@@ -5,7 +5,7 @@ p {
   line-height: 1.5;
 }
 
-h2 + p::first-letter {
+h2 + p#first-letter::first-letter {
   color: white;
   background-color: black;
   border-radius: 2px;
@@ -14,4 +14,10 @@ h2 + p::first-letter {
   padding: 6px 3px;
   margin-right: 6px;
   float: left;
+}
+
+h2 + p#first-line::first-line{
+  color: red;
+  background-color: #ddd;
+  font-size: 1.4em;
 }
