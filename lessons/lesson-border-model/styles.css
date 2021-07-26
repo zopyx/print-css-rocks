@@ -1,10 +1,9 @@
-@import url("../styles/a5.css");
+@import url("../styles/a4.css");
 
 
 * {
     margin: 0;
     padding: 0;
-
 }
 
 .outer {
@@ -13,6 +12,7 @@
     hyphens: auto;
     text-align: justify;
     background:  #eee;
+    page-break-after: always;
 }
 
 .container {
