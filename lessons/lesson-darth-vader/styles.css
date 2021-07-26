@@ -666,11 +666,6 @@ a:hover {
     height: 120px;
     margin-left: -10px;
     background: rgba(248,80,50,0);
-    background: -moz-linear-gradient(left, rgba(248,80,50,0) 10%, rgba(247,67,37,0) 20%, rgba(246,41,12,0.67) 40%, rgba(255,176,166,1) 50%, rgba(246,41,12,0.67) 60%, rgba(236,51,30,0) 80%, rgba(231,56,39,0) 90%);
-    background: -webkit-gradient(left top, right top, color-stop(10%, rgba(248,80,50,0)), color-stop(20%, rgba(247,67,37,0)), color-stop(40%, rgba(246,41,12,0.67)), color-stop(50%, rgba(255,176,166,1)), color-stop(60%, rgba(246,41,12,0.67)), color-stop(80%, rgba(236,51,30,0)), color-stop(90%, rgba(231,56,39,0)));
-    background: -webkit-linear-gradient(left, rgba(248,80,50,0) 10%, rgba(247,67,37,0) 20%, rgba(246,41,12,0.67) 40%, rgba(255,176,166,1) 50%, rgba(246,41,12,0.67) 60%, rgba(236,51,30,0) 80%, rgba(231,56,39,0) 90%);
-    background: -o-linear-gradient(left, rgba(248,80,50,0) 10%, rgba(247,67,37,0) 20%, rgba(246,41,12,0.67) 40%, rgba(255,176,166,1) 50%, rgba(246,41,12,0.67) 60%, rgba(236,51,30,0) 80%, rgba(231,56,39,0) 90%);
-    background: -ms-linear-gradient(left, rgba(248,80,50,0) 10%, rgba(247,67,37,0) 20%, rgba(246,41,12,0.67) 40%, rgba(255,176,166,1) 50%, rgba(246,41,12,0.67) 60%, rgba(236,51,30,0) 80%, rgba(231,56,39,0) 90%);
     background: linear-gradient(to right, rgba(248,80,50,0) 10%, rgba(247,67,37,0) 20%, rgba(246,41,12,0.67) 40%, rgba(255,176,166,1) 50%, rgba(246,41,12,0.67) 60%, rgba(236,51,30,0) 80%, rgba(231,56,39,0) 90%);
 }
 
@@ -695,64 +690,6 @@ a:hover {
     height: 14px;
     background: rgba(0,0,0,0.15);
     border-radius: 50%
-}
-
-.animation-right {
-    -webkit-animation: animationHandRight 1.5s linear infinite;
-    animation: animationHandRight 1.5s linear infinite
-}
-
-@-webkit-keyframes animationHandRight {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg)
-    }
-}
-
-@keyframes animationHandRight {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg)
-    }
-}
-
-.animation-left {
-    -webkit-animation: animationHandLeft 3s ease-in-out infinite;
-    animation: animationHandLeft 3s ease-in-out infinite
-}
-
-@-webkit-keyframes animationHandLeft {
-    0%, 100% {
-        -webkit-transform: translateX(0) rotate(-25deg);
-        transform: translateX(0) rotate(-25deg)
-    }
-
-    50% {
-        -webkit-transform: translateX(150px) rotate(25deg);
-        transform: translateX(150px) rotate(25deg)
-    }
-}
-
-@keyframes animationHandLeft {
-    0%, 100% {
-        -webkit-transform: translateX(0) rotate(-25deg);
-        transform: translateX(0) rotate(-25deg)
-    }
-
-    50% {
-        -webkit-transform: translateX(150px) rotate(25deg);
-        transform: translateX(150px) rotate(25deg)
-    }
 }
 
 .vader:hover .eyes .left {
