@@ -1,8 +1,8 @@
-@import url("../styles/a5.css");
+@import url("../styles/a4.css");
 
 h1 {
   text-align: center;
-  font: bold 60px Arial;
+  font: bold 30px Arial,sans-serif;
   padding: 40px 0;
 }
 
@@ -31,7 +31,7 @@ h1 {
 .relief {
   background-color: #3a50d9;
   color: #e0eff2;
-  font: italic bold 100px Georgia, Serif;
+  font: italic bold 30px sans-serif;
   text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
 }
 
