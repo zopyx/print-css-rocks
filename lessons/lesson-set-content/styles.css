@@ -18,6 +18,8 @@ h1::after {
 }
 
 @page {
+    size: A4;
+
     @top-center {
         content: string(header);
     }

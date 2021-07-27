@@ -12,7 +12,7 @@ section {
 }
 
 @page {
-    size: a4;
+    size: A4;
 
     @top-left {
         content: string(title);
