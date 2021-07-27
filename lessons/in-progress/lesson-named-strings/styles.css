@@ -22,3 +22,7 @@
 h2 {
     string-set: heading content();
 }
+
+.page {
+    page-break-after: always;
+}
