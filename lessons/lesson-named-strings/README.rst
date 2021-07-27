@@ -1,4 +1,4 @@
-This lesson demonstrates the usage of the string-set property and named
+This lesson demonstrates the usage of the `string-set` property and named
 strings.  
 
 Example taken from
