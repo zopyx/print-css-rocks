@@ -1,3 +1,4 @@
+/**** styles.css ***/
 meta[name="author"] {
     string-set: author attr(content);
 }
@@ -12,16 +13,16 @@ section {
 }
 
 @page {
-    @top-left {
+@    top-left {
         content: string(title);
     }
-    @top-center {
+@    top-center {
         content: string(author);
     }
-    @top-right {
+@    top-right {
         content: string(section);
     }
-    @bottom-center {
+@    bottom-center {
         content: "- " counter(page) " -";
     }
 }
