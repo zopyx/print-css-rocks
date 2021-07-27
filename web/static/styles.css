@@ -284,3 +284,9 @@ img.banner {
 table.compliance th.center {
     text-align: center ;
 }
+
+table.compliance th.converter {
+    width: 8%;
+}
+
+
