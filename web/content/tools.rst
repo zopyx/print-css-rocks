@@ -13,7 +13,7 @@ Converters, tools and services
 PDFreactor
 ----------
 
-* Current version: 10.1
+* Current version: 11.3
 * Website: https://www.pdfreactor.com
 * Docker images: https://hub.docker.com/r/realobjects/pdfreactor
 * `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
@@ -39,7 +39,7 @@ PDFreactor
 Prince
 ------
 
-* Current version: 13.1
+* Current version: 14.2
 * Website: http://www.princexml.com
 * Docker images: https://hub.docker.com/r/yeslogic/prince
 * Sample documents: http://www.princexml.com/samples
@@ -63,7 +63,7 @@ Prince
 Antenna House CSS Formatter
 ---------------------------
 
-* Current version: 7.1 R1
+* Current version: 7.1 MR3
 * Website: https://www.antennahouse.com
 * Docker images: https://hub.docker.com/r/antennahouse/ahfcmd71
 * `CSS & Compliance  <https://www.antenna.co.jp/AHF/help/en/ahf-css6.html>`_
@@ -120,7 +120,7 @@ pdfChip
 Weasyprint
 ----------
 
-* Current version: 51
+* Current version: 53 (beta)
 * Website: http://www.weasyprint.org
 * Pricing:
 
@@ -136,7 +136,7 @@ Weasyprint
 Typeset.sh
 ----------
 
-* Current version: 0.11.1
+* Current version: 0.16.12
 * Website: https://typeset.sh
 *  Pricing: 500 EUR (server license)
 
@@ -151,7 +151,7 @@ Typeset.sh
 Paged.js
 --------
 
-* Current version : 0.1.1 (pagedjs-cli)
+* Current version : 0.1.3 (pagedjs-cli)
 * Website: https://pagedjs.org
 * Pricing: free
 
@@ -171,8 +171,6 @@ Versatype Converter (formerly known as Vivliostyle Converter)
 
 * Website: https://www.trim-marks.com
 * Pricing: undisclosed
-
-
 
 The last editions of print-css.rocks also covered the `Vivliostyle` converter by Vivliostyle.
 Support for Vivliostyle has been removed in this edition of print-css.rocks
@@ -221,8 +219,8 @@ Vivliostyle
 -----------
   * Current version:
 
-    * Vivliostyle CLI 3.4
-    * Vivliostyle.js 2.8
+    * Vivliostyle CLI 3.5.1
+    * Vivliostyle.js 2.8.1
 
   * Website: https://vivliostyle.org
   * Pricing: free, open-source
