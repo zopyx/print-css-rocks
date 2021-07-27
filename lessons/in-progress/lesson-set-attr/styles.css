@@ -12,6 +12,8 @@ section {
 }
 
 @page {
+    size: a4;
+
     @top-left {
         content: string(title);
     }
