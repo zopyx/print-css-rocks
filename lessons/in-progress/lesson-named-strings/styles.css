@@ -1,6 +1,6 @@
 @page {
-    size: 15cm 10cm;
-    margin: 1.5cm;
+    size: A4; 
+    margin: 20mm;
 
     @top-left {
         content: "first: " string(heading, first);
