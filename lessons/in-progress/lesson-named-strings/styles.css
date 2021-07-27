@@ -1,0 +1,24 @@
+@page {
+    size: 15cm 10cm;
+    margin: 1.5cm;
+
+    @top-left {
+        content: "first: " string(heading, first);
+    }
+    @top-center {
+        content: "start: " string(heading, start);
+    }
+    @top-right {
+        content: "last: " string(heading, last);
+    }
+    @bottom-left {
+        content: "first-except: " string(heading, first-except);
+    }
+    @bottom-right {
+        content: "Page " counter(page);
+    }
+}
+
+h2 {
+    string-set: heading content();
+}
