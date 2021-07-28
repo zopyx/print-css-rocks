@@ -289,3 +289,8 @@ table.compliance th.converter {
     width: 8%;
 }
 
+table.compliance thead {
+    position: sticky;
+    top: 95px;
+    background: #fff;
+}
