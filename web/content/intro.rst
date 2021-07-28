@@ -1,9 +1,12 @@
 .. note::
 
-   This is the beta site of the print-css.rocks project. The purpose
-   of this beta site is to show the ongoing progress of the project
-   until the next major release in fall 2021. Some functionality might
-   not work or some lesson valuations might be wrong or incomplete.
+   This is the beta site of the print-css.rocks project. 
+   
+   The purpose of this beta site is to show the ongoing progress of the project
+   until the next major release in fall 2021. 
+   
+   Some functionality might not work or some lesson valuations might be wrong
+   or incomplete.
 
 
 .. image:: /static/pixel.png
