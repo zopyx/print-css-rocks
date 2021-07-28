@@ -5,6 +5,14 @@ body {
     line-height: 1.2em;
 }
 
+h1 {
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    font-weight: bold;
+}   
+
 #block1, 
 #block2,
 #block3 {
