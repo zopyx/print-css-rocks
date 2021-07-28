@@ -218,6 +218,9 @@ async def lessons(request: Request):
     compliance["intro"] = []
     compliance["advanced"] = []
     compliance["special"] = []
+    compliance["javascript"] = []
+    compliance["xml"] = []
+    compliance["mathml"] = []
     compliance["pdfreactor"] = []
     compliance["pagedjs"] = []
     compliance["antennahouse"] = []
@@ -305,7 +308,11 @@ def get_lesson_data(lesson):
     description = None
     if os.path.exists(conversion_ini):
         CP = ConfigParser()
-        CP.read(conversion_ini)
+        try:
+            CP.read(conversion_ini)
+        except Exception as e:
+            raise RuntimeError(f"Unable to parse {conversion_ini}") from e
+
         if CP.has_option("common", "mode"):
             mode = CP.get("common", "mode")
         if CP.has_option("common", "category"):
