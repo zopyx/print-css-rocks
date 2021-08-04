@@ -120,7 +120,7 @@ pdfChip
 Weasyprint
 ----------
 
-* Current version: 53 (beta)
+* Current version: 53 
 * Website: http://www.weasyprint.org
 * Pricing:
 
