@@ -1,0 +1,16 @@
+@import url("../styles/a4.css");
+
+.page {
+    page-break-after: always;
+}
+
+figure {
+    border: 1px solid blue;
+}
+
+
+figure img {
+    width: 50%;
+    float: right;
+    float-reference: page;
+}
