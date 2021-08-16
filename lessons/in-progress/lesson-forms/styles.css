@@ -5,6 +5,7 @@
 
 form, form input { 
     -ro-pdf-format: pdf; 
+    border: 1px solid grey;
 }
 
 fieldset {
@@ -14,11 +15,11 @@ fieldset {
 
 legend {
     font-weight: bold;
-    font-height: 1.2em;
+    font-size: 1.2em;
 }
 
 input[type="text"] {
-    width: 40%;
+    width: 50%;
 }
 
 div.row {
