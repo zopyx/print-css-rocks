@@ -55,8 +55,9 @@ RUN wget -q -O ah.rpm.gz ${AH_DOWNLOAD} ; \
         gzip -d ah.rpm; \
         alien -i ah.rpm; \
         rm ah.rpm; \
-        rpl '@@HOME@@' '/usr/AHFormatterV71_64' /usr/AHFormatterV71_64/run.sh
-COPY AHFormatter.lic /usr/AHFormatterV71_64/etc/AHFormatter.lic
+        rpl '@@HOME@@' '/usr/AHFormatterV72' /usr/AHFormatterV72/run.sh
+COPY AHFormatter.lic /usr/AHFormatterV72/etc/AHFormatter.lic
+RUN chmod a+r  /usr/AHFormatterV72/etc/AHFormatter.lic
 
 # Typeset.sh
 ARG TS_DOWNLOAD

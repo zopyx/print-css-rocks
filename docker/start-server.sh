@@ -5,7 +5,7 @@ export PATH=$PATH:\
 /tmp/python/bin:\
 /speedata-publisher/bin:\
 /node_modules/.bin:\
-/usr/AHFormatterV71_64:\
+/usr/AHFormatterV72:\
 /PDFreactor/clients/cli\
 
 chmod a+rx /PDFreactor/clients/cli/pdfreactor.py
