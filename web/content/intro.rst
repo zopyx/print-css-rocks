@@ -1,13 +1,3 @@
-.. note::
-
-   This is the beta site of the print-css.rocks project. 
-   
-   The purpose of this beta site is to show the ongoing progress of the project
-   until the next major release in fall 2021. 
-   
-   Some functionality might not work or some lesson valuations might be wrong
-   or incomplete.
-
 
 .. image:: /static/pixel.png
     :class: one-pixel
@@ -72,13 +62,13 @@ platform.
 
 This tutorial covers and compares the following four tools:
 
-- PDFreactor 11.3.0
+- PDFreactor 11.4.0
 - PrinceXML 14.2
-- Antennahouse 7.1 MR1
-- Weasyprint 53 
+- Antennahouse 7.2 R1
+- Weasyprint 53.3
 - PagedJS 0.1.3 
 - Typeset.sh  0.16.12
-- Vivliostyle 3.5.1
+- Vivliostyle 4.3.0 (core: 2.11.1)
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
