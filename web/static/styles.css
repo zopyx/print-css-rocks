@@ -4,10 +4,13 @@ body {
     font-family: 'Noto Sans', sans-serif !important;
 }
 
-h1 {
+h1 {}
+
+h3 {
+    font-size: 1.2em;
 }
 
-table {
+table {
     margin-bottom: 2em !important;
 }
 
@@ -31,9 +34,15 @@ td.title {
     max-width: 50%;
 }
 
-li.L0, li.L1, li.L2, li.L3,
-li.L5, li.L6, li.L7, li.L8 {
-  list-style-type: decimal !important;
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+    list-style-type: decimal !important;
 }
 
 .compliance,
@@ -169,7 +178,7 @@ img.ajung {
 
 a.nav-link.active {
 
-        font-weight: bold;
+    font-weight: bold;
 }
 
 cite {
@@ -178,9 +187,9 @@ cite {
 }
 
 @media only screen and (max-width: 800px) {
-  #sidebar {
-    display: none;
-  }
+    #sidebar {
+        display: none;
+    }
 }
 
 #twitter {
@@ -194,8 +203,9 @@ img.banner {
 }
 
 .converter-status {
-   text-align: center;
+    text-align: center;
 }
+
 /*
 .converter-status-OK {
 }
@@ -251,4 +261,42 @@ img.banner {
     width: 50px;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.status-icon {
+    width: 2em;
+}
+
+.icon-legend {
+    margin-bottom: 2em;
+}
+
+.status-icon-small {
+    width: 1.5em;
+}
+
+.status-text {
+    margin-right: 1em;
+}
+
+#pdf-files th.status {
+    width: 100px;
+}
+
+#pdf-files th.converter {
+    width: 200px;
+}
+
+table.compliance th.center {
+    text-align: center;
+}
+
+table.compliance th.converter {
+    width: 8%;
+}
+
+table.compliance thead {
+    position: sticky;
+    top: 95px;
+    background: #fff;
 }

@@ -1,0 +1,31 @@
+ol {
+    counter-reset: item;
+    list-style-type: none;
+    line-height: 2.2;
+    margin-left: -40px;
+}
+
+ol li {
+    display: block;
+    position: relative;
+}
+
+ol li span {
+    margin-left: 40px;
+}
+
+ol li:before {
+    content: counter(item) " ";
+    counter-increment: item;
+    color: #7eb4e2;
+    position: absolute;
+    top: 50%;
+    margin-top: -1em;
+    background: #f9dd94;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 2em;
+    font-weight: 700;
+}

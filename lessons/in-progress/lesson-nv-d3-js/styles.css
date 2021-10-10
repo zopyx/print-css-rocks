@@ -1,0 +1,25 @@
+body {
+    background-color: #eeeeee;
+    margin: 0;
+}
+
+.worldPopulationMultiStackedBar, .worldPopulationMultiBar, .averageDegreesLineChart  {
+    height: 350px;
+    flex: 1 0 300px;
+}
+.dashboard-flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.dashboard-flex-container>div {
+    margin:0.5em;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.chart {
+    width: 150mm;
+    page-break-after: always;
+}

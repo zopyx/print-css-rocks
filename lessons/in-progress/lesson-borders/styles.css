@@ -1,0 +1,33 @@
+div {
+  border-color: gold;
+  border-width: 4px;
+  height: 3em;
+  margin: 2em;
+}
+.a {
+  border-style: solid;
+}
+.b {
+  border-style: dotted;
+}
+.c {
+  border-style: dashed;
+}
+.d {
+  border-style: inset;
+}
+.e {
+  border-style: outset;
+}
+.f {
+  border-style: groove;
+}
+.g {
+  border-style: double;
+}
+.h {
+  border-style: ridge;
+}
+.i {
+  border-style: dotted dashed solid double;
+}

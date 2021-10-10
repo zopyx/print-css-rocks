@@ -1,0 +1,32 @@
+body {
+    counter-reset: chapter;
+}
+
+h1 {
+    counter-increment: chapter;
+    string-set: header content(before) ": " content(text) content(after), FirstLetter content(first-letter);
+    break-before: page;
+}
+
+h1::before {
+    content: "Chapter " counter(chapter);
+    display: block;
+}
+
+h1::after {
+    content: "~";
+}
+
+@page {
+    size: A4;
+
+    @top-center {
+        content: string(header);
+    }
+    @top-right {
+        content: "First Letter: " string(FirstLetter);
+    }
+    @bottom-center {
+        content: "- " counter(page) " -";
+    }
+}

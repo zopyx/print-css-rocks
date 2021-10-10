@@ -6,11 +6,11 @@ h1 {
 }
 
 @page Portrait {
-    size: a5;
+    size: A5;
 }
 
 @page Landscape {
-    size: a5 landscape;
+    size: A5 landscape;
 }
 
 @page Bizarre {

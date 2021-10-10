@@ -1,7 +1,7 @@
 @import url("../styles/a5.css");
 
 h1 {
-    font-size: 15pt;
+    font-size: 12pt;
     color: red;
     margin-bottom: 1em;
 }
@@ -30,5 +30,5 @@ div.demo {
 }
 
 .serif {
-    font-family: Times;
+    font-family: Gentium;
 }

@@ -1,0 +1,29 @@
+meta[name="author"] {
+    string-set: author attr(content);
+}
+
+title {
+    string-set: title content(text);
+}
+
+section {
+    string-set: section attr(title);
+    break-after: page;
+}
+
+@page {
+    size: A4;
+
+    @top-left {
+        content: string(title);
+    }
+    @top-center {
+        content: string(author);
+    }
+    @top-right {
+        content: string(section);
+    }
+    @bottom-center {
+        content: "- " counter(page) " -";
+    }
+}

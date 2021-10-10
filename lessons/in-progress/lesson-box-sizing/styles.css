@@ -1,0 +1,34 @@
+.parent {
+  width: 50%;
+  border: 5px solid #e18728;
+  float: left;
+}
+
+.child {
+  width: 90%;
+  padding: 20%;
+  border: 4px solid black;
+  margin: 0.5em auto;
+}
+
+.twins {
+  width: 50%;
+  padding: 1em;
+  border: 4px solid black;
+  float: left;
+}
+
+/* styling for Pen, not related to box-sizing or layout */
+
+body {
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+
+.buttons {
+  margin-bottom: 0.5em;
+}
+
+p:not(.intro) {
+  text-align: center;
+}

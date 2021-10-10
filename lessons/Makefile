@@ -1,4 +1,4 @@
-all: pdfreactor prince antennahouse  weasyprint pagedjs typeset.sh
+all: pdfreactor prince antennahouse  weasyprint pagedjs typeset.sh vivliostyle
 
 
 pdfreactor:
@@ -19,12 +19,15 @@ pagedjs:
 typeset.sh:
 	-typeset.sh.phar render:html --allow-local /home -rx index.html typeset.pdf
 
+vivliostyle:
+	-vivliostyle build --output vivliostyle.pdf index.html
+
 clean:
 	find . -name \*.pdf -exec rm {} \;
 
 images: FORCE
 	-rm -fr images
-	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/weasyprint images/pagedjs images/typeset.sh
+	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/weasyprint images/pagedjs images/typeset.sh images/vivliostyle
 	echo 1 >images/placeholder
 	$(eval OPTS :=-density 150 -quality 85)
 	$(eval OPTS2 := +profile "icc")
@@ -35,12 +38,14 @@ images: FORCE
 	-convert $(OPTS) weasyprint.pdf         $(OPTS2) images/weasyprint/weasyprint.png
 	-convert $(OPTS) pagedjs.pdf            $(OPTS2) images/pagedjs/pagedjs.png
 	-convert $(OPTS) typeset.pdf            $(OPTS2) images/typeset.sh/typeset.png
+	-convert $(OPTS) vivliostyle.pdf            $(OPTS2) images/vivliostyle/vivliostyle.png
 	-convert $(THUMBOPTS)  pdfreactor.pdf         $(OPTS2) images/pdfreactor/thumb-pdfreactor.png
 	-convert $(THUMBOPTS)  prince.pdf     		  $(OPTS2) images/princexml/thumb-prince.png
 	-convert $(THUMBOPTS)  antennahouse.pdf 	  $(OPTS2) images/antennahouse/thumb-antennahouse.png
 	-convert $(THUMBOPTS)  weasyprint.pdf     	  $(OPTS2) images/weasyprint/thumb-weasyprint.png
 	-convert $(THUMBOPTS)  pagedjs.pdf     	      $(OPTS2) images/pagedjs/thumb-pagedjs.png
 	-convert $(THUMBOPTS)  typeset.pdf     	      $(OPTS2) images/typeset.sh/thumb-typeset.png
+	-convert $(THUMBOPTS)  vivliostyle.pdf     	      $(OPTS2) images/vivliostyle/thumb-vivliostyle.png
 
 FORCE:
 

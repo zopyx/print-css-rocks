@@ -2,74 +2,91 @@
 
 @page {
     border: 1px solid blue;
+    color: black;
     font-size: 8pt;
 
     @top-left-corner {
         content: "@top-left-corner";
         border: 1px solid red;
+        color: black;
     }
     @top-left {
         content: "@top-left";
         border: 1px solid red;
+        color: black;
     }
     @top-center {
         content: "@top-center";
         border: 1px solid red;
+        color: black;
     }
     @top-right {
         content: "@top-right";
         border: 1px solid red;
+        color: black;
     }
     @top-right-corner {
         content: "@top-rightcorner";
         border: 1px solid red;
+        color: black;
     }
 
     @bottom-left-corner {
         content: "@bottom-left-corner";
         border: 1px solid red;
+        color: black;
     }
     @bottom-left {
         content: "@bottom-left";
         border: 1px solid red;
+        color: black;
     }
     @bottom-center {
         content: "@bottom-center";
         border: 1px solid red;
+        color: black;
     }
     @bottom-right {
         content: "@bottom-right";
         border: 1px solid red;
+        color: black;
     }
     @bottom-right-corner {
         content: "@bottom-rightcorner";
         border: 1px solid red;
+        color: black;
     }
 
     @left-top {
         content: "@left-top";
         border: 1px solid red;
+        color: black;
     }
     @left-middle {
         content: "@left-middle";
         border: 1px solid red;
+        color: black;
     }
     @left-bottom {
         content: "@left-bottom";
         border: 1px solid red;
+        color: black;
     }
 
     @right-top {
         content: "@right-top";
         border: 1px solid red;
+        color: black;
     }
     @right-middle {
         content: "@right-middle";
         border: 1px solid red;
+        color: black;
     }
     @right-bottom {
         content: "@right-bottom";
         border: 1px solid red;
+        color: black;
     }
 
 

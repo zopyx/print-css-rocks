@@ -5,7 +5,7 @@
 
     counter-increment: page;
     counter-reset: footnote 0;
-    size: a4;
+    size: A4;
     margin: 2cm;
 
     @bottom-center {

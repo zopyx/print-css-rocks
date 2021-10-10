@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Named strings - string() function</title>
+    <meta name="author" content="Test Author">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p>The top-left page header output must be "Test String-set with Attr", retrieved from the "title" element:
+      <code>&lt;title&gt;Test String-set with Attr&lt;/title&gt;</code></p>
+    <p>The top-center page header output must be "Test Author", retrieved from the "content" attribute of the meta tag:
+      <code>&lt;meta name="author" content="Test Author"&gt;</code></p>
+
+    <section title="Section One">
+      <h1>Test Section 1</h1>
+      <p>The top-right page header output must be "Section One", retrieved from the "title" attribute of the section start tag:
+        <code>&lt;section title="Section One"&gt;</code></p>
+    </section>
+    <section title="Section Two">
+      <h1>Test Section 2</h1>
+      <p>The top-right page header output must be "Section Two", retrieved from the "title" attribute of the section start tag
+        <code>&lt;section title="Section Two"&gt;</code></p>
+    </section>
+  </body>
+</html>

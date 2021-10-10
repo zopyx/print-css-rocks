@@ -1,27 +1,23 @@
-@import url("../styles/a5.css");
+@import url("../styles/a4.css");
 
-
-p.first-letter::first-letter {
-    font-size: 2em;
-    color: pink;
-    font-weight: bold;
+p {
+  width: 500px;
+  line-height: 1.5;
 }
 
-p.first-letter-multi::first-letter {
-    font-size: 40px;
-    color: pink;
-    font-weight: bold;
-    height:40px;
-    font-size:40px;
-    line-height:40px;
-    position:relative;
-    float:left;
-    display:block;
+h2 + p#first-letter::first-letter {
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 red;
+  font-size: 250%;
+  padding: 6px 3px;
+  margin-right: 6px;
+  float: left;
 }
 
-p.first-line::first-line {
-    font-size: 2em;
-    color: pink;
-    font-weight: bold;
-    text-transform: uppercase;
+h2 + p#first-line::first-line{
+  color: red;
+  background-color: #ddd;
+  font-size: 1.4em;
 }

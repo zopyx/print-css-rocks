@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.horizontal-tb {
+  writing-mode: horizontal-tb;
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+.box-physical {
+  background-color: rgb(55,55,110);
+  color: white;
+  padding: 20px;
+  border-radius: .5em;
+  width: 200px;
+  margin: 20px;
+}
+
+.box-logical {
+  background-color: rgb(55,55,110);
+  color: white;
+  padding: 20px;
+  border-radius: .5em;
+  inline-size: 200px;
+  margin: 20px;
+}
+
+body {
+  font: 1.4em/1.3 "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  margin: 2em 3em;
+}

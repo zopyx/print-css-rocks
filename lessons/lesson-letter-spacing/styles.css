@@ -1,0 +1,35 @@
+@import url("../styles/a4.css");
+
+body {
+    font-size: 12pt;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    font-weight: bold;
+}   
+
+#block1, 
+#block2,
+#block3 {
+    border: 1px solid blue;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+#block1 {
+    letter-spacing: normal;
+}
+
+#block2 {
+    letter-spacing: 0.1em;
+}
+
+#block3 {
+    letter-spacing: 0.2em;
+}

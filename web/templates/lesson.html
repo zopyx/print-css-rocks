@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block body %}
-        <h1>{{lesson.name.replace('lesson-', '')}}</h1>
+        <h1>{{ lesson.title }}</h1>
 
-        <div class="alert alert-info">{{lesson.readme_raw }}</div>
+        <div class="alert alert-info">{{lesson.readme_raw | safe }}</div>
 
         <section>
             <h2>Repository files</h2>
@@ -19,9 +19,9 @@
             <table class="table-bordered table-striped table" id="pdf-files">
                 <thead>
                     <tr>
-                        <th>Converter</th>
-                        <th>Status</th>
-                        <th>PDF Preview</th>
+                        <th class="converter">Converter</th>
+                        <th class="status">Status</th>
+                        <th class="pdf-preview">PDF Preview</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,13 +32,19 @@
                                 <a title="Download PDF" class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}"><i class="far fa-file-pdf"></i></a>
                             </td>
                             <td class="converter-status">
-                                <span class="converter-status">{{ entry.status }}</span>
+                                <span class="converter-status-{{ entry.status }}">
+                                    <img class="status-icon" 
+                                         src="/static/{{ entry.status.lower() }}.svg" 
+                                         alt="{{ entry.status }}"
+                                         title="Status: {{ entry.status }}"
+                                    />
+                                </span>
                             </td>
                             <td  data-featherlight-gallery data-featherlight-filter="a">
-                                <div class="spotlight-group" data-title="{{lesson.name.replace('lesson-', '').upper()}}: {{entry.name}}">
+                                <div class="spotlight-group" data-title="{{lesson.title.upper()}}: {{entry.name}}">
                                     {% for image in entry.images %} 
                                         <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" 
-                                            data-title="{{entry.name}}-{{lesson.name}} Page {{loop.index}}/{{entry.images|length}}">
+                                            data-title="{{lesson.title}} - Page {{loop.index}}/{{entry.images|length}}">
                                                 <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
                                         </a>
                                     {% endfor %}
@@ -53,6 +59,12 @@
                     {% endfor %}
                 </tbody>
             </table>
+            <div class="icon-legend">
+                <img class="status-icon-small" src="/static/ok.svg"> <span class="status-text">OK</span>
+                <img class="status-icon-small" src="/static/(ok).svg"> <span class="status-text">OK with issues</span>
+                <img class="status-icon-small" src="/static/error.svg"> <span class="status-text">Error</span>
+                <img class="status-icon-small" src="/static/unsupported.svg"> <span class="status-text">Unsupported</span>
+            </div>
         </section>
 
         <section>

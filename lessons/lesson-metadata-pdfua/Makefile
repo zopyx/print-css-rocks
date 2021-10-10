@@ -13,7 +13,7 @@ weasyprint:
 	weasyprint index.html weasyprint.pdf
 
 pagedjs:
-	pagedjs-cli index.html -o pagedjs.pdf
+	timeout --foreground -s 9 10 pagedjs-cli index.html -o pagedjs.pdf
 
 typeset.sh:
 	typeset.sh.phar render:html --allow-local / -rx index.html typeset.pdf

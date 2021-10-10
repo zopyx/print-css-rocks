@@ -1,3 +1,4 @@
+
 .. image:: /static/pixel.png
     :class: one-pixel
  
@@ -5,10 +6,6 @@
 .. image:: /static/banner.png
    :class: banner
 
-.. note::
-
-   This is a beta version. We added support for the
-   converters PagedJS, Typeset.sh and Weasyprint.
 
 Introduction to PrintCSS and CSS Paged Media
 ============================================
@@ -50,7 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 4.1 - 2021/05/15
+- V 4.2  2021/10/10
 
 
 Tools
@@ -65,12 +62,13 @@ platform.
 
 This tutorial covers and compares the following four tools:
 
-- PDFreactor 11.2.2
+- PDFreactor 11.4.0
 - PrinceXML 14.2
-- Antennahouse 7.1 R1
-- Weasyprint 52.5
-- PagedJS 0.1.1 
-- Typeset.sh  0.16.9 
+- Antennahouse 7.2 R1
+- Weasyprint 53.3
+- PagedJS 0.1.3 
+- Typeset.sh  0.16.12
+- Vivliostyle 4.3.0 (core: 2.11.1)
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
@@ -136,6 +134,13 @@ Typeset.sh
 
   > typeset.sh.phar render:html --allow-local / -rx index.html typeset.pdf
 
+Vivliostyle
++++++++++++
+
+.. code-block:: shell
+
+  > vivliostyle build --output vivliostyle.pdf index.html
+
 
 Each of the ``lesson-...`` directories contains a ``Makefile`` that can be used in the same way
 across all lessons for generating a PDF with one of the featured converters:
@@ -148,6 +153,7 @@ across all lessons for generating a PDF with one of the featured converters:
     > make weasyprint       # generates `weasyprint.pdf`
     > make typeset.sh       # generates `typeset.pdf`
     > make pagedjs          # generates `pagedjs.pdf`
+    > make vivliostyle      # generates `vivliostyle.pdf`
 
 
 Source code

@@ -11,12 +11,13 @@
                 <thead>
                     <tr>
                         <th>Lesson</th>
-                        <th>PDFreactor</th>
-                        <th>Prince</th>
-                        <th>Antenna&shy;house</th>
-                        <th>Weasy&shy;print</th>
-                        <th>PagedJS</th>
-                        <th>Typeset.sh</th>
+                        <th class="converter center">PDFreactor</th>
+                        <th class="converter center">Prince</th>
+                        <th class="converter center">Antenna&shy;house</th>
+                        <th class="converter center">Weasy&shy;print</th>
+                        <th class="converter center">PagedJS</th>
+                        <th class="converter center">Typeset.sh</th>
+                        <th class="converter center">Vivliostyle</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,18 +25,22 @@
                         <tr>
                             <td class="title">      
                                 <h3>
-                                    <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row['name'].replace('lesson-', '')}}</a>
+                                    <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row.title }}</a>
                                 </h3>
-                                {% if row['readme'] %}
-                                    <div class="readme"> {{ row['readme']  }} </div>
+                                {% if row['description'] %}
+                                    <div class="readme"> {{ row['description'] | safe  }} </div>
                                 {% endif %}
                             </td>
 
-                            {% for c in ('PDFreactor', 'PrinceXML', 'Antennahouse', 'Weasyprint', 'PagedJS', 'Typeset.sh') %}
+                            {% for c in ('PDFreactor', 'PrinceXML', 'Antennahouse', 'Weasyprint', 'PagedJS', 'Typeset.sh', 'Vivliostyle') %}
                                 <td class="converter-status">
                                     {% if c in row['converters'] %}
                                         <span class="converter-status-{{ row['converters'][c]['status']}}">
-                                            {{ row['converters'][c]['status'] }}
+                                            <img class="status-icon" 
+                                                 src="/static/{{row['converters'][c]['status'].lower()}}.svg" 
+                                                 alt="{{row['converters'][c]['status']}}"
+                                                 title="Status: {{row['converters'][c]['status']}}"
+                                            />
                                         </span>
                                     {% endif %}
                                 </td>
@@ -44,6 +49,12 @@
                     {% endfor %}
                 </tbody>
             </table>
+            <div class="icon-legend">
+                <img class="status-icon-small" src="/static/ok.svg"> <span class="status-text">OK</span>
+                <img class="status-icon-small" src="/static/(ok).svg"> <span class="status-text">OK with issues</span>
+                <img class="status-icon-small" src="/static/error.svg"> <span class="status-text">Error</span>
+                <img class="status-icon-small" src="/static/unsupported.svg"> <span class="status-text">Unsupported</span>
+            </div>
         {% endif %}
     {% endfor %}
 

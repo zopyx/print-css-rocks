@@ -1,1 +1,1 @@
-This example show a form/report implemented using CSS grid.
+This example shows a form/report implemented using CSS grid.

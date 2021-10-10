@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+  font-family: 'Marck Script', cursive;
+}
+
+ul li {
+  margin-bottom: 5px;
+  border-bottom: 2px #404B51 dotted;
+  font-size: 26px;
+  line-height: 1;
+}
+
+ul li span:nth-child(odd) {
+  padding-right: 6px; 
+  color: #404B51;
+}
+
+ul li span:nth-child(even) {
+  float: right; 
+  padding-left: 6px;
+  color: #fff;
+}
+
+ul span {
+  position: relative;
+  bottom: -7px;
+}
+    
