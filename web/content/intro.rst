@@ -47,7 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 4.2 beta - 2021/07/28
+- V 4.2  2021/10/10
 
 
 Tools
