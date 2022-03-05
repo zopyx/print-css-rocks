@@ -47,7 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 4.2  2021/10/10
+- V 4.3  2022/04/01
 
 
 Tools
@@ -64,11 +64,11 @@ This tutorial covers and compares the following four tools:
 
 - PDFreactor 11.4.0
 - PrinceXML 14.2
-- Antennahouse 7.2 R1
-- Weasyprint 53.3
-- PagedJS 0.1.3 
-- Typeset.sh  0.16.12
-- Vivliostyle 4.3.0 (core: 2.11.1)
+- Antennahouse 7.2 MR2
+- Weasyprint 54.2
+- PagedJS 0.1.6 
+- Typeset.sh  0.20.0
+- Vivliostyle 4.8.2 (core: 2.14.4)
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
