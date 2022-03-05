@@ -43,7 +43,6 @@ h1 {
 
 span.footnote { 
     float: footnote; 
-    counter-increment: footnote;
     -ah-float: footnote;
 }
 
