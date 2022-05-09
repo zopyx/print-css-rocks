@@ -23,5 +23,9 @@ span.footnote {
 .footnote::footnote-marker {
     content: counter(footnote, lower-roman);
     font-size: 14pt;
-    color: blue;
+    color: red;
+    display: inline-block;
+    width: 2em;
+    padding-right: 1em;
+    text-align: right;
 }
