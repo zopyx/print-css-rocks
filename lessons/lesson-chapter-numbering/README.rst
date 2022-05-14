@@ -4,4 +4,4 @@ counters.
 
 Further reading:
 
-- `PrintCSS Counter and Cross References <https://medium.com/printcss/printcss-counter-and-cross-references-8052d6d82b49>`_
+- `PrintCSS Counter and Cross References <https://printcss.net/articles/counter-and-cross-references>`_
