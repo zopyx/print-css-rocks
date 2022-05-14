@@ -9,4 +9,4 @@ page (which is an error in my opinion).
 
 Further reading:
 
-- `PrintCSS: Running headers and footers <https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62>`_
+- `PrintCSS: Running headers and footers <https://printcss.net/articles/running-headers-and-footers>`_
