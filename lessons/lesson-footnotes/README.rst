@@ -3,5 +3,5 @@ how to style the marker and the footnote text itself.
 
 Further reading:
 
-- `PrintCSS Footnotes <https://medium.com/printcss/printcss-footnotes-9bb67fb2064b>`_
+- `PrintCSS Footnotes <https://printcss.net/articles/footnotes>`_
 
