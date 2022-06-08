@@ -1,0 +1,22 @@
+  #exclusion{
+    -webkit-shape-outside: circle(farthest-side at center);
+    shape-outside: circle(farthest-side at center);
+    margin-left: 1rem; 
+    border-radius: 50%;
+    float: right;
+    width: 150px;
+    height: 150px;
+    background: red;
+    opacity: .75;
+  }
+  
+  body{
+    font-family: helvetica, arial, sans-serif;
+  }
+  article{
+    width: 50%;
+    max-width: 25em;
+    min-width: 15em;
+    line-height: 130%;
+    text-align: justify;
+  }
