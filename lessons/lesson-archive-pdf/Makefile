@@ -9,3 +9,5 @@ antennahouse:
 pdfreactor:
 	pdfreactor.py --conformance PDFA3B -i index.html -o pdfreactor.pdf
 
+weasyprint:
+	weasyprint --pdf-variant pdf/a-3b index.html weasyprint.pdf
