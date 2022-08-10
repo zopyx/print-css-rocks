@@ -227,6 +227,7 @@ async def lessons(request: Request):
     compliance["princexml"] = []
     compliance["weasyprint"] = []
     compliance["vivliostyle"] = []
+    compliance["bfo"] = []
 
     for lesson in os.listdir(LESSON_ROOT):
         if not lesson.startswith("lesson-"):
@@ -251,6 +252,7 @@ async def lessons(request: Request):
         "pdfreactor",
         "weasyprint",
         "pagedjs",
+        "bfo",
     ):
         compliance[key] = sorted(
             compliance[key], key=lambda item: lessons_ordered.get(item["name"], 999)
@@ -331,6 +333,7 @@ def get_lesson_data(lesson):
                 "PagedJS",
                 "Typeset.sh",
                 "Vivliostyle",
+                "BFO",
             ):
 
                 continue
