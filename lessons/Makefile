@@ -1,4 +1,7 @@
-all: pdfreactor prince antennahouse  weasyprint pagedjs typeset.sh vivliostyle
+all: pdfreactor prince antennahouse  weasyprint pagedjs typeset.sh vivliostyle bfo
+
+bfo:
+	-bfo.sh  --output bfo.pdf index.html 
 
 
 pdfreactor:
