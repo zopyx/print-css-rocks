@@ -1,29 +1,29 @@
 all: pdfreactor prince antennahouse  weasyprint pagedjs typeset.sh vivliostyle bfo
 
-bfo:
-	-bfo.sh  --output bfo.pdf index.html 
-
-
-pdfreactor:
+pdfreactor: FORCE
 	-pdfreactor.py  --addLinks --addBookmarks --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf
 
-prince: 
+prince: FORCE
 	-prince --javascript index.html -o prince.pdf
 
-antennahouse:
+antennahouse: FORCE
 	-run.sh -d  index.html -o antennahouse.pdf
 
-weasyprint:
+weasyprint: FORCE
 	-weasyprint  -e utf-8 index.html weasyprint.pdf
 
-pagedjs:
+pagedjs: FORCE
 	-timeout --foreground -s 9 10 pagedjs-cli -i index.html -o pagedjs.pdf
 
-typeset.sh:
+typeset.sh: FORCE
 	-typeset.sh.phar render:html --allow-local /home -rx index.html typeset.pdf
 
-vivliostyle:
+vivliostyle:FORCE
 	-vivliostyle build --output vivliostyle.pdf index.html
+
+bfo: FORCE
+	-bfo.sh  --output bfo.pdf index.html 
+
 
 clean:
 	find . -name \*.pdf -exec rm {} \;
