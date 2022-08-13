@@ -5,7 +5,7 @@ p {
 }
 
 #cmyk {
-    border: cmyk(0.5, 0.1, 0.0, 0.2) solid thick;
-    background: cmyk(0, 0.3, 0.2, 0);
-    color: cmyk(0.8, 0.5, 0.0, 0.3);
+    border: cmyk(0.5 0.1 0.0 0.2) solid thick;
+    background: cmyk(0, 0.3 0.2 0);
+    color: cmyk(0.8 0.5 0.0 0.3);
 }
