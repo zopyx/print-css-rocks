@@ -1,13 +1,13 @@
 @import url("../styles/a4.css");
 
 @font-face {
-    font-family: Emoji;
+    font-family: "Emoji";
     src: url("TwitterEmoji.ttf") format('opentype');
 }
 
 
 .emoji {
-    font-family: Emoji;
+    font-family: "Emoji";
     margin-bottom: 1em;
 }
 
