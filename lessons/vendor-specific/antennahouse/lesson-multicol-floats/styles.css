@@ -4,7 +4,7 @@ div.multicol {
     margin-bottom: 2em;
     text-align: justify;
     hyphens: auto;
-    break-after: page
+    break-after: page;
     font-size: 9pt;
     column-gap: 1cm;
     column-rule: 4px solid #ff00ff;

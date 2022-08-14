@@ -2,7 +2,7 @@
 
 .statement,
 .addendum {
-    break-after: page
+    break-after: page;
 }
 
 .statement {

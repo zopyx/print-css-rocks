@@ -6,7 +6,7 @@ img {
 }
 
 h1 {
-    break-before: page
+    break-before: page;
 }
 
 .image-100 {

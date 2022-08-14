@@ -99,7 +99,7 @@
 
 
 .page {
-    break-after: page
+    break-after: page;
 }
 
 .outer {

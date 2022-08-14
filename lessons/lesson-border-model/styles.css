@@ -12,7 +12,7 @@
     hyphens: auto;
     text-align: justify;
     background:  #eee;
-    break-after: page
+    break-after: page;
 }
 
 .container {

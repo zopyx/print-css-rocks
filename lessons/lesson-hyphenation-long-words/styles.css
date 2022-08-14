@@ -1,7 +1,7 @@
 @import url("../styles/a5.css");
 
 h1 {
-    break-before: page
+    break-before: page;
 }
 
 #v1 {
@@ -33,5 +33,5 @@ p.hyphenate {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-    break-after: page
+    break-after: page;
 }

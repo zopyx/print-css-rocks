@@ -8,7 +8,7 @@ title {
 
 section {
     string-set: section attr(title);
-    break-after: page;
+    break-after: page;;
 }
 
 @page {
