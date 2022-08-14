@@ -1,7 +1,7 @@
 @import url("../styles/a4.css");
 
 table {
-    page-break-after: always;
+    break-after: page
 }
 
 

@@ -1,7 +1,7 @@
 @import url("../styles/a5.css");
 
 div.outer {
-    page-break-after: always;
+    break-after: page
 }
 
 div.no-fit {

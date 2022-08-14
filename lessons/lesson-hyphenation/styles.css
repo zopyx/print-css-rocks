@@ -16,6 +16,6 @@ p.hyphenate {
 
 
 h1 {
-    page-break-before: always;
+    break-before: page
 }
 

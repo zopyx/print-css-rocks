@@ -4,7 +4,7 @@ div.multicol {
     margin-bottom: 2em;
     text-align: justify;
     hyphens: auto;
-    page-break-after: always;
+    break-after: page
     border: 1px dashed red;
 }
 
