@@ -148,7 +148,7 @@ div.notice-headline {
   width: 100%;
   margin-bottom: 10mm;
   break-inside: avoid;
-  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .general th {
