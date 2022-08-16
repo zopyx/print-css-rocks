@@ -11,3 +11,6 @@ pdfreactor:
 
 weasyprint:
 	weasyprint --pdf-variant pdf/a-3b index.html weasyprint.pdf
+
+bfo:
+	bfo.sh --output bfo.pdf --env-bfo-pdf-profile 'pdf/a-3a' index.html
