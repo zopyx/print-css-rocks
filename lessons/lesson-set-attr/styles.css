@@ -17,14 +17,22 @@ section {
 
     @top-left {
         content: string(title);
+        width: 33%;
+        border: 1px solid blue;
     }
     @top-center {
         content: string(author);
+        width: 33%;
+        border: 1px solid blue;
     }
     @top-right {
         content: string(section);
+        width: 33%;
+        border: 1px solid blue;
     }
     @bottom-center {
         content: "- " counter(page) " -";
+        width: 33%;
+        border: 1px solid blue;
     }
 }
