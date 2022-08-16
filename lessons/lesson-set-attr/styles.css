@@ -13,6 +13,7 @@ section {
 
 @page {
     size: A4;
+    margin: 72px;
 
     @top-left {
         content: string(title);
