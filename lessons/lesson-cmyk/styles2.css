@@ -5,5 +5,5 @@ p {
 }
 
 #cmyk {
-      color: device-cmyk(0, 1, 0, 0 );
+      color: device-cmyk(0 1 0 0 );
 }
