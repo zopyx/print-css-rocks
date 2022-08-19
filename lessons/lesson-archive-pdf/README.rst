@@ -1,5 +1,5 @@
-Support for "archive PDF" aka PDF/A profile is available for Prince, Antennahouse and 
-PDFreactor.
+Support for "archive PDF" aka PDF/A profile is available for Prince,
+Antennahouse, BFO Publisher  and PDFreactor.
 
 Check the *Makefile* in the Github repository (link above) for investigating
 the related commandline parameters for PDF/A. Note that Antennahouse requires a
