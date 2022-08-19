@@ -9,6 +9,9 @@ prince:
 antennahouse: 
 	run.sh -css styles.css -d index.xml -o antennahouse.pdf
 
+bfo: 
+	run.sh --output bfo.pdf --css styles.css index.xml
+
 clean:
 	find . -name \*.pdf -exec rm {} \;
 
