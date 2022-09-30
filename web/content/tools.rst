@@ -147,6 +147,7 @@ Typeset.sh
   * Similar to Weasyprint, Typeset.sh has its rough edges and requires more work. 
     Typeset.sh is too young in order to value the product but I am  happy to see it  
     growing steadly.
+    
 
 Paged.js
 --------
@@ -163,7 +164,9 @@ Paged.js
     technology.
   * `PagedJS` is a new project and work-in-progress. I am very happy to see this project
     growing and moving into the right direction.
-    
+  * However, `PagedJS` has made very little progress (almost no fixes, no new releases)
+    in 2022. A bunch of issues are open for more than a year, the stability of the commandline
+    tool is not given. I am unhappy with the current state and progress of `PagesJS`.
 
 
 Versatype Converter (formerly known as Vivliostyle Converter)
