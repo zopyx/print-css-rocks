@@ -16,6 +16,7 @@ table {
 
 img#logo {
     max-height: 80px;
+    margin-left: 20px;
     margin-right: 20px;
 }
 
@@ -299,4 +300,8 @@ table.compliance thead {
     position: sticky;
     top: 95px;
     background: #fff;
+}
+
+a {
+    text-decoration: none;
 }
