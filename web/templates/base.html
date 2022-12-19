@@ -17,14 +17,14 @@
 
         <meta name="description" content="PrintCSS/CSS Paged Media (PDF generation from XML and HTML using CSS stylesheets) tutorial and showcase with lessons, tool descriptions and comparions. PDFreactor Antennahouse PrinceXML"><meta name="keywords" content="CSS,PDF,HTML,XML, CSS Paged media, Antennahouse, PDFreactor, PrinceXML, Markup"></head>
 
-        <link href="/static/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" rel="stylesheet">
-
+        <link rel="stylesheet" href="/static/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link href="/static/styles.css" type="text/css" rel="stylesheet"/>
-        <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" rel="stylesheet">
+        <link rel="stylesheet" href="/static/fontawesome-free-5.14.0-web/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/iframemanager.css">
 
         <script src="/static/jquery-latest.js"></script>
         <script src="/static/run_prettify.js" type="text/javascript"  charset="utf-8"></script>
-        <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/static/spotlight.bundle.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
 
@@ -94,7 +94,7 @@
                     </div>
 
                     <div id="printcsslive">
-                        Try #PrintCSS live on 
+                        Try #PrintCSS live on
                         <a target="_blank" href="https://printcss.live">
                             printcss.live
                             <br/>
@@ -103,7 +103,7 @@
                     </div>
 
                     <div id="printcsslive">
-                        Find #PrintCSS videos on 
+                        Find #PrintCSS videos on
                         <a target="_blank" href="https://printcss.tube">
                             printcss.tube
                             <br/>
@@ -130,19 +130,76 @@
         <footer>
             <hr/>
             <div id="footer-text">
-                print-css.rocks is &copy; 2021 by <a href="https://www.zopyx.com">Andreas Jung, ZOPYX</a>
-                <br/> 
+                print-css.rocks is &copy; 2023 by <a href="https://www.zopyx.com">Andreas Jung, ZOPYX</a>
+                <br/>
                 All rights reserved
                 <br/>
-                 <a href="https://www.zopyx.com/imprint">Imprint</a> | 
-                 <a href="https://www.zopyx.com/privacy">Privacy statement</a> 
+                 <a href="https://www.zopyx.com/imprint">Imprint</a> |
+                 <a href="https://www.zopyx.com/privacy">Privacy statement</a>
             </div>
         </footer>
+
+        <script src='/static/iframemanager.js'></script>
+        <script src='/static/jquery.min.js'></script>
 
         <script src="/static/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="/static/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src="/static/local.js"></script>
         <script type="text/javascript">NAVIGATION = "{{navigation}}"</script>
+
+
+    <script>
+    window.addEventListener('load', function(){
+
+    var manager = iframemanager();
+
+    // Example with youtube embed
+    manager.run({
+        currLang: 'en',
+        services : {
+            slideshare: {
+                embedUrl: 'https://www.slideshare.net/slideshow/embed_code/key/{data-id}',
+                iframe: {
+                    frameborder: '0',
+                    allowfullscreen: 'no',
+                    scrolling: 'no',
+                },
+                cookie : {
+                    name : 'cc_slideshare'
+                },
+                languages : {
+                    en : {
+                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="hhttps://www.slideshare.net/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of slideshare.net.',
+                        loadBtn: 'Load slides',
+                        loadAllBtn: "Don't ask again"
+                    }
+                }
+            },                        
+            youtube : {
+                embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
+                thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
+                iframe : {
+                    allow : 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
+                },
+                cookie : {
+                    name : 'cc_youtube'
+                },
+                languages : {
+                    en : {
+                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
+                        loadBtn: 'Load video',
+                        loadAllBtn: 'Don\'t ask again'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+
+
+
 
 <!-- Matomo -->
 	<script type="text/javascript">

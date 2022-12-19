@@ -13,16 +13,16 @@ Converters, tools and services
 PDFreactor
 ----------
 
-* Current version: 11.3
+* Current version: 11.6
 * Website: https://www.pdfreactor.com
 * Docker images: https://hub.docker.com/r/realobjects/pdfreactor
 * `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
 * Sample documents: https://www.pdfreactor.com/samples/
-* Supported PDF profiles: 
+* Supported PDF profiles:
   `PDF/A <https://www.pdfreactor.com/product/doc_html/index.html#PDFAConformance>`_,
   `PDF/X <https://www.pdfreactor.com/product/doc_html/index.html#PDFXConformance>`_,
   `PDF/UA <https://www.pdfreactor.com/product/doc_html/index.html#PDFUAConformance>`_
-* Pricing: 
+* Pricing:
 
   * 4 CPU cores server licence: 2950 USD
   * Personal non-commercial licence: free
@@ -33,19 +33,18 @@ PDFreactor
   * Good-quality, extensive documentation (Javascript API could be better documented with examples).
   * Reasonable pricing.
   * Good and responsive support.
-  * PDFreactor is now our premier choice for customer projects.
-  * PDFreactor has integrated ZUGFerd integration.  
+  * PDFreactor has a ZUGFerd integration.
 
 Prince
 ------
 
-* Current version: 14.2
+* Current version: 15
 * Website: http://www.princexml.com
 * Docker images: https://hub.docker.com/r/yeslogic/prince
 * Sample documents: http://www.princexml.com/samples
 * `CSS Compliance matrix <http://www.princexml.com/doc/properties/>`_
 * Supported `PDF profiles Prince <https://www.princexml.com/doc/prince-output/#pdf-versions-and-profiles>`_
-* Pricing: 
+* Pricing:
 
   * Server licence (independent of #CPUs and #cores):    3800 USD
   * Academic server licence: 1900 USD
@@ -54,16 +53,15 @@ Prince
 
 * Personal review:
 
-  * Similar quality and level of complicance to PDFreactor 
+  * Similar quality and level of complicance to PDFreactor
   * Good-quality, extensive documentation
   * Good and responsive support
-  * A little overpriced in comparison to PDFreactor
   * We used PrinceXML for many years before we discovered and switched to PDFreactor
 
 Antenna House CSS Formatter
 ---------------------------
 
-* Current version: 7.1 MR3
+* Current version: 7.2 MR7
 * Website: https://www.antennahouse.com
 * Docker images: https://hub.docker.com/r/antennahouse/ahfcmd71
 * `CSS & Compliance  <https://www.antenna.co.jp/AHF/help/en/ahf-css6.html>`_
@@ -71,7 +69,7 @@ Antenna House CSS Formatter
 * Pricing:
 
   * AH server license with one CPU, ∞ cores: 5000 USD (+ 4000 USD per additional CPU)
-  * AH lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU) 
+  * AH lite version (various restrictions): 2000 USD (+ 1600 USD per additional CPU)
   * AH standalone license (includes GUI preview on Windows): 	1250 USD (Lite: 400 USD)
   * For a complete list of prices, see `here <https://www.antennahouse.com/pricing/>`_
 
@@ -93,7 +91,7 @@ pdfChip
 * Pricing: The various pdfChip versions are artificially limited (you pay
   for document volume and usage):
 
-  * pdfChip S (1000 pages per hour, 25 pages per document, barcode support limited): 5,000 EUR                            
+  * pdfChip S (1000 pages per hour, 25 pages per document, barcode support limited): 5,000 EUR
   * pdfChip M (5000 pages per hour, 250 pages per document): 10,000 EUR
   * pdfChip L (25000 pages per hour, 1500 pages per document): 15,000 EUR
   * pdfChip XL/Enterprise (unlimited):  25,000 EUR
@@ -120,7 +118,7 @@ pdfChip
 Weasyprint
 ----------
 
-* Current version: 53 
+* Current version: 57.1
 * Website: http://www.weasyprint.org
 * Pricing:
 
@@ -132,58 +130,45 @@ Weasyprint
   * Weasyprint still implements only a subset of the common Paged Media
     features. On the other hand, Weasyprint is a solid tool if you only need
     average PDF quality or if you do not have any fancy layout requirements.
+  * Solid support
+  * Frequent releases
 
 Typeset.sh
 ----------
 
-* Current version: 0.16.12
+* Current version: 0.22.5
 * Website: https://typeset.sh
 *  Pricing: 500 EUR (server license)
 
 * Personal review:
 
-  * Typeset.sh is a work-in-progress product and moving fast 
+  * Typeset.sh is a work-in-progress product and moving fast
   * Jacob Siefer - the author of Typeset.sh - is very responsive
-  * Similar to Weasyprint, Typeset.sh has its rough edges and requires more work. 
-    Typeset.sh is too young in order to value the product but I am  happy to see it  
+  * Similar to Weasyprint, Typeset.sh has its rough edges and requires more work.
+    Typeset.sh is too young in order to value the product but I am  happy to see it
     growing steadly.
+  * Solid support
+  * Frequent releases
+
 
 Paged.js
 --------
 
-* Current version : 0.1.3 (pagedjs-cli)
+* Current version : 0.4.0 (pagedjs-cli)
 * Website: https://pagedjs.org
 * Pricing: free
 
 * Personal review:
-  
+
   * The `PagedJS` is project is different from all other renders because it
     uses underlaying browser technology (Chromium) for rendering PDF. The main
     advantance is that you can directly make use of decent browser and CSS
     technology.
   * `PagedJS` is a new project and work-in-progress. I am very happy to see this project
     growing and moving into the right direction.
-    
-
-
-Versatype Converter (formerly known as Vivliostyle Converter)
--------------------------------------------------------------
-
-* Website: https://www.trim-marks.com
-* Pricing: undisclosed
-
-The last editions of print-css.rocks also covered the `Vivliostyle` converter by Vivliostyle.
-Support for Vivliostyle has been removed in this edition of print-css.rocks
-because the Vivliostyle project broke up in 2018 into a non-commercial
-open-source project focused on pagination within the browser keeping the
-Vivliostyle brand and into a new commercial business called `Trim-Marks` with
-a rebranding of the former „Vivliostyle Converter“ as „Versatype Converter“.
-See https://vivliostyle.org/blog/2018/03/26/a-new-beginning/ for details.
-Unfortunately Trim-Marks failed so far providing any public information about
-their „Versatype Converter“ converter related to functionality and pricing.
-For this reason there is no coverage on „Versatype Converter“ in this
-edition. This might change in the future if Trim-Marks takes some care about
-public visible information.
+  * However, `PagedJS` has made very little progress (almost no fixes, no new releases)
+    in 2022. A bunch of issues are open for more than a year, the stability of the commandline
+    tool is not given. I am unhappy with the current state and progress of `PagesJS`.
 
 
 Docraptor
@@ -199,8 +184,8 @@ Docraptor
 
   * Same PDF quality as PrinceXML, but DocRaptor offers better JavaScript
     parsing on top of the PrinceXML engine.
-  * Docraptor currently support PrinceXML version 11 and 12 under the hood through two
-    different conversion pipelines (`6` and `7`). See https://docraptor.com/documentation/api
+  * Docraptor currently support PrinceXML version 14 under the hood .
+    See https://docraptor.com/documentation/api
   * Docraptor is usually one PrinceXML version behind the official PrinceXML releases
   * Using DocRaptor requires your document to be sent to a third-party, but they
     can delete it immediately upon processing. Images and CSS must be placed on
@@ -219,8 +204,8 @@ Vivliostyle
 -----------
   * Current version:
 
-    * Vivliostyle CLI 3.5.1
-    * Vivliostyle.js 2.8.1
+    * Vivliostyle CLI 5.9.0
+    * Vivliostyle.js 2.19.2
 
   * Website: https://vivliostyle.org
   * Pricing: free, open-source
@@ -229,3 +214,13 @@ Vivliostyle
   * Supported PDF profiles:
 
     * PDF/X: https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-for-print-pdfx-1a-format
+
+
+BFO Publisher
+-------------
+
+  * Current Version: 1.3
+  * Website: https://publisher.bfo.com/
+  * Commercial
+  * Pretty new, lots features and high Compliance
+  * has some rough edges

@@ -6,7 +6,7 @@ div.g {
     border: 1px solid blue;
     margin-right: 1em;
     margin-bottom: 1em;
-    page-break-after: always;
+    break-after: page;
 }
 
 #gradient1 {

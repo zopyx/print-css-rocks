@@ -1,28 +1,28 @@
 @page {
-size: A4; 
-margin: 20mm;
+    size: A4; 
+    margin: 20mm;
 
-@top-left {
-content: "first: " string(heading, first);
-}
-@top-center {
-content: "start: " string(heading, start);
-}
-@top-right {
-content: "last: " string(heading, last);
-}
-@bottom-left {
-content: "first-except: " string(heading, first-except);
-}
-@bottom-right {
-content: "Page " counter(page);
-}
+    @top-left {
+        content: "first: " string(heading, first);
+    }
+    @top-center {
+        content: "start: " string(heading, start);
+    }
+    @top-right {
+        content: "last: " string(heading, last);
+    }
+    @bottom-left {
+        content: "first-except: " string(heading, first-except);
+    }
+    @bottom-right {
+        content: "Page " counter(page);
+    }
 }
 
 h2 {
-string-set: heading content();
+    string-set: heading content();
 }
 
 .page {
-page-break-after: always;
+    break-after: page;
 }

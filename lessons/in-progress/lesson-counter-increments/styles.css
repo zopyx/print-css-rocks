@@ -18,5 +18,5 @@ h1:before {
 
 .chapter {
     counter-increment: chapter 3;
-    page-break-after: always;
+    break-after: page;
 }

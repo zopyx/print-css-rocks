@@ -52,12 +52,12 @@ Slides
 Books
 +++++
 
-- `Print CSS. Das CSS paged media Modul <http://www.pagina-online.de/unternehmen/publikationen/printcss>`_  by Christin Götz, Tobias Ott (German only), Pagina GmbH, 38 €, ISBN 978-3938529089
+- `Print CSS. Das CSS paged media Modul <https://www.amazon.de/Print-CSS-paged-media-Modul/dp/3938529083/>`_  by Christin Götz, Tobias Ott (German only), Pagina GmbH, 38 €, ISBN 978-3938529089
 
     
     .. raw:: html
 
-       <img src="https://www.pagina.gmbh/fileadmin/_processed_/csm_Goetz_PrintCSS_Cover_919d071b68.jpg"/>
+       <img src="/static/print-css-book.jpg"/>
 
 Standards and drafts
 ++++++++++++++++++++

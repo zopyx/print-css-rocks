@@ -1,0 +1,21 @@
+@import url("../styles/a4.css");
+
+div.multicol {
+    margin-bottom: 2em;
+    text-align: justify;
+    hyphens: auto;
+    break-after: page;
+    font-size: 11pt;
+    column-count: 2;
+}
+
+
+h1 {
+    column-span: all;
+}
+
+
+#globe {
+    width: 100%;
+    -ah-float: top;
+}

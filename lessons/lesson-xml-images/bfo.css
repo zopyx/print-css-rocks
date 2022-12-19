@@ -1,0 +1,4 @@
+graphic {
+    content: attr(source url);
+    width: 100%;
+}

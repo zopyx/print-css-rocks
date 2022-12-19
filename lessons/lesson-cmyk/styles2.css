@@ -1,0 +1,9 @@
+@import url("../styles/a4.css");
+
+p {
+    font-size: 12pt;
+}
+
+#cmyk {
+      color: device-cmyk(0 1 0 0 );
+}

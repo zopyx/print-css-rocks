@@ -1,7 +1,7 @@
 @import url("../styles/a4.css");
 
 .page {
-    page-break-after: always;
+    break-after: page;
 }
 
 figure {

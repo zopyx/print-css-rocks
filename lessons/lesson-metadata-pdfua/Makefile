@@ -9,6 +9,9 @@ antennahouse:
 pdfreactor:
 	pdfreactor.py --addTags  --conformance PDFUA1 -i index.html -o pdfreactor.pdf
 
+bfo:
+	bfo.sh --env-bfo-pdf-tagged true --output bfo.pdf index.html
+
 weasyprint:
 	weasyprint index.html weasyprint.pdf
 

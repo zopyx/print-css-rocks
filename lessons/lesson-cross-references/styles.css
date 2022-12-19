@@ -20,7 +20,7 @@ h1 {
     font-size: 1.6em;
     color: blue;    
     counter-increment: chapterCounter;
-    page-break-before: always;
+    break-before: page;
 }
 
 

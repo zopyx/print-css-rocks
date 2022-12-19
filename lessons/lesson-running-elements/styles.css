@@ -19,7 +19,7 @@ h2 {
 div.title {
     font-size: 2em;
     margin-bottom: 2em;
-    page-break-before: always;
+    break-before: page;
 }
 
 @page{

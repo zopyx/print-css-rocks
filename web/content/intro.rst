@@ -1,8 +1,8 @@
 
 .. image:: /static/pixel.png
     :class: one-pixel
- 
-     
+
+
 .. image:: /static/banner.png
    :class: banner
 
@@ -22,7 +22,7 @@ What is CSS Paged Media
 In brief: CSS Paged Media (a W3C standard) is a way of generating
 PDF documents using XML/HTML as input and CSS for styling. It can be thought of as
 an extension of CSS for print purposes. As such, it is obvious that CSS Paged Media
-must deal with print-related considerations such as pagination, page formats, page regions 
+must deal with print-related considerations such as pagination, page formats, page regions
 and other print-specific details.
 
 Usecases for CSS Paged Media
@@ -30,7 +30,7 @@ Usecases for CSS Paged Media
 
 - Text-oriented publications (books, newspapers, documentation, etc.).
 - Layout-oriented publications (flyers, brochures, web-to-print applications)
-- Technical documentation 
+- Technical documentation
 - Etc.
 
 Status of this tutorial
@@ -47,7 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 4.3  2022/04/01
+- V 5.0 - Januar 2023
 
 
 Tools
@@ -62,13 +62,14 @@ platform.
 
 This tutorial covers and compares the following four tools:
 
-- PDFreactor 11.4.0
-- PrinceXML 14.2
-- Antennahouse 7.2 MR2
-- Weasyprint 54.2
-- PagedJS 0.1.6 
-- Typeset.sh  0.20.0
-- Vivliostyle 4.8.2 (core: 2.14.4)
+- PDFreactor 11.6.0
+- PrinceXML 15
+- Antennahouse 7.2 MR7
+- Weasyprint 57.1
+- PagedJS 0.4.0 (pagedjs-cli 0.2.0)
+- Typeset.sh  0.22.0
+- Vivliostyle 5.9.0 (core: 2.19.2)
+- BFO Publisher 1.2
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose
@@ -86,7 +87,7 @@ or check out the repository using git::
 
     git clone git@github.com:zopyx/print-css-rocks.git
 
-The core examples work with all four tools, `weasyprint`, `pdfreactor`, `prince` and `run.sh` (Antennahouse). 
+The core examples work with all four tools, `weasyprint`, `pdfreactor`, `prince` and `run.sh` (Antennahouse).
 Ensure that the related binary/binaries are configured in the ``$PATH`` of your shell environment.
 
 PDFreactor
@@ -142,6 +143,15 @@ Vivliostyle
   > vivliostyle build --output vivliostyle.pdf index.html
 
 
+BFO Publisher
++++++++++++++
+
+.. code-block:: shell
+
+  > java -jar publisher-bundle-1.2.jar  --output bfo.pdf index.html
+
+
+
 Each of the ``lesson-...`` directories contains a ``Makefile`` that can be used in the same way
 across all lessons for generating a PDF with one of the featured converters:
 
@@ -154,6 +164,7 @@ across all lessons for generating a PDF with one of the featured converters:
     > make typeset.sh       # generates `typeset.pdf`
     > make pagedjs          # generates `pagedjs.pdf`
     > make vivliostyle      # generates `vivliostyle.pdf`
+    > make bfo              # generates `bfo.pdf`
 
 
 Source code

@@ -6,11 +6,11 @@ p {
 }
 
 h1 {
-    page-break-before: always;
+    break-before: page;
 }
 
 p {
-    page-break-after: always;
+    break-after: page;
 }
 
 
