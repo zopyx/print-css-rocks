@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="/static/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link href="/static/styles.css" type="text/css" rel="stylesheet"/>
         <link rel="stylesheet" href="/static/fontawesome-free-5.14.0-web/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/iframemanager.css">
 
         <script src="/static/jquery-latest.js"></script>
         <script src="/static/run_prettify.js" type="text/javascript"  charset="utf-8"></script>
@@ -138,10 +139,67 @@
             </div>
         </footer>
 
+        <script src='/static/iframemanager.js'></script>
+        <script src='/static/jquery.min.js'></script>
+
         <script src="/static/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="/static/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src="/static/local.js"></script>
         <script type="text/javascript">NAVIGATION = "{{navigation}}"</script>
+
+
+    <script>
+    window.addEventListener('load', function(){
+
+    var manager = iframemanager();
+
+    // Example with youtube embed
+    manager.run({
+        currLang: 'en',
+        services : {
+            slideshare: {
+                embedUrl: 'https://www.slideshare.net/slideshow/embed_code/key/{data-id}',
+                iframe: {
+                    frameborder: '0',
+                    allowfullscreen: 'no',
+                    scrolling: 'no',
+                },
+                cookie : {
+                    name : 'cc_slideshare'
+                },
+                languages : {
+                    en : {
+                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="hhttps://www.slideshare.net/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of slideshare.net.',
+                        loadBtn: 'Load slides',
+                        loadAllBtn: "Don't ask again"
+                    }
+                }
+            },                        
+            youtube : {
+                embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
+                thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
+                iframe : {
+                    allow : 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
+                },
+                cookie : {
+                    name : 'cc_youtube'
+                },
+                languages : {
+                    en : {
+                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
+                        loadBtn: 'Load video',
+                        loadAllBtn: 'Don\'t ask again'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+
+
+
 
 <!-- Matomo -->
 	<script type="text/javascript">
