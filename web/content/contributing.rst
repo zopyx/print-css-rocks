@@ -14,14 +14,14 @@ CSS community.
 Setting up your own environment
 -------------------------------
 
-You need a decent Python 3 installation (Python 3.7 or higher) for installing the print-css.rocks setup
+You need a decent Python 3 installation (Python 3.10 or higher) for installing the print-css.rocks setup
 locally. It might be necessary to installed the `libxml2` and `libxslt` packages on Linux (including
 their dev packages) or using Homebrew on MacOSX.
 
 .. code-block:: shell
 
     > python3 --version
-      Python 3.7.2
+      Python 3.10.8
 
 Clone the print-css-rocks repository:
 
