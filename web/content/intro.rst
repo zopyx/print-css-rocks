@@ -178,3 +178,62 @@ Bugtracker
 - https://github.com/zopyx/print-css-rocks/issues
 
 
+PrintCSS Live
+-------------
+
+.. raw:: html
+
+    <div id="printcsslive">
+        Try #PrintCSS live on
+        <a target="_blank" href="https://printcss.live">
+            printcss.live
+            <br/>
+            <img id="printcsslivelogo" src="/static/printcss.live.png" alt="PrintCSS Live Logo"/>
+        </a>
+    </div>
+
+    <div id="printcsslive">
+        Find #PrintCSS videos on
+        <a target="_blank" href="https://printcss.tube">
+            printcss.tube
+            <br/>
+            <img id="printcsstubelogo" src="/static/printcsstube.png" alt="PrintCSS Tube Logo"/>
+        </a>
+    </div>
+
+PrintCSS on Discord
+-------------------
+    
+.. raw:: html
+
+    <div id="discord">
+        <img src="/static/discord.png" style="width: 32px">
+        <a href="https://discord.gg/sAHAQdh" alt="Discord Logo" >
+        Join the PrintCSS community on Discord
+        </a>
+    </div>
+
+print-css.rocks on Twitter
+--------------------------
+
+.. raw:: html
+
+    <div id="twitter">
+        You can also find us on Twitter
+        <br/>
+        <a href="https://twitter.com/printcssrocks">
+            <i class="fab fa-twitter"></i>&nbsp;@printcssrocks
+        </a>
+    </div>
+
+PrintCSS consulting
+-------------------
+
+.. raw:: html
+
+    <div id="consulting">
+        PrintCSS consulting is available through
+        <a target="_blank" href="https://print-css.com">
+            print-css.com
+        </a>
+    </div>
