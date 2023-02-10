@@ -3,9 +3,12 @@
     margin: 2cm;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 form, form input, textarea, select{ 
     -ro-pdf-format: pdf; 
-    border: 1px solid grey;
 }
 
 fieldset {
@@ -16,6 +19,10 @@ fieldset {
 legend {
     font-weight: bold;
     font-size: 1.2em;
+}
+
+select {
+    width: 20em;
 }
 
 input[type="text"] {
