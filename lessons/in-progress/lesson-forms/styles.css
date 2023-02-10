@@ -3,7 +3,7 @@
     margin: 2cm;
 }
 
-form, form input { 
+form, form input, textarea, select{ 
     -ro-pdf-format: pdf; 
     border: 1px solid grey;
 }
