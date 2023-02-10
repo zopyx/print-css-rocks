@@ -18,6 +18,8 @@ span.footnote {
 .footnote::footnote-call {
     content: counter(footnote, decimal) " ";
     color: green;
+    vertical-align: super;
+    font-size: 0.8em;
 }
 
 .footnote::footnote-marker {
