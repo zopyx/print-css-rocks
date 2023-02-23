@@ -33,7 +33,6 @@ PDF_FILES = {
 
 def execute(cmd, log_fn):
 
-    print(cmd)
     p = EasyProcess(cmd).call()
     stdout = p.stdout
     stderr = p.stderr
@@ -65,8 +64,9 @@ def process_target(lesson_dir, make_target):
 
     pdf_fn = lesson_dir / PDF_FILES[make_target]
     if not pdf_fn.exists():
-        print(f"PDF file {pdf_fn} not found")
-        return
+        msg = f"PDF file {pdf_fn} not found"
+        print(msg)
+        return dict(error=msg, make_target=make_target, lesson_dir=lesson_dir)
 
     images_dir = lesson_dir / "images" / make_target
     if images_dir.exists():
@@ -85,14 +85,15 @@ def process_target(lesson_dir, make_target):
     cmd = f'convert {thumb_opts} "{pdf_fn}" {convert_opts2} {images_dir}/thumb-{make_target}.png'
     execute(cmd, log_fn)
 
+    return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
 
 def main():
 
     cwd = Path(".").resolve()
     for lesson_dir in cwd.glob("lesson-*"):
 
-#        if lesson_dir.name != "lesson-basic":
-#            continue
+        if lesson_dir.name != "lesson-basic":
+            continue
 
         conversion_ini = lesson_dir / "conversion.ini"
         if not conversion_ini.exists():
