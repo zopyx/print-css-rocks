@@ -313,8 +313,6 @@ def get_lesson_data(lesson):
         else:
             readme_raw = markdown.markdown(readme)
 
-    print(readme_raw)
-
     pdfs = list()
     compliance = dict()
     mode = "html"
