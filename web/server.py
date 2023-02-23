@@ -2,6 +2,7 @@ import collections
 import configparser
 import inspect
 import os
+import markdown
 from configparser import ConfigParser
 
 import furl
@@ -295,12 +296,24 @@ def get_lesson_data(lesson):
     generated_dir = os.path.join(GENERATED_ROOT, lesson)
 
     conversion_ini = os.path.join(lesson_dir, "conversion.ini")
-    readme_fn = os.path.join(lesson_dir, "README.rst")
+
+    readme_fn = None
+    for name in ("README.rst", "README.md"):
+        fn = os.path.join(lesson_dir, name)
+        if os.path.exists(fn):
+            readme_fn = fn
+            print(readme_fn)
+
     readme = None
     readme_raw = None
-    if os.path.exists(readme_fn):
+    if readme_fn:
         readme = open(readme_fn).read()
-        readme_raw = render_rst(readme)
+        if readme_fn.endswith(".rst"):
+            readme_raw = render_rst(readme)
+        else:
+            readme_raw = markdown.markdown(readme)
+
+    print(readme_raw)
 
     pdfs = list()
     compliance = dict()
