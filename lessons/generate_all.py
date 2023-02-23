@@ -4,6 +4,9 @@ from pathlib import Path
 import os
 import shutil
 
+from multiprocessing import Pool
+POOL_SIZE = 4
+
 
 TARGETS = {
     "PDFreactor": "pdfreactor",
@@ -30,6 +33,7 @@ PDF_FILES = {
 
 def execute(cmd, log_fn):
 
+    print(cmd)
     p = EasyProcess(cmd).call()
     stdout = p.stdout
     stderr = p.stderr
@@ -86,8 +90,9 @@ def main():
 
     cwd = Path(".").resolve()
     for lesson_dir in cwd.glob("lesson-*"):
-        if lesson_dir.name != "lesson-basic":
-            continue
+
+#        if lesson_dir.name != "lesson-basic":
+#            continue
 
         conversion_ini = lesson_dir / "conversion.ini"
         if not conversion_ini.exists():
@@ -98,12 +103,20 @@ def main():
         config.read(conversion_ini)
         sections = config.sections()
 
-        for target in TARGETS:
-            if not target in sections:
-                continue
-            make_target = TARGETS[target]
-            lesson_directory = cwd / lesson_dir
-            process_target(lesson_directory, make_target)
+        with Pool(POOL_SIZE) as pool:
+
+            jobs = []
+
+            for target in TARGETS:
+                if not target in sections:
+                    continue
+                make_target = TARGETS[target]
+                lesson_directory = cwd / lesson_dir
+                jobs.append((lesson_directory, make_target))
+
+            result = pool.starmap(process_target, jobs)
+            print(result)
+    
 
 
 if __name__ == "__main__":
