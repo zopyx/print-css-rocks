@@ -1,5 +1,5 @@
 aiofiles
-easyproc
+easyprocess
 docutils
 fastapi
 furl
