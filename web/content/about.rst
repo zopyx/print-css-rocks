@@ -4,7 +4,7 @@
 About this site
 ===============
 
-.. note:: 
+.. note::
 
   The author and maintainer of this site is not affiliated with any company or
   vendor. All opinions expressed on this page are those of the author and
@@ -17,9 +17,9 @@ About this site
 Maintainer
 +++++++++++
 
-This site is a private project by `Andreas Jung <https://about.me/andreasjung>`_.  
+This site is a private project by `Andreas Jung <https://about.me/andreasjung>`_.
 
-.. image:: /static/ajung-med.jpg 
+.. image:: /static/ajung-med.jpg
     :class: ajung
 
 Andreas Jung is the founder of ZOPYX Limited. Upon completing his studies
@@ -32,124 +32,22 @@ sophisticated solutions for web portals (intranet, internet,
 extranet), electronic publishing and diverse individual software
 developments ever since.
 
-.. raw:: html
+Professional support
+++++++++++++++++++++
 
-  <table class="table table-bordered" id="about-table">
-    <thead>
-      <tr>
-        <th>Skills</th>
-        <th>Areas of expertise</th>
-        <th>Services</th>
-        <th>Training</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <ul>
-            <li>Python
-            <li>Zope
-            <li>Plone
-            <li>Postgres, MongoDB, MySQL, noSQL databases
-            <li>XML
-            <li>PDF generation 
-            <li>All web technologies (HTML, Javascript, jQuery, Highstocks, Highcharts)
-           </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Backend software development</li>
-            <li>Architecture</li>
-            <li>Project management</li>
-            <li>Consulting</li>
-            <li>Training (incl. practical training)</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Python and Plone software development</li>
-            <li>Electronic publishing solutions</li>
-            <li>XML based publishing</li>
-            <li>Web applications and portals</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>
-                <a href="https://print-css.com">Commercial support and training [EN]</a> 
-            </li>
-            <li>
-                <a href="https://print-css.de">Kommerzieller Support und Training [DE]</a> 
-            </li>
+Professional and commercial support is available from the maintainer through https://print-css.com and https://print-css.de.
 
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+
 
 Related projects
 ++++++++++++++++
 
-.. raw:: html
-
-  <table class="table table-bordered " id="projects-table">
-    <tbody>
-    </tbody>
-      <tr>
-        <td>
-          <img src="/static/zopyx.png"/>
-        </td>
-        <td>
-          <img src="/static/medical-publishing.png" />
-        </td>
-        <td>
-          <img src="/static/pp.png" />
-        </td>
-        <td>
-          <img src="/static/xmldirector.jpg" />
-        </td>
-        <td>
-          <img src="/static/printcss.jpg" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <a href="https://www.zopyx.com">www.zopyx.com</a>
-        </td>
-        <td>
-            <a href="https://medical-publishing.com">www.medical-publishing.com</a>
-        </td>
-        <td>
-            <a href="https://www.produce-and-publish.com">www.produce-and-publish.com</a>
-        </td>
-        <td>
-            <a href="https://www.xml-director.info">www.xml-director.info</a>
-        </td>
-        <td>
-            <a href="https://print-css.rocks">print-css.rocks</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            ZOPYX homepage      
-        </td>
-        <td>
-            Medical Publishing Solutions
-        </td>
-        <td>
-            Our single-source multi-channel publishing solutions
-            and toolbox.      
-        </td>
-        <td>
-            Our XML content management solution based on the open-source
-            CMS <a href="https://plone.org">Plone</a>      
-        </td>
-        <td>
-            CSS Paged Media tutorial and showcase
-        </td>
-      </tr>
-  </table>
+- `print-css.com <https://print-css.com>`_ - Professional support, training and consulting
+- `print-css.de <https://print-css.de>`_ - Professionelle Unterstützung, Training und Beratung
+- `zopyx.com <https://zopyx.com>`_ - ZOPYX
+- `andreas-jung.com <https://andreas-jung.com>`_ - General developer profile of Andreas Jung
+- `XML-Director <https://xml-director.info>`_ - XML Director (XML publishing solutions)
+- `Medical Publishing Solutions <https://medical-publishing.solutions>`_ - Medical Publishing Solutions
 
 
 Legal information and privacy statement
@@ -181,8 +79,8 @@ Professional support
 ====================
 
 
-Professional and commercial support is available from the maintainer of 
-print-css.rocks project,  `Andreas Jung <https://about.me/andreasjung>`_.  
+Professional and commercial support is available from the maintainer of
+print-css.rocks project,  `Andreas Jung <https://about.me/andreasjung>`_.
 
 - `Professional support, training and consulting [EN] <https://print-css.com>`_
 - `Professionelle Unterstützung, Training und Beratung [DE] <https://print-css.DE>`_
