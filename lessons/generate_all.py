@@ -83,20 +83,6 @@ def process_target(lesson_dir, make_target):
     execute(cmd, log_fn)
     return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
 
-    convert_opts = "-density 150 -quality 85"
-    convert_opts2 = "+profile icc"
-    thumb_opts = "-thumbnail 100x100 -background white -alpha remove"
-
-    # PDF to PNG
-    cmd = f'convert {convert_opts} "{pdf_fn}" {convert_opts2} {images_dir}/{make_target}.png'
-    execute(cmd, log_fn)
-
-    # PDF to thumbnail PNG
-    cmd = f'convert {thumb_opts} "{pdf_fn}" {convert_opts2} {images_dir}/thumb-{make_target}.png'
-    execute(cmd, log_fn)
-
-    return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
-
 
 def main():
 
