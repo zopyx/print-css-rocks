@@ -73,6 +73,15 @@ def process_target(lesson_dir, make_target):
         shutil.rmtree(images_dir)
     images_dir.mkdir(parents=True)
 
+    # PDF to PNG
+    cmd = f'mutool convert -F png -O resolution=150 -o "{images_dir}/prince.png" "{pdf_fn}"'
+    execute(cmd, log_fn)
+
+    # PDF to thumbnail PNG
+    cmd = f'mutool convert -F png -O resolution=150 -O width=100 -O height=100 -o "{images_dir}/thumb-prince.png" "{pdf_fn}"'
+    execute(cmd, log_fn)
+    return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
+
     convert_opts = "-density 150 -quality 85"
     convert_opts2 = "+profile icc"
     thumb_opts = "-thumbnail 100x100 -background white -alpha remove"
@@ -87,13 +96,17 @@ def process_target(lesson_dir, make_target):
 
     return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
 
+
 def main():
 
     cwd = Path(".").resolve()
-    for lesson_dir in cwd.glob("lesson-*"):
+    lessons = list(cwd.glob("lesson-*"))
+    for i, lesson_dir in enumerate(lessons):
 
-        if lesson_dir.name != "lesson-basic":
-            continue
+        print(f"{i+1}/{len(lessons)} {lesson_dir}")
+
+        #        if lesson_dir.name != "lesson-basic":
+        #            continue
 
         conversion_ini = lesson_dir / "conversion.ini"
         if not conversion_ini.exists():
@@ -116,8 +129,9 @@ def main():
                 jobs.append((lesson_directory, make_target))
 
             result = pool.starmap(process_target, jobs)
-            print(result)
-    
+            for r in result:
+                if r["error"]:
+                    print(f'  ERROR: {r["error"]}')
 
 
 if __name__ == "__main__":
