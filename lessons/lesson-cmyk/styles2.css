@@ -5,5 +5,8 @@ p {
 }
 
 #cmyk {
-      color: device-cmyk(0 1 0 0 );
+    border: 10px solid device-cmyk(1 0 0 0 );
+    background: device-cmyk(1 0.35 0 0);
+    color: device-cmyk(0 0.09 0.07 0.3);
+    padding: 1em;
 }
