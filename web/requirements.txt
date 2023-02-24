@@ -1,4 +1,5 @@
 aiofiles
+loguru
 markdown
 easyprocess
 docutils
