@@ -1,19 +1,22 @@
 import os
 import shutil
 from configparser import ConfigParser
+from typing import List
 from multiprocessing import Pool
 from pathlib import Path
+import typer
+from loguru import logger as LOG
 
 from easyprocess import EasyProcess
 
-POOL_SIZE = 4
+POOL_SIZE = os.cpu_count()
 
 
 TARGETS = {
     "PDFreactor": "pdfreactor",
     "PrinceXML": "prince",
     "Antennahouse": "antennahouse",
-    "Weasyprint": "weasyprint",
+    "WeasyLOG.info": "weasyLOG.info",
     "PagedJS": "pagedjs",
     "Typeset.sh": "typeset.sh",
     "Vivliostyle": "vivliostyle",
@@ -24,7 +27,7 @@ PDF_FILES = {
     "pdfreactor": "pdfreactor.pdf",
     "prince": "prince.pdf",
     "antennahouse": "antennahouse.pdf",
-    "weasyprint": "weasyprint.pdf",
+    "weasyLOG.info": "weasyLOG.info.pdf",
     "pagedjs": "pagedjs.pdf",
     "typeset.sh": "typeset.pdf",
     "vivliostyle": "vivliostyle.pdf",
@@ -32,15 +35,19 @@ PDF_FILES = {
 }
 
 
-def execute(cmd, log_fn):
+def execute(cmd, log_fn, verbose=False):
+
+    if verbose:
+        LOG.info(cmd)
 
     p = EasyProcess(cmd).call()
     stdout = p.stdout
     stderr = p.stderr
     if p.return_code != 0:
-        print("Error in: " + cmd)
-        print(stdout)
-        print(stderr)
+        LOG.info("Error in: " + cmd)
+        if verbose:
+            LOG.error(stdout)
+            LOG.error(stderr)
 
     with open(log_fn, "a") as f:
         f.write("CMD:" + cmd + "\n")
@@ -51,22 +58,23 @@ def execute(cmd, log_fn):
         f.write("\n")
 
 
-def process_target(lesson_dir, make_target):
-    print(f"Processing {lesson_dir}:{make_target}")
+def process_target(lesson_dir, make_target, verbose=False):
 
     os.chdir(lesson_dir)
+
+    LOG.info(f"Processing {lesson_dir}:{make_target}")
 
     log_fn = lesson_dir / f"{make_target}.log"
     if log_fn.exists():
         log_fn.unlink()
 
     cmd = f"make {make_target}"
-    execute(cmd, log_fn)
+    execute(cmd, log_fn, verbose)
 
     pdf_fn = lesson_dir / PDF_FILES[make_target]
     if not pdf_fn.exists():
         msg = f"PDF file {pdf_fn} not found"
-        print(msg)
+        LOG.info(msg)
         return dict(error=msg, make_target=make_target, lesson_dir=lesson_dir)
 
     images_dir = lesson_dir / "images" / make_target
@@ -75,16 +83,16 @@ def process_target(lesson_dir, make_target):
     images_dir.mkdir(parents=True)
 
     # PDF to PNG
-    cmd = f'mutool convert -F png -O resolution=150 -o "{images_dir}/prince.png" "{pdf_fn}"'
-    execute(cmd, log_fn)
+    cmd = f'mutool convert -F png -O resolution=150 -o "{images_dir}/{make_target}.png" "{pdf_fn}"'
+    execute(cmd, log_fn, verbose)
 
     # PDF to thumbnail PNG
-    cmd = f'mutool convert -F png -O resolution=150 -O width=100 -O height=100 -o "{images_dir}/thumb-prince.png" "{pdf_fn}"'
-    execute(cmd, log_fn)
+    cmd = f'mutool convert -F png -O resolution=150 -O width=100 -O height=100 -o "{images_dir}/thumb-{make_target}.png" "{pdf_fn}"'
+    execute(cmd, log_fn, verbose)
     return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
 
 
-def main():
+def main(lessons:list[Path], verbose: bool=False):
 
     cwd = Path(".").resolve()
 
@@ -92,20 +100,19 @@ def main():
     generated_dir = cwd / "generated"
     if generated_dir.exists():
         EasyProcess(f"git rm -fr {generated_dir}").call()
-        shutil.rmtree(generated_dir)
+#        shutil.rmtree(generated_dir)
     generated_dir.mkdir(parents=True)
 
-    lessons = list(cwd.glob("lesson-*"))
+    if not lessons:
+        lessons = list(cwd.glob("lesson-*"))
+
     for i, lesson_dir in enumerate(lessons):
 
-        print(f"{i+1}/{len(lessons)} {lesson_dir}")
-
-#        if lesson_dir.name != "lesson-basic":
-#            continue
+        LOG.info(f"{i+1}/{len(lessons)} {lesson_dir}")
 
         conversion_ini = lesson_dir / "conversion.ini"
         if not conversion_ini.exists():
-            print(f"No {conversion_ini} found")
+            LOG.info(f"No {conversion_ini} found")
             continue
 
         # target directory
@@ -125,12 +132,12 @@ def main():
                     continue
                 make_target = TARGETS[target]
                 lesson_directory = cwd / lesson_dir
-                jobs.append((lesson_directory, make_target))
+                jobs.append((lesson_directory, make_target, verbose))
 
             result = pool.starmap(process_target, jobs)
             for r in result:
                 if r["error"]:
-                    print(f'  ERROR: {r["error"]}')
+                    LOG.info(f'  ERROR: {r["error"]}')
 
                 # Add generated directory
 
@@ -151,4 +158,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    typer.run(main)
