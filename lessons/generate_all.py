@@ -1,10 +1,11 @@
-from easyprocess import EasyProcess
-from configparser import ConfigParser
-from pathlib import Path
 import os
 import shutil
-
+from configparser import ConfigParser
 from multiprocessing import Pool
+from pathlib import Path
+
+from easyprocess import EasyProcess
+
 POOL_SIZE = 4
 
 
@@ -59,7 +60,7 @@ def process_target(lesson_dir, make_target):
     if log_fn.exists():
         log_fn.unlink()
 
-    cmd = f'make {make_target}'
+    cmd = f"make {make_target}"
     execute(cmd, log_fn)
 
     pdf_fn = lesson_dir / PDF_FILES[make_target]
@@ -100,18 +101,30 @@ def process_target(lesson_dir, make_target):
 def main():
 
     cwd = Path(".").resolve()
+
+    # Remove generated directory
+    generated_dir = cwd / "generated"
+    if generated_dir.exists():
+        EasyProcess(f"git rm -fr {generated_dir}").call()
+        shutil.rmtree(generated_dir)
+    generated_dir.mkdir(parents=True)
+
     lessons = list(cwd.glob("lesson-*"))
     for i, lesson_dir in enumerate(lessons):
 
         print(f"{i+1}/{len(lessons)} {lesson_dir}")
 
-        #        if lesson_dir.name != "lesson-basic":
-        #            continue
+#        if lesson_dir.name != "lesson-basic":
+#            continue
 
         conversion_ini = lesson_dir / "conversion.ini"
         if not conversion_ini.exists():
             print(f"No {conversion_ini} found")
             continue
+
+        # target directory
+        generated_lesson_dir = generated_dir / lesson_dir.name
+        generated_lesson_dir.mkdir()
 
         config = ConfigParser()
         config.read(conversion_ini)
@@ -132,6 +145,23 @@ def main():
             for r in result:
                 if r["error"]:
                     print(f'  ERROR: {r["error"]}')
+
+                # Add generated directory
+
+        # copy PDF
+        for target in TARGETS:
+            if not target in sections:
+                continue
+            make_target = TARGETS[target]
+            pdf_fn = lesson_dir / PDF_FILES[make_target]
+            if pdf_fn.exists():
+                shutil.copy(pdf_fn, generated_lesson_dir)
+
+        # copy images
+        images_dir = lesson_dir / "images"
+        shutil.copytree(images_dir, generated_lesson_dir / "images")
+
+    EasyProcess(f"git add {generated_dir}").call()
 
 
 if __name__ == "__main__":
