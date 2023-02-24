@@ -1,4 +1,5 @@
 aiofiles
+markdown
 easyprocess
 docutils
 fastapi
