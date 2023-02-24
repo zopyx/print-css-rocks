@@ -16,7 +16,7 @@ TARGETS = {
     "PDFreactor": "pdfreactor",
     "PrinceXML": "prince",
     "Antennahouse": "antennahouse",
-    "WeasyLOG.info": "weasyLOG.info",
+    "Weasyprint": "weasyprint",
     "PagedJS": "pagedjs",
     "Typeset.sh": "typeset.sh",
     "Vivliostyle": "vivliostyle",
@@ -27,7 +27,7 @@ PDF_FILES = {
     "pdfreactor": "pdfreactor.pdf",
     "prince": "prince.pdf",
     "antennahouse": "antennahouse.pdf",
-    "weasyLOG.info": "weasyLOG.info.pdf",
+    "weasyprint": "weasyprint.pdf",
     "pagedjs": "pagedjs.pdf",
     "typeset.sh": "typeset.pdf",
     "vivliostyle": "vivliostyle.pdf",
@@ -92,7 +92,7 @@ def process_target(lesson_dir, make_target, verbose=False):
     return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
 
 
-def main(lessons:list[Path], verbose: bool=False):
+def main(lessons: list[Path] = [], verbose: bool = False,):
 
     cwd = Path(".").resolve()
 
@@ -100,8 +100,9 @@ def main(lessons:list[Path], verbose: bool=False):
     generated_dir = cwd / "generated"
     if generated_dir.exists():
         EasyProcess(f"git rm -fr {generated_dir}").call()
-#        shutil.rmtree(generated_dir)
-    generated_dir.mkdir(parents=True)
+        if generated_dir.exists():
+            shutil.rmtree(generated_dir)
+    generated_dir.mkdir(parents=True, exist_ok=True)
 
     if not lessons:
         lessons = list(cwd.glob("lesson-*"))
@@ -117,7 +118,9 @@ def main(lessons:list[Path], verbose: bool=False):
 
         # target directory
         generated_lesson_dir = generated_dir / lesson_dir.name
-        generated_lesson_dir.mkdir()
+        if generated_lesson_dir.exists():
+            shutil.rmtree(generated_lesson_dir)
+        generated_lesson_dir.mkdir(parents=True)
 
         config = ConfigParser()
         config.read(conversion_ini)
