@@ -9,7 +9,7 @@ import furl
 import lxml.html
 from docutils import core
 from docutils.writers.html4css1 import HTMLTranslator, Writer
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -74,7 +74,7 @@ def render_rst(rst_filename):
     elif rst_filename.endswith(".rst"):
         fn = os.path.join(os.path.dirname(__file__), "content", rst_filename)
         if not os.path.exists(fn):
-            raise NotFound("RST file {} not found".format(fn))
+            raise HTTPException(status_code=404, detail="RST file {} not found".format(fn))
         with open(fn) as fp:
             rst_data = fp.read()
         return rest_to_html(rst_data)
@@ -190,11 +190,11 @@ async def download_image(request: Request, lesson, vendor, filename):
 
     lesson_dir = os.path.join(GENERATED_ROOT, lesson)
     if not os.path.exists(lesson_dir):
-        raise NotFound("Lession {} does not exist".format(lesson))
+        raise HTTPException(status_code=404, detail="Lession {} does not exist".format(lesson))
 
     download_fn = os.path.join(lesson_dir, "images", vendor, filename)
     if not os.path.exists(download_fn):
-        raise NotFound("Download filename {} does not exist".format(download_fn))
+        raise HTTPException(status_code=404, detail="Download filename {} does not exist".format(download_fn))
     return FileResponse(download_fn)
 
 
@@ -203,11 +203,11 @@ async def download_pdf(request: Request, lesson, filename):
 
     lesson_dir = os.path.join(GENERATED_ROOT, lesson)
     if not os.path.exists(lesson_dir):
-        raise NotFound("Lession {} does not exist".format(lesson))
+        raise HTTPException(status_code=404, detail="Lession {} does not exist".format(lesson))
 
     download_fn = os.path.join(lesson_dir, filename)
     if not os.path.exists(download_fn):
-        raise NotFound("Download filename {} does not exist".format(download_fn))
+        raise HTTPException(status_code=404, detail="Download filename {} does not exist".format(download_fn))
     return FileResponse(download_fn)
 
 
@@ -267,7 +267,7 @@ async def lesson(request: Request, lesson: str):
     inside = inspect.stack()[0][0].f_code.co_name
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     if not os.path.exists(lesson_dir):
-        raise NotFound("Lession {} does not exist".format(lesson))
+        raise HTTPException(status_code=404, detail="Lession {} does not exist".format(lesson))
     request_url = get_request_url(request)
     params = dict(
         lesson=get_lesson_data(lesson),
