@@ -374,7 +374,10 @@ def get_lesson_data(lesson):
             if not os.path.exists(generated_pdf):
                 print("--> No PDF file {}".format(generated_pdf))
 
-            image_directory = os.path.join(generated_dir, "images", section.lower())
+            image_subdir = section.lower()
+            if section.lower() == "princexml":
+                image_subdir = "prince"
+            image_directory = os.path.join(generated_dir, "images", image_subdir)
             images = []
             if os.path.exists(image_directory):
                 images = sorted(os.listdir(image_directory))
@@ -392,7 +395,7 @@ def get_lesson_data(lesson):
                 )
             )
             compliance[section] = dict(
-                name=section, pdf_file=pdf_file, status=status, message=message
+                name=section, pdf_file=pdf_file, status=status, message=message,
             )
 
         has_css = os.path.exists(os.path.join(lesson_dir, "styles.css"))

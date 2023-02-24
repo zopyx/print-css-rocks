@@ -43,10 +43,19 @@
                             <td  data-featherlight-gallery data-featherlight-filter="a">
                                 <div class="spotlight-group" data-title="{{lesson.title.upper()}}: {{entry.name}}">
                                     {% for image in entry.images %} 
-                                        <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" 
-                                            data-title="{{lesson.title}} - Page {{loop.index}}/{{entry.images|length}}">
-                                                <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
-                                        </a>
+
+                                        {% if entry.name.lower() != "princexml" %}
+                                            <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" 
+                                                data-title="{{lesson.title}} - Page {{loop.index}}/{{entry.images|length}}">
+                                                    <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
+                                            </a>
+                                        {% endif %}
+                                        {% if entry.name.lower() == "princexml" %}
+                                            <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/prince/{{ image }}" 
+                                                data-title="{{lesson.title}} - Page {{loop.index}}/{{entry.images|length}}">
+                                                    <img class="preview" src="{{request_url}}/download/images/prince/thumb-{{ image }}" />
+                                            </a>
+                                        {% endif %}
                                     {% endfor %}
                                 </div>
                                 {% if entry.message %} 
