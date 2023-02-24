@@ -17,10 +17,10 @@ from starlette.requests import Request
 
 LESSON_ROOT = os.environ.get("LESSON_ROOT")
 if not LESSON_ROOT:
-    raise ValueUNSUPPORTED("$LESSON_ROOT not set")
+    raise ValueError("$LESSON_ROOT not set")
 
 if not os.path.exists(LESSON_ROOT):
-    raise ValueUNSUPPORTED("$LESSON_ROOT {}")
+    raise ValueError("$LESSON_ROOT {}")
 
 LESSON_ROOT = os.path.abspath(LESSON_ROOT)
 GENERATED_ROOT = os.path.abspath(os.path.join(LESSON_ROOT, "generated"))
@@ -74,7 +74,7 @@ def render_rst(rst_filename):
     elif rst_filename.endswith(".rst"):
         fn = os.path.join(os.path.dirname(__file__), "content", rst_filename)
         if not os.path.exists(fn):
-            raise IOUNSUPPORTED("RST file {} not found".format(fn))
+            raise NotFound("RST file {} not found".format(fn))
         with open(fn) as fp:
             rst_data = fp.read()
         return rest_to_html(rst_data)
