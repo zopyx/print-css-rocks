@@ -47,7 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 5.0 - Januar 2023
+- V 5.1 - March 2023 (updated underlying PDF generation, support for Markup for README.md)
 
 
 Tools
