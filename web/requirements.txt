@@ -1,4 +1,5 @@
 aiofiles
+typer
 loguru
 markdown
 easyprocess
