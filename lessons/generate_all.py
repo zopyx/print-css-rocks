@@ -2,7 +2,7 @@ import os
 import shutil
 from configparser import ConfigParser
 from typing import List
-from multiprocessing import Pool
+from multiprocessing import Pool, set_start_method
 from pathlib import Path
 import typer
 from loguru import logger as LOG
@@ -155,10 +155,12 @@ def main(lessons: list[Path] = [], verbose: bool = False,):
 
         # copy images
         images_dir = lesson_dir / "images"
-        shutil.copytree(images_dir, generated_lesson_dir / "images")
+        if images_dir.exists():
+            shutil.copytree(images_dir, generated_lesson_dir / "images")
 
     EasyProcess(f"git add {generated_dir}").call()
 
 
 if __name__ == "__main__":
+    set_start_method("forkserver")
     typer.run(main)
