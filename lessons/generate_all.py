@@ -1,13 +1,14 @@
 import os
 import shutil
+import traceback
 from configparser import ConfigParser
-from typing import List
 from multiprocessing import Pool, set_start_method
 from pathlib import Path
-import typer
-from loguru import logger as LOG
+from typing import List
 
+import typer
 from easyprocess import EasyProcess
+from loguru import logger as LOG
 
 POOL_SIZE = os.cpu_count()
 
@@ -36,6 +37,15 @@ PDF_FILES = {
 
 
 def execute(cmd, log_fn, verbose=False):
+
+    try:
+        return _execute(cmd, log_fn, verbose)
+    except Exception as e:
+        traceback.print_exc()
+        return dict(error=str(e))
+
+
+def _execute(cmd, log_fn, verbose=False):
 
     if verbose:
         LOG.info(cmd)
@@ -92,7 +102,10 @@ def process_target(lesson_dir, make_target, verbose=False):
     return dict(error=None, make_target=make_target, lesson_dir=lesson_dir)
 
 
-def main(lessons: list[Path] = [], verbose: bool = False,):
+def main(
+    lessons: list[Path] = [],
+    verbose: bool = False,
+):
 
     cwd = Path(".").resolve()
 
@@ -162,5 +175,4 @@ def main(lessons: list[Path] = [], verbose: bool = False,):
 
 
 if __name__ == "__main__":
-    set_start_method("forkserver")
     typer.run(main)
