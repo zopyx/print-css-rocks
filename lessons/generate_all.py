@@ -1,6 +1,7 @@
 import os
 import shutil
 import traceback
+import datetime
 from configparser import ConfigParser
 from multiprocessing import Pool, set_start_method
 from pathlib import Path
@@ -11,6 +12,9 @@ from easyprocess import EasyProcess
 from loguru import logger as LOG
 
 POOL_SIZE = os.cpu_count()
+
+now = datetime.datetime.now().isoformat()
+LOG.add(f"conversion-{now}.log")
 
 
 TARGETS = {
