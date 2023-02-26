@@ -48,11 +48,12 @@ of the `lessons` directory of your checkout.
 .. code-block:: shell
 
     > export LESSON_DIR=../lessons  # or
-    > export LESSON_DIR=/path/to/print-css-rocks/lessons 
+    > export LESSON_DIR=/path/to/print-css-rocks/lessons
     > bin/python server.py
+    > # or run "make serve"
 
 Now you can access the web service aka your local print-css-rocks copy  on
-http://localhost:8000. 
+http://localhost:8000.
 
 Creating your own lessons
 -------------------------
@@ -95,15 +96,16 @@ which contains for each supported converter a dedicated section like
    pdf = antennahouse.pdf
    message =
 
-The section keys 
+The section keys
 
-- `PDFreactor` 
-- `PrinceXML` 
+- `PDFreactor`
+- `PrinceXML`
 - `Antennahouse`
 - `PagedJS`
 - `Typeset.sh`
 - `WeasyPrint`
 - `Vivliostyle`
+- `BFO`
 
 are case-sensitive. The `status` option is usually `OK`, `ERROR` or `UNSUPPORTED`
 by definition. However the value can be an arbitrary string. The values for `pdf` should
@@ -136,16 +138,17 @@ is equivalent to running the following manually on the console:
     make pagedjs
     make vivliostyle
     make typeset.sh
+    make bfo
 
 There is an additional Makefile target `images` which will convert all PDF files to PNG (for usage within
 the web application).
 
-In order to run run and generate all lessons you need to execute the following:
+In order to run and generate all lessons you need to execute the following:
 
 .. code-block::
 
    cd lessons
-   bash generated.sh
+   python3 generate_all.py
 
 The `generated.sh` script will iterate over all `lessons-*` lesson directories and execute `make; make images` for each lesson.
 The generated files (PDF, converted PNG) will be copied to `lessons/generated`. This folder is also automatically updated for git
