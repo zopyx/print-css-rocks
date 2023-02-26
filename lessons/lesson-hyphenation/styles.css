@@ -1,8 +1,12 @@
 @import url("../styles/a5.css");
 
+body {
+    font-size: 14pt;
+}
+
 p {
     text-align: justify;
-    font-size: 16pt;
+    font-size: 14pt;
     hyphens: none;
 }
 
