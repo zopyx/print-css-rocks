@@ -33,12 +33,6 @@ sophisticated solutions for web portals (intranet, internet,
 extranet), electronic publishing and diverse individual software
 developments ever since.
 
-Professional support
-++++++++++++++++++++
-
-Professional and commercial support is available from the maintainer through https://print-css.com and https://print-css.de.
-
-
 
 Related projects
 ++++++++++++++++
