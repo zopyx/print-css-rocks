@@ -152,6 +152,12 @@ async def about(request: Request):
     params = {"body": render_rst("about.rst"), "navigation": inside, "request": request}
     return templates.TemplateResponse("content.html", params)
 
+@app.get("/consulting", response_class=HTMLResponse)
+async def about(request: Request):
+    inside = inspect.stack()[0][0].f_code.co_name
+    params = {"body": render_rst("consulting.rst"), "navigation": inside, "request": request}
+    return templates.TemplateResponse("content.html", params)
+
 
 @app.get("/contributing", response_class=HTMLResponse)
 async def contributing(request: Request):
