@@ -2,6 +2,7 @@ import collections
 import configparser
 import inspect
 import os
+import re
 from configparser import ConfigParser
 
 import furl
@@ -313,6 +314,12 @@ def get_request_url(request):
 
 
 def get_lesson_data(lesson):
+
+    regex = re.compile(r"\d+")
+
+    def image_key(s):
+        return int(regex.search(s).group(0))
+
     lesson_dir = os.path.join(LESSON_ROOT, lesson)
     generated_dir = os.path.join(GENERATED_ROOT, lesson)
 
@@ -323,7 +330,6 @@ def get_lesson_data(lesson):
         fn = os.path.join(lesson_dir, name)
         if os.path.exists(fn):
             readme_fn = fn
-            print(readme_fn)
 
     readme = None
     readme_raw = None
@@ -386,7 +392,7 @@ def get_lesson_data(lesson):
             image_directory = os.path.join(generated_dir, "images", image_subdir)
             images = []
             if os.path.exists(image_directory):
-                images = sorted(os.listdir(image_directory))
+                images = sorted(os.listdir(image_directory), key=lambda x: image_key(x))
                 if not images:
                     print("--> No images found in {}".format(image_directory))
                 images = [image for image in images if not image.startswith("thumb-")]
