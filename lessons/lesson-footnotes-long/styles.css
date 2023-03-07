@@ -1,0 +1,33 @@
+@import url("../styles/a5.css");
+
+@page {
+    counter-reset: footnote 0;
+}
+
+@page {
+    @footnote {
+        border-top: dashed red 1px;
+        float: bottom;
+    }
+}
+
+span.footnote { 
+    float: footnote; 
+}
+
+.footnote::footnote-call {
+    content: counter(footnote, decimal) " ";
+    color: green;
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+.footnote::footnote-marker {
+    content: counter(footnote, decimal);
+    font-size: 14pt;
+    color: red;
+    display: inline-block;
+    width: 2em;
+    padding-right: 1em;
+    text-align: right;
+}
