@@ -5,7 +5,7 @@ Professional support
 ++++++++++++++++++++
 
 Professional and commercial support is available from the maintainer through
-https://print-css.com )(EN) or https://print-css.de (DE).
+https://print-css.com (EN) or https://print-css.de (DE).
 
 Consulting on a per-hour basis
 ++++++++++++++++++++++++++++++
