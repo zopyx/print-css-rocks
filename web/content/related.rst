@@ -30,7 +30,7 @@ Video
 Slides
 ++++++
 
-- `State of PrintCSS in 2023 - by Andreas Jung (MarkupUK 2023)`
+- `State of PrintCSS in 2023`_ - by Andreas Jung (MarkupUK 2023)
 
     .. raw:: html 
 
