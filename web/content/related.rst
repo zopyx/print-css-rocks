@@ -30,6 +30,13 @@ Video
 Slides
 ++++++
 
+- `State of PrintCSS in 2023 - by Andreas Jung (MarkupUK 2023)`
+
+    .. raw:: html 
+
+     <iframe src="https://www.slideshare.net/slideshow/embed_code/key/7ae3FHEByDpum?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/ajung/state-of-printcss-markupuk-2023pdf" title="State of PrintCSS - MarkupUK 2023.pdf" target="_blank">State of PrintCSS - MarkupUK 2023.pdf</a></strong> from <strong><a href="https://www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong></div>
+
+
 - `Publishing with CSS Paged Media – A review of existing tools and techniques (slides) <https://de.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques>`_ by Andreas Jung (XML Prague 2015)
 
     .. raw:: html 
