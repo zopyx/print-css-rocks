@@ -15,7 +15,6 @@
                         <th class="converter center">Prince</th>
                         <th class="converter center">Antenna&shy;house</th>
                         <th class="converter center">Weasy&shy;print</th>
-                        <th class="converter center">PagedJS</th>
                         <th class="converter center">Typeset.sh</th>
                         <th class="converter center">Vivliostyle</th>
                         <th class="converter center">BFO</th>
@@ -33,7 +32,7 @@
                                 {% endif %}
                             </td>
 
-                            {% for c in ('PDFreactor', 'PrinceXML', 'Antennahouse', 'Weasyprint', 'PagedJS', 'Typeset.sh', 'Vivliostyle', 'BFO') %}
+                            {% for c in ('PDFreactor', 'PrinceXML', 'Antennahouse', 'Weasyprint', 'Typeset.sh', 'Vivliostyle', 'BFO') %}
                                 <td class="converter-status">
                                     {% if c in row['converters'] %}
                                         <span class="converter-status-{{ row['converters'][c]['status']}}">

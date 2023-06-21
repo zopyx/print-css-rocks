@@ -47,6 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
+- V 5.2 - June 2023 (removed PagedJS due to project inactivity, lack of communication etc.)
 - V 5.1 - March 2023 (updated underlying PDF generation, support for Markup for README.md)
 
 
