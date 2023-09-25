@@ -1,0 +1,42 @@
+@import url("../styles/a5.css");
+
+@page {
+    counter-reset: footnote 0;
+}
+
+@page {
+    @footnote {
+        border-top: dashed red 1px;
+        float: bottom;
+    }
+}
+
+.footnote {
+    float: footnote;
+    display: block;
+    color: red;
+    text-indent: -.5em; /* make the number stick out to the left */
+}
+
+/* set text back from teal to black, so that only the number is in teal; and reset text-indent */
+.footnote > .p { display: block; text-align: justify; margin-top: .5em; color: black; text-indent: 0px; }
+
+/*
+  fuse the first paragraph with footnote-marker on the same line;
+  making it inline will ignore block parameters for .p above such as padding-left or margin-top
+*/
+.footnote :first-child { display: inline; }
+
+.footnote::footnote-call {
+    content: counter(footnote, decimal) " ";
+    color: green;
+    vertical-align: super;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+.footnote::footnote-marker {
+    content: counter(footnote, decimal) ". ";
+    display: inline-block;
+    /* width: 2em; padding-right: 1em; text-align: right; font-size: 14pt; color: red; */
+}
