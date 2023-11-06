@@ -61,7 +61,7 @@ work cross-platform, on multiple operating systems (Mac OSX, Linux, Windows).
 The tests do not include tools that only work on a single operating system or
 platform.
 
-This tutorial covers and compares the following four tools:
+This tutorial covers and compares the following tools:
 
 - PDFreactor 11.6.0
 - PrinceXML 15
