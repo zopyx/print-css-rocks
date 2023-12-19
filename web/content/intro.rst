@@ -47,8 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 5.2 - June 2023 (removed PagedJS due to project inactivity, lack of communication etc.)
-- V 5.1 - March 2023 (updated underlying PDF generation, support for Markup for README.md)
+- V 6.0 - January 2024 (removed PagedJS, updated all tools)
 
 
 Tools
@@ -63,14 +62,13 @@ platform.
 
 This tutorial covers and compares the following tools:
 
-- PDFreactor 11.6.0
-- PrinceXML 15
-- Antennahouse 7.2 MR7
-- Weasyprint 57.1
-- PagedJS 0.4.0 (pagedjs-cli 0.2.0)
-- Typeset.sh  0.22.0
-- Vivliostyle 5.9.0 (core: 2.19.2)
-- BFO Publisher 1.2
+- PDFreactor 11.6.9
+- PrinceXML 15.2
+- Antennahouse 7.3 MR4
+- Weasyprint 60.2
+- Typeset.sh  0.24.10
+- Vivliostyle 8.6.0 (core: 2.25.9)
+- BFO Publisher 1.3
 
 This tutorial does not cover installation issues. For this, please refer to
 the vendor documentation. All tools are available for free for the purpose

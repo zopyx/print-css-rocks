@@ -13,7 +13,7 @@ Converters, tools and services
 PDFreactor
 ----------
 
-* Current version: 11.6
+* Current version: 11.6.9
 * Website: https://www.pdfreactor.com
 * Docker images: https://hub.docker.com/r/realobjects/pdfreactor
 * `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
@@ -38,7 +38,7 @@ PDFreactor
 Prince
 ------
 
-* Current version: 15
+* Current version: 15.2
 * Website: http://www.princexml.com
 * Docker images: https://hub.docker.com/r/yeslogic/prince
 * Sample documents: http://www.princexml.com/samples
@@ -61,7 +61,7 @@ Prince
 Antenna House CSS Formatter
 ---------------------------
 
-* Current version: 7.2 MR7
+* Current version: 7.3 MR4
 * Website: https://www.antennahouse.com
 * Docker images: https://hub.docker.com/r/antennahouse/ahfcmd71
 * `CSS & Compliance  <https://www.antenna.co.jp/AHF/help/en/ahf-css6.html>`_
@@ -118,7 +118,7 @@ pdfChip
 Weasyprint
 ----------
 
-* Current version: 57.1
+* Current version: 60.2
 * Website: http://www.weasyprint.org
 * Pricing:
 
@@ -136,7 +136,7 @@ Weasyprint
 Typeset.sh
 ----------
 
-* Current version: 0.22.5
+* Current version: 0.24.10
 * Website: https://typeset.sh
 *  Pricing: 500 EUR (server license)
 
@@ -169,6 +169,8 @@ Paged.js
   * However, `PagedJS` has made very little progress (almost no fixes, no new releases)
     in 2022. A bunch of issues are open for more than a year, the stability of the commandline
     tool is not given. I am unhappy with the current state and progress of `PagesJS`.
+  * PagedJS has been removed in 2023 from the print-css.rocks test setup due to (public)
+    inactivity of the project, lack of maintenance, many essential unfixed bugs.
 
 
 Docraptor
@@ -204,8 +206,7 @@ Vivliostyle
 -----------
   * Current version:
 
-    * Vivliostyle CLI 5.9.0
-    * Vivliostyle.js 2.19.2
+    * Vivliostyle CLI 8.6.0 (core: 2.25.9)
 
   * Website: https://vivliostyle.org
   * Pricing: free, open-source
