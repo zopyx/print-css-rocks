@@ -13,7 +13,7 @@ bfo:
 	bfo.sh --env-bfo-pdf-tagged true --output bfo.pdf index.html
 
 weasyprint:
-	weasyprint index.html weasyprint.pdf
+	weasyprint --pdf-variant pdf/ua-1 index.html weasyprint.pdf
 
 pagedjs:
 	timeout --foreground -s 9 10 pagedjs-cli index.html -o pagedjs.pdf
