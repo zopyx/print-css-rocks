@@ -64,7 +64,7 @@ This tutorial covers and compares the following tools:
 
 - PDFreactor 11.6.9
 - PrinceXML 15.2
-- Antennahouse 7.3 MR4
+- Antennahouse 7.4 MR1
 - Weasyprint 60.2
 - Typeset.sh  0.24.10
 - Vivliostyle 8.6.0 (core: 2.25.9)

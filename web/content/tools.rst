@@ -61,7 +61,7 @@ Prince
 Antenna House CSS Formatter
 ---------------------------
 
-* Current version: 7.3 MR4
+* Current version: 7.4 MR1
 * Website: https://www.antennahouse.com
 * Docker images: https://hub.docker.com/r/antennahouse/ahfcmd71
 * `CSS & Compliance  <https://www.antenna.co.jp/AHF/help/en/ahf-css6.html>`_
