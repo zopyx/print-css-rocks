@@ -47,7 +47,7 @@ functionality. Sophisticated layout options have been omitted for the sake of si
 Version
 -------
 
-- V 6.0 (alpha) - January 2024 (removed PagedJS, updated all tools)
+- V 6.0 - January 2024 (removed PagedJS, updated all other tools)
 
 
 Tools
