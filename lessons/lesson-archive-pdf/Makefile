@@ -13,7 +13,7 @@ weasyprint:
 	weasyprint --pdf-variant pdf/a-3b index.html weasyprint.pdf
 
 typeset.sh:
-	-typeset.sh.phar render:html --profile 'PDF/A-1b' --allow-local /home -rx index.html typeset.pdf
+	-typesetsh.phar render:html --profile 'PDF/A-1b' --allow-local /home -rx index.html typeset.pdf
 
 bfo:
 	bfo.sh --output bfo.pdf --env-bfo-pdf-profile 'pdf/a-3a' index.html

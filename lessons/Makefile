@@ -16,7 +16,7 @@ pagedjs: FORCE
 	-timeout --foreground -s 9 10 pagedjs-cli -i index.html -o pagedjs.pdf
 
 typeset.sh: FORCE
-	-typeset.sh.phar render:html --allow-local /home -rx index.html typeset.pdf
+	-typesetsh.phar render:html --allow-local /home -rx index.html typeset.pdf
 
 vivliostyle:FORCE
 	-vivliostyle build --output vivliostyle.pdf index.html
