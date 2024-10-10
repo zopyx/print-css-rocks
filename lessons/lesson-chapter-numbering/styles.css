@@ -2,8 +2,7 @@
 
 h1 {
     counter-increment: c1;
-    counter-reset: c3;
-    counter-reset: c2;
+    counter-reset: c2 c3;
 }
 
 h2 {
@@ -31,9 +30,9 @@ h1:before {
 }
 
 h2:before {
-    content: counter(c1) "." counter(c2);
+    content: counter(c1) "."counter(c2);
 }
 
 h3:before {
-    content: counter(c1) "." counter(c2) "." counter(c3);
+    content: counter(c1) "."counter(c2) "."counter(c3);
 }
