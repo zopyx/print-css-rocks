@@ -225,3 +225,12 @@ BFO Publisher
   * Commercial
   * Pretty new, lots features and high Compliance
   * has some rough edges
+
+
+EuroPDF
+-------
+* Cloud-based conversion service running on top of PrinceXML
+* Similar to DocRaptor as a hosted solution
+* If you are in the EU: EuroPDF wants to be GDPR-compliant
+* Website: https://www.europdf.eu
+* Pricing: https://www.europdf.eu/#pricing 
