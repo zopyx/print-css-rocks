@@ -13,7 +13,7 @@ Converters, tools and services
 PDFreactor
 ----------
 
-* Current version: 11.6.9
+* Current version: 12.0
 * Website: https://www.pdfreactor.com
 * Docker images: https://hub.docker.com/r/realobjects/pdfreactor
 * `CSS Compliance <https://www.pdfreactor.com/product/doc_html/index.html#SupportedCSSPropertiesSection>`_
@@ -24,16 +24,15 @@ PDFreactor
   `PDF/UA <https://www.pdfreactor.com/product/doc_html/index.html#PDFUAConformance>`_
 * Pricing:
 
-  * 4 CPU cores server licence: 2950 USD
-  * Personal non-commercial licence: free
-
-* Personal review:
+  * Start 2025, PDFreactor is only available on a subscription basis. See [https://www.pdfreactor.com/pricing/]:(https://www.pdfreactor.com/pricing
 
   * Excellent workhorse, very compliant and complete implementation of the CSS Paged Media standard.
   * Good-quality, extensive documentation (Javascript API could be better documented with examples).
   * Reasonable pricing.
   * Good and responsive support.
   * PDFreactor has a ZUGFerd integration.
+  * new in PDFreactor 12: support for side notes, news Javascript engine, CSS shapes and many more see https://www.pdfreactor.com/product/changelog.htm
+
 
 Prince
 ------

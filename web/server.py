@@ -43,6 +43,22 @@ lines = [line.strip() for line in lines if line.strip()]
 lessons_ordered = dict([(line, i) for i, line in enumerate(lines)])
 
 
+def render_markdown(md_filename):
+    if not md_filename:
+        return ""
+    elif md_filename.endswith(".md"):
+        fn = os.path.join(os.path.dirname(__file__), "content", md_filename)
+        if not os.path.exists(fn):
+            raise HTTPException(
+                status_code=404, detail="Markdown file {} not found".format(fn)
+            )
+        with open(fn) as fp:
+            md_data = fp.read()
+        return markdown.markdown(md_data)
+    else:
+        return ""
+
+
 def render_rst(rst_filename):
     class HTMLFragmentTranslator(HTMLTranslator):
         def __init__(self, document):
@@ -92,7 +108,7 @@ async def introduction(request: Request):
 @app.get("/tools", response_class=HTMLResponse)
 async def tools(request: Request):
     inside = inspect.stack()[0][0].f_code.co_name
-    params = {"body": render_rst("tools.rst"), "navigation": inside, "request": request}
+    params = {"body": render_markdown("tools.md"), "navigation": inside, "request": request}
     return templates.TemplateResponse("content.html", params)
 
 
