@@ -222,6 +222,6 @@ on personal experience, evaluation work and project work.
 
 * Cloud-based conversion service running on top of PrinceXML
 * Similar to DocRaptor as a hosted solution
-* If you are in the EU: EuroPDF wants to be GDPR-compliant
+* EuroPDF is a GDPR-compliant SaaS solution
 * Website: https://www.europdf.eu
 * Pricing: https://www.europdf.eu/#pricing 
