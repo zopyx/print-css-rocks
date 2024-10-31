@@ -198,21 +198,30 @@ on personal experience, evaluation work and project work.
 
 ## Vivliostyle
 
-> -   Current version:
->     -   Vivliostyle CLI 8.15.0 (core: 2.30.4)
-> -   Website: <https://vivliostyle.org>
-> -   Pricing: free, open-source
-> -   CSS Compliance:
->     <https://docs.vivliostyle.org/#/supported-css-features>
-> -   Sample documents: <https://vivliostyle.org/samples/>
-> -   Supported PDF profiles:
->     -   PDF/X:
->         [https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-for-print-pdfx-1a-format](https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-for-print-pdfx-1a-format)
+-   Current version:
+    -   Vivliostyle CLI 8.15.0 (core: 2.30.4)
+-   Website: <https://vivliostyle.org>
+-   Pricing: free, open-source
+-   CSS Compliance:
+     <https://docs.vivliostyle.org/#/supported-css-features>
+-   Sample documents: <https://vivliostyle.org/samples/>
+-   Supported PDF profiles:
+    -   PDF/X:
+        [https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-for-print-pdfx-1a-format](https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-for-print-pdfx-1a-format)
 
 ## BFO Publisher
 
-> -   Current Version: 1.3
-> -   Website: <https://publisher.bfo.com/>
-> -   Commercial
-> -   Pretty new, lots features and high Compliance
-> -   has some rough edges
+-   Current Version: 1.3
+-   Website: <https://publisher.bfo.com/>
+-   Commercial
+-   Pretty new, lots features and high Compliance
+-   has some rough edges
+
+
+## EuroPDF
+
+* Cloud-based conversion service running on top of PrinceXML
+* Similar to DocRaptor as a hosted solution
+* If you are in the EU: EuroPDF wants to be GDPR-compliant
+* Website: https://www.europdf.eu
+* Pricing: https://www.europdf.eu/#pricing 
