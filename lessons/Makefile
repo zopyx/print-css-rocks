@@ -1,7 +1,7 @@
 all: pdfreactor prince antennahouse  weasyprint pagedjs typeset.sh vivliostyle bfo
 
 pdfreactor: FORCE
-	-pdfreactor.py  --addLinks --addBookmarks --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf
+	-pdfreactor.py  -i index.html -o pdfreactor.pdf --base-url file://${PWD}/
 
 prince: FORCE
 	-prince --javascript index.html -o prince.pdf
