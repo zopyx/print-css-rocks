@@ -1,7 +1,7 @@
 all: pdfreactor prince antennahouse
 
 pdfreactor:
-	pdfreactor.py -c styles.css -i index.xml -o pdfreactor.pdf
+	pdfreactor.py -c styles.css -i index.xml -o pdfreactor.pdf --base-url file://$(PWD)/
 
 prince: 
 	prince -s styles.css  index.xml -o prince.pdf

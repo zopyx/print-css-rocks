@@ -1,7 +1,7 @@
 all: pdfreactor
 
 pdfreactor:
-	-pdfreactor.py --verbose --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf
+	-pdfreactor.py --verbose --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf --base-url file://$(PWD)/
 
 images: FORCE
 	-rm -fr images

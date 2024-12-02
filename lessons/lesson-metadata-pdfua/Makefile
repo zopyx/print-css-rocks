@@ -7,7 +7,7 @@ antennahouse:
 	run.sh -d index.html -pdfver PDF1.7/UA-1:2014 >antennahouse.pdf
 
 pdfreactor:
-	pdfreactor.py --addTags  --conformance PDFUA1 -i index.html -o pdfreactor.pdf
+	pdfreactor.py --addTags  --conformance PDFUA1 -i index.html -o pdfreactor.pdf --base-url file://$(PWD)/
 
 bfo:
 	bfo.sh --env-bfo-pdf-tagged true --output bfo.pdf index.html

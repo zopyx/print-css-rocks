@@ -1,4 +1,4 @@
 include ../Makefile
 
 pdfreactor:
-	-pdfreactor.py -c pdfreactor.css  -v --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf
+	-pdfreactor.py -c pdfreactor.css  -v --javaScriptMode ENABLED -i index.html -o pdfreactor.pdf --base-url file://$(PWD)/
