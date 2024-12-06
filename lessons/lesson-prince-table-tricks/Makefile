@@ -12,8 +12,8 @@ images: FORCE
 	$(eval OPTS :=-density 150 -quality 85)
 	$(eval OPTS2 := +profile "icc")
 	$(eval THUMBOPTS := -thumbnail 100x100 -background white -alpha remove)
-	-convert $(OPTS) prince.pdf             $(OPTS2) images/princexml/prince.png
-	-convert $(THUMBOPTS)  prince.pdf     		  $(OPTS2) images/princexml/thumb-prince.png
+	-magick $(OPTS) prince.pdf             $(OPTS2) images/princexml/prince.png
+	-magick prince.pdf $(THUMBOPTS)  $(OPTS2) images/princexml/thumb-prince.png
 
 FORCE:
 

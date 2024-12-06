@@ -2,7 +2,7 @@ all: pdfreactor
 
 
 pdfreactor:
-	pdfreactor.py -i index.html --javaScriptMode ENABLED -o pdfreactor.pdf --base-url file://$(PWD)/
+	pdfreactor.py -i index.html -o pdfreactor.pdf --base-url file://$(PWD)/
 
 images: FORCE
 	-rm -fr images
@@ -11,7 +11,7 @@ images: FORCE
 	$(eval OPTS :=-density 150 -quality 85)
 	$(eval OPTS2 := +profile "icc")
 	$(eval THUMBOPTS := -thumbnail 100x100 -background white -alpha remove)
-	-convert $(OPTS) pdfreactor.pdf         $(OPTS2) images/pdfreactor/pdfreactor.png
-	-convert $(THUMBOPTS)  pdfreactor.pdf         $(OPTS2) images/pdfreactor/thumb-pdfreactor.png
+	-magick $(OPTS) pdfreactor.pdf         $(OPTS2) images/pdfreactor/pdfreactor.png
+	-magick pdfreactor.pdf $(THUMBOPTS)  $(OPTS2) images/pdfreactor/thumb-pdfreactor.png
 
 FORCE:

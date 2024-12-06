@@ -1,4 +1,4 @@
-all: pdfreactor prince antennahouse
+all: pdfreactor prince antennahouse bfo
 
 pdfreactor:
 	pdfreactor.py -c styles.css -i index.xml -o pdfreactor.pdf --base-url file://$(PWD)/
@@ -17,18 +17,18 @@ clean:
 
 images: FORCE
 	-rm -fr images
-	mkdir -p images/pdfreactor images/princexml images/antennahouse 
+	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/bfo
 	echo 1 >images/placeholder
 	$(eval OPTS :=-density 150 -quality 85)
 	$(eval OPTS2 := +profile "icc")
 	$(eval THUMBOPTS := -thumbnail 100x100 -background white -alpha remove)
-	-convert $(OPTS) pdfreactor.pdf         $(OPTS2) images/pdfreactor/pdfreactor.png
-	-convert $(OPTS) prince.pdf             $(OPTS2) images/princexml/prince.png
-	-convert $(OPTS) antennahouse.pdf       $(OPTS2) images/antennahouse/antennahouse.png
-	-convert $(OPTS) bfo.pdf                $(OPTS2) images/bfo/bfo.png
-	-convert $(THUMBOPTS)  pdfreactor.pdf         $(OPTS2) images/pdfreactor/thumb-pdfreactor.png
-	-convert $(THUMBOPTS)  prince.pdf     		  $(OPTS2) images/princexml/thumb-prince.png
-	-convert $(THUMBOPTS)  antennahouse.pdf 	  $(OPTS2) images/antennahouse/thumb-antennahouse.png
-	-convert $(THUMBOPTS)  bfo.pdf                $(OPTS2) images/bfo/thumb-bfo.png
+	-magick $(OPTS) pdfreactor.pdf         $(OPTS2) images/pdfreactor/pdfreactor.png
+	-magick $(OPTS) prince.pdf             $(OPTS2) images/princexml/prince.png
+	-magick $(OPTS) antennahouse.pdf       $(OPTS2) images/antennahouse/antennahouse.png
+	-magick $(OPTS) bfo.pdf                $(OPTS2) images/bfo/bfo.png
+	-magick  pdfreactor.pdf   $(THUMBOPTS)       $(OPTS2) images/pdfreactor/thumb-pdfreactor.png
+	-magick  prince.pdf       $(THUMBOPTS)   	  $(OPTS2) images/princexml/thumb-prince.png
+	-magick  antennahouse.pdf $(THUMBOPTS)  	  $(OPTS2) images/antennahouse/thumb-antennahouse.png
+	-magick  bfo.pdf          $(THUMBOPTS)       $(OPTS2) images/bfo/thumb-bfo.png
 
 FORCE:

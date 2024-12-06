@@ -1,4 +1,4 @@
-all: pdfreactor prince antennahouse
+all: pdfreactor prince antennahouse bfo
 
 pdfreactor:
 	pdfreactor.py -c pdfreactor.css -i index.xml -o pdfreactor.pdf --base-url file://$(PWD)/
@@ -16,15 +16,15 @@ clean:
 	find . -name \*.pdf -exec rm {} \;
 
 images: FORCE
-	mkdir -p images/pdfreactor images/princexml images/antennahouse 
+	mkdir -p images/pdfreactor images/princexml images/antennahouse  images/bfo
 	echo 1 >images/placeholder
-	-convert -density 150 -quality 85 pdfreactor.pdf         images/pdfreactor/pdfreactor.png
-	-convert -density 150 -quality 85 prince.pdf             images/princexml/prince.png
-	-convert -density 150 -quality 85 antennahouse.pdf       images/antennahouse/antennahouse.png
-	-convert -density 150 -quality 85 bfo.pdf       images/bfo/bfo.png
-	-convert -thumbnail 100x100 -background white -alpha remove pdfreactor.pdf          images/pdfreactor/thumb-pdfreactor.png
-	-convert -thumbnail 100x100 -background white -alpha remove prince.pdf              images/princexml/thumb-prince.png
-	-convert -thumbnail 100x100 -background white -alpha remove antennahouse.pdf        images/antennahouse/thumb-antennahouse.png
-	-convert -thumbnail 100x100 -background white -alpha remove bfo.pdf                 images/bfo/thumb-bfo.png
+	-magick -density 150 -quality 85 pdfreactor.pdf         images/pdfreactor/pdfreactor.png
+	-magick -density 150 -quality 85 prince.pdf             images/princexml/prince.png
+	-magick -density 150 -quality 85 antennahouse.pdf       images/antennahouse/antennahouse.png
+	-magick -density 150 -quality 85 bfo.pdf       images/bfo/bfo.png
+	-magick pdfreactor.pdf   -thumbnail 100x100 -background white -alpha remove        images/pdfreactor/thumb-pdfreactor.png
+	-magick prince.pdf       -thumbnail 100x100 -background white -alpha remove        images/princexml/thumb-prince.png
+	-magick antennahouse.pdf -thumbnail 100x100 -background white -alpha remove        images/antennahouse/thumb-antennahouse.png
+	-magick bfo.pdf          -thumbnail 100x100 -background white -alpha remove        images/bfo/thumb-bfo.png
 
 FORCE:
