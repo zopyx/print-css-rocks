@@ -7,6 +7,13 @@
    :class: banner
 
 
+.. note::
+
+  print-css.rocks is currently (as of 2025) no longer updated.
+  The site remains online for the time being but do not expect any
+  future updates.
+
+
 Introduction to PrintCSS and CSS Paged Media
 ============================================
 
@@ -15,6 +22,8 @@ using the "CSS Paged Media" approach, whereby the complete styling
 and layout information is kept in cascading stylesheets (CSS).
 It will also show the results produced by different tools with identical
 data, providing an impression of functionality and output quality.
+
+
 
 What is CSS Paged Media
 -----------------------
