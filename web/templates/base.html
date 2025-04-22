@@ -1,7 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="language" content="en">
+        <meta name="keywords" content="PDF,PrintCSS,CSS Paged Media,ZOPYX,CSS,HTML,XML,PDFreactor,PrinceXML,Antennahouse">
+        <meta name="description" content="PrintCSS/CSS Paged Media (PDF generation from XML and HTML using CSS stylesheets) tutorial and showcase with lessons, tool descriptions and comparisons. PDFreactor Antennahouse PrinceXML">
+        
+        <title>print-css.rocks - PrintCSS CSS Paged Media tutorial and information</title>
+        
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
@@ -9,175 +17,185 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
-        <meta charset="utf-8">
-        <meta name="language" content="en">
-        <meta name="keywords" content="PDF,PrintCSS,CSS Paged Media, ZOPYX, CSS, HTML, XML, PDFreactor, PrinceXML,Antennahouse">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>print-css.rocks - PrintCSS CSS Paged Media tutorial and information</title>
-
-        <meta name="description" content="PrintCSS/CSS Paged Media (PDF generation from XML and HTML using CSS stylesheets) tutorial and showcase with lessons, tool descriptions and comparions. PDFreactor Antennahouse PrinceXML"><meta name="keywords" content="CSS,PDF,HTML,XML, CSS Paged media, Antennahouse, PDFreactor, PrinceXML, Markup"></head>
-
+        <!-- CSS -->
         <link rel="stylesheet" href="/static/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link href="/static/styles.css" type="text/css" rel="stylesheet"/>
         <link rel="stylesheet" href="/static/fontawesome-free-5.14.0-web/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="/static/iframemanager.css">
+        <link rel="stylesheet" href="/static/iframemanager.css">
+        <link rel="stylesheet" href="/static/styles.css">
 
-        <script src="/static/jquery-latest.js"></script>
-        <script src="/static/run_prettify.js" type="text/javascript"  charset="utf-8"></script>
-        <script src="/static/spotlight.bundle.js" type="text/javascript" charset="utf-8"></script>
+        <!-- Scripts loaded in head (critical) -->
+        <script src="/static/jquery-latest.js" defer></script>
+        <script src="/static/run_prettify.js" defer></script>
+        <script src="/static/spotlight.bundle.js" defer></script>
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
 
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <a href="/">
-                <img id="logo" src="/static/logo.png"/ alt="Print CSS Logo">
-            </a>
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img src="/static/logo.png" alt="Print CSS Logo" width="140" height="40" class="d-inline-block align-text-top">
+                    </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-introduction" href="/">Introduction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-lessons" href="/lessons">Lessons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-tools" href="/tools">Tools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-related" href="/related">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-showcases" href="/showcases">Showcase</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-blog" href="/blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-about" href="/consulting">Consulting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-about" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navigation-contributing" href="/contributing">Contributing</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-        <div class="container-fluid" id="body-wrapper">
-            <div class="row">
-                <div class="col-sm-3" id="sidebar">
-                    <ul id="navigation-items">
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-introduction" href="/" aria-current="page">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-lessons" href="/lessons">Lessons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-tools" href="/tools">Tools</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-related" href="/related">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-showcases" href="/showcases">Showcase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-blog" href="/blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-consulting" href="/consulting">Consulting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-about" href="/about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" id="navigation-contributing" href="/contributing">Contributing</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-sm-9" id="main">
-                    {% block body  %}
+            </nav>
+        </header>
+
+        <main class="container py-5 mt-5 flex-grow-1">
+            <div class="row g-4">
+                <div class="col-lg-3" id="sidebar">
+                    <div class="position-sticky" style="top: 5rem;">
+                        <ul id="navigation-items" class="list-unstyled nav flex-column">
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9" id="main">
+                    {% block body %}
                     {% endblock %}
                 </div>
             </div>
+        </main>
 
-        </div>
 
-
-        <footer>
-            <hr/>
-            <div id="footer-text">
-                print-css.rocks is &copy; 2023 by <a href="https://www.zopyx.com">Andreas Jung, ZOPYX</a>
-                <br/>
-                All rights reserved
-                <br/>
-                 <a href="https://www.zopyx.com/imprint">Imprint</a> |
-                 <a href="https://www.zopyx.com/privacy">Privacy statement</a>
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-lg-12">
+                        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                            <div>
+                                <span class="text-muted">print-css.rocks is &copy; 2024 by <a href="https://www.zopyx.com" class="text-decoration-none">Andreas Jung, ZOPYX</a></span>
+                            </div>
+                            <div>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="https://www.zopyx.com/imprint" class="text-decoration-none">Imprint</a>
+                                    </li>
+                                    <li class="list-inline-item">|</li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.zopyx.com/privacy" class="text-decoration-none">Privacy statement</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
 
-        <script src='/static/iframemanager.js'></script>
-        <script src='/static/jquery.min.js'></script>
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="/static/jquery.min.js" defer></script>
+        <script src="/static/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous" defer></script>
+        <script src="/static/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" defer></script>
+        
+        <!-- Custom scripts -->
+        <script src="/static/iframemanager.js" defer></script>
+        <script src="/static/local.js" defer></script>
+        <script>
+            window.NAVIGATION = "{{navigation}}";
+        </script>
 
-        <script src="/static/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="/static/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script src="/static/local.js"></script>
-        <script type="text/javascript">NAVIGATION = "{{navigation}}"</script>
+        <!-- iFrame Manager Configuration -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const manager = iframemanager();
 
-
-    <script>
-    window.addEventListener('load', function(){
-
-    var manager = iframemanager();
-
-    // Example with youtube embed
-    manager.run({
-        currLang: 'en',
-        services : {
-            slideshare: {
-                embedUrl: 'https://www.slideshare.net/slideshow/embed_code/key/{data-id}',
-                iframe: {
-                    frameborder: '0',
-                    allowfullscreen: 'no',
-                    scrolling: 'no',
-                },
-                cookie : {
-                    name : 'cc_slideshare'
-                },
-                languages : {
-                    en : {
-                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="hhttps://www.slideshare.net/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of slideshare.net.',
-                        loadBtn: 'Load slides',
-                        loadAllBtn: "Don't ask again"
+            manager.run({
+                currLang: 'en',
+                services: {
+                    slideshare: {
+                        embedUrl: 'https://www.slideshare.net/slideshow/embed_code/key/{data-id}',
+                        iframe: {
+                            frameborder: '0',
+                            allowfullscreen: 'no',
+                            scrolling: 'no',
+                        },
+                        cookie: {
+                            name: 'cc_slideshare'
+                        },
+                        languages: {
+                            en: {
+                                notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.slideshare.net/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of slideshare.net.',
+                                loadBtn: 'Load slides',
+                                loadAllBtn: "Don't ask again"
+                            }
+                        }
+                    },                        
+                    youtube: {
+                        embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
+                        thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
+                        iframe: {
+                            allow: 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
+                        },
+                        cookie: {
+                            name: 'cc_youtube'
+                        },
+                        languages: {
+                            en: {
+                                notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
+                                loadBtn: 'Load video',
+                                loadAllBtn: 'Don\'t ask again'
+                            }
+                        }
                     }
                 }
-            },                        
-            youtube : {
-                embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
-                thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
-                iframe : {
-                    allow : 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
-                },
-                cookie : {
-                    name : 'cc_youtube'
-                },
-                languages : {
-                    en : {
-                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
-                        loadBtn: 'Load video',
-                        loadAllBtn: 'Don\'t ask again'
-                    }
-                }
-            }
-        }
-    });
-});
+            });
+        });
 </script>
 
 
-<script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/9a681c2af7d742bda75657339d424a3c7c8cb246ced347c7aaf692bea3e01011.js"></script> 
+        <!-- Userlike Chat Widget -->
+        <script async src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/9a681c2af7d742bda75657339d424a3c7c8cb246ced347c7aaf692bea3e01011.js"></script> 
 
-
-
-<!-- Matomo -->
-	<script type="text/javascript">
-	  var _paq = window._paq || [];
-	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-	  _paq.push(["setCookieDomain", "*.print-css.rocks"]);
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u="https://matomo.zopyx.com/";
-	    _paq.push(['setTrackerUrl', u+'matomo.php']);
-	    _paq.push(['setSiteId', '1']);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<!-- End Matomo Code -->
+        <!-- Matomo Analytics -->
+        <script>
+            var _paq = window._paq || [];
+            _paq.push(["setCookieDomain", "*.print-css.rocks"]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="https://matomo.zopyx.com/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '1']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
     </body>
 </html>
 

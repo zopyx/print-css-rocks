@@ -1,34 +1,37 @@
 {% extends "base.html" %}
 {% block body %}
-    <h1>Lessons</h1>
+    <article>
+        <header>
+            <h1>Lessons</h1>
+        </header>
 
-    {% for category in compliance %}
-        {% if compliance[category] %}
-            <table class="table table-bordered compliance">
-                <caption>
-                    <h2 class="caption">{{ category.upper() }}</h2>
-                </caption>
-                <thead>
-                    <tr>
-                        <th>Lesson</th>
-                        <th class="converter center">PDFreactor</th>
-                        <th class="converter center">Prince</th>
-                        <th class="converter center">Antenna&shy;house</th>
-                        <th class="converter center">Weasy&shy;print</th>
-                        <th class="converter center">Typeset.sh</th>
-                        <th class="converter center">Vivliostyle</th>
-                        <th class="converter center">BFO</th>
-                    </tr>
-                </thead>
+        {% for category in compliance %}
+            {% if compliance[category] %}
+                <section class="mb-5">
+                    <h2>{{ category.upper() }}</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered compliance">
+                            <thead>
+                                <tr>
+                                    <th>Lesson</th>
+                                    <th class="converter center">PDFreactor</th>
+                                    <th class="converter center">Prince</th>
+                                    <th class="converter center">Antenna&shy;house</th>
+                                    <th class="converter center">Weasy&shy;print</th>
+                                    <th class="converter center">Typeset.sh</th>
+                                    <th class="converter center">Vivliostyle</th>
+                                    <th class="converter center">BFO</th>
+                                </tr>
+                            </thead>
                 <tbody>
                     {% for row in compliance[category] %}
                         <tr>
                             <td class="title">      
-                                <h3>
-                                    <a class="lesson-title" href="../lesson/{{ row['name'] }}">{{ row.title }}</a>
+                                <h3 class="h5 mb-2">
+                                    <a class="lesson-title text-decoration-none" href="../lesson/{{ row['name'] }}">{{ row.title }}</a>
                                 </h3>
                                 {% if row['description'] %}
-                                    <div class="readme"> {{ row['description'] | safe  }} </div>
+                                    <div class="readme mt-2 small"> {{ row['description'] | safe }} </div>
                                 {% endif %}
                             </td>
 
@@ -40,6 +43,8 @@
                                                  src="/static/{{row['converters'][c]['status'].lower()}}.svg" 
                                                  alt="{{row['converters'][c]['status']}}"
                                                  title="Status: {{row['converters'][c]['status']}}"
+                                                 width="24"
+                                                 height="24"
                                             />
                                         </span>
                                     {% endif %}
@@ -47,15 +52,18 @@
                             {% endfor %}
                         </tr>
                     {% endfor %}
-                </tbody>
-            </table>
-            <div class="icon-legend">
-                <img class="status-icon-small" src="/static/ok.svg"> <span class="status-text">OK</span>
-                <img class="status-icon-small" src="/static/(ok).svg"> <span class="status-text">OK with issues</span>
-                <img class="status-icon-small" src="/static/error.svg"> <span class="status-text">Error</span>
-                <img class="status-icon-small" src="/static/unsupported.svg"> <span class="status-text">Unsupported</span>
-            </div>
-        {% endif %}
-    {% endfor %}
-
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="icon-legend mt-3">
+                        <img class="status-icon-small" src="/static/ok.svg" alt="OK" width="16" height="16"> <span class="status-text">OK</span>
+                        <img class="status-icon-small" src="/static/(ok).svg" alt="OK with issues" width="16" height="16"> <span class="status-text">OK with issues</span>
+                        <img class="status-icon-small" src="/static/error.svg" alt="Error" width="16" height="16"> <span class="status-text">Error</span>
+                        <img class="status-icon-small" src="/static/unsupported.svg" alt="Unsupported" width="16" height="16"> <span class="status-text">Unsupported</span>
+                    </div>
+                </section>
+            {% endif %}
+        {% endfor %}
+    </article>
 {% endblock %}

@@ -1,65 +1,83 @@
 {% extends "base.html" %}
 {% block body %}
-        <h1>{{ lesson.title }}</h1>
+    <article class="pb-3">
+        <header class="mb-4">
+            <h1 class="display-5 fw-bold border-bottom pb-3 mb-4">{{ lesson.title }}</h1>
+            <div class="alert alert-info shadow-sm">{{lesson.readme_raw | safe }}</div>
+        </header>
 
-        <div class="alert alert-info">{{lesson.readme_raw | safe }}</div>
-
-        <section>
-            <h2>Repository files</h2>
-            <ul>
-                <a href="https://github.com/zopyx/print-css-rocks/tree/master/lessons/{{ lesson.name }}">
-                        https://github.com/zopyx/print-css-rocks/tree/master/lessons/{{ lesson.name }}
+        <section class="mb-5">
+            <h2 class="h3 mb-3">Repository files</h2>
+            <div class="d-grid gap-2 d-md-flex">
+                <a href="https://github.com/zopyx/print-css-rocks/tree/master/lessons/{{ lesson.name }}" 
+                   class="btn btn-outline-primary d-flex align-items-center" 
+                   target="_blank"
+                   rel="noopener">
+                   <i class="fab fa-github me-2" aria-hidden="true"></i>
+                   <span>View source code on GitHub</span>
                 </a>
-            </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>PDF files</h2>
+        <section class="mb-5">
+            <h2 class="h3 mb-3">PDF files</h2>
 
-            <table class="table-bordered table-striped table" id="pdf-files">
-                <thead>
-                    <tr>
-                        <th class="converter">Converter</th>
-                        <th class="status">Status</th>
-                        <th class="pdf-preview">PDF Preview</th>
-                    </tr>
-                </thead>
+            <div class="table-responsive shadow-sm rounded">
+                <table class="table table-hover" id="pdf-files">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="converter">Converter</th>
+                            <th class="status text-center">Status</th>
+                            <th class="pdf-preview">PDF Preview</th>
+                        </tr>
+                    </thead>
                 <tbody>
                     {% for entry in lesson.pdfs %}
                         <tr>
-                            <td>
-                                <span class="converter-name">{{ entry.name }}</span>&nbsp;
-                                <a title="Download PDF" class="pdf-download" href="{{request_url}}/download/{{ entry['pdf_file'] }}"><i class="far fa-file-pdf"></i></a>
+                            <td class="align-middle">
+                                <span class="fw-semibold converter-name">{{ entry.name }}</span>
+                                <a title="Download PDF" class="btn btn-sm btn-outline-secondary ms-2" href="{{request_url}}/download/{{ entry['pdf_file'] }}">
+                                    <i class="far fa-file-pdf" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Download PDF</span>
+                                </a>
                             </td>
-                            <td class="converter-status">
+                            <td class="converter-status text-center align-middle">
                                 <span class="converter-status-{{ entry.status }}">
                                     <img class="status-icon" 
                                          src="/static/{{ entry.status.lower() }}.svg" 
                                          alt="{{ entry.status }}"
                                          title="Status: {{ entry.status }}"
+                                         width="24" 
+                                         height="24"
                                     />
                                 </span>
                             </td>
-                            <td  data-featherlight-gallery data-featherlight-filter="a">
-                                <div class="spotlight-group" data-title="{{lesson.title.upper()}}: {{entry.name}}">
+                            <td data-featherlight-gallery data-featherlight-filter="a">
+                                <div class="spotlight-group d-flex flex-wrap gap-2" data-title="{{lesson.title.upper()}}: {{entry.name}}">
                                     {% for image in entry.images %} 
 
                                         {% if entry.name.lower() != "princexml" %}
                                             <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/{{ entry.name.lower() }}/{{ image }}" 
                                                 data-title="{{lesson.title}} - Page {{loop.index}}/{{entry.images|length}}">
-                                                    <img class="preview" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}" />
+                                                    <img class="preview img-thumbnail" src="{{request_url}}/download/images/{{ entry.name.lower() }}/thumb-{{ image }}"
+                                                         alt="Page {{loop.index}} preview" 
+                                                         loading="lazy"
+                                                         width="120" height="170" />
                                             </a>
                                         {% endif %}
                                         {% if entry.name.lower() == "princexml" %}
                                             <a class="spotlight" data-theme="white" href="{{request_url}}/download/images/prince/{{ image }}" 
                                                 data-title="{{lesson.title}} - Page {{loop.index}}/{{entry.images|length}}">
-                                                    <img class="preview" src="{{request_url}}/download/images/prince/thumb-{{ image }}" />
+                                                    <img class="preview img-thumbnail" src="{{request_url}}/download/images/prince/thumb-{{ image }}"
+                                                         alt="Page {{loop.index}} preview" 
+                                                         loading="lazy"
+                                                         width="120" height="170" />
                                             </a>
                                         {% endif %}
                                     {% endfor %}
                                 </div>
                                 {% if entry.message %} 
-                                    <div>
+                                    <div class="alert alert-warning mt-2">
                                         {{ entry.message }}
                                     </div>
                                 {% endif %}
@@ -68,38 +86,42 @@
                     {% endfor %}
                 </tbody>
             </table>
-            <div class="icon-legend">
-                <img class="status-icon-small" src="/static/ok.svg"> <span class="status-text">OK</span>
-                <img class="status-icon-small" src="/static/(ok).svg"> <span class="status-text">OK with issues</span>
-                <img class="status-icon-small" src="/static/error.svg"> <span class="status-text">Error</span>
-                <img class="status-icon-small" src="/static/unsupported.svg"> <span class="status-text">Unsupported</span>
             </div>
-        </section>
-
-        <section>
-            <div class="row">
-                <div class="col-sm-12">
-                    {% if lesson.mode == 'html' %}
-                        <h2>HTML input</h2>
-                    {% endif %}
-                    {% if lesson.mode == 'xml' %}
-                        <h2>XML input</h2>
-                    {% endif %}
-                    <pre id="source-text" class="prettyprint linenums language-html">{{lesson.source | e }}</pre>
+            
+            <div class="icon-legend d-flex gap-3 mt-3 bg-light p-3 rounded shadow-sm">
+                <div class="d-flex align-items-center">
+                    <img class="status-icon-small me-1" src="/static/ok.svg" alt="OK" width="16" height="16"> 
+                    <span class="status-text">OK</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="status-icon-small me-1" src="/static/(ok).svg" alt="OK with issues" width="16" height="16"> 
+                    <span class="status-text">OK with issues</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="status-icon-small me-1" src="/static/error.svg" alt="Error" width="16" height="16"> 
+                    <span class="status-text">Error</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="status-icon-small me-1" src="/static/unsupported.svg" alt="Unsupported" width="16" height="16"> 
+                    <span class="status-text">Unsupported</span>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="row">
-                <div class="col-sm-12">
-                    {% if lesson.has_css %}
-                        <h2>Stylesheet</h2>
-                        <pre id="css-text" class="prettyprint linenums language-css">{{lesson.css_text}}</pre>
-                    {% endif %}
-                </div>
-
+        <section class="mb-5">
+            <h2 class="h3 mb-3">{% if lesson.mode == 'html' %}HTML{% else %}XML{% endif %} Input</h2>
+            <div class="source-code-container bg-light p-3 rounded shadow-sm">
+                <pre id="source-text" class="prettyprint linenums language-html mb-0">{{lesson.source | e }}</pre>
             </div>
         </section>
 
+        {% if lesson.has_css %}
+        <section class="mb-5">
+            <h2 class="h3 mb-3">Stylesheet</h2>
+            <div class="source-code-container bg-light p-3 rounded shadow-sm">
+                <pre id="css-text" class="prettyprint linenums language-css mb-0">{{lesson.css_text}}</pre>
+            </div>
+        </section>
+        {% endif %}
+    </article>
 {% endblock %}

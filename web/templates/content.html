@@ -1,4 +1,8 @@
 {% extends "base.html" %}
 {% block body %}
-    {{ body | safe }}
+    <article class="content-article">
+        <div class="rich-content pb-4">
+            {{ body | safe }}
+        </div>
+    </article>
 {% endblock %}
