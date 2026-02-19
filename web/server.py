@@ -30,11 +30,18 @@ print("LESSON_ROOT=", LESSON_ROOT)
 print("GENERATED_ROOT=", GENERATED_ROOT)
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
 
 folder = os.path.dirname(__file__)
 template_folder = os.path.abspath(os.path.join(folder, "templates"))
+static_folder = os.path.abspath(os.path.join(folder, "static"))
+
+if not os.path.isdir(static_folder):
+    raise ValueError("Static folder not found at {}".format(static_folder))
+if not os.path.isdir(template_folder):
+    raise ValueError("Templates folder not found at {}".format(template_folder))
+
+app.mount("/static", StaticFiles(directory=static_folder), name="static")
+templates = Jinja2Templates(directory=template_folder)
 
 lessons_ini = os.path.join(LESSON_ROOT, "lessons.ini")
 with open(lessons_ini) as fp:

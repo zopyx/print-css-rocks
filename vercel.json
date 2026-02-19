@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "web/server.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "web/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "web/server.py"
+    }
+  ],
+  "env": {
+    "LESSON_ROOT": "lessons"
+  }
+}
