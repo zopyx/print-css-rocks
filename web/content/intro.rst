@@ -10,8 +10,9 @@
 .. note::
 
   print-css.rocks is currently (as of 2025) in legacy mode.
-  The site remains online for the time being but do not expect any
-  future updates.
+
+  The site will be taken offline by 01.07.2026.  If you want to maintain the project in the future, contact
+  Andreas Jung (info@zopyx.com).
 
 
 Introduction to PrintCSS and CSS Paged Media
